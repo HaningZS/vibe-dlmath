@@ -1,0 +1,36 @@
+{
+  "title": "What learning algorithm is in-context learning? Investigations with linear models",
+  "authors": [
+    "Akyürek, Ekin",
+    "Schuurmans, Dale",
+    "Andreas, Jacob",
+    "Ma, Tengyu",
+    "Zhou, Denny"
+  ],
+  "published": "2022/11/28",
+  "resolved_id": "2211.15661v3",
+  "metadata_url": "https://arxiv.org/abs/2211.15661v3",
+  "metadata_checked_at": "2026-09-26T05:40:46+00:00",
+  "download_urls": {
+    "pdf": "https://arxiv.org/pdf/2211.15661v3",
+    "source": "https://export.arxiv.org/e-print/2211.15661v3"
+  },
+  "artifacts": {
+    "pdf": {
+      "sha256": "18f2a209349c75ec84b74f2b72d32d96e12a86ebad97f47602a9bd8ce4c24ca4",
+      "bytes": 1285070
+    },
+    "source": {
+      "sha256": "91915ae6082217f8e2c2370b3a088fbd74af2c5aa30503071393dc22236768f6",
+      "bytes": 633228
+    }
+  },
+  "identifier": "2211.15661",
+  "topic": "transformer-icl",
+  "templates": [
+    "T14"
+  ],
+  "path": "proof_ref/foundations-2026-09/what-learning-algorithm-is-in-context-learning-investigations-2211.15661",
+  "last_checked_at": "2026-09-26T05:54:20+00:00",
+  "errors": {}
+}

@@ -1,0 +1,50 @@
+{
+  "title": "Distribution-Free Predictive Inference For Regression",
+  "kind": "arxiv",
+  "identifier": "1604.04173",
+  "raw": "https://arxiv.org/abs/1604.04173",
+  "pdf_url": "https://arxiv.org/pdf/1604.04173.pdf",
+  "source_url": "https://export.arxiv.org/e-print/1604.04173",
+  "pdf_error": null,
+  "source_error": null,
+  "imported_from": {
+    "repository": "HaningZS/HaningZS_Notes",
+    "commit": "8ced9038b7611bcb8c2b2774fb870149df8ef780"
+  },
+  "edition_status": "pinned-cross-checked",
+  "artifacts": {
+    "pdf": {
+      "sha256": "28bbed19a871a5dd748953a3ea4f9d58cb03f00bb9e3f7f26f8d46398c399914",
+      "bytes": 1340253
+    },
+    "source": {
+      "sha256": "926aab6403af4a1f67028e0e46b2c335dd63938877912038757c7b7e847089b1",
+      "bytes": 694917
+    }
+  },
+  "topic": "statistics",
+  "templates": [
+    "T18"
+  ],
+  "path": "proof_ref/core-theory-2026-09/distribution-free-predictive-inference-for-regression-1604.04173",
+  "last_checked_at": "2026-09-26T05:54:22+00:00",
+  "errors": {},
+  "authors": [
+    "Lei, Jing",
+    "G'Sell, Max",
+    "Rinaldo, Alessandro",
+    "Tibshirani, Ryan J.",
+    "Wasserman, Larry"
+  ],
+  "published": "2016/04/14",
+  "resolved_id": "1604.04173v2",
+  "metadata_url": "https://arxiv.org/abs/1604.04173v2",
+  "metadata_checked_at": "2026-10-19T16:34:36+00:00",
+  "version_verification": {
+    "checked_at": "2026-10-19T16:34:40+00:00",
+    "pdf_marker": "1604.04173v2",
+    "source_url": "https://arxiv.org/src/1604.04173v2",
+    "method": "Unique arXiv version marker in local PDF pages 1-2; local PDF/source hashes match recorded metadata; exact hash match with newly downloaded official versioned source.",
+    "report": "reports/legacy_version_verification.json"
+  }
+}

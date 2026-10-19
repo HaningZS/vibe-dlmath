@@ -1,0 +1,34 @@
+{
+  "title": "Certified Adversarial Robustness via Randomized Smoothing",
+  "authors": [
+    "Cohen, Jeremy M",
+    "Rosenfeld, Elan",
+    "Kolter, J. Zico"
+  ],
+  "published": "2019/02/08",
+  "resolved_id": "1902.02918v2",
+  "metadata_url": "https://arxiv.org/abs/1902.02918v2",
+  "metadata_checked_at": "2026-10-02T07:17:14+00:00",
+  "download_urls": {
+    "pdf": "https://arxiv.org/pdf/1902.02918v2",
+    "source": "https://export.arxiv.org/e-print/1902.02918v2"
+  },
+  "artifacts": {
+    "pdf": {
+      "sha256": "a03d92f572f076e35e8edf84471580805acf2f422e0736e29828798f5d3bb995",
+      "bytes": 3026873
+    },
+    "source": {
+      "sha256": "169dad24a50cd383ad898724d50b2afb32713728ab7d76862b1306fd453cf7af",
+      "bytes": 3136445
+    }
+  },
+  "identifier": "1902.02918",
+  "topic": "robustness",
+  "templates": [
+    "T45"
+  ],
+  "path": "proof_ref/dl-specializations-2026-10/certified-adversarial-robustness-via-randomized-smoothing-1902.02918",
+  "last_checked_at": "2026-10-02T07:17:29+00:00",
+  "errors": {}
+}

@@ -1,0 +1,49 @@
+{
+  "title": "Provable Statistical Rates for Consistency Diffusion Models",
+  "kind": "arxiv",
+  "identifier": "2406.16213",
+  "raw": "https://arxiv.org/abs/2406.16213",
+  "pdf_url": "https://arxiv.org/pdf/2406.16213.pdf",
+  "source_url": "https://export.arxiv.org/e-print/2406.16213",
+  "pdf_error": null,
+  "source_error": null,
+  "imported_from": {
+    "repository": "HaningZS/HaningZS_Notes",
+    "commit": "8ced9038b7611bcb8c2b2774fb870149df8ef780"
+  },
+  "edition_status": "pinned-cross-checked",
+  "artifacts": {
+    "pdf": {
+      "sha256": "8fc9c86081272501823c0c1cc24df0d8b4bd178e6c70d8deeb50d7dc567c263f",
+      "bytes": 1165462
+    },
+    "source": {
+      "sha256": "41c351d442e9e2a7c6844749253592ab0bad638eb25997fd681159b66e27995a",
+      "bytes": 1615707
+    }
+  },
+  "topic": "generative",
+  "templates": [
+    "T13"
+  ],
+  "path": "proof_ref/core-theory-2026-09/provable-statistical-rates-for-consistency-diffusion-models-2406.16213",
+  "last_checked_at": "2026-09-26T05:54:22+00:00",
+  "errors": {},
+  "authors": [
+    "Dou, Zehao",
+    "Chen, Minshuo",
+    "Wang, Mengdi",
+    "Yang, Zhuoran"
+  ],
+  "published": "2024/06/23",
+  "resolved_id": "2406.16213v1",
+  "metadata_url": "https://arxiv.org/abs/2406.16213v1",
+  "metadata_checked_at": "2026-10-19T16:35:20+00:00",
+  "version_verification": {
+    "checked_at": "2026-10-19T16:35:24+00:00",
+    "pdf_marker": "2406.16213v1",
+    "source_url": "https://arxiv.org/src/2406.16213v1",
+    "method": "Unique arXiv version marker in local PDF pages 1-2; local PDF/source hashes match recorded metadata; exact hash match with newly downloaded official versioned source.",
+    "report": "reports/legacy_version_verification.json"
+  }
+}

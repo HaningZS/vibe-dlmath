@@ -1,0 +1,37 @@
+{
+  "title": "Sampling is as easy as learning the score: theory for diffusion models with minimal data assumptions",
+  "authors": [
+    "Chen, Sitan",
+    "Chewi, Sinho",
+    "Li, Jerry",
+    "Li, Yuanzhi",
+    "Salim, Adil",
+    "Zhang, Anru R."
+  ],
+  "published": "2022/09/22",
+  "resolved_id": "2209.11215v3",
+  "metadata_url": "https://arxiv.org/abs/2209.11215v3",
+  "metadata_checked_at": "2026-09-26T05:44:41+00:00",
+  "download_urls": {
+    "pdf": "https://arxiv.org/pdf/2209.11215v3",
+    "source": "https://arxiv.org/src/2209.11215v3"
+  },
+  "artifacts": {
+    "pdf": {
+      "sha256": "03f7c302ef183407843dee3bbe90b7f10afcb3b7cde8c6ac8171caa6e9784111",
+      "bytes": 445635
+    },
+    "source": {
+      "sha256": "587649805e315075c15f965f1d3f9b04d230ebc86c534d188003c39191dae519",
+      "bytes": 49533
+    }
+  },
+  "identifier": "2209.11215",
+  "topic": "generative",
+  "templates": [
+    "T13"
+  ],
+  "path": "proof_ref/foundations-2026-09/sampling-is-as-easy-as-learning-the-score-2209.11215",
+  "last_checked_at": "2026-09-26T05:54:21+00:00",
+  "errors": {}
+}

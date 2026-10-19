@@ -1,0 +1,48 @@
+{
+  "title": "The Stability of Singular Distribution: A Spectral Perspective on the Two-Phase Dynamics of Language Model Pre-training",
+  "kind": "arxiv",
+  "identifier": "2605.26489",
+  "raw": "https://arxiv.org/abs/2605.26489",
+  "pdf_url": "https://arxiv.org/pdf/2605.26489.pdf",
+  "source_url": "https://export.arxiv.org/e-print/2605.26489",
+  "pdf_error": null,
+  "source_error": null,
+  "imported_from": {
+    "repository": "HaningZS/HaningZS_Notes",
+    "commit": "8ced9038b7611bcb8c2b2774fb870149df8ef780"
+  },
+  "edition_status": "pinned-cross-checked",
+  "artifacts": {
+    "pdf": {
+      "sha256": "3dd2a2144d182a84aed5eb58d72ae739a83f0e9ce31710591a108c474fd60284",
+      "bytes": 7282010
+    },
+    "source": {
+      "sha256": "f16735eb39895a4c1abb037f28865de016fdfecc89eb73574466c177854459b0",
+      "bytes": 6297286
+    }
+  },
+  "topic": "neural-dynamics",
+  "templates": [],
+  "path": "proof_ref/core-theory-2026-09/the-stability-of-singular-distribution-a-spectral-perspective-2605.26489",
+  "last_checked_at": "2026-09-26T05:54:22+00:00",
+  "errors": {},
+  "authors": [
+    "Zhang, Hongtao",
+    "Zhou, Wenjie",
+    "Jia, Chenxi",
+    "Chen, Wei",
+    "Cheng, Xueqi"
+  ],
+  "published": "2026/05/26",
+  "resolved_id": "2605.26489v1",
+  "metadata_url": "https://arxiv.org/abs/2605.26489v1",
+  "metadata_checked_at": "2026-10-19T16:35:45+00:00",
+  "version_verification": {
+    "checked_at": "2026-10-19T16:35:52+00:00",
+    "pdf_marker": "2605.26489v1",
+    "source_url": "https://arxiv.org/src/2605.26489v1",
+    "method": "Unique arXiv version marker in local PDF pages 1-2; local PDF/source hashes match recorded metadata; exact hash match with newly downloaded official versioned source.",
+    "report": "reports/legacy_version_verification.json"
+  }
+}

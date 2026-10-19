@@ -1,0 +1,47 @@
+{
+  "title": "O(d/T) Convergence Theory for Diffusion Probabilistic Models under Minimal Assumptions",
+  "kind": "arxiv",
+  "identifier": "2409.18959",
+  "raw": "https://arxiv.org/abs/2409.18959",
+  "pdf_url": "https://arxiv.org/pdf/2409.18959.pdf",
+  "source_url": "https://export.arxiv.org/e-print/2409.18959",
+  "pdf_error": null,
+  "source_error": null,
+  "imported_from": {
+    "repository": "HaningZS/HaningZS_Notes",
+    "commit": "8ced9038b7611bcb8c2b2774fb870149df8ef780"
+  },
+  "edition_status": "pinned-cross-checked",
+  "artifacts": {
+    "pdf": {
+      "sha256": "aafe1cfdf454c5b5ff6f9a61d81f1fcd69f5f746d2e7c6a6cd78281c9fd89f7d",
+      "bytes": 615799
+    },
+    "source": {
+      "sha256": "b57b2b7fbb43f39f4b16d3039206113d28ff97977b25d086ff75fdf45a337136",
+      "bytes": 61350
+    }
+  },
+  "topic": "generative",
+  "templates": [
+    "T13"
+  ],
+  "path": "proof_ref/core-theory-2026-09/o-d-t-convergence-theory-for-diffusion-probabilistic-2409.18959",
+  "last_checked_at": "2026-09-26T05:54:22+00:00",
+  "errors": {},
+  "authors": [
+    "Li, Gen",
+    "Yan, Yuling"
+  ],
+  "published": "2024/09/27",
+  "resolved_id": "2409.18959v2",
+  "metadata_url": "https://arxiv.org/abs/2409.18959v2",
+  "metadata_checked_at": "2026-10-19T16:35:13+00:00",
+  "version_verification": {
+    "checked_at": "2026-10-19T16:35:17+00:00",
+    "pdf_marker": "2409.18959v2",
+    "source_url": "https://arxiv.org/src/2409.18959v2",
+    "method": "Unique arXiv version marker in local PDF pages 1-2; local PDF/source hashes match recorded metadata; exact hash match with newly downloaded official versioned source.",
+    "report": "reports/legacy_version_verification.json"
+  }
+}

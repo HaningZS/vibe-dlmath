@@ -1,0 +1,35 @@
+{
+  "title": "Consistency Models",
+  "authors": [
+    "Song, Yang",
+    "Dhariwal, Prafulla",
+    "Chen, Mark",
+    "Sutskever, Ilya"
+  ],
+  "published": "2023/03/02",
+  "resolved_id": "2303.01469v2",
+  "metadata_url": "https://arxiv.org/abs/2303.01469v2",
+  "metadata_checked_at": "2026-09-26T05:45:57+00:00",
+  "download_urls": {
+    "pdf": "https://arxiv.org/pdf/2303.01469v2",
+    "source": "https://export.arxiv.org/e-print/2303.01469v2"
+  },
+  "artifacts": {
+    "pdf": {
+      "sha256": "b36df36eb96abcad5ad67173952258c34f2ba0624c15acaaf38bebf855074043",
+      "bytes": 31529980
+    },
+    "source": {
+      "sha256": "182804eb2a6e596f88527557ce73c93153f026d2fcef84043b1d801aeab23567",
+      "bytes": 29604082
+    }
+  },
+  "identifier": "2303.01469",
+  "topic": "generative",
+  "templates": [
+    "T13"
+  ],
+  "path": "proof_ref/foundations-2026-09/consistency-models-2303.01469",
+  "last_checked_at": "2026-09-26T05:54:21+00:00",
+  "errors": {}
+}

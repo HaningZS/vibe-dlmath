@@ -1,0 +1,36 @@
+{
+  "title": "Time-uniform, nonparametric, nonasymptotic confidence sequences",
+  "authors": [
+    "Howard, Steven R.",
+    "Ramdas, Aaditya",
+    "McAuliffe, Jon",
+    "Sekhon, Jasjeet"
+  ],
+  "published": "2018/10/18",
+  "resolved_id": "1810.08240v9",
+  "metadata_url": "https://arxiv.org/abs/1810.08240v9",
+  "metadata_checked_at": "2026-09-26T05:49:19+00:00",
+  "download_urls": {
+    "pdf": "https://arxiv.org/pdf/1810.08240v9",
+    "source": "https://arxiv.org/src/1810.08240v9"
+  },
+  "artifacts": {
+    "pdf": {
+      "sha256": "eb3efd547349adfbff25514ae0854c142cd29b96b398be38c9000d69a2f64ca8",
+      "bytes": 1494142
+    },
+    "source": {
+      "sha256": "194d4a8a98587c2ac8726416aeea804aa3f1784584716792e2da3e0fd14c74f5",
+      "bytes": 439718
+    }
+  },
+  "identifier": "1810.08240",
+  "topic": "concentration",
+  "templates": [
+    "T18",
+    "T23"
+  ],
+  "path": "proof_ref/foundations-2026-09/time-uniform-nonparametric-nonasymptotic-confidence-sequences-1810.08240",
+  "last_checked_at": "2026-09-26T05:54:20+00:00",
+  "errors": {}
+}

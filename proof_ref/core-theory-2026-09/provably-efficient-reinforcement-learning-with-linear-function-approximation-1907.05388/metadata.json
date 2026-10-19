@@ -1,0 +1,49 @@
+{
+  "title": "Provably Efficient Reinforcement Learning with Linear Function Approximation",
+  "kind": "arxiv",
+  "identifier": "1907.05388",
+  "raw": "https://arxiv.org/abs/1907.05388",
+  "pdf_url": "https://arxiv.org/pdf/1907.05388.pdf",
+  "source_url": "https://export.arxiv.org/e-print/1907.05388",
+  "pdf_error": null,
+  "source_error": null,
+  "imported_from": {
+    "repository": "HaningZS/HaningZS_Notes",
+    "commit": "8ced9038b7611bcb8c2b2774fb870149df8ef780"
+  },
+  "edition_status": "pinned-cross-checked",
+  "artifacts": {
+    "pdf": {
+      "sha256": "5984f3eae6e8619dea065f015a1b49abdba2e7be94ac7a2ba9f36e2b3765d644",
+      "bytes": 329662
+    },
+    "source": {
+      "sha256": "7c6bdbf1d9d27eb6e502dd6a8f58bc111aea9bb4b8405114d2437e4b571a06c0",
+      "bytes": 43827
+    }
+  },
+  "topic": "rl-bandits",
+  "templates": [
+    "T07"
+  ],
+  "path": "proof_ref/core-theory-2026-09/provably-efficient-reinforcement-learning-with-linear-function-approximation-1907.05388",
+  "last_checked_at": "2026-09-26T05:54:22+00:00",
+  "errors": {},
+  "authors": [
+    "Jin, Chi",
+    "Yang, Zhuoran",
+    "Wang, Zhaoran",
+    "Jordan, Michael I."
+  ],
+  "published": "2019/07/11",
+  "resolved_id": "1907.05388v2",
+  "metadata_url": "https://arxiv.org/abs/1907.05388v2",
+  "metadata_checked_at": "2026-10-19T16:35:26+00:00",
+  "version_verification": {
+    "checked_at": "2026-10-19T16:35:29+00:00",
+    "pdf_marker": "1907.05388v2",
+    "source_url": "https://arxiv.org/src/1907.05388v2",
+    "method": "Unique arXiv version marker in local PDF pages 1-2; local PDF/source hashes match recorded metadata; exact hash match with newly downloaded official versioned source.",
+    "report": "reports/legacy_version_verification.json"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "title": "The Modern Mathematics of Deep Learning",
+  "authors": [
+    "Berner, Julius",
+    "Grohs, Philipp",
+    "Kutyniok, Gitta",
+    "Petersen, Philipp"
+  ],
+  "published": "2021/05/09",
+  "resolved_id": "2105.04026v2",
+  "metadata_url": "https://arxiv.org/abs/2105.04026v2",
+  "metadata_checked_at": "2026-09-28T08:22:27+00:00",
+  "download_urls": {
+    "pdf": "https://arxiv.org/pdf/2105.04026v2",
+    "source": "https://export.arxiv.org/e-print/2105.04026v2"
+  },
+  "artifacts": {
+    "pdf": {
+      "sha256": "bc2f041e6bb4cc488e3c638ae5231ca6ce7c11b92ca9b88f834fd2c50cdce21f",
+      "bytes": 3509595
+    },
+    "source": {
+      "sha256": "643cc068ee4349c79216f22f9fba18716fbb25ddd59f0b4a80aa6948a900857c",
+      "bytes": 2595235
+    }
+  },
+  "identifier": "2105.04026",
+  "topic": "dl-foundations",
+  "templates": [
+    "T32",
+    "T33",
+    "T34",
+    "T35",
+    "T36",
+    "T39"
+  ],
+  "path": "proof_ref/dl-core-2026-09/the-modern-mathematics-of-deep-learning-2105.04026",
+  "last_checked_at": "2026-09-28T08:22:39+00:00",
+  "errors": {}
+}

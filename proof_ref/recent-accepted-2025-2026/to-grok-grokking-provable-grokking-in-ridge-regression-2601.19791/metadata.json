@@ -1,0 +1,46 @@
+{
+  "title": "To Grok Grokking: Provable Grokking in Ridge Regression",
+  "kind": "arxiv",
+  "identifier": "2601.19791",
+  "raw": "https://arxiv.org/abs/2601.19791",
+  "pdf_url": "https://arxiv.org/pdf/2601.19791.pdf",
+  "source_url": "https://export.arxiv.org/e-print/2601.19791",
+  "pdf_error": null,
+  "source_error": null,
+  "imported_from": {
+    "repository": "HaningZS/HaningZS_Notes",
+    "commit": "8ced9038b7611bcb8c2b2774fb870149df8ef780"
+  },
+  "edition_status": "pinned-cross-checked",
+  "artifacts": {
+    "pdf": {
+      "sha256": "49124546cb1c153b3aef2355bee9bb4185a3c82f8f3a23a5e6d1fe4cbf148d08",
+      "bytes": 2250762
+    },
+    "source": {
+      "sha256": "9579f56263149672b13e23706cf44c4f1b14c784ee3880642e88b281ec3e90a3",
+      "bytes": 2179134
+    }
+  },
+  "topic": "neural-dynamics",
+  "templates": [],
+  "path": "proof_ref/recent-accepted-2025-2026/to-grok-grokking-provable-grokking-in-ridge-regression-2601.19791",
+  "last_checked_at": "2026-09-26T05:54:22+00:00",
+  "errors": {},
+  "authors": [
+    "Xu, Mingyue",
+    "Vardi, Gal",
+    "Safran, Itay"
+  ],
+  "published": "2026/01/27",
+  "resolved_id": "2601.19791v4",
+  "metadata_url": "https://arxiv.org/abs/2601.19791v4",
+  "metadata_checked_at": "2026-10-19T16:38:11+00:00",
+  "version_verification": {
+    "checked_at": "2026-10-19T16:38:19+00:00",
+    "pdf_marker": "2601.19791v4",
+    "source_url": "https://arxiv.org/src/2601.19791v4",
+    "method": "Unique arXiv version marker in local PDF pages 1-2; local PDF/source hashes match recorded metadata; exact hash match with newly downloaded official versioned source.",
+    "report": "reports/legacy_version_verification.json"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "title": "Wide Neural Networks of Any Depth Evolve as Linear Models Under Gradient Descent",
+  "authors": [
+    "Lee, Jaehoon",
+    "Xiao, Lechao",
+    "Schoenholz, Samuel S.",
+    "Bahri, Yasaman",
+    "Novak, Roman",
+    "Sohl-Dickstein, Jascha",
+    "Pennington, Jeffrey"
+  ],
+  "published": "2019/02/18",
+  "resolved_id": "1902.06720v4",
+  "metadata_url": "https://arxiv.org/abs/1902.06720v4",
+  "metadata_checked_at": "2026-09-26T05:40:01+00:00",
+  "download_urls": {
+    "pdf": "https://arxiv.org/pdf/1902.06720v4",
+    "source": "https://export.arxiv.org/e-print/1902.06720v4"
+  },
+  "artifacts": {
+    "pdf": {
+      "sha256": "f7a3601530bfa3d112cb00bb8a1b05b71286da3217d3a6df0c52d7d7662a36d5",
+      "bytes": 1632320
+    },
+    "source": {
+      "sha256": "a3a2167b3933287b1a1d1ca938bc2fad16425bfe850f5989dea3446185af9849",
+      "bytes": 1030060
+    }
+  },
+  "identifier": "1902.06720",
+  "topic": "neural-dynamics",
+  "templates": [
+    "T09"
+  ],
+  "path": "proof_ref/foundations-2026-09/wide-neural-networks-of-any-depth-evolve-as-1902.06720",
+  "last_checked_at": "2026-09-26T05:54:20+00:00",
+  "errors": {}
+}

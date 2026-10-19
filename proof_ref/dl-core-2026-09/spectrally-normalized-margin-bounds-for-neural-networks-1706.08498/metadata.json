@@ -1,0 +1,35 @@
+{
+  "title": "Spectrally-normalized margin bounds for neural networks",
+  "authors": [
+    "Bartlett, Peter",
+    "Foster, Dylan J.",
+    "Telgarsky, Matus"
+  ],
+  "published": "2017/06/26",
+  "resolved_id": "1706.08498v2",
+  "metadata_url": "https://arxiv.org/abs/1706.08498v2",
+  "metadata_checked_at": "2026-09-28T08:22:52+00:00",
+  "download_urls": {
+    "pdf": "https://arxiv.org/pdf/1706.08498v2",
+    "source": "https://arxiv.org/src/1706.08498v2"
+  },
+  "artifacts": {
+    "pdf": {
+      "sha256": "5674595cb6e6b13c43add644ca5f189f5c42ac38c877016f65358c20878812b6",
+      "bytes": 1210441
+    },
+    "source": {
+      "sha256": "a29179073c003fc80dcb76dd29037fa7fac5db9c226590f5331ec01871d41316",
+      "bytes": 457828
+    }
+  },
+  "identifier": "1706.08498",
+  "topic": "generalization",
+  "templates": [
+    "T33",
+    "T35"
+  ],
+  "path": "proof_ref/dl-core-2026-09/spectrally-normalized-margin-bounds-for-neural-networks-1706.08498",
+  "last_checked_at": "2026-09-28T08:22:59+00:00",
+  "errors": {}
+}

@@ -1,0 +1,35 @@
+{
+  "title": "On Lazy Training in Differentiable Programming",
+  "authors": [
+    "Chizat, Lenaic",
+    "Oyallon, Edouard",
+    "Bach, Francis"
+  ],
+  "published": "2018/12/19",
+  "resolved_id": "1812.07956v5",
+  "metadata_url": "https://arxiv.org/abs/1812.07956v5",
+  "metadata_checked_at": "2026-09-26T05:50:02+00:00",
+  "download_urls": {
+    "pdf": "https://arxiv.org/pdf/1812.07956v5",
+    "source": "https://arxiv.org/src/1812.07956v5"
+  },
+  "artifacts": {
+    "pdf": {
+      "sha256": "70299b331e75c305c2d54597c82c135ebc1f55d2c7c3f03793abc2588aa31387",
+      "bytes": 734962
+    },
+    "source": {
+      "sha256": "641078ba7c3ac2e9fccab336237675c5fc7f5e1698ff713ab2dbe724f7b66a4e",
+      "bytes": 365727
+    }
+  },
+  "identifier": "1812.07956",
+  "topic": "neural-dynamics",
+  "templates": [
+    "T09",
+    "T10"
+  ],
+  "path": "proof_ref/foundations-2026-09/on-lazy-training-in-differentiable-programming-1812.07956",
+  "last_checked_at": "2026-09-26T05:54:20+00:00",
+  "errors": {}
+}

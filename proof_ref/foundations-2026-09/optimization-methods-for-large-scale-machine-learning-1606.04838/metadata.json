@@ -1,0 +1,36 @@
+{
+  "title": "Optimization Methods for Large-Scale Machine Learning",
+  "authors": [
+    "Bottou, Léon",
+    "Curtis, Frank E.",
+    "Nocedal, Jorge"
+  ],
+  "published": "2016/06/15",
+  "resolved_id": "1606.04838v3",
+  "metadata_url": "https://arxiv.org/abs/1606.04838v3",
+  "metadata_checked_at": "2026-09-26T05:38:24+00:00",
+  "download_urls": {
+    "pdf": "https://arxiv.org/pdf/1606.04838v3",
+    "source": "https://arxiv.org/src/1606.04838v3"
+  },
+  "artifacts": {
+    "pdf": {
+      "sha256": "6d09a78cc225e29a10fcff75974692e1900810fb04222076bf69dfbbf35931d2",
+      "bytes": 1954019
+    },
+    "source": {
+      "sha256": "1bcbc3fcd630a946a01f1ceb7c3a09c6df1284c3065a21f552154387e19fcb19",
+      "bytes": 599066
+    }
+  },
+  "identifier": "1606.04838",
+  "topic": "optimization",
+  "templates": [
+    "T01",
+    "T02",
+    "T03"
+  ],
+  "path": "proof_ref/foundations-2026-09/optimization-methods-for-large-scale-machine-learning-1606.04838",
+  "last_checked_at": "2026-09-26T05:54:20+00:00",
+  "errors": {}
+}

@@ -1,0 +1,53 @@
+{
+  "title": "Clipping Improves Adam-Norm and AdaGrad-Norm when the Noise Is Heavy-Tailed",
+  "kind": "arxiv",
+  "identifier": "2406.04443",
+  "raw": "https://arxiv.org/abs/2406.04443",
+  "pdf_url": "https://arxiv.org/pdf/2406.04443.pdf",
+  "source_url": "https://export.arxiv.org/e-print/2406.04443",
+  "pdf_error": null,
+  "source_error": null,
+  "imported_from": {
+    "repository": "HaningZS/HaningZS_Notes",
+    "commit": "8ced9038b7611bcb8c2b2774fb870149df8ef780"
+  },
+  "edition_status": "pinned-cross-checked",
+  "artifacts": {
+    "pdf": {
+      "sha256": "4675dcbcafc15a333a5fc54f6794b441fbfecec5e3f76b1c20874035e9af1019",
+      "bytes": 10398937
+    },
+    "source": {
+      "sha256": "a5faec5aca6b62657892fd70acbcb08eac2709c0a586ba391c64c23dc6478818",
+      "bytes": 7957695
+    }
+  },
+  "topic": "optimization",
+  "templates": [
+    "T16"
+  ],
+  "path": "proof_ref/core-theory-2026-09/clipping-improves-adam-norm-and-adagrad-norm-when-2406.04443",
+  "last_checked_at": "2026-09-26T05:54:22+00:00",
+  "errors": {},
+  "authors": [
+    "Chezhegov, Savelii",
+    "Klyukin, Yaroslav",
+    "Semenov, Andrei",
+    "Beznosikov, Aleksandr",
+    "Gasnikov, Alexander",
+    "Horváth, Samuel",
+    "Takáč, Martin",
+    "Gorbunov, Eduard"
+  ],
+  "published": "2024/06/06",
+  "resolved_id": "2406.04443v3",
+  "metadata_url": "https://arxiv.org/abs/2406.04443v3",
+  "metadata_checked_at": "2026-10-19T16:34:15+00:00",
+  "version_verification": {
+    "checked_at": "2026-10-19T16:34:29+00:00",
+    "pdf_marker": "2406.04443v3",
+    "source_url": "https://arxiv.org/src/2406.04443v3",
+    "method": "Unique arXiv version marker in local PDF pages 1-2; local PDF/source hashes match recorded metadata; exact hash match with newly downloaded official versioned source.",
+    "report": "reports/legacy_version_verification.json"
+  }
+}

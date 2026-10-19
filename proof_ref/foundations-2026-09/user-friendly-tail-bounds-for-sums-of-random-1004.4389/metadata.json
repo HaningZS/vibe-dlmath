@@ -1,0 +1,32 @@
+{
+  "title": "User-friendly tail bounds for sums of random matrices",
+  "authors": [
+    "Tropp, Joel A."
+  ],
+  "published": "2010/04/25",
+  "resolved_id": "1004.4389v7",
+  "metadata_url": "https://arxiv.org/abs/1004.4389v7",
+  "metadata_checked_at": "2026-09-26T05:37:44+00:00",
+  "download_urls": {
+    "pdf": "https://arxiv.org/pdf/1004.4389v7",
+    "source": "https://export.arxiv.org/e-print/1004.4389v7"
+  },
+  "artifacts": {
+    "pdf": {
+      "sha256": "0536851fddb683a2c46da844e2e75c9f1a343320b43366683baa5916c60efba5",
+      "bytes": 324039
+    },
+    "source": {
+      "sha256": "4f6681afdadd52e51add477af4ce441592a8f81c371d96dbd7f498de0d785c30",
+      "bytes": 85801
+    }
+  },
+  "identifier": "1004.4389",
+  "topic": "concentration",
+  "templates": [
+    "T09"
+  ],
+  "path": "proof_ref/foundations-2026-09/user-friendly-tail-bounds-for-sums-of-random-1004.4389",
+  "last_checked_at": "2026-09-26T05:54:20+00:00",
+  "errors": {}
+}

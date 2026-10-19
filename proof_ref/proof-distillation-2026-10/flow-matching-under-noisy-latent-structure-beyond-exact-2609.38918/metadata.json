@@ -1,0 +1,34 @@
+{
+  "title": "Flow Matching under Noisy Latent Structure: Beyond Exact Low-Dimensional Support",
+  "authors": [
+    "Hao, Lifeng",
+    "Ji, Shaolin"
+  ],
+  "published": "2026/09/30",
+  "resolved_id": "2609.38918v1",
+  "metadata_url": "https://arxiv.org/abs/2609.38918v1",
+  "metadata_checked_at": "2026-10-19T15:50:36+00:00",
+  "download_urls": {
+    "pdf": "https://arxiv.org/pdf/2609.38918v1",
+    "source": "https://arxiv.org/src/2609.38918v1"
+  },
+  "artifacts": {
+    "pdf": {
+      "sha256": "e08d29fb9befb01997352cb9a724e9abfe684acf9c65b867166ac93343cb000e",
+      "bytes": 592771
+    },
+    "source": {
+      "sha256": "49996c22eac663e5ab391a06466fb3ca83f773ee03e8621cad9496c4ef116800",
+      "bytes": 66818
+    }
+  },
+  "identifier": "2609.38918",
+  "topic": "generative",
+  "templates": [
+    "T13",
+    "T51"
+  ],
+  "path": "proof_ref/proof-distillation-2026-10/flow-matching-under-noisy-latent-structure-beyond-exact-2609.38918",
+  "last_checked_at": "2026-10-19T15:50:41+00:00",
+  "errors": {}
+}

@@ -1,0 +1,49 @@
+{
+  "title": "The Hidden Cost of Approximation in Online Mirror Descent",
+  "kind": "arxiv",
+  "identifier": "2511.22283",
+  "raw": "https://arxiv.org/abs/2511.22283",
+  "pdf_url": "https://arxiv.org/pdf/2511.22283.pdf",
+  "source_url": "https://export.arxiv.org/e-print/2511.22283",
+  "pdf_error": null,
+  "source_error": null,
+  "imported_from": {
+    "repository": "HaningZS/HaningZS_Notes",
+    "commit": "8ced9038b7611bcb8c2b2774fb870149df8ef780"
+  },
+  "edition_status": "pinned-cross-checked",
+  "artifacts": {
+    "pdf": {
+      "sha256": "ccd0d85469cee7f2dea26464d71fe8f1e06d6eae492b6c6a98b6428f94a417fd",
+      "bytes": 671179
+    },
+    "source": {
+      "sha256": "11aff1124273e1a47811a967355a07dcf7f688d1b738c475ab061555dd8dab80",
+      "bytes": 40702
+    }
+  },
+  "topic": "optimization",
+  "templates": [
+    "T08"
+  ],
+  "path": "proof_ref/core-theory-2026-09/the-hidden-cost-of-approximation-in-online-mirror-2511.22283",
+  "last_checked_at": "2026-09-26T05:54:22+00:00",
+  "errors": {},
+  "authors": [
+    "Schlisselberg, Ofir",
+    "Sherman, Uri",
+    "Koren, Tomer",
+    "Mansour, Yishay"
+  ],
+  "published": "2025/11/27",
+  "resolved_id": "2511.22283v2",
+  "metadata_url": "https://arxiv.org/abs/2511.22283v2",
+  "metadata_checked_at": "2026-10-19T16:35:38+00:00",
+  "version_verification": {
+    "checked_at": "2026-10-19T16:35:41+00:00",
+    "pdf_marker": "2511.22283v2",
+    "source_url": "https://arxiv.org/src/2511.22283v2",
+    "method": "Unique arXiv version marker in local PDF pages 1-2; local PDF/source hashes match recorded metadata; exact hash match with newly downloaded official versioned source.",
+    "report": "reports/legacy_version_verification.json"
+  }
+}

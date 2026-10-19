@@ -1,0 +1,49 @@
+{
+  "title": "Strategy Coopetition Explains the Emergence and Transience of In-Context Learning",
+  "kind": "arxiv",
+  "identifier": "2503.05631",
+  "raw": "https://arxiv.org/abs/2503.05631",
+  "pdf_url": "https://arxiv.org/pdf/2503.05631.pdf",
+  "source_url": "https://export.arxiv.org/e-print/2503.05631",
+  "pdf_error": null,
+  "source_error": null,
+  "imported_from": {
+    "repository": "HaningZS/HaningZS_Notes",
+    "commit": "8ced9038b7611bcb8c2b2774fb870149df8ef780"
+  },
+  "edition_status": "pinned-cross-checked",
+  "artifacts": {
+    "pdf": {
+      "sha256": "7b3634ec192553bd03cc8fc643f216aa62fd981ee86b13d3d28d2f12d4ff6462",
+      "bytes": 1818293
+    },
+    "source": {
+      "sha256": "071b6c6903b9c1c76eb171550e41212b47fb3ee01ba17588fed4e70afe0f5d0b",
+      "bytes": 1260925
+    }
+  },
+  "topic": "transformer-icl",
+  "templates": [],
+  "path": "proof_ref/core-theory-2026-09/strategy-coopetition-explains-the-emergence-and-transience-of-2503.05631",
+  "last_checked_at": "2026-09-26T05:54:22+00:00",
+  "errors": {},
+  "authors": [
+    "Singh, Aaditya K.",
+    "Moskovitz, Ted",
+    "Dragutinovic, Sara",
+    "Hill, Felix",
+    "Chan, Stephanie C. Y.",
+    "Saxe, Andrew M."
+  ],
+  "published": "2025/03/07",
+  "resolved_id": "2503.05631v2",
+  "metadata_url": "https://arxiv.org/abs/2503.05631v2",
+  "metadata_checked_at": "2026-10-19T16:35:32+00:00",
+  "version_verification": {
+    "checked_at": "2026-10-19T16:35:37+00:00",
+    "pdf_marker": "2503.05631v2",
+    "source_url": "https://arxiv.org/src/2503.05631v2",
+    "method": "Unique arXiv version marker in local PDF pages 1-2; local PDF/source hashes match recorded metadata; exact hash match with newly downloaded official versioned source.",
+    "report": "reports/legacy_version_verification.json"
+  }
+}

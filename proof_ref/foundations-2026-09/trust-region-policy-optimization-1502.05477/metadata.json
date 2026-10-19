@@ -1,0 +1,37 @@
+{
+  "title": "Trust Region Policy Optimization",
+  "authors": [
+    "Schulman, John",
+    "Levine, Sergey",
+    "Moritz, Philipp",
+    "Jordan, Michael I.",
+    "Abbeel, Pieter"
+  ],
+  "published": "2015/02/19",
+  "resolved_id": "1502.05477v5",
+  "metadata_url": "https://arxiv.org/abs/1502.05477v5",
+  "metadata_checked_at": "2026-09-26T05:41:41+00:00",
+  "download_urls": {
+    "pdf": "https://arxiv.org/pdf/1502.05477v5",
+    "source": "https://arxiv.org/src/1502.05477v5"
+  },
+  "artifacts": {
+    "pdf": {
+      "sha256": "c228ad36d9d46972b898c96d58b5929c51b54cc43fd42f01d751b36f434bfa4a",
+      "bytes": 1026237
+    },
+    "source": {
+      "sha256": "a74109df05e73dbe40a75612a306ecdfeadd24b9a49332d0acb0f0a52b01b7b1",
+      "bytes": 554024
+    }
+  },
+  "identifier": "1502.05477",
+  "topic": "rl-bandits",
+  "templates": [
+    "T07",
+    "T08"
+  ],
+  "path": "proof_ref/foundations-2026-09/trust-region-policy-optimization-1502.05477",
+  "last_checked_at": "2026-09-26T05:54:20+00:00",
+  "errors": {}
+}

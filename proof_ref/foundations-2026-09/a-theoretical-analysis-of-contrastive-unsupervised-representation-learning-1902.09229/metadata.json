@@ -1,0 +1,36 @@
+{
+  "title": "A Theoretical Analysis of Contrastive Unsupervised Representation Learning",
+  "authors": [
+    "Arora, Sanjeev",
+    "Khandeparkar, Hrishikesh",
+    "Khodak, Mikhail",
+    "Plevrakis, Orestis",
+    "Saunshi, Nikunj"
+  ],
+  "published": "2019/02/25",
+  "resolved_id": "1902.09229v1",
+  "metadata_url": "https://arxiv.org/abs/1902.09229v1",
+  "metadata_checked_at": "2026-09-26T05:52:02+00:00",
+  "download_urls": {
+    "pdf": "https://arxiv.org/pdf/1902.09229v1",
+    "source": "https://export.arxiv.org/e-print/1902.09229v1"
+  },
+  "artifacts": {
+    "pdf": {
+      "sha256": "ec57aa8024c349487cbef9b013b9c5582e8ad21a76cf7f5cc437323d6a797fb0",
+      "bytes": 592388
+    },
+    "source": {
+      "sha256": "0b256a21d1ff8a7418399691ae6242fa111ba3af3c2d5e12a1b6dfb18ab28c61",
+      "bytes": 100809
+    }
+  },
+  "identifier": "1902.09229",
+  "topic": "representation",
+  "templates": [
+    "T05"
+  ],
+  "path": "proof_ref/foundations-2026-09/a-theoretical-analysis-of-contrastive-unsupervised-representation-learning-1902.09229",
+  "last_checked_at": "2026-09-26T05:54:21+00:00",
+  "errors": {}
+}

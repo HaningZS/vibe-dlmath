@@ -1,0 +1,34 @@
+{
+  "title": "Is Pessimism Provably Efficient for Offline RL?",
+  "authors": [
+    "Jin, Ying",
+    "Yang, Zhuoran",
+    "Wang, Zhaoran"
+  ],
+  "published": "2020/12/30",
+  "resolved_id": "2012.15085v3",
+  "metadata_url": "https://arxiv.org/abs/2012.15085v3",
+  "metadata_checked_at": "2026-09-26T05:41:29+00:00",
+  "download_urls": {
+    "pdf": "https://arxiv.org/pdf/2012.15085v3",
+    "source": "https://export.arxiv.org/e-print/2012.15085v3"
+  },
+  "artifacts": {
+    "pdf": {
+      "sha256": "48ebb9c9357d29a8347c00d41d0d96f23aab072ef03c836f0e890ba49747d390",
+      "bytes": 1171180
+    },
+    "source": {
+      "sha256": "8b5a9ea96544d87dcd0ada416dc04de1044660186ba7dee3a4e0a531a9bac052",
+      "bytes": 503278
+    }
+  },
+  "identifier": "2012.15085",
+  "topic": "rl-bandits",
+  "templates": [
+    "T07"
+  ],
+  "path": "proof_ref/foundations-2026-09/is-pessimism-provably-efficient-for-offline-rl-2012.15085",
+  "last_checked_at": "2026-09-26T05:54:20+00:00",
+  "errors": {}
+}

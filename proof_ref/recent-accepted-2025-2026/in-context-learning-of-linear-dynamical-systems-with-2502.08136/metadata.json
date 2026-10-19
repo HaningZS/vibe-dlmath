@@ -1,0 +1,49 @@
+{
+  "title": "In-Context Learning of Linear Dynamical Systems with Transformers: Approximation Bounds and Depth-Separation",
+  "kind": "arxiv",
+  "identifier": "2502.08136",
+  "raw": "https://arxiv.org/abs/2502.08136",
+  "pdf_url": "https://arxiv.org/pdf/2502.08136.pdf",
+  "source_url": "https://export.arxiv.org/e-print/2502.08136",
+  "pdf_error": null,
+  "source_error": null,
+  "imported_from": {
+    "repository": "HaningZS/HaningZS_Notes",
+    "commit": "8ced9038b7611bcb8c2b2774fb870149df8ef780"
+  },
+  "edition_status": "pinned-cross-checked",
+  "artifacts": {
+    "pdf": {
+      "sha256": "4e9d1823c3a74e12e457b7554110801d522d3b4816a70e1d63d4918a25c13398",
+      "bytes": 605806
+    },
+    "source": {
+      "sha256": "9f2bb848091a6121f87810a0c124382f3a74bfb11449ae5e954c757ebcc11125",
+      "bytes": 111011
+    }
+  },
+  "topic": "transformer-icl",
+  "templates": [
+    "T14"
+  ],
+  "path": "proof_ref/recent-accepted-2025-2026/in-context-learning-of-linear-dynamical-systems-with-2502.08136",
+  "last_checked_at": "2026-09-26T05:54:22+00:00",
+  "errors": {},
+  "authors": [
+    "Cole, Frank",
+    "Zhao, Yuxuan",
+    "Lu, Yulong",
+    "Zhang, Tianhao"
+  ],
+  "published": "2025/02/12",
+  "resolved_id": "2502.08136v3",
+  "metadata_url": "https://arxiv.org/abs/2502.08136v3",
+  "metadata_checked_at": "2026-10-19T16:37:27+00:00",
+  "version_verification": {
+    "checked_at": "2026-10-19T16:37:31+00:00",
+    "pdf_marker": "2502.08136v3",
+    "source_url": "https://arxiv.org/src/2502.08136v3",
+    "method": "Unique arXiv version marker in local PDF pages 1-2; local PDF/source hashes match recorded metadata; exact hash match with newly downloaded official versioned source.",
+    "report": "reports/legacy_version_verification.json"
+  }
+}

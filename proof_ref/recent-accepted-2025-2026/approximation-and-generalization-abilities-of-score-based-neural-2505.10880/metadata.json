@@ -1,0 +1,45 @@
+{
+  "title": "Approximation and Generalization Abilities of Score-based Neural Network Generative Models for Sub-Gaussian Distributions",
+  "kind": "arxiv",
+  "identifier": "2505.10880",
+  "raw": "https://arxiv.org/abs/2505.10880",
+  "pdf_url": "https://arxiv.org/pdf/2505.10880.pdf",
+  "source_url": "https://export.arxiv.org/e-print/2505.10880",
+  "pdf_error": null,
+  "source_error": null,
+  "imported_from": {
+    "repository": "HaningZS/HaningZS_Notes",
+    "commit": "8ced9038b7611bcb8c2b2774fb870149df8ef780"
+  },
+  "edition_status": "pinned-cross-checked",
+  "artifacts": {
+    "pdf": {
+      "sha256": "0c4c0da120f7ac4508e69b71f08c389403c7d1422e8c84ef6a18173ea5385fd0",
+      "bytes": 1831964
+    },
+    "source": {
+      "sha256": "8486023245f7c0244d56430be7e5359adb110af394ced6bce6ba444e450acf79",
+      "bytes": 172119
+    }
+  },
+  "topic": "generative",
+  "templates": [],
+  "path": "proof_ref/recent-accepted-2025-2026/approximation-and-generalization-abilities-of-score-based-neural-2505.10880",
+  "last_checked_at": "2026-09-26T05:54:22+00:00",
+  "errors": {},
+  "authors": [
+    "Fu, Guoji",
+    "Lee, Wee Sun"
+  ],
+  "published": "2025/05/16",
+  "resolved_id": "2505.10880v2",
+  "metadata_url": "https://arxiv.org/abs/2505.10880v2",
+  "metadata_checked_at": "2026-10-19T16:36:40+00:00",
+  "version_verification": {
+    "checked_at": "2026-10-19T16:36:43+00:00",
+    "pdf_marker": "2505.10880v2",
+    "source_url": "https://arxiv.org/src/2505.10880v2",
+    "method": "Unique arXiv version marker in local PDF pages 1-2; local PDF/source hashes match recorded metadata; exact hash match with newly downloaded official versioned source.",
+    "report": "reports/legacy_version_verification.json"
+  }
+}

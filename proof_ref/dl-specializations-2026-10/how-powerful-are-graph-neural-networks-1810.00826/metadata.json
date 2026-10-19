@@ -1,0 +1,36 @@
+{
+  "title": "How Powerful are Graph Neural Networks?",
+  "authors": [
+    "Xu, Keyulu",
+    "Hu, Weihua",
+    "Leskovec, Jure",
+    "Jegelka, Stefanie"
+  ],
+  "published": "2018/10/01",
+  "resolved_id": "1810.00826v3",
+  "metadata_url": "https://arxiv.org/abs/1810.00826v3",
+  "metadata_checked_at": "2026-10-02T07:17:05+00:00",
+  "download_urls": {
+    "pdf": "https://arxiv.org/pdf/1810.00826v3",
+    "source": "https://arxiv.org/src/1810.00826v3"
+  },
+  "artifacts": {
+    "pdf": {
+      "sha256": "a6ebf80c2790b8bac1fa378902993eae26020cc6d0d95e3964eea42b0c66a974",
+      "bytes": 819821
+    },
+    "source": {
+      "sha256": "bb76deb9e4fe5ccd1b06ffad73b8d3e42d478188ea82ab646be8bced7a1f5dcc",
+      "bytes": 416040
+    }
+  },
+  "identifier": "1810.00826",
+  "topic": "architecture",
+  "templates": [
+    "T44",
+    "T20B"
+  ],
+  "path": "proof_ref/dl-specializations-2026-10/how-powerful-are-graph-neural-networks-1810.00826",
+  "last_checked_at": "2026-10-02T07:17:11+00:00",
+  "errors": {}
+}

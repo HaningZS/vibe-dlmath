@@ -1,0 +1,45 @@
+{
+  "title": "$f$-Trajectory Balance: A Loss Family for Tuning GFlowNets, Generative Models, and LLMs with Off- and On-Policy Data",
+  "kind": "arxiv",
+  "identifier": "2605.15417",
+  "raw": "https://arxiv.org/abs/2605.15417",
+  "pdf_url": "https://arxiv.org/pdf/2605.15417.pdf",
+  "source_url": "https://export.arxiv.org/e-print/2605.15417",
+  "pdf_error": null,
+  "source_error": null,
+  "imported_from": {
+    "repository": "HaningZS/HaningZS_Notes",
+    "commit": "8ced9038b7611bcb8c2b2774fb870149df8ef780"
+  },
+  "edition_status": "pinned-cross-checked",
+  "artifacts": {
+    "pdf": {
+      "sha256": "408099e7c8a1605170863869c011840f3650cc5be9cf3a8f12a46f22cee2a660",
+      "bytes": 12064947
+    },
+    "source": {
+      "sha256": "9728c5a391450fc0af62c4bf005f709471412535a506ca5b8dc44737e8ece842",
+      "bytes": 6263390
+    }
+  },
+  "topic": "generative",
+  "templates": [],
+  "path": "proof_ref/core-theory-2026-09/f-trajectory-balance-a-loss-family-for-tuning-2605.15417",
+  "last_checked_at": "2026-09-26T05:54:22+00:00",
+  "errors": {},
+  "authors": [
+    "Fawkes, Jake",
+    "Hartford, Jason"
+  ],
+  "published": "2026/05/14",
+  "resolved_id": "2605.15417v1",
+  "metadata_url": "https://arxiv.org/abs/2605.15417v1",
+  "metadata_checked_at": "2026-10-19T16:34:49+00:00",
+  "version_verification": {
+    "checked_at": "2026-10-19T16:34:54+00:00",
+    "pdf_marker": "2605.15417v1",
+    "source_url": "https://arxiv.org/src/2605.15417v1",
+    "method": "Unique arXiv version marker in local PDF pages 1-2; local PDF/source hashes match recorded metadata; exact hash match with newly downloaded official versioned source.",
+    "report": "reports/legacy_version_verification.json"
+  }
+}

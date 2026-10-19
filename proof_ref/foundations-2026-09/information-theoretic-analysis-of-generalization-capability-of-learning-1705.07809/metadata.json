@@ -1,0 +1,33 @@
+{
+  "title": "Information-theoretic analysis of generalization capability of learning algorithms",
+  "authors": [
+    "Xu, Aolin",
+    "Raginsky, Maxim"
+  ],
+  "published": "2017/05/22",
+  "resolved_id": "1705.07809v2",
+  "metadata_url": "https://arxiv.org/abs/1705.07809v2",
+  "metadata_checked_at": "2026-09-26T05:39:11+00:00",
+  "download_urls": {
+    "pdf": "https://arxiv.org/pdf/1705.07809v2",
+    "source": "https://arxiv.org/src/1705.07809v2"
+  },
+  "artifacts": {
+    "pdf": {
+      "sha256": "60172ad33096c6bea1a20787806b146166d92bfef2cde23eba38239b25292a81",
+      "bytes": 242224
+    },
+    "source": {
+      "sha256": "65d78246cc738e0524053c01fad95c2cf0505b3d23d2ee408bc9e399ab57aff7",
+      "bytes": 21972
+    }
+  },
+  "identifier": "1705.07809",
+  "topic": "generalization",
+  "templates": [
+    "T05"
+  ],
+  "path": "proof_ref/foundations-2026-09/information-theoretic-analysis-of-generalization-capability-of-learning-1705.07809",
+  "last_checked_at": "2026-09-26T05:54:20+00:00",
+  "errors": {}
+}

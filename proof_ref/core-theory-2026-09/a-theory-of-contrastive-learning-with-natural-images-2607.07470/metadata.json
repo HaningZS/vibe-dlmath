@@ -1,0 +1,45 @@
+{
+  "title": "A Theory of Contrastive Learning with Natural Images",
+  "kind": "arxiv",
+  "identifier": "2607.07470",
+  "raw": "https://arxiv.org/abs/2607.07470",
+  "pdf_url": "https://arxiv.org/pdf/2607.07470.pdf",
+  "source_url": "https://export.arxiv.org/e-print/2607.07470",
+  "pdf_error": null,
+  "source_error": null,
+  "imported_from": {
+    "repository": "HaningZS/HaningZS_Notes",
+    "commit": "8ced9038b7611bcb8c2b2774fb870149df8ef780"
+  },
+  "edition_status": "pinned-cross-checked",
+  "artifacts": {
+    "pdf": {
+      "sha256": "25c8712dfa2a580d9afbd9cfa23ce34709309ac8e9c206d9d72775ab0b89586d",
+      "bytes": 27326387
+    },
+    "source": {
+      "sha256": "ff9b800103b370932b8097bff8d1d271883975da19a9f524b2d084a402844056",
+      "bytes": 36815753
+    }
+  },
+  "topic": "representation",
+  "templates": [],
+  "path": "proof_ref/core-theory-2026-09/a-theory-of-contrastive-learning-with-natural-images-2607.07470",
+  "last_checked_at": "2026-09-26T05:54:22+00:00",
+  "errors": {},
+  "authors": [
+    "Torralba, Antonio",
+    "Weiss, Yair"
+  ],
+  "published": "2026/07/08",
+  "resolved_id": "2607.07470v1",
+  "metadata_url": "https://arxiv.org/abs/2607.07470v1",
+  "metadata_checked_at": "2026-10-19T16:33:02+00:00",
+  "version_verification": {
+    "checked_at": "2026-10-19T16:33:14+00:00",
+    "pdf_marker": "2607.07470v1",
+    "source_url": "https://arxiv.org/src/2607.07470v1",
+    "method": "Unique arXiv version marker in local PDF pages 1-2; local PDF/source hashes match recorded metadata; exact hash match with newly downloaded official versioned source.",
+    "report": "reports/legacy_version_verification.json"
+  }
+}

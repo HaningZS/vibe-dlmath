@@ -1,0 +1,50 @@
+{
+  "title": "Generalization Bounds via Meta-Learned Model Representations: PAC-Bayes and Sample Compression Hypernetworks",
+  "kind": "arxiv",
+  "identifier": "2410.13577",
+  "raw": "https://arxiv.org/abs/2410.13577",
+  "pdf_url": "https://arxiv.org/pdf/2410.13577.pdf",
+  "source_url": "https://export.arxiv.org/e-print/2410.13577",
+  "pdf_error": null,
+  "source_error": null,
+  "imported_from": {
+    "repository": "HaningZS/HaningZS_Notes",
+    "commit": "8ced9038b7611bcb8c2b2774fb870149df8ef780"
+  },
+  "edition_status": "pinned-cross-checked",
+  "artifacts": {
+    "pdf": {
+      "sha256": "7c4b5afb92b71b2eb4f7ed28756bcce19294f39c9b095b4da8101665aacb632f",
+      "bytes": 1661616
+    },
+    "source": {
+      "sha256": "8b0ea492c4971e849e820a6b0a48c20213c2fc86bc96fb0285ecd3b1f51fd057",
+      "bytes": 5227620
+    }
+  },
+  "topic": "generalization",
+  "templates": [
+    "T05"
+  ],
+  "path": "proof_ref/recent-accepted-2025-2026/generalization-bounds-via-meta-learned-model-representations-pac-2410.13577",
+  "last_checked_at": "2026-09-26T05:54:22+00:00",
+  "errors": {},
+  "authors": [
+    "Leblanc, Benjamin",
+    "Bazinet, Mathieu",
+    "D'Amours, Nathaniel",
+    "Drouin, Alexandre",
+    "Germain, Pascal"
+  ],
+  "published": "2024/10/17",
+  "resolved_id": "2410.13577v3",
+  "metadata_url": "https://arxiv.org/abs/2410.13577v3",
+  "metadata_checked_at": "2026-10-19T16:36:52+00:00",
+  "version_verification": {
+    "checked_at": "2026-10-19T16:36:58+00:00",
+    "pdf_marker": "2410.13577v3",
+    "source_url": "https://arxiv.org/src/2410.13577v3",
+    "method": "Unique arXiv version marker in local PDF pages 1-2; local PDF/source hashes match recorded metadata; exact hash match with newly downloaded official versioned source.",
+    "report": "reports/legacy_version_verification.json"
+  }
+}

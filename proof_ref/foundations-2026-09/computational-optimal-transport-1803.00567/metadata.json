@@ -1,0 +1,34 @@
+{
+  "title": "Computational Optimal Transport",
+  "authors": [
+    "Peyré, Gabriel",
+    "Cuturi, Marco"
+  ],
+  "published": "2018/03/01",
+  "resolved_id": "1803.00567v4",
+  "metadata_url": "https://arxiv.org/abs/1803.00567v4",
+  "metadata_checked_at": "2026-09-26T05:42:43+00:00",
+  "download_urls": {
+    "pdf": "https://arxiv.org/pdf/1803.00567v4",
+    "source": "https://arxiv.org/src/1803.00567v4"
+  },
+  "artifacts": {
+    "pdf": {
+      "sha256": "5292a1fc53631ac28fdbcccecc060de8e072b3008fb8d36c22d963a8f6a06bac",
+      "bytes": 42429657
+    },
+    "source": {
+      "sha256": "0b9e06d4a2a69ff09f6fae517799742246a75831bf949a3239102f77cad1e33b",
+      "bytes": 63467029
+    }
+  },
+  "identifier": "1803.00567",
+  "topic": "transport",
+  "templates": [
+    "T08",
+    "T19"
+  ],
+  "path": "proof_ref/foundations-2026-09/computational-optimal-transport-1803.00567",
+  "last_checked_at": "2026-09-26T05:54:21+00:00",
+  "errors": {}
+}

@@ -1,0 +1,33 @@
+{
+  "title": "Local SGD Converges Fast and Communicates Little",
+  "authors": [
+    "Stich, Sebastian U."
+  ],
+  "published": "2018/05/24",
+  "resolved_id": "1805.09767v3",
+  "metadata_url": "https://arxiv.org/abs/1805.09767v3",
+  "metadata_checked_at": "2026-10-02T07:17:49+00:00",
+  "download_urls": {
+    "pdf": "https://export.arxiv.org/pdf/1805.09767v3",
+    "source": "https://arxiv.org/src/1805.09767v3"
+  },
+  "artifacts": {
+    "pdf": {
+      "sha256": "98fb2c50800106cb84fe8204a022eda78264a84c66c3f16fe2e5f94dd23cd85c",
+      "bytes": 1095972
+    },
+    "source": {
+      "sha256": "365c209730f7566ff1b5e5550c1e49f787382a2ca6153b867de1d4c3b9024629",
+      "bytes": 244979
+    }
+  },
+  "identifier": "1805.09767",
+  "topic": "distributed-optimization",
+  "templates": [
+    "T47",
+    "T02"
+  ],
+  "path": "proof_ref/dl-specializations-2026-10/local-sgd-converges-fast-and-communicates-little-1805.09767",
+  "last_checked_at": "2026-10-02T07:18:02+00:00",
+  "errors": {}
+}

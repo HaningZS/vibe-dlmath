@@ -1,0 +1,32 @@
+{
+  "title": "Error bounds for approximations with deep ReLU networks",
+  "authors": [
+    "Yarotsky, Dmitry"
+  ],
+  "published": "2016/10/03",
+  "resolved_id": "1610.01145v3",
+  "metadata_url": "https://arxiv.org/abs/1610.01145v3",
+  "metadata_checked_at": "2026-09-28T08:22:40+00:00",
+  "download_urls": {
+    "pdf": "https://arxiv.org/pdf/1610.01145v3",
+    "source": "https://export.arxiv.org/e-print/1610.01145v3"
+  },
+  "artifacts": {
+    "pdf": {
+      "sha256": "0bad3c1b064a62353af1dbebf64b963df4cc847834492edb58ed7801c1efbc2a",
+      "bytes": 678683
+    },
+    "source": {
+      "sha256": "e6c0f79d5926b45729a21b883619f49d91ce8267a19e5ed54e5a2466f67ca0c9",
+      "bytes": 321655
+    }
+  },
+  "identifier": "1610.01145",
+  "topic": "approximation",
+  "templates": [
+    "T34"
+  ],
+  "path": "proof_ref/dl-core-2026-09/error-bounds-for-approximations-with-deep-relu-networks-1610.01145",
+  "last_checked_at": "2026-09-28T08:22:50+00:00",
+  "errors": {}
+}

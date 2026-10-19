@@ -1,0 +1,34 @@
+{
+  "title": "Convex Optimization: Algorithms and Complexity",
+  "authors": [
+    "Bubeck, Sébastien"
+  ],
+  "published": "2014/05/20",
+  "resolved_id": "1405.4980v2",
+  "metadata_url": "https://arxiv.org/abs/1405.4980v2",
+  "metadata_checked_at": "2026-09-26T05:38:14+00:00",
+  "download_urls": {
+    "pdf": "https://arxiv.org/pdf/1405.4980v2",
+    "source": "https://arxiv.org/src/1405.4980v2"
+  },
+  "artifacts": {
+    "pdf": {
+      "sha256": "4d5cd5428a8e627fa2b7ee80791259c2f17e6ae5bf68cf7c78aee1fcefdc05f2",
+      "bytes": 1163209
+    },
+    "source": {
+      "sha256": "8d6ef878a7633ea0713b6f7113a4aa5bfaab3d9b600ab58d67bda180e432f466",
+      "bytes": 103142
+    }
+  },
+  "identifier": "1405.4980",
+  "topic": "optimization",
+  "templates": [
+    "T01",
+    "T02",
+    "T08"
+  ],
+  "path": "proof_ref/foundations-2026-09/convex-optimization-algorithms-and-complexity-1405.4980",
+  "last_checked_at": "2026-09-26T05:54:20+00:00",
+  "errors": {}
+}

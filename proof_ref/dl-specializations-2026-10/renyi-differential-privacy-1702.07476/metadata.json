@@ -1,0 +1,32 @@
+{
+  "title": "Renyi Differential Privacy",
+  "authors": [
+    "Mironov, Ilya"
+  ],
+  "published": "2017/02/24",
+  "resolved_id": "1702.07476v3",
+  "metadata_url": "https://arxiv.org/abs/1702.07476v3",
+  "metadata_checked_at": "2026-10-02T07:17:30+00:00",
+  "download_urls": {
+    "pdf": "https://arxiv.org/pdf/1702.07476v3",
+    "source": "https://arxiv.org/src/1702.07476v3"
+  },
+  "artifacts": {
+    "pdf": {
+      "sha256": "0d8cd53ff47bbe52686b8c60f09be96864dc1089add781e936a19c70e70d63ad",
+      "bytes": 267247
+    },
+    "source": {
+      "sha256": "e8a1e292eb39ddba9b0118a133e71fbbd72071d8efc7ab9eaab4df5c890d9860",
+      "bytes": 118043
+    }
+  },
+  "identifier": "1702.07476",
+  "topic": "privacy",
+  "templates": [
+    "T46"
+  ],
+  "path": "proof_ref/dl-specializations-2026-10/renyi-differential-privacy-1702.07476",
+  "last_checked_at": "2026-10-02T07:17:37+00:00",
+  "errors": {}
+}

@@ -1,0 +1,46 @@
+{
+  "title": "Train faster, generalize better: Stability of stochastic gradient descent",
+  "kind": "arxiv",
+  "identifier": "1509.01240",
+  "raw": "https://arxiv.org/abs/1509.01240",
+  "pdf_url": "https://arxiv.org/pdf/1509.01240.pdf",
+  "source_url": "https://export.arxiv.org/e-print/1509.01240",
+  "pdf_error": null,
+  "source_error": null,
+  "imported_from": {
+    "repository": "HaningZS/HaningZS_Notes",
+    "commit": "8ced9038b7611bcb8c2b2774fb870149df8ef780"
+  },
+  "edition_status": "pinned-cross-checked",
+  "artifacts": {
+    "pdf": {
+      "sha256": "f25c44207c24f6a940eb92e06cb36bc53ed4c57a7632850be1b78b334022749e",
+      "bytes": 1082162
+    },
+    "source": {
+      "sha256": "155cd6d6d177fd27473b972fe996f21035d9a121f7a2b1cf45e26675310448bb",
+      "bytes": 454357
+    }
+  },
+  "topic": "generalization",
+  "templates": [],
+  "path": "proof_ref/core-theory-2026-09/train-faster-generalize-better-stability-of-stochastic-gradient-1509.01240",
+  "last_checked_at": "2026-09-26T05:54:22+00:00",
+  "errors": {},
+  "authors": [
+    "Hardt, Moritz",
+    "Recht, Benjamin",
+    "Singer, Yoram"
+  ],
+  "published": "2015/09/03",
+  "resolved_id": "1509.01240v2",
+  "metadata_url": "https://arxiv.org/abs/1509.01240v2",
+  "metadata_checked_at": "2026-10-19T16:36:01+00:00",
+  "version_verification": {
+    "checked_at": "2026-10-19T16:36:04+00:00",
+    "pdf_marker": "1509.01240v2",
+    "source_url": "https://arxiv.org/src/1509.01240v2",
+    "method": "Unique arXiv version marker in local PDF pages 1-2; local PDF/source hashes match recorded metadata; exact hash match with newly downloaded official versioned source.",
+    "report": "reports/legacy_version_verification.json"
+  }
+}

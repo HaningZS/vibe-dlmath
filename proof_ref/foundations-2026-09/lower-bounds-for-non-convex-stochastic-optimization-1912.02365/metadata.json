@@ -1,0 +1,37 @@
+{
+  "title": "Lower Bounds for Non-Convex Stochastic Optimization",
+  "authors": [
+    "Arjevani, Yossi",
+    "Carmon, Yair",
+    "Duchi, John C.",
+    "Foster, Dylan J.",
+    "Srebro, Nathan",
+    "Woodworth, Blake"
+  ],
+  "published": "2019/12/05",
+  "resolved_id": "1912.02365v2",
+  "metadata_url": "https://arxiv.org/abs/1912.02365v2",
+  "metadata_checked_at": "2026-09-26T05:42:34+00:00",
+  "download_urls": {
+    "pdf": "https://arxiv.org/pdf/1912.02365v2",
+    "source": "https://arxiv.org/src/1912.02365v2"
+  },
+  "artifacts": {
+    "pdf": {
+      "sha256": "9b46af1b0dd300a87bdefd2e403c098adb9a66090767e1efa698d945a07fd309",
+      "bytes": 844725
+    },
+    "source": {
+      "sha256": "b551de4bce63864f86f3fff483be320ffc7b4a7b245cd338ff62b6a765f5d80c",
+      "bytes": 190647
+    }
+  },
+  "identifier": "1912.02365",
+  "topic": "lower-bounds",
+  "templates": [
+    "T12"
+  ],
+  "path": "proof_ref/foundations-2026-09/lower-bounds-for-non-convex-stochastic-optimization-1912.02365",
+  "last_checked_at": "2026-09-26T05:54:20+00:00",
+  "errors": {}
+}

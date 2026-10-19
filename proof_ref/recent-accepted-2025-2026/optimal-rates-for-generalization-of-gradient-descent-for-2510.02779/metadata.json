@@ -1,0 +1,47 @@
+{
+  "title": "Optimal Rates for Generalization of Gradient Descent for Deep ReLU Classification",
+  "kind": "arxiv",
+  "identifier": "2510.02779",
+  "raw": "https://arxiv.org/abs/2510.02779",
+  "pdf_url": "https://arxiv.org/pdf/2510.02779.pdf",
+  "source_url": "https://export.arxiv.org/e-print/2510.02779",
+  "pdf_error": null,
+  "source_error": null,
+  "imported_from": {
+    "repository": "HaningZS/HaningZS_Notes",
+    "commit": "8ced9038b7611bcb8c2b2774fb870149df8ef780"
+  },
+  "edition_status": "pinned-cross-checked",
+  "artifacts": {
+    "pdf": {
+      "sha256": "e8eed299e872969ae0d32bde77a813171a2e25526b8af690a8435024037d9661",
+      "bytes": 774008
+    },
+    "source": {
+      "sha256": "8d51e7d81de2ca5f3aeb6bf3bf0b67e18038bc450456c704f6a0c5a75bfd2818",
+      "bytes": 162697
+    }
+  },
+  "topic": "generalization",
+  "templates": [],
+  "path": "proof_ref/recent-accepted-2025-2026/optimal-rates-for-generalization-of-gradient-descent-for-2510.02779",
+  "last_checked_at": "2026-09-26T05:54:22+00:00",
+  "errors": {},
+  "authors": [
+    "Li, Yuanfan",
+    "Lei, Yunwen",
+    "Guo, Zheng-Chu",
+    "Ying, Yiming"
+  ],
+  "published": "2025/10/03",
+  "resolved_id": "2510.02779v4",
+  "metadata_url": "https://arxiv.org/abs/2510.02779v4",
+  "metadata_checked_at": "2026-10-19T16:37:40+00:00",
+  "version_verification": {
+    "checked_at": "2026-10-19T16:37:43+00:00",
+    "pdf_marker": "2510.02779v4",
+    "source_url": "https://arxiv.org/src/2510.02779v4",
+    "method": "Unique arXiv version marker in local PDF pages 1-2; local PDF/source hashes match recorded metadata; exact hash match with newly downloaded official versioned source.",
+    "report": "reports/legacy_version_verification.json"
+  }
+}

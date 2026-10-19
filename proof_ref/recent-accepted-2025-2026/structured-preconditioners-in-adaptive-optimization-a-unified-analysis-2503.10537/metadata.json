@@ -1,0 +1,48 @@
+{
+  "title": "Structured Preconditioners in Adaptive Optimization: A Unified Analysis",
+  "kind": "arxiv",
+  "identifier": "2503.10537",
+  "raw": "https://arxiv.org/abs/2503.10537",
+  "pdf_url": "https://arxiv.org/pdf/2503.10537.pdf",
+  "source_url": "https://export.arxiv.org/e-print/2503.10537",
+  "pdf_error": null,
+  "source_error": null,
+  "imported_from": {
+    "repository": "HaningZS/HaningZS_Notes",
+    "commit": "8ced9038b7611bcb8c2b2774fb870149df8ef780"
+  },
+  "edition_status": "pinned-cross-checked",
+  "artifacts": {
+    "pdf": {
+      "sha256": "19143bdc57a6711dbb33b35fc1cf036025a031a71cb29787a3df5a219e81c09f",
+      "bytes": 937579
+    },
+    "source": {
+      "sha256": "94c5dfcfb8788a38d043b079eccdeba17c9253d80b8d60402185463bf1e862af",
+      "bytes": 417285
+    }
+  },
+  "topic": "optimization",
+  "templates": [],
+  "path": "proof_ref/recent-accepted-2025-2026/structured-preconditioners-in-adaptive-optimization-a-unified-analysis-2503.10537",
+  "last_checked_at": "2026-09-26T05:54:22+00:00",
+  "errors": {},
+  "authors": [
+    "Xie, Shuo",
+    "Wang, Tianhao",
+    "Reddi, Sashank",
+    "Kumar, Sanjiv",
+    "Li, Zhiyuan"
+  ],
+  "published": "2025/03/13",
+  "resolved_id": "2503.10537v2",
+  "metadata_url": "https://arxiv.org/abs/2503.10537v2",
+  "metadata_checked_at": "2026-10-19T16:37:59+00:00",
+  "version_verification": {
+    "checked_at": "2026-10-19T16:38:02+00:00",
+    "pdf_marker": "2503.10537v2",
+    "source_url": "https://arxiv.org/src/2503.10537v2",
+    "method": "Unique arXiv version marker in local PDF pages 1-2; local PDF/source hashes match recorded metadata; exact hash match with newly downloaded official versioned source.",
+    "report": "reports/legacy_version_verification.json"
+  }
+}

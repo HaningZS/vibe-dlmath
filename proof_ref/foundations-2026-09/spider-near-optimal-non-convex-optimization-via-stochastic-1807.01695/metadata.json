@@ -1,0 +1,35 @@
+{
+  "title": "SPIDER: Near-Optimal Non-Convex Optimization via Stochastic Path Integrated Differential Estimator",
+  "authors": [
+    "Fang, Cong",
+    "Li, Chris Junchi",
+    "Lin, Zhouchen",
+    "Zhang, Tong"
+  ],
+  "published": "2018/07/04",
+  "resolved_id": "1807.01695v2",
+  "metadata_url": "https://arxiv.org/abs/1807.01695v2",
+  "metadata_checked_at": "2026-09-26T05:38:36+00:00",
+  "download_urls": {
+    "source": "https://export.arxiv.org/e-print/1807.01695v2",
+    "pdf": "https://export.arxiv.org/pdf/1807.01695v2"
+  },
+  "artifacts": {
+    "source": {
+      "sha256": "811641cf8006ebb7699ce510d9a2453177909eb8b21b63e6eeefb4f6b047d4ed",
+      "bytes": 1553588
+    },
+    "pdf": {
+      "sha256": "b8bb14e38ca37092d7c32c1bf871e610f98bd20fa247656308f97611de318b73",
+      "bytes": 1500433
+    }
+  },
+  "identifier": "1807.01695",
+  "topic": "optimization",
+  "templates": [
+    "T03"
+  ],
+  "path": "proof_ref/foundations-2026-09/spider-near-optimal-non-convex-optimization-via-stochastic-1807.01695",
+  "last_checked_at": "2026-09-26T05:54:20+00:00",
+  "errors": {}
+}

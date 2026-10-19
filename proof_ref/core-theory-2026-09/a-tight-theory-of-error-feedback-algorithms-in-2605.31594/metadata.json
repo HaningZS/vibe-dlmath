@@ -1,0 +1,46 @@
+{
+  "title": "A Tight Theory of Error Feedback Algorithms in Distributed Optimization",
+  "kind": "arxiv",
+  "identifier": "2605.31594",
+  "raw": "https://arxiv.org/abs/2605.31594",
+  "pdf_url": "https://arxiv.org/pdf/2605.31594.pdf",
+  "source_url": "https://export.arxiv.org/e-print/2605.31594",
+  "pdf_error": null,
+  "source_error": null,
+  "imported_from": {
+    "repository": "HaningZS/HaningZS_Notes",
+    "commit": "8ced9038b7611bcb8c2b2774fb870149df8ef780"
+  },
+  "edition_status": "pinned-cross-checked",
+  "artifacts": {
+    "pdf": {
+      "sha256": "29d0469a9f0c1afa8ee2b6b3b0de91afe419c53b2993a5bedb545a2c8e962605",
+      "bytes": 663154
+    },
+    "source": {
+      "sha256": "97d6fecbf03e7d55ce3e493ede5780097588a6890af987fbe403e02f05da47f5",
+      "bytes": 424908
+    }
+  },
+  "topic": "optimization",
+  "templates": [],
+  "path": "proof_ref/core-theory-2026-09/a-tight-theory-of-error-feedback-algorithms-in-2605.31594",
+  "last_checked_at": "2026-09-26T05:54:22+00:00",
+  "errors": {},
+  "authors": [
+    "Thomsen, Daniel Berg",
+    "Taylor, Adrien",
+    "Dieuleveut, Aymeric"
+  ],
+  "published": "2026/05/29",
+  "resolved_id": "2605.31594v1",
+  "metadata_url": "https://arxiv.org/abs/2605.31594v1",
+  "metadata_checked_at": "2026-10-19T16:33:24+00:00",
+  "version_verification": {
+    "checked_at": "2026-10-19T16:33:28+00:00",
+    "pdf_marker": "2605.31594v1",
+    "source_url": "https://arxiv.org/src/2605.31594v1",
+    "method": "Unique arXiv version marker in local PDF pages 1-2; local PDF/source hashes match recorded metadata; exact hash match with newly downloaded official versioned source.",
+    "report": "reports/legacy_version_verification.json"
+  }
+}

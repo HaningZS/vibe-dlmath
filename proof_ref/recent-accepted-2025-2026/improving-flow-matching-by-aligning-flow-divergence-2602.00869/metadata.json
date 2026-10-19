@@ -1,0 +1,51 @@
+{
+  "title": "Improving Flow Matching by Aligning Flow Divergence",
+  "kind": "arxiv",
+  "identifier": "2602.00869",
+  "raw": "https://arxiv.org/abs/2602.00869",
+  "pdf_url": "https://arxiv.org/pdf/2602.00869.pdf",
+  "source_url": "https://export.arxiv.org/e-print/2602.00869",
+  "pdf_error": null,
+  "source_error": null,
+  "imported_from": {
+    "repository": "HaningZS/HaningZS_Notes",
+    "commit": "8ced9038b7611bcb8c2b2774fb870149df8ef780"
+  },
+  "edition_status": "pinned-cross-checked",
+  "artifacts": {
+    "pdf": {
+      "sha256": "e54a1d133672fbe9d1b27f9ca01c33442657b825db44c30a8fd7a657329b89b9",
+      "bytes": 6384925
+    },
+    "source": {
+      "sha256": "8a1addb588245602781ad8fd7b5de9ac32b47b5d9ae1f51a666129406564b77f",
+      "bytes": 8258461
+    }
+  },
+  "topic": "generative",
+  "templates": [
+    "T13"
+  ],
+  "path": "proof_ref/recent-accepted-2025-2026/improving-flow-matching-by-aligning-flow-divergence-2602.00869",
+  "last_checked_at": "2026-09-26T05:54:22+00:00",
+  "errors": {},
+  "authors": [
+    "Huang, Yuhao",
+    "Transue, Taos",
+    "Wang, Shih-Hsin",
+    "Feldman, William",
+    "Zhang, Hong",
+    "Wang, Bao"
+  ],
+  "published": "2026/01/31",
+  "resolved_id": "2602.00869v1",
+  "metadata_url": "https://arxiv.org/abs/2602.00869v1",
+  "metadata_checked_at": "2026-10-19T16:37:21+00:00",
+  "version_verification": {
+    "checked_at": "2026-10-19T16:37:27+00:00",
+    "pdf_marker": "2602.00869v1",
+    "source_url": "https://arxiv.org/src/2602.00869v1",
+    "method": "Unique arXiv version marker in local PDF pages 1-2; local PDF/source hashes match recorded metadata; exact hash match with newly downloaded official versioned source.",
+    "report": "reports/legacy_version_verification.json"
+  }
+}

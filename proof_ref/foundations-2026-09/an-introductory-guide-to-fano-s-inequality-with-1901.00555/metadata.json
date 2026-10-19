@@ -1,0 +1,33 @@
+{
+  "title": "An Introductory Guide to Fano's Inequality with Applications in Statistical Estimation",
+  "authors": [
+    "Scarlett, Jonathan",
+    "Cevher, Volkan"
+  ],
+  "published": "2019/01/02",
+  "resolved_id": "1901.00555v3",
+  "metadata_url": "https://arxiv.org/abs/1901.00555v3",
+  "metadata_checked_at": "2026-09-26T05:42:24+00:00",
+  "download_urls": {
+    "pdf": "https://arxiv.org/pdf/1901.00555v3",
+    "source": "https://arxiv.org/src/1901.00555v3"
+  },
+  "artifacts": {
+    "pdf": {
+      "sha256": "c12fff1bc3e51b57b666fcbc1721eb5be794453eaddae11c74ad73d749a58c9c",
+      "bytes": 933604
+    },
+    "source": {
+      "sha256": "05cda0aa623ccb875d3bdbf2e440e576f087bf3b787367b7d7c779657f6d1c77",
+      "bytes": 616766
+    }
+  },
+  "identifier": "1901.00555",
+  "topic": "lower-bounds",
+  "templates": [
+    "T12"
+  ],
+  "path": "proof_ref/foundations-2026-09/an-introductory-guide-to-fano-s-inequality-with-1901.00555",
+  "last_checked_at": "2026-09-26T05:54:20+00:00",
+  "errors": {}
+}

@@ -1,0 +1,32 @@
+{
+  "identifier": "1306.0895",
+  "title": "Sinkhorn Distances: Lightspeed Computation of Optimal Transportation Distances",
+  "topic": "transport",
+  "templates": [
+    "T19"
+  ],
+  "path": "proof_ref/foundations-2026-09/sinkhorn-distances-lightspeed-computation-of-optimal-transportation-distances-1306.0895",
+  "last_checked_at": "2026-09-26T05:54:21+00:00",
+  "errors": {},
+  "authors": [
+    "Cuturi, Marco"
+  ],
+  "published": "2013/06/04",
+  "resolved_id": "1306.0895v1",
+  "metadata_url": "https://arxiv.org/abs/1306.0895v1",
+  "metadata_checked_at": "2026-09-26T05:51:23+00:00",
+  "download_urls": {
+    "pdf": "https://arxiv.org/pdf/1306.0895v1",
+    "source": "https://arxiv.org/src/1306.0895v1"
+  },
+  "artifacts": {
+    "pdf": {
+      "sha256": "f666b9bce6bbe0111fbaa49d550c7c58a53da11f5e62bdb547b422b83414f20f",
+      "bytes": 1004298
+    },
+    "source": {
+      "sha256": "23891eb9bab9c8b1b6e6bbf4ffa657e99673778222db5cb33fba4ffc0edf6d35",
+      "bytes": 491955
+    }
+  }
+}

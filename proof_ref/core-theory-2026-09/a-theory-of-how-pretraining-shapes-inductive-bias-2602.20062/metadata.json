@@ -1,0 +1,50 @@
+{
+  "title": "A Theory of How Pretraining Shapes Inductive Bias in Fine-Tuning",
+  "kind": "arxiv",
+  "identifier": "2602.20062",
+  "raw": "https://arxiv.org/abs/2602.20062",
+  "pdf_url": "https://arxiv.org/pdf/2602.20062.pdf",
+  "source_url": "https://export.arxiv.org/e-print/2602.20062",
+  "pdf_error": null,
+  "source_error": null,
+  "imported_from": {
+    "repository": "HaningZS/HaningZS_Notes",
+    "commit": "8ced9038b7611bcb8c2b2774fb870149df8ef780"
+  },
+  "edition_status": "pinned-cross-checked",
+  "artifacts": {
+    "pdf": {
+      "sha256": "c0f5e47a9962d9b91d373a501afeb18a988e941f9afae2cf86d024db476ea365",
+      "bytes": 3057562
+    },
+    "source": {
+      "sha256": "1e7dca42c7ac9956b1f3580c8322cb2874cbb783d57991431dbfb57430e8452c",
+      "bytes": 16309282
+    }
+  },
+  "topic": "representation",
+  "templates": [],
+  "path": "proof_ref/core-theory-2026-09/a-theory-of-how-pretraining-shapes-inductive-bias-2602.20062",
+  "last_checked_at": "2026-09-26T05:54:22+00:00",
+  "errors": {},
+  "authors": [
+    "Anguita, Nicolas",
+    "Locatello, Francesco",
+    "Saxe, Andrew M.",
+    "Mondelli, Marco",
+    "Mancini, Flavia",
+    "Lippl, Samuel",
+    "Domine, Clementine"
+  ],
+  "published": "2026/02/23",
+  "resolved_id": "2602.20062v2",
+  "metadata_url": "https://arxiv.org/abs/2602.20062v2",
+  "metadata_checked_at": "2026-10-19T16:33:15+00:00",
+  "version_verification": {
+    "checked_at": "2026-10-19T16:33:24+00:00",
+    "pdf_marker": "2602.20062v2",
+    "source_url": "https://arxiv.org/src/2602.20062v2",
+    "method": "Unique arXiv version marker in local PDF pages 1-2; local PDF/source hashes match recorded metadata; exact hash match with newly downloaded official versioned source.",
+    "report": "reports/legacy_version_verification.json"
+  }
+}

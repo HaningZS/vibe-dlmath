@@ -1,0 +1,35 @@
+{
+  "title": "Stronger generalization bounds for deep nets via a compression approach",
+  "authors": [
+    "Arora, Sanjeev",
+    "Ge, Rong",
+    "Neyshabur, Behnam",
+    "Zhang, Yi"
+  ],
+  "published": "2018/02/14",
+  "resolved_id": "1802.05296v4",
+  "metadata_url": "https://arxiv.org/abs/1802.05296v4",
+  "metadata_checked_at": "2026-09-28T08:23:22+00:00",
+  "download_urls": {
+    "pdf": "https://export.arxiv.org/pdf/1802.05296v4",
+    "source": "https://export.arxiv.org/e-print/1802.05296v4"
+  },
+  "artifacts": {
+    "pdf": {
+      "sha256": "ccdbe269c585b9bce9aee0ec0b551d6a60349051847ffe30012ee92953e4c7be",
+      "bytes": 2302401
+    },
+    "source": {
+      "sha256": "a64016db817dcf100e62ca9a5cbaf3179a0e5e042775bd13291e02386667ade2",
+      "bytes": 2284802
+    }
+  },
+  "identifier": "1802.05296",
+  "topic": "generalization",
+  "templates": [
+    "T38"
+  ],
+  "path": "proof_ref/dl-core-2026-09/stronger-generalization-bounds-for-deep-nets-via-a-1802.05296",
+  "last_checked_at": "2026-09-28T08:23:40+00:00",
+  "errors": {}
+}

@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "description": "截至 2026-10-19 的近期证明蒸馏：证书的量词、Flow Matching 的误差分布、流形扩散的计算成本。",
+  "papers": [
+    {"arxiv_id":"2610.06238","title":"Certification-Enhanced Generalization Bounds","topic":"generalization","templates":["T04","T50"],"review_status":"scoped-claim-checked","why":"蒸馏指数距离上包络、bounded differences 与指数矩；仅核对 Proposition 2 / Theorem 1 的指定范围，严格保留期望 gap 量词。"},
+    {"arxiv_id":"2609.38918","title":"Flow Matching under Noisy Latent Structure: Beyond Exact Low-Dimensional Support","topic":"generative","templates":["T13","T51"],"review_status":"scoped-claim-checked","why":"核对 Theorem 5.2 连续流桥、学习场 Lipschitz 与真实边缘误差；完整统计构造和 SGD 优化未全部核验。"},
+    {"arxiv_id":"2609.36568","title":"Sharp Convergence and Sampling Trade-offs for Riemannian Diffusion under Nonnegative Ricci Curvature","topic":"generative","templates":["T13"],"review_status":"source-issues-recorded","why":"复杂度与来源审计案例：本地 PDF/TeX 确认 Hessian、步长括号、Pinsker 展示不一致，保留问题清单和未完成的全链条核验。"}
+  ]
+}

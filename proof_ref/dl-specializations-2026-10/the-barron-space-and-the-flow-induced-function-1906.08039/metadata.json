@@ -1,0 +1,35 @@
+{
+  "title": "The Barron Space and the Flow-induced Function Spaces for Neural Network Models",
+  "authors": [
+    "E, Weinan",
+    "Ma, Chao",
+    "Wu, Lei"
+  ],
+  "published": "2019/06/18",
+  "resolved_id": "1906.08039v2",
+  "metadata_url": "https://arxiv.org/abs/1906.08039v2",
+  "metadata_checked_at": "2026-10-02T07:16:43+00:00",
+  "download_urls": {
+    "pdf": "https://arxiv.org/pdf/1906.08039v2",
+    "source": "https://export.arxiv.org/e-print/1906.08039v2"
+  },
+  "artifacts": {
+    "pdf": {
+      "sha256": "49f42d466e48bf40a52dbf5ab6cee8eddf6f766dbe4887abef6c2a8ebac72ecf",
+      "bytes": 331178
+    },
+    "source": {
+      "sha256": "e3c4532a849b1c80010bf2c27c095bf86f2f4ad729c88faa72395c25bb64744b",
+      "bytes": 27410
+    }
+  },
+  "identifier": "1906.08039",
+  "topic": "approximation",
+  "templates": [
+    "T41",
+    "T34"
+  ],
+  "path": "proof_ref/dl-specializations-2026-10/the-barron-space-and-the-flow-induced-function-1906.08039",
+  "last_checked_at": "2026-10-02T07:16:53+00:00",
+  "errors": {}
+}

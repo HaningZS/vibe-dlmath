@@ -1,0 +1,35 @@
+{
+  "title": "Flow Straight and Fast: Learning to Generate and Transfer Data with Rectified Flow",
+  "authors": [
+    "Liu, Xingchao",
+    "Gong, Chengyue",
+    "Liu, Qiang"
+  ],
+  "published": "2022/09/07",
+  "resolved_id": "2209.03003v1",
+  "metadata_url": "https://arxiv.org/abs/2209.03003v1",
+  "metadata_checked_at": "2026-09-26T05:45:32+00:00",
+  "download_urls": {
+    "pdf": "https://arxiv.org/pdf/2209.03003v1",
+    "source": "https://export.arxiv.org/e-print/2209.03003v1"
+  },
+  "artifacts": {
+    "pdf": {
+      "sha256": "d81790cb6988ef480002adcc84000d4f44855b11fb868001fd53aad133bc3a74",
+      "bytes": 18024983
+    },
+    "source": {
+      "sha256": "29edb64c6a63f52f7425c6a2693dc9a38043c38bcd1d0800a48f2c9f4bd887aa",
+      "bytes": 16547996
+    }
+  },
+  "identifier": "2209.03003",
+  "topic": "generative",
+  "templates": [
+    "T13",
+    "T19"
+  ],
+  "path": "proof_ref/foundations-2026-09/flow-straight-and-fast-learning-to-generate-and-2209.03003",
+  "last_checked_at": "2026-09-26T05:54:21+00:00",
+  "errors": {}
+}

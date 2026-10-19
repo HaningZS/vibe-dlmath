@@ -1,0 +1,36 @@
+{
+  "title": "Reconciling modern machine learning practice and the bias-variance trade-off",
+  "authors": [
+    "Belkin, Mikhail",
+    "Hsu, Daniel",
+    "Ma, Siyuan",
+    "Mandal, Soumik"
+  ],
+  "published": "2018/12/28",
+  "resolved_id": "1812.11118v2",
+  "metadata_url": "https://arxiv.org/abs/1812.11118v2",
+  "metadata_checked_at": "2026-09-26T05:39:29+00:00",
+  "download_urls": {
+    "pdf": "https://arxiv.org/pdf/1812.11118v2",
+    "source": "https://arxiv.org/src/1812.11118v2"
+  },
+  "artifacts": {
+    "pdf": {
+      "sha256": "aa968bc49b5676254e5a4bb045435b9c508e2a1d3ce45f1b0cce645fcedfe79b",
+      "bytes": 1171814
+    },
+    "source": {
+      "sha256": "dc1b527343207744c6a3f0863b304eb414fce83008ee5f5b75a91507601c244e",
+      "bytes": 3248633
+    }
+  },
+  "identifier": "1812.11118",
+  "topic": "generalization",
+  "templates": [
+    "T04",
+    "T09"
+  ],
+  "path": "proof_ref/foundations-2026-09/reconciling-modern-machine-learning-practice-and-the-classical-1812.11118",
+  "last_checked_at": "2026-09-26T05:54:20+00:00",
+  "errors": {}
+}

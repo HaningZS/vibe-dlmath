@@ -1,0 +1,36 @@
+{
+  "title": "How to Escape Saddle Points Efficiently",
+  "authors": [
+    "Jin, Chi",
+    "Ge, Rong",
+    "Netrapalli, Praneeth",
+    "Kakade, Sham M.",
+    "Jordan, Michael I."
+  ],
+  "published": "2017/03/02",
+  "resolved_id": "1703.00887v1",
+  "metadata_url": "https://arxiv.org/abs/1703.00887v1",
+  "metadata_checked_at": "2026-10-02T07:16:33+00:00",
+  "download_urls": {
+    "pdf": "https://arxiv.org/pdf/1703.00887v1",
+    "source": "https://arxiv.org/src/1703.00887v1"
+  },
+  "artifacts": {
+    "pdf": {
+      "sha256": "52953f9c6a2b284ddd9b3ccac70d8b773563ccc6f6ef47379075ccfb733ebb58",
+      "bytes": 651104
+    },
+    "source": {
+      "sha256": "bdf5bcb40353832090513189a74034e80f5a07456943b9d29dc842f65bac4cc0",
+      "bytes": 709160
+    }
+  },
+  "identifier": "1703.00887",
+  "topic": "optimization",
+  "templates": [
+    "T40"
+  ],
+  "path": "proof_ref/dl-specializations-2026-10/how-to-escape-saddle-points-efficiently-1703.00887",
+  "last_checked_at": "2026-10-02T07:16:40+00:00",
+  "errors": {}
+}

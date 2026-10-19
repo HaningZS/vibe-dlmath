@@ -1,0 +1,33 @@
+{
+  "title": "A Gentle Introduction to Conformal Prediction and Distribution-Free Uncertainty Quantification",
+  "authors": [
+    "Angelopoulos, Anastasios N.",
+    "Bates, Stephen"
+  ],
+  "published": "2021/07/15",
+  "resolved_id": "2107.07511v6",
+  "metadata_url": "https://arxiv.org/abs/2107.07511v6",
+  "metadata_checked_at": "2026-09-26T05:42:03+00:00",
+  "download_urls": {
+    "pdf": "https://arxiv.org/pdf/2107.07511v6",
+    "source": "https://arxiv.org/src/2107.07511v6"
+  },
+  "artifacts": {
+    "pdf": {
+      "sha256": "c69aa191d8363c25b36685db4adb7e6980e55ee39892fd3626206c16e1e0efa1",
+      "bytes": 5360733
+    },
+    "source": {
+      "sha256": "5555f54438fcbe5d81198597c9294f1b6404fc4fa7682362a1ad62f5c40e1490",
+      "bytes": 25903115
+    }
+  },
+  "identifier": "2107.07511",
+  "topic": "statistics",
+  "templates": [
+    "T18"
+  ],
+  "path": "proof_ref/foundations-2026-09/a-gentle-introduction-to-conformal-prediction-and-distribution-2107.07511",
+  "last_checked_at": "2026-09-26T05:54:20+00:00",
+  "errors": {}
+}

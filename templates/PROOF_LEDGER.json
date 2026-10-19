@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "target": {
+    "requested_statement": "待填写：用户原始主张，保留原假设与原量词。",
+    "formal_statement": "待填写：本次确实要证明的精确命题。",
+    "quantifiers": "待填写：随机性、概率、时间和资源范围。",
+    "output_rule": "待填写：最终迭代、随机迭代、存在性对象或其他输出。",
+    "claim_id": "C1"
+  },
+  "assumptions": [],
+  "claims": [
+    {
+      "id": "C1",
+      "statement": "待填写：本次确实要证明的精确命题。",
+      "quantifiers": "待填写：随机性、概率、时间和资源范围。",
+      "output_rule": "待填写：最终迭代、随机迭代、存在性对象或其他输出。",
+      "assumptions": [],
+      "dependencies": [],
+      "status": "open",
+      "argument": "",
+      "evidence": [],
+      "gaps": ["尚未固定假设、逐步推导或原文证据。"]
+    }
+  ]
+}

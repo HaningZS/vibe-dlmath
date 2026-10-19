@@ -1,0 +1,38 @@
+{
+  "title": "Transformers learn in-context by gradient descent",
+  "authors": [
+    "von Oswald, Johannes",
+    "Niklasson, Eyvind",
+    "Randazzo, Ettore",
+    "Sacramento, João",
+    "Mordvintsev, Alexander",
+    "Zhmoginov, Andrey",
+    "Vladymyrov, Max"
+  ],
+  "published": "2022/12/15",
+  "resolved_id": "2212.07677v2",
+  "metadata_url": "https://arxiv.org/abs/2212.07677v2",
+  "metadata_checked_at": "2026-09-26T05:40:32+00:00",
+  "download_urls": {
+    "pdf": "https://arxiv.org/pdf/2212.07677v2",
+    "source": "https://export.arxiv.org/e-print/2212.07677v2"
+  },
+  "artifacts": {
+    "pdf": {
+      "sha256": "1d132920d78f7680d13290d410671c8c6a14018d6c241717ef63338a44fb7c31",
+      "bytes": 2294443
+    },
+    "source": {
+      "sha256": "dd16854ef7616cf4af280c706e0d289e62322d6cee829ed26cb977a619617cd7",
+      "bytes": 1383436
+    }
+  },
+  "identifier": "2212.07677",
+  "topic": "transformer-icl",
+  "templates": [
+    "T14"
+  ],
+  "path": "proof_ref/foundations-2026-09/transformers-learn-in-context-by-gradient-descent-2212.07677",
+  "last_checked_at": "2026-09-26T05:54:20+00:00",
+  "errors": {}
+}

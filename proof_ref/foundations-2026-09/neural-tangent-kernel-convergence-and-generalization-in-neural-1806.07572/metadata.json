@@ -1,0 +1,34 @@
+{
+  "title": "Neural Tangent Kernel: Convergence and Generalization in Neural Networks",
+  "authors": [
+    "Jacot, Arthur",
+    "Gabriel, Franck",
+    "Hongler, Clément"
+  ],
+  "published": "2018/06/20",
+  "resolved_id": "1806.07572v4",
+  "metadata_url": "https://arxiv.org/abs/1806.07572v4",
+  "metadata_checked_at": "2026-09-26T05:39:51+00:00",
+  "download_urls": {
+    "pdf": "https://arxiv.org/pdf/1806.07572v4",
+    "source": "https://arxiv.org/src/1806.07572v4"
+  },
+  "artifacts": {
+    "pdf": {
+      "sha256": "e052eb972f646747ac4554a294eb62874077e59a5f585f459e2dbd5cb2a0975d",
+      "bytes": 519056
+    },
+    "source": {
+      "sha256": "66dc24e2a8588d5f13e737915842f258f61c3d792422b7f316fb551b2f17f10d",
+      "bytes": 130697
+    }
+  },
+  "identifier": "1806.07572",
+  "topic": "neural-dynamics",
+  "templates": [
+    "T09"
+  ],
+  "path": "proof_ref/foundations-2026-09/neural-tangent-kernel-convergence-and-generalization-in-neural-1806.07572",
+  "last_checked_at": "2026-09-26T05:54:20+00:00",
+  "errors": {}
+}

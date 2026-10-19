@@ -1,0 +1,33 @@
+{
+  "title": "Group Equivariant Convolutional Networks",
+  "authors": [
+    "Cohen, Taco S.",
+    "Welling, Max"
+  ],
+  "published": "2016/02/24",
+  "resolved_id": "1602.07576v3",
+  "metadata_url": "https://arxiv.org/abs/1602.07576v3",
+  "metadata_checked_at": "2026-10-02T07:16:55+00:00",
+  "download_urls": {
+    "pdf": "https://arxiv.org/pdf/1602.07576v3",
+    "source": "https://arxiv.org/src/1602.07576v3"
+  },
+  "artifacts": {
+    "pdf": {
+      "sha256": "f99aa84fcd750c5f99ce700c635a2128cd741142d3df96d9794645c9cb199570",
+      "bytes": 204081
+    },
+    "source": {
+      "sha256": "9ef33bd97d9d6f446508492a9dc2dd850cb94fa8b5f7b2b6d2ec2b7fecb77be0",
+      "bytes": 465139
+    }
+  },
+  "identifier": "1602.07576",
+  "topic": "architecture",
+  "templates": [
+    "T43"
+  ],
+  "path": "proof_ref/dl-specializations-2026-10/group-equivariant-convolutional-networks-1602.07576",
+  "last_checked_at": "2026-10-02T07:17:02+00:00",
+  "errors": {}
+}

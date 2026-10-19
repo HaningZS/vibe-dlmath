@@ -1,0 +1,39 @@
+{
+  "title": "Deep Learning with Differential Privacy",
+  "authors": [
+    "Abadi, Martín",
+    "Chu, Andy",
+    "Goodfellow, Ian",
+    "McMahan, H. Brendan",
+    "Mironov, Ilya",
+    "Talwar, Kunal",
+    "Zhang, Li"
+  ],
+  "published": "2016/07/01",
+  "resolved_id": "1607.00133v2",
+  "metadata_url": "https://arxiv.org/abs/1607.00133v2",
+  "metadata_checked_at": "2026-10-02T07:17:39+00:00",
+  "download_urls": {
+    "pdf": "https://arxiv.org/pdf/1607.00133v2",
+    "source": "https://arxiv.org/src/1607.00133v2"
+  },
+  "artifacts": {
+    "pdf": {
+      "sha256": "c88a9b68a2cdf2eff61e1e9e1f8c493c72a13a673293a3b3bbce9ffe326b48f0",
+      "bytes": 770523
+    },
+    "source": {
+      "sha256": "e7cdbd134aea45351c540725916cb1648b013f4bb3fea2da192bfef54820109f",
+      "bytes": 524700
+    }
+  },
+  "identifier": "1607.00133",
+  "topic": "privacy",
+  "templates": [
+    "T46",
+    "T16"
+  ],
+  "path": "proof_ref/dl-specializations-2026-10/deep-learning-with-differential-privacy-1607.00133",
+  "last_checked_at": "2026-10-02T07:17:46+00:00",
+  "errors": {}
+}

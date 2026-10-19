@@ -1,0 +1,38 @@
+{
+  "title": "The Implicit Bias of Gradient Descent on Separable Data",
+  "authors": [
+    "Soudry, Daniel",
+    "Hoffer, Elad",
+    "Nacson, Mor Shpigel",
+    "Gunasekar, Suriya",
+    "Srebro, Nathan"
+  ],
+  "published": "2017/10/27",
+  "resolved_id": "1710.10345v7",
+  "metadata_url": "https://arxiv.org/abs/1710.10345v7",
+  "metadata_checked_at": "2026-09-26T05:40:19+00:00",
+  "download_urls": {
+    "pdf": "https://arxiv.org/pdf/1710.10345v7",
+    "source": "https://export.arxiv.org/e-print/1710.10345v7"
+  },
+  "artifacts": {
+    "pdf": {
+      "sha256": "048be5291cd8bd4c23989dc3988cde8c27624f526c0d43ab9a2c74a11bd076ee",
+      "bytes": 772854
+    },
+    "source": {
+      "sha256": "5c4e9d8f3517e52307042ba5357c14d4cc46d9f5efa9f95c951f91162a901c9b",
+      "bytes": 346367
+    }
+  },
+  "identifier": "1710.10345",
+  "topic": "neural-dynamics",
+  "templates": [
+    "T01",
+    "T09",
+    "T36"
+  ],
+  "path": "proof_ref/foundations-2026-09/the-implicit-bias-of-gradient-descent-on-separable-1710.10345",
+  "last_checked_at": "2026-09-26T05:54:20+00:00",
+  "errors": {}
+}

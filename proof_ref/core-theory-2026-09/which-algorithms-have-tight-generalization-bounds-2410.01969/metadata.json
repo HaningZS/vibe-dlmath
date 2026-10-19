@@ -1,0 +1,49 @@
+{
+  "title": "Which Algorithms Have Tight Generalization Bounds?",
+  "kind": "arxiv",
+  "identifier": "2410.01969",
+  "raw": "https://arxiv.org/abs/2410.01969",
+  "pdf_url": "https://arxiv.org/pdf/2410.01969.pdf",
+  "source_url": "https://export.arxiv.org/e-print/2410.01969",
+  "pdf_error": null,
+  "source_error": null,
+  "imported_from": {
+    "repository": "HaningZS/HaningZS_Notes",
+    "commit": "8ced9038b7611bcb8c2b2774fb870149df8ef780"
+  },
+  "edition_status": "pinned-cross-checked",
+  "artifacts": {
+    "pdf": {
+      "sha256": "94787754b3ab3b5f4e9e3a60db59f619878ae6e7b85f455e2b952f127fc800b9",
+      "bytes": 961688
+    },
+    "source": {
+      "sha256": "da0661c49e16832e8300ab6670ddd0d7bb32a02a60d3a092babeefe5865f4c39",
+      "bytes": 380996
+    }
+  },
+  "topic": "generalization",
+  "templates": [
+    "T05"
+  ],
+  "path": "proof_ref/core-theory-2026-09/which-algorithms-have-tight-generalization-bounds-2410.01969",
+  "last_checked_at": "2026-09-26T05:54:22+00:00",
+  "errors": {},
+  "authors": [
+    "Gastpar, Michael",
+    "Nachum, Ido",
+    "Shafer, Jonathan",
+    "Weinberger, Thomas"
+  ],
+  "published": "2024/10/02",
+  "resolved_id": "2410.01969v1",
+  "metadata_url": "https://arxiv.org/abs/2410.01969v1",
+  "metadata_checked_at": "2026-10-19T16:36:25+00:00",
+  "version_verification": {
+    "checked_at": "2026-10-19T16:36:28+00:00",
+    "pdf_marker": "2410.01969v1",
+    "source_url": "https://arxiv.org/src/2410.01969v1",
+    "method": "Unique arXiv version marker in local PDF pages 1-2; local PDF/source hashes match recorded metadata; exact hash match with newly downloaded official versioned source.",
+    "report": "reports/legacy_version_verification.json"
+  }
+}

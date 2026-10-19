@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "target": {
+    "requested_statement": "在明确的光滑、有界下界与条件矩假设下，证明有偏随机梯度法独立均匀随机输出的期望真实梯度平方界。",
+    "formal_statement": "E||grad f(x_R)||^2 <= 2(f(x_0)-f_inf)/(eta*T) + (1/T) sum_{t=0}^{T-1} E||b_t||^2 + (L*eta/T) sum_{t=0}^{T-1} E[v_t^2].",
+    "quantifiers": "For every deterministic integer T >= 1 and constant eta in (0,1/L], expectation is over the algorithm and an independent R uniform on {0,...,T-1}.",
+    "output_rule": "Return x_R for R sampled independently of the entire algorithm trajectory, uniformly from {0,...,T-1}.",
+    "claim_id": "C3"
+  },
+  "assumptions": [
+    {
+      "id": "A1",
+      "statement": "f: R^d -> R is deterministic, differentiable, globally L-smooth with L > 0, and f(x) >= f_inf for a finite constant f_inf.",
+      "origin": "given"
+    },
+    {
+      "id": "A2",
+      "statement": "F_0 subset ... subset F_T is a filtration; x_0 is deterministic and x_t is F_t-measurable. Set a_t = grad f(x_t).",
+      "origin": "given"
+    },
+    {
+      "id": "A3",
+      "statement": "g_t = a_t + b_t + xi_t; b_t is F_t-measurable; g_t and xi_t are F_{t+1}-measurable; E[xi_t | F_t] = 0.",
+      "origin": "given"
+    },
+    {
+      "id": "A4",
+      "statement": "For every t < T, a_t, b_t and xi_t are square integrable; f(x_t) is integrable for all t <= T. All conditional products in the proof are therefore integrable by Cauchy-Schwarz.",
+      "origin": "given"
+    },
+    {
+      "id": "A5",
+      "statement": "v_t^2 is nonnegative and F_t-measurable, E[v_t^2] < infinity, and E[||xi_t||^2 | F_t] <= v_t^2.",
+      "origin": "given"
+    },
+    {
+      "id": "A6",
+      "statement": "For deterministic T >= 1 and constant 0 < eta <= 1/L, the actual update is x_{t+1} = x_t - eta*g_t for t = 0,...,T-1.",
+      "origin": "given"
+    },
+    {
+      "id": "A7",
+      "statement": "R is uniform on {0,...,T-1} and independent of the entire algorithm trajectory; the algorithm returns x_R.",
+      "origin": "given"
+    }
+  ],
+  "claims": [
+    {
+      "id": "C1",
+      "statement": "E[f(x_{t+1}) | F_t] <= f(x_t) - (eta/2)||a_t||^2 + (eta/2)||b_t||^2 + (L*eta^2/2)*v_t^2.",
+      "quantifiers": "For every t in {0,...,T-1}, almost surely on the common probability space.",
+      "output_rule": "A conditional one-step bound for the actual iterate x_{t+1}.",
+      "assumptions": ["A1", "A2", "A3", "A4", "A5", "A6"],
+      "dependencies": [],
+      "status": "proved",
+      "argument": "L-smoothness along the actual update gives f(x_{t+1}) <= f(x_t)-eta<a_t,g_t>+(L*eta^2/2)||g_t||^2. Since a_t+b_t is F_t-measurable and E_t xi_t=0, E_t<a_t,g_t>=<a_t,a_t+b_t> and E_t||g_t||^2=||a_t+b_t||^2+E_t||xi_t||^2. The identity -<a,a+b>=-||a||^2/2-||a+b||^2/2+||b||^2/2 leaves the additional term -eta(1-L*eta)||a_t+b_t||^2/2, which is nonpositive by A6. Drop that term and apply A5. A4 makes the conditional products and tower operations legitimate.",
+      "evidence": [
+        {
+          "kind": "derivation",
+          "used_fact": "Direct expansion of smoothness, conditional centering and an exact Euclidean norm identity; full derivation is in extensions/经典下降证明的偏差与方差接口.md, section 3."
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "id": "C2",
+      "statement": "(1/T) sum_{t=0}^{T-1} E||grad f(x_t)||^2 <= 2(f(x_0)-f_inf)/(eta*T) + (1/T) sum_{t=0}^{T-1} E||b_t||^2 + (L*eta/T) sum_{t=0}^{T-1} E[v_t^2].",
+      "quantifiers": "For every deterministic integer T >= 1 and constant eta in (0,1/L], expectation is over the algorithm.",
+      "output_rule": "The arithmetic average of the expected squared gradients at x_0,...,x_{T-1}.",
+      "assumptions": ["A1", "A2", "A4", "A6"],
+      "dependencies": ["C1"],
+      "status": "proved",
+      "argument": "Take total expectation of C1 using tower property and sum over t=0,...,T-1. The objective terms telescope to f(x_0)-E f(x_T). Bound E f(x_T) below by f_inf using A1, then divide all terms by eta*T/2. The bias coefficient becomes 1/T and the conditional variance coefficient becomes L*eta/T. The finite sums and integrable terms in A4 justify each operation.",
+      "evidence": [
+        {
+          "kind": "derivation",
+          "used_fact": "Finite telescoping sum of C1 and a deterministic lower bound on f; full derivation is in extensions/经典下降证明的偏差与方差接口.md, section 4."
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "id": "C3",
+      "statement": "E||grad f(x_R)||^2 <= 2(f(x_0)-f_inf)/(eta*T) + (1/T) sum_{t=0}^{T-1} E||b_t||^2 + (L*eta/T) sum_{t=0}^{T-1} E[v_t^2].",
+      "quantifiers": "For every deterministic integer T >= 1 and constant eta in (0,1/L], expectation is over the algorithm and an independent R uniform on {0,...,T-1}.",
+      "output_rule": "Return x_R for R sampled independently of the entire algorithm trajectory, uniformly from {0,...,T-1}.",
+      "assumptions": ["A4", "A7"],
+      "dependencies": ["C2"],
+      "status": "proved",
+      "argument": "By A7, conditioning on the complete algorithm trajectory gives E[||grad f(x_R)||^2 | trajectory] = (1/T) sum_{t=0}^{T-1} ||grad f(x_t)||^2. Take total expectation, interchange the finite sum using A4, and apply C2. This argument gives the specified independent random-iterate expectation only; it does not establish a last-iterate or high-probability statement.",
+      "evidence": [
+        {
+          "kind": "derivation",
+          "used_fact": "Conditional expectation over the independent uniform output index followed by C2; full derivation is in extensions/经典下降证明的偏差与方差接口.md, section 5."
+        }
+      ],
+      "gaps": []
+    }
+  ]
+}

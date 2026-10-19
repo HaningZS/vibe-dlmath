@@ -1,0 +1,48 @@
+{
+  "title": "Blink of an eye: a simple theory for feature localization in generative models",
+  "kind": "arxiv",
+  "identifier": "2502.00921",
+  "raw": "https://arxiv.org/abs/2502.00921",
+  "pdf_url": "https://arxiv.org/pdf/2502.00921.pdf",
+  "source_url": "https://export.arxiv.org/e-print/2502.00921",
+  "pdf_error": null,
+  "source_error": null,
+  "imported_from": {
+    "repository": "HaningZS/HaningZS_Notes",
+    "commit": "8ced9038b7611bcb8c2b2774fb870149df8ef780"
+  },
+  "edition_status": "pinned-cross-checked",
+  "artifacts": {
+    "pdf": {
+      "sha256": "456b297deefda29a45276a33bc8dfb12298a3fd9e22226c8bc509762f157f7fd",
+      "bytes": 28025948
+    },
+    "source": {
+      "sha256": "b977496bd08af60294fa361c75ec77b577f3ad69a8027639ee786c7bed17f570",
+      "bytes": 36666631
+    }
+  },
+  "topic": "generative",
+  "templates": [
+    "T25"
+  ],
+  "path": "proof_ref/core-theory-2026-09/blink-of-an-eye-a-simple-theory-for-2502.00921",
+  "last_checked_at": "2026-09-26T05:54:22+00:00",
+  "errors": {},
+  "authors": [
+    "Li, Marvin",
+    "Karan, Aayush",
+    "Chen, Sitan"
+  ],
+  "published": "2025/02/02",
+  "resolved_id": "2502.00921v2",
+  "metadata_url": "https://arxiv.org/abs/2502.00921v2",
+  "metadata_checked_at": "2026-10-19T16:33:43+00:00",
+  "version_verification": {
+    "checked_at": "2026-10-19T16:34:15+00:00",
+    "pdf_marker": "2502.00921v2",
+    "source_url": "https://arxiv.org/src/2502.00921v2",
+    "method": "Unique arXiv version marker in local PDF pages 1-2; local PDF/source hashes match recorded metadata; exact hash match with newly downloaded official versioned source.",
+    "report": "reports/legacy_version_verification.json"
+  }
+}

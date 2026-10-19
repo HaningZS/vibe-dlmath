@@ -1,0 +1,50 @@
+{
+  "title": "In-Context Deep Learning via Transformer Models",
+  "kind": "arxiv",
+  "identifier": "2411.16549",
+  "raw": "https://arxiv.org/abs/2411.16549",
+  "pdf_url": "https://arxiv.org/pdf/2411.16549.pdf",
+  "source_url": "https://export.arxiv.org/e-print/2411.16549",
+  "pdf_error": null,
+  "source_error": null,
+  "imported_from": {
+    "repository": "HaningZS/HaningZS_Notes",
+    "commit": "8ced9038b7611bcb8c2b2774fb870149df8ef780"
+  },
+  "edition_status": "pinned-cross-checked",
+  "artifacts": {
+    "pdf": {
+      "sha256": "3c701d4e970db7d74fc60e02d82eb62bc6c305f61b5f7f9ee6e599143a628091",
+      "bytes": 1180789
+    },
+    "source": {
+      "sha256": "57dd63f39ea3b9e964ad3f53634f450aa9cb5dbeaf8d106837e85a000eb9c079",
+      "bytes": 209955
+    }
+  },
+  "topic": "transformer-icl",
+  "templates": [
+    "T14"
+  ],
+  "path": "proof_ref/core-theory-2026-09/in-context-deep-learning-via-transformer-models-2411.16549",
+  "last_checked_at": "2026-09-26T05:54:22+00:00",
+  "errors": {},
+  "authors": [
+    "Wu, Weimin",
+    "Su, Maojiang",
+    "Hu, Jerry Yao-Chieh",
+    "Song, Zhao",
+    "Liu, Han"
+  ],
+  "published": "2024/11/25",
+  "resolved_id": "2411.16549v2",
+  "metadata_url": "https://arxiv.org/abs/2411.16549v2",
+  "metadata_checked_at": "2026-10-19T16:35:01+00:00",
+  "version_verification": {
+    "checked_at": "2026-10-19T16:35:04+00:00",
+    "pdf_marker": "2411.16549v2",
+    "source_url": "https://arxiv.org/src/2411.16549v2",
+    "method": "Unique arXiv version marker in local PDF pages 1-2; local PDF/source hashes match recorded metadata; exact hash match with newly downloaded official versioned source.",
+    "report": "reports/legacy_version_verification.json"
+  }
+}

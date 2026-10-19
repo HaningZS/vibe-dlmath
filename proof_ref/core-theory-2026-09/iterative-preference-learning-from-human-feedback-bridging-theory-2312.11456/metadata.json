@@ -1,0 +1,53 @@
+{
+  "title": "Iterative Preference Learning from Human Feedback: Bridging Theory and Practice for RLHF under KL-Constraint",
+  "kind": "arxiv",
+  "identifier": "2312.11456",
+  "raw": "https://arxiv.org/abs/2312.11456",
+  "pdf_url": "https://arxiv.org/pdf/2312.11456.pdf",
+  "source_url": "https://export.arxiv.org/e-print/2312.11456",
+  "pdf_error": null,
+  "source_error": null,
+  "imported_from": {
+    "repository": "HaningZS/HaningZS_Notes",
+    "commit": "8ced9038b7611bcb8c2b2774fb870149df8ef780"
+  },
+  "edition_status": "pinned-cross-checked",
+  "artifacts": {
+    "pdf": {
+      "sha256": "9c7b9f33c52f2ebc1041f9f1482a8eabee2995fd7820ed1af454473bae821ef5",
+      "bytes": 1308841
+    },
+    "source": {
+      "sha256": "639d737fa4ebd612dbfea94249a104644b850467eba4a4fa0a311f13c5a2cb36",
+      "bytes": 2975104
+    }
+  },
+  "topic": "post-training",
+  "templates": [
+    "T08"
+  ],
+  "path": "proof_ref/core-theory-2026-09/iterative-preference-learning-from-human-feedback-bridging-theory-2312.11456",
+  "last_checked_at": "2026-09-26T05:54:22+00:00",
+  "errors": {},
+  "authors": [
+    "Xiong, Wei",
+    "Dong, Hanze",
+    "Ye, Chenlu",
+    "Wang, Ziqi",
+    "Zhong, Han",
+    "Ji, Heng",
+    "Jiang, Nan",
+    "Zhang, Tong"
+  ],
+  "published": "2023/12/18",
+  "resolved_id": "2312.11456v4",
+  "metadata_url": "https://arxiv.org/abs/2312.11456v4",
+  "metadata_checked_at": "2026-10-19T16:35:07+00:00",
+  "version_verification": {
+    "checked_at": "2026-10-19T16:35:12+00:00",
+    "pdf_marker": "2312.11456v4",
+    "source_url": "https://arxiv.org/src/2312.11456v4",
+    "method": "Unique arXiv version marker in local PDF pages 1-2; local PDF/source hashes match recorded metadata; exact hash match with newly downloaded official versioned source.",
+    "report": "reports/legacy_version_verification.json"
+  }
+}

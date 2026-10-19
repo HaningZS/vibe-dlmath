@@ -1,0 +1,51 @@
+{
+  "title": "Assouad, Fano, and Le Cam with Interaction: A Unifying Lower Bound Framework and Characterization for Bandit Learnability",
+  "kind": "arxiv",
+  "identifier": "2410.05117",
+  "raw": "https://arxiv.org/abs/2410.05117",
+  "pdf_url": "https://arxiv.org/pdf/2410.05117.pdf",
+  "source_url": "https://export.arxiv.org/e-print/2410.05117",
+  "pdf_error": null,
+  "source_error": null,
+  "imported_from": {
+    "repository": "HaningZS/HaningZS_Notes",
+    "commit": "8ced9038b7611bcb8c2b2774fb870149df8ef780"
+  },
+  "edition_status": "pinned-cross-checked",
+  "artifacts": {
+    "pdf": {
+      "sha256": "529ccbec88a678f7c3efcd6b502f06114c1c161c15337db2c23191e5f3352f15",
+      "bytes": 831028
+    },
+    "source": {
+      "sha256": "9d7b80197fd384ebf3e07ce2fb5953308873246ea3cea674f28636ffd1878bdc",
+      "bytes": 144130
+    }
+  },
+  "topic": "lower-bounds",
+  "templates": [
+    "T12"
+  ],
+  "path": "proof_ref/core-theory-2026-09/assouad-fano-and-le-cam-with-interaction-a-2410.05117",
+  "last_checked_at": "2026-09-26T05:54:22+00:00",
+  "errors": {},
+  "authors": [
+    "Chen, Fan",
+    "Foster, Dylan J.",
+    "Han, Yanjun",
+    "Qian, Jian",
+    "Rakhlin, Alexander",
+    "Xu, Yunbei"
+  ],
+  "published": "2024/10/07",
+  "resolved_id": "2410.05117v2",
+  "metadata_url": "https://arxiv.org/abs/2410.05117v2",
+  "metadata_checked_at": "2026-10-19T16:33:37+00:00",
+  "version_verification": {
+    "checked_at": "2026-10-19T16:33:43+00:00",
+    "pdf_marker": "2410.05117v2",
+    "source_url": "https://arxiv.org/src/2410.05117v2",
+    "method": "Unique arXiv version marker in local PDF pages 1-2; local PDF/source hashes match recorded metadata; exact hash match with newly downloaded official versioned source.",
+    "report": "reports/legacy_version_verification.json"
+  }
+}

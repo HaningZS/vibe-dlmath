@@ -1,0 +1,49 @@
+{
+  "title": "Generalized-Smooth Nonconvex Optimization is As Efficient As Smooth Nonconvex Optimization",
+  "kind": "arxiv",
+  "identifier": "2303.02854",
+  "raw": "https://arxiv.org/abs/2303.02854",
+  "pdf_url": "https://arxiv.org/pdf/2303.02854.pdf",
+  "source_url": "https://export.arxiv.org/e-print/2303.02854",
+  "pdf_error": null,
+  "source_error": null,
+  "imported_from": {
+    "repository": "HaningZS/HaningZS_Notes",
+    "commit": "8ced9038b7611bcb8c2b2774fb870149df8ef780"
+  },
+  "edition_status": "pinned-cross-checked",
+  "artifacts": {
+    "pdf": {
+      "sha256": "db6bcae1153a1ac01e64ebef585ff77d600c7e4a4aed85ac18547955e4b41991",
+      "bytes": 1002193
+    },
+    "source": {
+      "sha256": "f0ad8d6754c2dea44acc1395fdf52d0cddef4f50e4d272a383b49515780452a1",
+      "bytes": 983097
+    }
+  },
+  "topic": "optimization",
+  "templates": [
+    "T15"
+  ],
+  "path": "proof_ref/core-theory-2026-09/generalized-smooth-nonconvex-optimization-is-as-efficient-as-2303.02854",
+  "last_checked_at": "2026-09-26T05:54:22+00:00",
+  "errors": {},
+  "authors": [
+    "Chen, Ziyi",
+    "Zhou, Yi",
+    "Liang, Yingbin",
+    "Lu, Zhaosong"
+  ],
+  "published": "2023/03/06",
+  "resolved_id": "2303.02854v2",
+  "metadata_url": "https://arxiv.org/abs/2303.02854v2",
+  "metadata_checked_at": "2026-10-19T16:34:55+00:00",
+  "version_verification": {
+    "checked_at": "2026-10-19T16:34:59+00:00",
+    "pdf_marker": "2303.02854v2",
+    "source_url": "https://arxiv.org/src/2303.02854v2",
+    "method": "Unique arXiv version marker in local PDF pages 1-2; local PDF/source hashes match recorded metadata; exact hash match with newly downloaded official versioned source.",
+    "report": "reports/legacy_version_verification.json"
+  }
+}

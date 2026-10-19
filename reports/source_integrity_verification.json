@@ -1,0 +1,1422 @@
+{
+  "checked_at": "2026-10-19T16:40:49+00:00",
+  "scope": "Local PDF/source hashes and archive-to-extracted-source byte comparison, not mathematical verification",
+  "total": 101,
+  "verified": 101,
+  "results": [
+    {
+      "arxiv_id": "2105.04026",
+      "path": "proof_ref/dl-core-2026-09/the-modern-mathematics-of-deep-learning-2105.04026",
+      "resolved_id": "2105.04026v2",
+      "pdf_sha256": "bc2f041e6bb4cc488e3c638ae5231ca6ce7c11b92ca9b88f834fd2c50cdce21f",
+      "source_sha256": "643cc068ee4349c79216f22f9fba18716fbb25ddd59f0b4a80aa6948a900857c",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "643cc068ee4349c79216f22f9fba18716fbb25ddd59f0b4a80aa6948a900857c",
+        "archive_file_count": 50,
+        "checked_at": "2026-10-19T16:40:43+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "1610.01145",
+      "path": "proof_ref/dl-core-2026-09/error-bounds-for-approximations-with-deep-relu-networks-1610.01145",
+      "resolved_id": "1610.01145v3",
+      "pdf_sha256": "0bad3c1b064a62353af1dbebf64b963df4cc847834492edb58ed7801c1efbc2a",
+      "source_sha256": "e6c0f79d5926b45729a21b883619f49d91ce8267a19e5ed54e5a2466f67ca0c9",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "e6c0f79d5926b45729a21b883619f49d91ce8267a19e5ed54e5a2466f67ca0c9",
+        "archive_file_count": 19,
+        "checked_at": "2026-10-19T16:40:43+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "1706.08498",
+      "path": "proof_ref/dl-core-2026-09/spectrally-normalized-margin-bounds-for-neural-networks-1706.08498",
+      "resolved_id": "1706.08498v2",
+      "pdf_sha256": "5674595cb6e6b13c43add644ca5f189f5c42ac38c877016f65358c20878812b6",
+      "source_sha256": "a29179073c003fc80dcb76dd29037fa7fac5db9c226590f5331ec01871d41316",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "a29179073c003fc80dcb76dd29037fa7fac5db9c226590f5331ec01871d41316",
+        "archive_file_count": 12,
+        "checked_at": "2026-10-19T16:40:43+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "1802.05296",
+      "path": "proof_ref/dl-core-2026-09/stronger-generalization-bounds-for-deep-nets-via-a-1802.05296",
+      "resolved_id": "1802.05296v4",
+      "pdf_sha256": "ccdbe269c585b9bce9aee0ec0b551d6a60349051847ffe30012ee92953e4c7be",
+      "source_sha256": "a64016db817dcf100e62ca9a5cbaf3179a0e5e042775bd13291e02386667ade2",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "a64016db817dcf100e62ca9a5cbaf3179a0e5e042775bd13291e02386667ade2",
+        "archive_file_count": 221,
+        "checked_at": "2026-10-19T16:40:43+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "1807.03748",
+      "path": "proof_ref/dl-core-2026-09/representation-learning-with-contrastive-predictive-coding-1807.03748",
+      "resolved_id": "1807.03748v2",
+      "pdf_sha256": "5ef5e1ab47d2273f418f01f66fb8eb1431ba9b185b7cba45e9955f0fee36427d",
+      "source_sha256": "1781e27db6bac28518611ddbdcb427d868252bdb5a7cd6c4308066dc8acb8967",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "1781e27db6bac28518611ddbdcb427d868252bdb5a7cd6c4308066dc8acb8967",
+        "archive_file_count": 29,
+        "checked_at": "2026-10-19T16:40:43+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "1703.00887",
+      "path": "proof_ref/dl-specializations-2026-10/how-to-escape-saddle-points-efficiently-1703.00887",
+      "resolved_id": "1703.00887v1",
+      "pdf_sha256": "52953f9c6a2b284ddd9b3ccac70d8b773563ccc6f6ef47379075ccfb733ebb58",
+      "source_sha256": "bdf5bcb40353832090513189a74034e80f5a07456943b9d29dc842f65bac4cc0",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "bdf5bcb40353832090513189a74034e80f5a07456943b9d29dc842f65bac4cc0",
+        "archive_file_count": 14,
+        "checked_at": "2026-10-19T16:40:43+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "1906.08039",
+      "path": "proof_ref/dl-specializations-2026-10/the-barron-space-and-the-flow-induced-function-1906.08039",
+      "resolved_id": "1906.08039v2",
+      "pdf_sha256": "49f42d466e48bf40a52dbf5ab6cee8eddf6f766dbe4887abef6c2a8ebac72ecf",
+      "source_sha256": "e3c4532a849b1c80010bf2c27c095bf86f2f4ad729c88faa72395c25bb64744b",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "e3c4532a849b1c80010bf2c27c095bf86f2f4ad729c88faa72395c25bb64744b",
+        "archive_file_count": 3,
+        "checked_at": "2026-10-19T16:40:43+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "1602.07576",
+      "path": "proof_ref/dl-specializations-2026-10/group-equivariant-convolutional-networks-1602.07576",
+      "resolved_id": "1602.07576v3",
+      "pdf_sha256": "f99aa84fcd750c5f99ce700c635a2128cd741142d3df96d9794645c9cb199570",
+      "source_sha256": "9ef33bd97d9d6f446508492a9dc2dd850cb94fa8b5f7b2b6d2ec2b7fecb77be0",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "9ef33bd97d9d6f446508492a9dc2dd850cb94fa8b5f7b2b6d2ec2b7fecb77be0",
+        "archive_file_count": 16,
+        "checked_at": "2026-10-19T16:40:43+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "1810.00826",
+      "path": "proof_ref/dl-specializations-2026-10/how-powerful-are-graph-neural-networks-1810.00826",
+      "resolved_id": "1810.00826v3",
+      "pdf_sha256": "a6ebf80c2790b8bac1fa378902993eae26020cc6d0d95e3964eea42b0c66a974",
+      "source_sha256": "bb76deb9e4fe5ccd1b06ffad73b8d3e42d478188ea82ab646be8bced7a1f5dcc",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "bb76deb9e4fe5ccd1b06ffad73b8d3e42d478188ea82ab646be8bced7a1f5dcc",
+        "archive_file_count": 21,
+        "checked_at": "2026-10-19T16:40:43+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "1902.02918",
+      "path": "proof_ref/dl-specializations-2026-10/certified-adversarial-robustness-via-randomized-smoothing-1902.02918",
+      "resolved_id": "1902.02918v2",
+      "pdf_sha256": "a03d92f572f076e35e8edf84471580805acf2f422e0736e29828798f5d3bb995",
+      "source_sha256": "169dad24a50cd383ad898724d50b2afb32713728ab7d76862b1306fd453cf7af",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "169dad24a50cd383ad898724d50b2afb32713728ab7d76862b1306fd453cf7af",
+        "archive_file_count": 74,
+        "checked_at": "2026-10-19T16:40:43+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "1702.07476",
+      "path": "proof_ref/dl-specializations-2026-10/renyi-differential-privacy-1702.07476",
+      "resolved_id": "1702.07476v3",
+      "pdf_sha256": "0d8cd53ff47bbe52686b8c60f09be96864dc1089add781e936a19c70e70d63ad",
+      "source_sha256": "e8a1e292eb39ddba9b0118a133e71fbbd72071d8efc7ab9eaab4df5c890d9860",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "e8a1e292eb39ddba9b0118a133e71fbbd72071d8efc7ab9eaab4df5c890d9860",
+        "archive_file_count": 7,
+        "checked_at": "2026-10-19T16:40:44+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "1607.00133",
+      "path": "proof_ref/dl-specializations-2026-10/deep-learning-with-differential-privacy-1607.00133",
+      "resolved_id": "1607.00133v2",
+      "pdf_sha256": "c88a9b68a2cdf2eff61e1e9e1f8c493c72a13a673293a3b3bbce9ffe326b48f0",
+      "source_sha256": "e7cdbd134aea45351c540725916cb1648b013f4bb3fea2da192bfef54820109f",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "e7cdbd134aea45351c540725916cb1648b013f4bb3fea2da192bfef54820109f",
+        "archive_file_count": 44,
+        "checked_at": "2026-10-19T16:40:44+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "1805.09767",
+      "path": "proof_ref/dl-specializations-2026-10/local-sgd-converges-fast-and-communicates-little-1805.09767",
+      "resolved_id": "1805.09767v3",
+      "pdf_sha256": "98fb2c50800106cb84fe8204a022eda78264a84c66c3f16fe2e5f94dd23cd85c",
+      "source_sha256": "365c209730f7566ff1b5e5550c1e49f787382a2ca6153b867de1d4c3b9024629",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "365c209730f7566ff1b5e5550c1e49f787382a2ca6153b867de1d4c3b9024629",
+        "archive_file_count": 14,
+        "checked_at": "2026-10-19T16:40:44+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "1910.06378",
+      "path": "proof_ref/dl-specializations-2026-10/scaffold-stochastic-controlled-averaging-for-federated-learning-1910.06378",
+      "resolved_id": "1910.06378v4",
+      "pdf_sha256": "efe06c86acc7a06116e372a7ab6386c300f4d0dc9c7ba2dd5c82e95111a1d694",
+      "source_sha256": "6b7773cb8ba2de4670a72437fb8cb48378cf6432088ab40fd69d4ad66ccb716c",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "6b7773cb8ba2de4670a72437fb8cb48378cf6432088ab40fd69d4ad66ccb716c",
+        "archive_file_count": 23,
+        "checked_at": "2026-10-19T16:40:44+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "1011.3027",
+      "path": "proof_ref/foundations-2026-09/introduction-to-the-non-asymptotic-analysis-of-random-1011.3027",
+      "resolved_id": "1011.3027v7",
+      "pdf_sha256": "4e8c5b3684f9d0ae41f749ec773166624ed1c847e8c1a74d6959f423e584d8ca",
+      "source_sha256": "72ebb73021e41cfc46753da3471613bafc14dd4e72093e4f7c47824e4dab9b4e",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "72ebb73021e41cfc46753da3471613bafc14dd4e72093e4f7c47824e4dab9b4e",
+        "archive_file_count": 2,
+        "checked_at": "2026-10-19T16:40:44+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "1004.4389",
+      "path": "proof_ref/foundations-2026-09/user-friendly-tail-bounds-for-sums-of-random-1004.4389",
+      "resolved_id": "1004.4389v7",
+      "pdf_sha256": "0536851fddb683a2c46da844e2e75c9f1a343320b43366683baa5916c60efba5",
+      "source_sha256": "4f6681afdadd52e51add477af4ce441592a8f81c371d96dbd7f498de0d785c30",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "4f6681afdadd52e51add477af4ce441592a8f81c371d96dbd7f498de0d785c30",
+        "archive_file_count": 3,
+        "checked_at": "2026-10-19T16:40:44+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "1501.01571",
+      "path": "proof_ref/foundations-2026-09/an-introduction-to-matrix-concentration-inequalities-1501.01571",
+      "resolved_id": "1501.01571v1",
+      "pdf_sha256": "8989dc217ae3c603fcf91adab0dd6a05e26497dbe05976c4613cfc325b0561f9",
+      "source_sha256": "e9c19972693d707470beb9b9a2a390cf916163e4c1895d829b398b9f5a2050a0",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "e9c19972693d707470beb9b9a2a390cf916163e4c1895d829b398b9f5a2050a0",
+        "archive_file_count": 3,
+        "checked_at": "2026-10-19T16:40:44+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "1808.03204",
+      "path": "proof_ref/foundations-2026-09/time-uniform-chernoff-bounds-via-nonnegative-supermartingales-1808.03204",
+      "resolved_id": "1808.03204v8",
+      "pdf_sha256": "7d0a6788b11fe9bbcc36ae19b0c7c18cf39d9e12ab82c6cce59834244efa7cd2",
+      "source_sha256": "a19e1123221cde7e24d0cb73e9e9ea3204bc5981121dc31d35124287de1211bd",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "a19e1123221cde7e24d0cb73e9e9ea3204bc5981121dc31d35124287de1211bd",
+        "archive_file_count": 13,
+        "checked_at": "2026-10-19T16:40:44+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "1810.08240",
+      "path": "proof_ref/foundations-2026-09/time-uniform-nonparametric-nonasymptotic-confidence-sequences-1810.08240",
+      "resolved_id": "1810.08240v9",
+      "pdf_sha256": "eb3efd547349adfbff25514ae0854c142cd29b96b398be38c9000d69a2f64ca8",
+      "source_sha256": "194d4a8a98587c2ac8726416aeea804aa3f1784584716792e2da3e0fd14c74f5",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "194d4a8a98587c2ac8726416aeea804aa3f1784584716792e2da3e0fd14c74f5",
+        "archive_file_count": 14,
+        "checked_at": "2026-10-19T16:40:44+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "1405.4980",
+      "path": "proof_ref/foundations-2026-09/convex-optimization-algorithms-and-complexity-1405.4980",
+      "resolved_id": "1405.4980v2",
+      "pdf_sha256": "4d5cd5428a8e627fa2b7ee80791259c2f17e6ae5bf68cf7c78aee1fcefdc05f2",
+      "source_sha256": "8d6ef878a7633ea0713b6f7113a4aa5bfaab3d9b600ab58d67bda180e432f466",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "8d6ef878a7633ea0713b6f7113a4aa5bfaab3d9b600ab58d67bda180e432f466",
+        "archive_file_count": 15,
+        "checked_at": "2026-10-19T16:40:44+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "1606.04838",
+      "path": "proof_ref/foundations-2026-09/optimization-methods-for-large-scale-machine-learning-1606.04838",
+      "resolved_id": "1606.04838v3",
+      "pdf_sha256": "6d09a78cc225e29a10fcff75974692e1900810fb04222076bf69dfbbf35931d2",
+      "source_sha256": "1bcbc3fcd630a946a01f1ceb7c3a09c6df1284c3065a21f552154387e19fcb19",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "1bcbc3fcd630a946a01f1ceb7c3a09c6df1284c3065a21f552154387e19fcb19",
+        "archive_file_count": 14,
+        "checked_at": "2026-10-19T16:40:44+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "1608.04636",
+      "path": "proof_ref/foundations-2026-09/linear-convergence-of-gradient-and-proximal-gradient-methods-1608.04636",
+      "resolved_id": "1608.04636v4",
+      "pdf_sha256": "17f7425560b9e6b68164cd1a3197c8f5e0372ff1bb0c5f526a5c0bbafeadb4a2",
+      "source_sha256": "81babd979fba10d798761de10b39d13f6d245cc219816bda79de409f37ce6d59",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "81babd979fba10d798761de10b39d13f6d245cc219816bda79de409f37ce6d59",
+        "archive_file_count": 3,
+        "checked_at": "2026-10-19T16:40:44+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "1807.01695",
+      "path": "proof_ref/foundations-2026-09/spider-near-optimal-non-convex-optimization-via-stochastic-1807.01695",
+      "resolved_id": "1807.01695v2",
+      "pdf_sha256": "b8bb14e38ca37092d7c32c1bf871e610f98bd20fa247656308f97611de318b73",
+      "source_sha256": "811641cf8006ebb7699ce510d9a2453177909eb8b21b63e6eeefb4f6b047d4ed",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "811641cf8006ebb7699ce510d9a2453177909eb8b21b63e6eeefb4f6b047d4ed",
+        "archive_file_count": 8,
+        "checked_at": "2026-10-19T16:40:44+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "1202.6258",
+      "path": "proof_ref/foundations-2026-09/a-stochastic-gradient-method-with-an-exponential-convergence-1202.6258",
+      "resolved_id": "1202.6258v4",
+      "pdf_sha256": "1f7445347699c7354d16bbe859cbedd395b37833891a671e5bfbf534d7cdff3b",
+      "source_sha256": "7ec1df1da6cc414053f1f8c9c750a6e5e8c30f4d6ed55f2fefe79c5f31b46948",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "7ec1df1da6cc414053f1f8c9c750a6e5e8c30f4d6ed55f2fefe79c5f31b46948",
+        "archive_file_count": 28,
+        "checked_at": "2026-10-19T16:40:44+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "2110.11216",
+      "path": "proof_ref/foundations-2026-09/user-friendly-introduction-to-pac-bayes-bounds-2110.11216",
+      "resolved_id": "2110.11216v6",
+      "pdf_sha256": "8776454b6a8daafbacb1bf75f8e161a3aa84b4452cfa8f8e0b0d6cec32fbda53",
+      "source_sha256": "5bb4296e5319c1699c4338187ebccd869dbf930670f5a87b4617feef31402ba7",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "5bb4296e5319c1699c4338187ebccd869dbf930670f5a87b4617feef31402ba7",
+        "archive_file_count": 7,
+        "checked_at": "2026-10-19T16:40:44+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "1705.07809",
+      "path": "proof_ref/foundations-2026-09/information-theoretic-analysis-of-generalization-capability-of-learning-1705.07809",
+      "resolved_id": "1705.07809v2",
+      "pdf_sha256": "60172ad33096c6bea1a20787806b146166d92bfef2cde23eba38239b25292a81",
+      "source_sha256": "65d78246cc738e0524053c01fad95c2cf0505b3d23d2ee408bc9e399ab57aff7",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "65d78246cc738e0524053c01fad95c2cf0505b3d23d2ee408bc9e399ab57aff7",
+        "archive_file_count": 2,
+        "checked_at": "2026-10-19T16:40:44+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "1611.03530",
+      "path": "proof_ref/foundations-2026-09/understanding-deep-learning-requires-rethinking-generalization-1611.03530",
+      "resolved_id": "1611.03530v2",
+      "pdf_sha256": "a71f1294a021cebc6939ec977fc073b6d7b4f183950eba761ec55364d30b729f",
+      "source_sha256": "cd455ca4cc1ed6fa03912054b2aa6e350a1e9d1c9d5d166b62c8a3acb2a371d2",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "cd455ca4cc1ed6fa03912054b2aa6e350a1e9d1c9d5d166b62c8a3acb2a371d2",
+        "archive_file_count": 2,
+        "checked_at": "2026-10-19T16:40:44+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "1812.11118",
+      "path": "proof_ref/foundations-2026-09/reconciling-modern-machine-learning-practice-and-the-classical-1812.11118",
+      "resolved_id": "1812.11118v2",
+      "pdf_sha256": "aa968bc49b5676254e5a4bb045435b9c508e2a1d3ce45f1b0cce645fcedfe79b",
+      "source_sha256": "dc1b527343207744c6a3f0863b304eb414fce83008ee5f5b75a91507601c244e",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "dc1b527343207744c6a3f0863b304eb414fce83008ee5f5b75a91507601c244e",
+        "archive_file_count": 23,
+        "checked_at": "2026-10-19T16:40:44+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "1903.08560",
+      "path": "proof_ref/foundations-2026-09/surprises-in-high-dimensional-ridgeless-least-squares-interpolation-1903.08560",
+      "resolved_id": "1903.08560v5",
+      "pdf_sha256": "b671592188609aae4a4b99bfeb6505dcd8fadffb8916126a71570e2d0b658814",
+      "source_sha256": "c6f3755694dea4877ed5486bcd0cf89ad0dca12336c7707db2125510ca57318a",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "c6f3755694dea4877ed5486bcd0cf89ad0dca12336c7707db2125510ca57318a",
+        "archive_file_count": 36,
+        "checked_at": "2026-10-19T16:40:44+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "1806.07572",
+      "path": "proof_ref/foundations-2026-09/neural-tangent-kernel-convergence-and-generalization-in-neural-1806.07572",
+      "resolved_id": "1806.07572v4",
+      "pdf_sha256": "e052eb972f646747ac4554a294eb62874077e59a5f585f459e2dbd5cb2a0975d",
+      "source_sha256": "66dc24e2a8588d5f13e737915842f258f61c3d792422b7f316fb551b2f17f10d",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "66dc24e2a8588d5f13e737915842f258f61c3d792422b7f316fb551b2f17f10d",
+        "archive_file_count": 8,
+        "checked_at": "2026-10-19T16:40:44+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "1902.06720",
+      "path": "proof_ref/foundations-2026-09/wide-neural-networks-of-any-depth-evolve-as-1902.06720",
+      "resolved_id": "1902.06720v4",
+      "pdf_sha256": "f7a3601530bfa3d112cb00bb8a1b05b71286da3217d3a6df0c52d7d7662a36d5",
+      "source_sha256": "a3a2167b3933287b1a1d1ca938bc2fad16425bfe850f5989dea3446185af9849",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "a3a2167b3933287b1a1d1ca938bc2fad16425bfe850f5989dea3446185af9849",
+        "archive_file_count": 32,
+        "checked_at": "2026-10-19T16:40:44+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "1812.07956",
+      "path": "proof_ref/foundations-2026-09/on-lazy-training-in-differentiable-programming-1812.07956",
+      "resolved_id": "1812.07956v5",
+      "pdf_sha256": "70299b331e75c305c2d54597c82c135ebc1f55d2c7c3f03793abc2588aa31387",
+      "source_sha256": "641078ba7c3ac2e9fccab336237675c5fc7f5e1698ff713ab2dbe724f7b66a4e",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "641078ba7c3ac2e9fccab336237675c5fc7f5e1698ff713ab2dbe724f7b66a4e",
+        "archive_file_count": 32,
+        "checked_at": "2026-10-19T16:40:44+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "1804.06561",
+      "path": "proof_ref/foundations-2026-09/a-mean-field-view-of-the-landscape-of-1804.06561",
+      "resolved_id": "1804.06561v2",
+      "pdf_sha256": "9728a2be8430c21f7b6efd661d507f0ad4b630fecc3755ebc9c908e870b7d435",
+      "source_sha256": "c5ecd8ccc52bd20f5500e79d5fc03dc3f9efbe2786ef5d6aa3b0e10a30cf42e2",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "c5ecd8ccc52bd20f5500e79d5fc03dc3f9efbe2786ef5d6aa3b0e10a30cf42e2",
+        "archive_file_count": 20,
+        "checked_at": "2026-10-19T16:40:44+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "1710.10345",
+      "path": "proof_ref/foundations-2026-09/the-implicit-bias-of-gradient-descent-on-separable-1710.10345",
+      "resolved_id": "1710.10345v7",
+      "pdf_sha256": "048be5291cd8bd4c23989dc3988cde8c27624f526c0d43ab9a2c74a11bd076ee",
+      "source_sha256": "5c4e9d8f3517e52307042ba5357c14d4cc46d9f5efa9f95c951f91162a901c9b",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "5c4e9d8f3517e52307042ba5357c14d4cc46d9f5efa9f95c951f91162a901c9b",
+        "archive_file_count": 11,
+        "checked_at": "2026-10-19T16:40:44+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "2212.07677",
+      "path": "proof_ref/foundations-2026-09/transformers-learn-in-context-by-gradient-descent-2212.07677",
+      "resolved_id": "2212.07677v2",
+      "pdf_sha256": "1d132920d78f7680d13290d410671c8c6a14018d6c241717ef63338a44fb7c31",
+      "source_sha256": "dd16854ef7616cf4af280c706e0d289e62322d6cee829ed26cb977a619617cd7",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "dd16854ef7616cf4af280c706e0d289e62322d6cee829ed26cb977a619617cd7",
+        "archive_file_count": 118,
+        "checked_at": "2026-10-19T16:40:44+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "2211.15661",
+      "path": "proof_ref/foundations-2026-09/what-learning-algorithm-is-in-context-learning-investigations-2211.15661",
+      "resolved_id": "2211.15661v3",
+      "pdf_sha256": "18f2a209349c75ec84b74f2b72d32d96e12a86ebad97f47602a9bd8ce4c24ca4",
+      "source_sha256": "91915ae6082217f8e2c2370b3a088fbd74af2c5aa30503071393dc22236768f6",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "91915ae6082217f8e2c2370b3a088fbd74af2c5aa30503071393dc22236768f6",
+        "archive_file_count": 23,
+        "checked_at": "2026-10-19T16:40:44+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "2111.02080",
+      "path": "proof_ref/foundations-2026-09/an-explanation-of-in-context-learning-as-implicit-2111.02080",
+      "resolved_id": "2111.02080v6",
+      "pdf_sha256": "ad9be01798fcf4fdc66ff3630f7a6f1cc157c04d51d0821d7798e028cb175c4b",
+      "source_sha256": "74b1f5ae57f75099e7883e40f48d9be5913402e17be25a8cf4b7a3d7cbc4029b",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "74b1f5ae57f75099e7883e40f48d9be5913402e17be25a8cf4b7a3d7cbc4029b",
+        "archive_file_count": 49,
+        "checked_at": "2026-10-19T16:40:44+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "1102.2670",
+      "path": "proof_ref/foundations-2026-09/online-least-squares-estimation-with-self-normalized-processes-1102.2670",
+      "resolved_id": "1102.2670v1",
+      "pdf_sha256": "64333d497159dbc0f554fbe93b4e9dc2db4866b03c54c166b94e1b05aacf718a",
+      "source_sha256": "c3bf22b73816fa8e86b6271395e6410eeab2507f383427b6f229eeb0c034689b",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "c3bf22b73816fa8e86b6271395e6410eeab2507f383427b6f229eeb0c034689b",
+        "archive_file_count": 4,
+        "checked_at": "2026-10-19T16:40:44+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "1204.5721",
+      "path": "proof_ref/foundations-2026-09/regret-analysis-of-stochastic-and-nonstochastic-multi-armed-1204.5721",
+      "resolved_id": "1204.5721v2",
+      "pdf_sha256": "52e871fa30c9aaa2eb8292df169a681b89976e22db899563879225d5755e16a2",
+      "source_sha256": "b490265a10e4cf79d3c7c362238200a6cb24a1bd64aaec24eb9343d62bc7224b",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "b490265a10e4cf79d3c7c362238200a6cb24a1bd64aaec24eb9343d62bc7224b",
+        "archive_file_count": 15,
+        "checked_at": "2026-10-19T16:40:44+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "2012.15085",
+      "path": "proof_ref/foundations-2026-09/is-pessimism-provably-efficient-for-offline-rl-2012.15085",
+      "resolved_id": "2012.15085v3",
+      "pdf_sha256": "48ebb9c9357d29a8347c00d41d0d96f23aab072ef03c836f0e890ba49747d390",
+      "source_sha256": "8b5a9ea96544d87dcd0ada416dc04de1044660186ba7dee3a4e0a531a9bac052",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "8b5a9ea96544d87dcd0ada416dc04de1044660186ba7dee3a4e0a531a9bac052",
+        "archive_file_count": 66,
+        "checked_at": "2026-10-19T16:40:44+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "1502.05477",
+      "path": "proof_ref/foundations-2026-09/trust-region-policy-optimization-1502.05477",
+      "resolved_id": "1502.05477v5",
+      "pdf_sha256": "c228ad36d9d46972b898c96d58b5929c51b54cc43fd42f01d751b36f434bfa4a",
+      "source_sha256": "a74109df05e73dbe40a75612a306ecdfeadd24b9a49332d0acb0f0a52b01b7b1",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "a74109df05e73dbe40a75612a306ecdfeadd24b9a49332d0acb0f0a52b01b7b1",
+        "archive_file_count": 21,
+        "checked_at": "2026-10-19T16:40:44+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "1511.03722",
+      "path": "proof_ref/foundations-2026-09/doubly-robust-off-policy-value-evaluation-for-reinforcement-1511.03722",
+      "resolved_id": "1511.03722v3",
+      "pdf_sha256": "df2a2a5c0e5eb6545413143ad44ea185bc97d7f08d56d2308263825791e459e9",
+      "source_sha256": "be5c9781c6409852118af121116aaada7425c92a9029bf1dd7278f88314ab7ee",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "be5c9781c6409852118af121116aaada7425c92a9029bf1dd7278f88314ab7ee",
+        "archive_file_count": 16,
+        "checked_at": "2026-10-19T16:40:44+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "1608.00060",
+      "path": "proof_ref/foundations-2026-09/double-debiased-machine-learning-for-treatment-and-structural-1608.00060",
+      "resolved_id": "1608.00060v7",
+      "pdf_sha256": "3186133dacb9f4a31c004a00150627de1e5cf26e203d1522a25a5444c7dbdf78",
+      "source_sha256": "5bee6318942693e3ffa13632a73c6e1a4d6335773f23a47be1e7fc664fd71df2",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "5bee6318942693e3ffa13632a73c6e1a4d6335773f23a47be1e7fc664fd71df2",
+        "archive_file_count": 5,
+        "checked_at": "2026-10-19T16:40:44+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "2107.07511",
+      "path": "proof_ref/foundations-2026-09/a-gentle-introduction-to-conformal-prediction-and-distribution-2107.07511",
+      "resolved_id": "2107.07511v6",
+      "pdf_sha256": "c69aa191d8363c25b36685db4adb7e6980e55ee39892fd3626206c16e1e0efa1",
+      "source_sha256": "5555f54438fcbe5d81198597c9294f1b6404fc4fa7682362a1ad62f5c40e1490",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "5555f54438fcbe5d81198597c9294f1b6404fc4fa7682362a1ad62f5c40e1490",
+        "archive_file_count": 156,
+        "checked_at": "2026-10-19T16:40:44+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "2208.02814",
+      "path": "proof_ref/foundations-2026-09/conformal-risk-control-2208.02814",
+      "resolved_id": "2208.02814v4",
+      "pdf_sha256": "32c3b9689cb69dbec96ce87ba8b0fe98293bb1c9a59247480b16dbae6aa37df2",
+      "source_sha256": "a71d0ce824b1aa291da2304c13ce833f25a23878caf976f9bf57dc0f5ab8f7f1",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "a71d0ce824b1aa291da2304c13ce833f25a23878caf976f9bf57dc0f5ab8f7f1",
+        "archive_file_count": 11,
+        "checked_at": "2026-10-19T16:40:44+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "1901.00555",
+      "path": "proof_ref/foundations-2026-09/an-introductory-guide-to-fano-s-inequality-with-1901.00555",
+      "resolved_id": "1901.00555v3",
+      "pdf_sha256": "c12fff1bc3e51b57b666fcbc1721eb5be794453eaddae11c74ad73d749a58c9c",
+      "source_sha256": "05cda0aa623ccb875d3bdbf2e440e576f087bf3b787367b7d7c779657f6d1c77",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "05cda0aa623ccb875d3bdbf2e440e576f087bf3b787367b7d7c779657f6d1c77",
+        "archive_file_count": 14,
+        "checked_at": "2026-10-19T16:40:44+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "1912.02365",
+      "path": "proof_ref/foundations-2026-09/lower-bounds-for-non-convex-stochastic-optimization-1912.02365",
+      "resolved_id": "1912.02365v2",
+      "pdf_sha256": "9b46af1b0dd300a87bdefd2e403c098adb9a66090767e1efa698d945a07fd309",
+      "source_sha256": "b551de4bce63864f86f3fff483be320ffc7b4a7b245cd338ff62b6a765f5d80c",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "b551de4bce63864f86f3fff483be320ffc7b4a7b245cd338ff62b6a765f5d80c",
+        "archive_file_count": 3,
+        "checked_at": "2026-10-19T16:40:44+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "1803.00567",
+      "path": "proof_ref/foundations-2026-09/computational-optimal-transport-1803.00567",
+      "resolved_id": "1803.00567v4",
+      "pdf_sha256": "5292a1fc53631ac28fdbcccecc060de8e072b3008fb8d36c22d963a8f6a06bac",
+      "source_sha256": "0b9e06d4a2a69ff09f6fae517799742246a75831bf949a3239102f77cad1e33b",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "0b9e06d4a2a69ff09f6fae517799742246a75831bf949a3239102f77cad1e33b",
+        "archive_file_count": 640,
+        "checked_at": "2026-10-19T16:40:45+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "1306.0895",
+      "path": "proof_ref/foundations-2026-09/sinkhorn-distances-lightspeed-computation-of-optimal-transportation-distances-1306.0895",
+      "resolved_id": "1306.0895v1",
+      "pdf_sha256": "f666b9bce6bbe0111fbaa49d550c7c58a53da11f5e62bdb547b422b83414f20f",
+      "source_sha256": "23891eb9bab9c8b1b6e6bbf4ffa657e99673778222db5cb33fba4ffc0edf6d35",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "23891eb9bab9c8b1b6e6bbf4ffa657e99673778222db5cb33fba4ffc0edf6d35",
+        "archive_file_count": 10,
+        "checked_at": "2026-10-19T16:40:45+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "2011.13456",
+      "path": "proof_ref/foundations-2026-09/score-based-generative-modeling-through-stochastic-differential-equations-2011.13456",
+      "resolved_id": "2011.13456v2",
+      "pdf_sha256": "b244b740e60628d01bc3d4b98d721c2343be1fb9b67ad22593c8555e66f4d4a6",
+      "source_sha256": "2f699f06ee25d923206ee4fd3632e2188bb592db737460df6f51e95183547022",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "2f699f06ee25d923206ee4fd3632e2188bb592db737460df6f51e95183547022",
+        "archive_file_count": 122,
+        "checked_at": "2026-10-19T16:40:46+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "2209.11215",
+      "path": "proof_ref/foundations-2026-09/sampling-is-as-easy-as-learning-the-score-2209.11215",
+      "resolved_id": "2209.11215v3",
+      "pdf_sha256": "03f7c302ef183407843dee3bbe90b7f10afcb3b7cde8c6ac8171caa6e9784111",
+      "source_sha256": "587649805e315075c15f965f1d3f9b04d230ebc86c534d188003c39191dae519",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "587649805e315075c15f965f1d3f9b04d230ebc86c534d188003c39191dae519",
+        "archive_file_count": 4,
+        "checked_at": "2026-10-19T16:40:46+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "2210.02747",
+      "path": "proof_ref/foundations-2026-09/flow-matching-for-generative-modeling-2210.02747",
+      "resolved_id": "2210.02747v2",
+      "pdf_sha256": "5eeb39ba516396924aba4787452f9d0abdee88467a4d0c264d9f66cad0c5ee14",
+      "source_sha256": "4f840e07b171b531b0a2ffc344dc71fcde2df492502e0f4cf1f93fd56d192904",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "4f840e07b171b531b0a2ffc344dc71fcde2df492502e0f4cf1f93fd56d192904",
+        "archive_file_count": 313,
+        "checked_at": "2026-10-19T16:40:46+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "2209.03003",
+      "path": "proof_ref/foundations-2026-09/flow-straight-and-fast-learning-to-generate-and-2209.03003",
+      "resolved_id": "2209.03003v1",
+      "pdf_sha256": "d81790cb6988ef480002adcc84000d4f44855b11fb868001fd53aad133bc3a74",
+      "source_sha256": "29edb64c6a63f52f7425c6a2693dc9a38043c38bcd1d0800a48f2c9f4bd887aa",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "29edb64c6a63f52f7425c6a2693dc9a38043c38bcd1d0800a48f2c9f4bd887aa",
+        "archive_file_count": 103,
+        "checked_at": "2026-10-19T16:40:46+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "2303.01469",
+      "path": "proof_ref/foundations-2026-09/consistency-models-2303.01469",
+      "resolved_id": "2303.01469v2",
+      "pdf_sha256": "b36df36eb96abcad5ad67173952258c34f2ba0624c15acaaf38bebf855074043",
+      "source_sha256": "182804eb2a6e596f88527557ce73c93153f026d2fcef84043b1d801aeab23567",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "182804eb2a6e596f88527557ce73c93153f026d2fcef84043b1d801aeab23567",
+        "archive_file_count": 95,
+        "checked_at": "2026-10-19T16:40:46+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "1902.09229",
+      "path": "proof_ref/foundations-2026-09/a-theoretical-analysis-of-contrastive-unsupervised-representation-learning-1902.09229",
+      "resolved_id": "1902.09229v1",
+      "pdf_sha256": "ec57aa8024c349487cbef9b013b9c5582e8ad21a76cf7f5cc437323d6a797fb0",
+      "source_sha256": "0b256a21d1ff8a7418399691ae6242fa111ba3af3c2d5e12a1b6dfb18ab28c61",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "0b256a21d1ff8a7418399691ae6242fa111ba3af3c2d5e12a1b6dfb18ab28c61",
+        "archive_file_count": 20,
+        "checked_at": "2026-10-19T16:40:46+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "2005.10242",
+      "path": "proof_ref/foundations-2026-09/understanding-contrastive-representation-learning-through-alignment-and-uniformi-2005.10242",
+      "resolved_id": "2005.10242v10",
+      "pdf_sha256": "1b5e644e94cbc4b2fbd3177c115b153be44c622863aaec779bc66672b2e7deb7",
+      "source_sha256": "798c01a50a83053e64aa4d54e8ab3af76ae9fb659a021b67d93389bb342f279b",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "798c01a50a83053e64aa4d54e8ab3af76ae9fb659a021b67d93389bb342f279b",
+        "archive_file_count": 353,
+        "checked_at": "2026-10-19T16:40:47+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "2604.05324",
+      "path": "proof_ref/core-theory-2026-09/a-theoretical-framework-for-statistical-evaluability-of-generative-2604.05324",
+      "resolved_id": "2604.05324v3",
+      "pdf_sha256": "b27cad26bddf86498f3d36473929b74f822fc60e425d5736efbe191969546299",
+      "source_sha256": "53a7c3603f48547708d6483db2416fcb9cdb52aeb58f98be28d40a2b7e73e8f5",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "53a7c3603f48547708d6483db2416fcb9cdb52aeb58f98be28d40a2b7e73e8f5",
+        "archive_file_count": 5,
+        "checked_at": "2026-10-19T16:40:47+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "2607.07470",
+      "path": "proof_ref/core-theory-2026-09/a-theory-of-contrastive-learning-with-natural-images-2607.07470",
+      "resolved_id": "2607.07470v1",
+      "pdf_sha256": "25c8712dfa2a580d9afbd9cfa23ce34709309ac8e9c206d9d72775ab0b89586d",
+      "source_sha256": "ff9b800103b370932b8097bff8d1d271883975da19a9f524b2d084a402844056",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "ff9b800103b370932b8097bff8d1d271883975da19a9f524b2d084a402844056",
+        "archive_file_count": 80,
+        "checked_at": "2026-10-19T16:40:47+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "2602.20062",
+      "path": "proof_ref/core-theory-2026-09/a-theory-of-how-pretraining-shapes-inductive-bias-2602.20062",
+      "resolved_id": "2602.20062v2",
+      "pdf_sha256": "c0f5e47a9962d9b91d373a501afeb18a988e941f9afae2cf86d024db476ea365",
+      "source_sha256": "1e7dca42c7ac9956b1f3580c8322cb2874cbb783d57991431dbfb57430e8452c",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "1e7dca42c7ac9956b1f3580c8322cb2874cbb783d57991431dbfb57430e8452c",
+        "archive_file_count": 53,
+        "checked_at": "2026-10-19T16:40:47+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "2605.31594",
+      "path": "proof_ref/core-theory-2026-09/a-tight-theory-of-error-feedback-algorithms-in-2605.31594",
+      "resolved_id": "2605.31594v1",
+      "pdf_sha256": "29d0469a9f0c1afa8ee2b6b3b0de91afe419c53b2993a5bedb545a2c8e962605",
+      "source_sha256": "97d6fecbf03e7d55ce3e493ede5780097588a6890af987fbe403e02f05da47f5",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "97d6fecbf03e7d55ce3e493ede5780097588a6890af987fbe403e02f05da47f5",
+        "archive_file_count": 17,
+        "checked_at": "2026-10-19T16:40:47+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "2502.02861",
+      "path": "proof_ref/core-theory-2026-09/algorithms-with-calibrated-machine-learning-predictions-2502.02861",
+      "resolved_id": "2502.02861v4",
+      "pdf_sha256": "aa25509754021c48b782952c0912dc1d420a4150b88231bb026b823668b922e0",
+      "source_sha256": "42494cc25c01a61f1ba3cc90a3927282f6c551f14ec949a3f8e715be53321041",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "42494cc25c01a61f1ba3cc90a3927282f6c551f14ec949a3f8e715be53321041",
+        "archive_file_count": 25,
+        "checked_at": "2026-10-19T16:40:47+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "2410.05117",
+      "path": "proof_ref/core-theory-2026-09/assouad-fano-and-le-cam-with-interaction-a-2410.05117",
+      "resolved_id": "2410.05117v2",
+      "pdf_sha256": "529ccbec88a678f7c3efcd6b502f06114c1c161c15337db2c23191e5f3352f15",
+      "source_sha256": "9d7b80197fd384ebf3e07ce2fb5953308873246ea3cea674f28636ffd1878bdc",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "9d7b80197fd384ebf3e07ce2fb5953308873246ea3cea674f28636ffd1878bdc",
+        "archive_file_count": 31,
+        "checked_at": "2026-10-19T16:40:47+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "2502.00921",
+      "path": "proof_ref/core-theory-2026-09/blink-of-an-eye-a-simple-theory-for-2502.00921",
+      "resolved_id": "2502.00921v2",
+      "pdf_sha256": "456b297deefda29a45276a33bc8dfb12298a3fd9e22226c8bc509762f157f7fd",
+      "source_sha256": "b977496bd08af60294fa361c75ec77b577f3ad69a8027639ee786c7bed17f570",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "b977496bd08af60294fa361c75ec77b577f3ad69a8027639ee786c7bed17f570",
+        "archive_file_count": 56,
+        "checked_at": "2026-10-19T16:40:47+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "2406.04443",
+      "path": "proof_ref/core-theory-2026-09/clipping-improves-adam-norm-and-adagrad-norm-when-2406.04443",
+      "resolved_id": "2406.04443v3",
+      "pdf_sha256": "4675dcbcafc15a333a5fc54f6794b441fbfecec5e3f76b1c20874035e9af1019",
+      "source_sha256": "a5faec5aca6b62657892fd70acbcb08eac2709c0a586ba391c64c23dc6478818",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "a5faec5aca6b62657892fd70acbcb08eac2709c0a586ba391c64c23dc6478818",
+        "archive_file_count": 52,
+        "checked_at": "2026-10-19T16:40:48+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "2305.18290",
+      "path": "proof_ref/core-theory-2026-09/direct-preference-optimization-your-language-model-is-secretly-2305.18290",
+      "resolved_id": "2305.18290v3",
+      "pdf_sha256": "92cb3a2b71362acda98a789b03d88688fd33cf5fcf13f81d2b1de30ee7d3b67a",
+      "source_sha256": "750054a6d13d9f79559d6defbfa68432e2a8c8959f0b7e7e37c622c1740653cc",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "750054a6d13d9f79559d6defbfa68432e2a8c8959f0b7e7e37c622c1740653cc",
+        "archive_file_count": 15,
+        "checked_at": "2026-10-19T16:40:48+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "1604.04173",
+      "path": "proof_ref/core-theory-2026-09/distribution-free-predictive-inference-for-regression-1604.04173",
+      "resolved_id": "1604.04173v2",
+      "pdf_sha256": "28bbed19a871a5dd748953a3ea4f9d58cb03f00bb9e3f7f26f8d46398c399914",
+      "source_sha256": "926aab6403af4a1f67028e0e46b2c335dd63938877912038757c7b7e847089b1",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "926aab6403af4a1f67028e0e46b2c335dd63938877912038757c7b7e847089b1",
+        "archive_file_count": 61,
+        "checked_at": "2026-10-19T16:40:48+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "2605.06977",
+      "path": "proof_ref/core-theory-2026-09/f-divergence-regularized-rlhf-two-tales-of-sampling-2605.06977",
+      "resolved_id": "2605.06977v1",
+      "pdf_sha256": "14376bfa221fd090a8068072735a08f48c623c3e5f9361d3fca2fb4415b435d5",
+      "source_sha256": "c963e7688f0cc6c38f20bff2ce0c8dc7fd11b9224936eecdb8860e51d0cf2763",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "c963e7688f0cc6c38f20bff2ce0c8dc7fd11b9224936eecdb8860e51d0cf2763",
+        "archive_file_count": 15,
+        "checked_at": "2026-10-19T16:40:48+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "2605.15417",
+      "path": "proof_ref/core-theory-2026-09/f-trajectory-balance-a-loss-family-for-tuning-2605.15417",
+      "resolved_id": "2605.15417v1",
+      "pdf_sha256": "408099e7c8a1605170863869c011840f3650cc5be9cf3a8f12a46f22cee2a660",
+      "source_sha256": "9728c5a391450fc0af62c4bf005f709471412535a506ca5b8dc44737e8ece842",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "9728c5a391450fc0af62c4bf005f709471412535a506ca5b8dc44737e8ece842",
+        "archive_file_count": 42,
+        "checked_at": "2026-10-19T16:40:48+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "2303.02854",
+      "path": "proof_ref/core-theory-2026-09/generalized-smooth-nonconvex-optimization-is-as-efficient-as-2303.02854",
+      "resolved_id": "2303.02854v2",
+      "pdf_sha256": "db6bcae1153a1ac01e64ebef585ff77d600c7e4a4aed85ac18547955e4b41991",
+      "source_sha256": "f0ad8d6754c2dea44acc1395fdf52d0cddef4f50e4d272a383b49515780452a1",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "f0ad8d6754c2dea44acc1395fdf52d0cddef4f50e4d272a383b49515780452a1",
+        "archive_file_count": 21,
+        "checked_at": "2026-10-19T16:40:48+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "2411.16549",
+      "path": "proof_ref/core-theory-2026-09/in-context-deep-learning-via-transformer-models-2411.16549",
+      "resolved_id": "2411.16549v2",
+      "pdf_sha256": "3c701d4e970db7d74fc60e02d82eb62bc6c305f61b5f7f9ee6e599143a628091",
+      "source_sha256": "57dd63f39ea3b9e964ad3f53634f450aa9cb5dbeaf8d106837e85a000eb9c079",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "57dd63f39ea3b9e964ad3f53634f450aa9cb5dbeaf8d106837e85a000eb9c079",
+        "archive_file_count": 33,
+        "checked_at": "2026-10-19T16:40:48+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "2312.11456",
+      "path": "proof_ref/core-theory-2026-09/iterative-preference-learning-from-human-feedback-bridging-theory-2312.11456",
+      "resolved_id": "2312.11456v4",
+      "pdf_sha256": "9c7b9f33c52f2ebc1041f9f1482a8eabee2995fd7820ed1af454473bae821ef5",
+      "source_sha256": "639d737fa4ebd612dbfea94249a104644b850467eba4a4fa0a311f13c5a2cb36",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "639d737fa4ebd612dbfea94249a104644b850467eba4a4fa0a311f13c5a2cb36",
+        "archive_file_count": 32,
+        "checked_at": "2026-10-19T16:40:48+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "2409.18959",
+      "path": "proof_ref/core-theory-2026-09/o-d-t-convergence-theory-for-diffusion-probabilistic-2409.18959",
+      "resolved_id": "2409.18959v2",
+      "pdf_sha256": "aafe1cfdf454c5b5ff6f9a61d81f1fcd69f5f746d2e7c6a6cd78281c9fd89f7d",
+      "source_sha256": "b57b2b7fbb43f39f4b16d3039206113d28ff97977b25d086ff75fdf45a337136",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "b57b2b7fbb43f39f4b16d3039206113d28ff97977b25d086ff75fdf45a337136",
+        "archive_file_count": 11,
+        "checked_at": "2026-10-19T16:40:48+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "2406.16213",
+      "path": "proof_ref/core-theory-2026-09/provable-statistical-rates-for-consistency-diffusion-models-2406.16213",
+      "resolved_id": "2406.16213v1",
+      "pdf_sha256": "8fc9c86081272501823c0c1cc24df0d8b4bd178e6c70d8deeb50d7dc567c263f",
+      "source_sha256": "41c351d442e9e2a7c6844749253592ab0bad638eb25997fd681159b66e27995a",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "41c351d442e9e2a7c6844749253592ab0bad638eb25997fd681159b66e27995a",
+        "archive_file_count": 22,
+        "checked_at": "2026-10-19T16:40:48+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "1907.05388",
+      "path": "proof_ref/core-theory-2026-09/provably-efficient-reinforcement-learning-with-linear-function-approximation-1907.05388",
+      "resolved_id": "1907.05388v2",
+      "pdf_sha256": "5984f3eae6e8619dea065f015a1b49abdba2e7be94ac7a2ba9f36e2b3765d644",
+      "source_sha256": "7c6bdbf1d9d27eb6e502dd6a8f58bc111aea9bb4b8405114d2437e4b571a06c0",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "7c6bdbf1d9d27eb6e502dd6a8f58bc111aea9bb4b8405114d2437e4b571a06c0",
+        "archive_file_count": 14,
+        "checked_at": "2026-10-19T16:40:48+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "2503.05631",
+      "path": "proof_ref/core-theory-2026-09/strategy-coopetition-explains-the-emergence-and-transience-of-2503.05631",
+      "resolved_id": "2503.05631v2",
+      "pdf_sha256": "7b3634ec192553bd03cc8fc643f216aa62fd981ee86b13d3d28d2f12d4ff6462",
+      "source_sha256": "071b6c6903b9c1c76eb171550e41212b47fb3ee01ba17588fed4e70afe0f5d0b",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "071b6c6903b9c1c76eb171550e41212b47fb3ee01ba17588fed4e70afe0f5d0b",
+        "archive_file_count": 26,
+        "checked_at": "2026-10-19T16:40:48+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "2511.22283",
+      "path": "proof_ref/core-theory-2026-09/the-hidden-cost-of-approximation-in-online-mirror-2511.22283",
+      "resolved_id": "2511.22283v2",
+      "pdf_sha256": "ccd0d85469cee7f2dea26464d71fe8f1e06d6eae492b6c6a98b6428f94a417fd",
+      "source_sha256": "11aff1124273e1a47811a967355a07dcf7f688d1b738c475ab061555dd8dab80",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "11aff1124273e1a47811a967355a07dcf7f688d1b738c475ab061555dd8dab80",
+        "archive_file_count": 4,
+        "checked_at": "2026-10-19T16:40:48+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "2605.26489",
+      "path": "proof_ref/core-theory-2026-09/the-stability-of-singular-distribution-a-spectral-perspective-2605.26489",
+      "resolved_id": "2605.26489v1",
+      "pdf_sha256": "3dd2a2144d182a84aed5eb58d72ae739a83f0e9ce31710591a108c474fd60284",
+      "source_sha256": "f16735eb39895a4c1abb037f28865de016fdfecc89eb73574466c177854459b0",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "f16735eb39895a4c1abb037f28865de016fdfecc89eb73574466c177854459b0",
+        "archive_file_count": 13,
+        "checked_at": "2026-10-19T16:40:48+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "2601.21306",
+      "path": "proof_ref/core-theory-2026-09/the-surprising-difficulty-of-search-in-model-based-2601.21306",
+      "resolved_id": "2601.21306v2",
+      "pdf_sha256": "60dc8046515f260659e705e5db180cab1d513011c8253cea2acd6a8ca90048a9",
+      "source_sha256": "7c27dab2024d0e28b4e1092338962d3e161c1ca9c449dd16d19245969df76a91",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "7c27dab2024d0e28b4e1092338962d3e161c1ca9c449dd16d19245969df76a91",
+        "archive_file_count": 110,
+        "checked_at": "2026-10-19T16:40:48+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "1509.01240",
+      "path": "proof_ref/core-theory-2026-09/train-faster-generalize-better-stability-of-stochastic-gradient-1509.01240",
+      "resolved_id": "1509.01240v2",
+      "pdf_sha256": "f25c44207c24f6a940eb92e06cb36bc53ed4c57a7632850be1b78b334022749e",
+      "source_sha256": "155cd6d6d177fd27473b972fe996f21035d9a121f7a2b1cf45e26675310448bb",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "155cd6d6d177fd27473b972fe996f21035d9a121f7a2b1cf45e26675310448bb",
+        "archive_file_count": 31,
+        "checked_at": "2026-10-19T16:40:48+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "2502.06768",
+      "path": "proof_ref/core-theory-2026-09/train-for-the-worst-plan-for-the-best-2502.06768",
+      "resolved_id": "2502.06768v3",
+      "pdf_sha256": "622b56cf0efd627ec5dcf179ed907c4693b923e6affa34bd4dd01c9f0e8f6121",
+      "source_sha256": "4be2ded31d22265148d259f1f411bcb9d3a2e1c0dfdcc91777686a0d355fda37",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "4be2ded31d22265148d259f1f411bcb9d3a2e1c0dfdcc91777686a0d355fda37",
+        "archive_file_count": 13,
+        "checked_at": "2026-10-19T16:40:48+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "2501.16265",
+      "path": "proof_ref/core-theory-2026-09/training-dynamics-of-in-context-learning-in-linear-2501.16265",
+      "resolved_id": "2501.16265v2",
+      "pdf_sha256": "7149120cccaed6bee1bacd49d784a2451bd6e465f2adc5cd18939fd432f99c8b",
+      "source_sha256": "e8fce35c989de1e8db6af3c05390feb335cf9982d05789aa66b6a927e89f6c06",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "e8fce35c989de1e8db6af3c05390feb335cf9982d05789aa66b6a927e89f6c06",
+        "archive_file_count": 50,
+        "checked_at": "2026-10-19T16:40:48+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "2410.01969",
+      "path": "proof_ref/core-theory-2026-09/which-algorithms-have-tight-generalization-bounds-2410.01969",
+      "resolved_id": "2410.01969v1",
+      "pdf_sha256": "94787754b3ab3b5f4e9e3a60db59f619878ae6e7b85f455e2b952f127fc800b9",
+      "source_sha256": "da0661c49e16832e8300ab6670ddd0d7bb32a02a60d3a092babeefe5865f4c39",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "da0661c49e16832e8300ab6670ddd0d7bb32a02a60d3a092babeefe5865f4c39",
+        "archive_file_count": 36,
+        "checked_at": "2026-10-19T16:40:48+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "2602.02908",
+      "path": "proof_ref/recent-accepted-2025-2026/a-random-matrix-theory-perspective-on-the-consistency-2602.02908",
+      "resolved_id": "2602.02908v2",
+      "pdf_sha256": "d3855e619518a64cd328577a598a10778bb82c94b42c0d86537c605d69f3cdc1",
+      "source_sha256": "d315b147972a42b0672876faa771b7a27d759659ad2ffa49e44f68494d4f3f3d",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "d315b147972a42b0672876faa771b7a27d759659ad2ffa49e44f68494d4f3f3d",
+        "archive_file_count": 65,
+        "checked_at": "2026-10-19T16:40:48+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "2505.10880",
+      "path": "proof_ref/recent-accepted-2025-2026/approximation-and-generalization-abilities-of-score-based-neural-2505.10880",
+      "resolved_id": "2505.10880v2",
+      "pdf_sha256": "0c4c0da120f7ac4508e69b71f08c389403c7d1422e8c84ef6a18173ea5385fd0",
+      "source_sha256": "8486023245f7c0244d56430be7e5359adb110af394ced6bce6ba444e450acf79",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "8486023245f7c0244d56430be7e5359adb110af394ced6bce6ba444e450acf79",
+        "archive_file_count": 22,
+        "checked_at": "2026-10-19T16:40:48+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "2503.19856",
+      "path": "proof_ref/recent-accepted-2025-2026/capacity-constrained-online-learning-with-delays-scheduling-frameworks-2503.19856",
+      "resolved_id": "2503.19856v2",
+      "pdf_sha256": "cc6fd81926bdbba7dd297bf50d6dae59965418a88610294096411ca3fea7d7c0",
+      "source_sha256": "9604d6c9a8e92b359e6d694b3a730f89a27a7a7b8e909f31142d9450ffe6119b",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "9604d6c9a8e92b359e6d694b3a730f89a27a7a7b8e909f31142d9450ffe6119b",
+        "archive_file_count": 6,
+        "checked_at": "2026-10-19T16:40:48+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "2410.13577",
+      "path": "proof_ref/recent-accepted-2025-2026/generalization-bounds-via-meta-learned-model-representations-pac-2410.13577",
+      "resolved_id": "2410.13577v3",
+      "pdf_sha256": "7c4b5afb92b71b2eb4f7ed28756bcce19294f39c9b095b4da8101665aacb632f",
+      "source_sha256": "8b0ea492c4971e849e820a6b0a48c20213c2fc86bc96fb0285ecd3b1f51fd057",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "8b0ea492c4971e849e820a6b0a48c20213c2fc86bc96fb0285ecd3b1f51fd057",
+        "archive_file_count": 28,
+        "checked_at": "2026-10-19T16:40:48+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "2505.11298",
+      "path": "proof_ref/recent-accepted-2025-2026/graph-representational-learning-when-does-more-expressivity-hurt-2505.11298",
+      "resolved_id": "2505.11298v1",
+      "pdf_sha256": "faac47519ff875c0f92958331c74e19502c4ff228ad9a18f6356d118506cba99",
+      "source_sha256": "ebfeb89b1494b1ba675bde5e07f44b02cc075d811b028f6570c9fe4494eb5b74",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "ebfeb89b1494b1ba675bde5e07f44b02cc075d811b028f6570c9fe4494eb5b74",
+        "archive_file_count": 82,
+        "checked_at": "2026-10-19T16:40:48+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "2602.01338",
+      "path": "proof_ref/recent-accepted-2025-2026/high-accuracy-sampling-for-diffusion-models-and-log-2602.01338",
+      "resolved_id": "2602.01338v2",
+      "pdf_sha256": "3262376a641f1305f0734d52e44787307bb4fadd25a50bee4608dabcfab16f82",
+      "source_sha256": "4461cfd4938c5024e1c41f0096a020d60654c049eabe0dc4c9ece81ad2be3aa9",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "4461cfd4938c5024e1c41f0096a020d60654c049eabe0dc4c9ece81ad2be3aa9",
+        "archive_file_count": 22,
+        "checked_at": "2026-10-19T16:40:48+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "2309.16858",
+      "path": "proof_ref/recent-accepted-2025-2026/improved-generalization-bounds-for-transductive-learning-by-transductive-2309.16858",
+      "resolved_id": "2309.16858v5",
+      "pdf_sha256": "fb6a9e77a302462ee41f0c6cba3864a2d4091eaed64ca0aa0a042268b125a108",
+      "source_sha256": "00e044cb47324b05981f4faf4dc7b55f45934396387c147804ea0b0d357a8049",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "00e044cb47324b05981f4faf4dc7b55f45934396387c147804ea0b0d357a8049",
+        "archive_file_count": 13,
+        "checked_at": "2026-10-19T16:40:48+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "2602.00869",
+      "path": "proof_ref/recent-accepted-2025-2026/improving-flow-matching-by-aligning-flow-divergence-2602.00869",
+      "resolved_id": "2602.00869v1",
+      "pdf_sha256": "e54a1d133672fbe9d1b27f9ca01c33442657b825db44c30a8fd7a657329b89b9",
+      "source_sha256": "8a1addb588245602781ad8fd7b5de9ac32b47b5d9ae1f51a666129406564b77f",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "8a1addb588245602781ad8fd7b5de9ac32b47b5d9ae1f51a666129406564b77f",
+        "archive_file_count": 95,
+        "checked_at": "2026-10-19T16:40:49+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "2502.08136",
+      "path": "proof_ref/recent-accepted-2025-2026/in-context-learning-of-linear-dynamical-systems-with-2502.08136",
+      "resolved_id": "2502.08136v3",
+      "pdf_sha256": "4e9d1823c3a74e12e457b7554110801d522d3b4816a70e1d63d4918a25c13398",
+      "source_sha256": "9f2bb848091a6121f87810a0c124382f3a74bfb11449ae5e954c757ebcc11125",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "9f2bb848091a6121f87810a0c124382f3a74bfb11449ae5e954c757ebcc11125",
+        "archive_file_count": 7,
+        "checked_at": "2026-10-19T16:40:49+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "2502.14060",
+      "path": "proof_ref/recent-accepted-2025-2026/new-lower-bounds-for-stochastic-non-convex-optimization-2502.14060",
+      "resolved_id": "2502.14060v2",
+      "pdf_sha256": "f45f487eb04eef737a7995f5edab93798076c20cd573184b6a9d87bafcc2c7dd",
+      "source_sha256": "6b4465509b14ba4c794c84e1dad2b0481e53c4c5b20dd92ce47ef2480aeae52b",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "6b4465509b14ba4c794c84e1dad2b0481e53c4c5b20dd92ce47ef2480aeae52b",
+        "archive_file_count": 9,
+        "checked_at": "2026-10-19T16:40:49+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "2510.02779",
+      "path": "proof_ref/recent-accepted-2025-2026/optimal-rates-for-generalization-of-gradient-descent-for-2510.02779",
+      "resolved_id": "2510.02779v4",
+      "pdf_sha256": "e8eed299e872969ae0d32bde77a813171a2e25526b8af690a8435024037d9661",
+      "source_sha256": "8d51e7d81de2ca5f3aeb6bf3bf0b67e18038bc450456c704f6a0c5a75bfd2818",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "8d51e7d81de2ca5f3aeb6bf3bf0b67e18038bc450456c704f6a0c5a75bfd2818",
+        "archive_file_count": 6,
+        "checked_at": "2026-10-19T16:40:49+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "2405.15050",
+      "path": "proof_ref/recent-accepted-2025-2026/reinforcement-learning-for-infinite-horizon-average-reward-linear-2405.15050",
+      "resolved_id": "2405.15050v3",
+      "pdf_sha256": "2fc9c78f12d7975e4bdb8a50a5da71ae33734d7b8bb7b8278e8096fd52a07963",
+      "source_sha256": "d96adaaad8ef5337bb7b099f3e581038450af6bb6c206e410588cd75c8cce4f7",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "d96adaaad8ef5337bb7b099f3e581038450af6bb6c206e410588cd75c8cce4f7",
+        "archive_file_count": 4,
+        "checked_at": "2026-10-19T16:40:49+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "2510.24966",
+      "path": "proof_ref/recent-accepted-2025-2026/sequences-of-logits-reveal-the-low-rank-structure-2510.24966",
+      "resolved_id": "2510.24966v1",
+      "pdf_sha256": "c7b2c7c61bde391afedabfe5290fe81003f49746a842148613347fd4aa64d43d",
+      "source_sha256": "164b791e3ea4987743604f7db28dcd0fde8a846cbe1725507e1d3bb3389945fc",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "164b791e3ea4987743604f7db28dcd0fde8a846cbe1725507e1d3bb3389945fc",
+        "archive_file_count": 62,
+        "checked_at": "2026-10-19T16:40:49+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "2503.10537",
+      "path": "proof_ref/recent-accepted-2025-2026/structured-preconditioners-in-adaptive-optimization-a-unified-analysis-2503.10537",
+      "resolved_id": "2503.10537v2",
+      "pdf_sha256": "19143bdc57a6711dbb33b35fc1cf036025a031a71cb29787a3df5a219e81c09f",
+      "source_sha256": "94c5dfcfb8788a38d043b079eccdeba17c9253d80b8d60402185463bf1e862af",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "94c5dfcfb8788a38d043b079eccdeba17c9253d80b8d60402185463bf1e862af",
+        "archive_file_count": 30,
+        "checked_at": "2026-10-19T16:40:49+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "2310.09100",
+      "path": "proof_ref/recent-accepted-2025-2026/time-uniform-self-normalized-concentration-for-vector-valued-2310.09100",
+      "resolved_id": "2310.09100v2",
+      "pdf_sha256": "6a05a405b9a81650b439252ce11dfba397e93fbd2798d1cbbd74023dfd44fbda",
+      "source_sha256": "fb46a15eae05801661da291ccbe1cc7f59e10fb10f01615e42f234b3d9ee2a31",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "fb46a15eae05801661da291ccbe1cc7f59e10fb10f01615e42f234b3d9ee2a31",
+        "archive_file_count": 36,
+        "checked_at": "2026-10-19T16:40:49+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "2601.19791",
+      "path": "proof_ref/recent-accepted-2025-2026/to-grok-grokking-provable-grokking-in-ridge-regression-2601.19791",
+      "resolved_id": "2601.19791v4",
+      "pdf_sha256": "49124546cb1c153b3aef2355bee9bb4185a3c82f8f3a23a5e6d1fe4cbf148d08",
+      "source_sha256": "9579f56263149672b13e23706cf44c4f1b14c784ee3880642e88b281ec3e90a3",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "9579f56263149672b13e23706cf44c4f1b14c784ee3880642e88b281ec3e90a3",
+        "archive_file_count": 27,
+        "checked_at": "2026-10-19T16:40:49+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "2610.06238",
+      "path": "proof_ref/proof-distillation-2026-10/certification-enhanced-generalization-bounds-2610.06238",
+      "resolved_id": "2610.06238v1",
+      "pdf_sha256": "14b5d8b22b5f1d4d9177ac711aff61e3be79a376da4b5a53a9bfca630d84d3e2",
+      "source_sha256": "93aee1fcefe96ec544e0ec31640afafab84ad5a773f25b19fac328f7b764d08f",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "93aee1fcefe96ec544e0ec31640afafab84ad5a773f25b19fac328f7b764d08f",
+        "archive_file_count": 20,
+        "checked_at": "2026-10-19T16:40:49+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "2609.38918",
+      "path": "proof_ref/proof-distillation-2026-10/flow-matching-under-noisy-latent-structure-beyond-exact-2609.38918",
+      "resolved_id": "2609.38918v1",
+      "pdf_sha256": "e08d29fb9befb01997352cb9a724e9abfe684acf9c65b867166ac93343cb000e",
+      "source_sha256": "49996c22eac663e5ab391a06466fb3ca83f773ee03e8621cad9496c4ef116800",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "49996c22eac663e5ab391a06466fb3ca83f773ee03e8621cad9496c4ef116800",
+        "archive_file_count": 10,
+        "checked_at": "2026-10-19T16:40:49+00:00"
+      },
+      "status": "verified"
+    },
+    {
+      "arxiv_id": "2609.36568",
+      "path": "proof_ref/proof-distillation-2026-10/sharp-convergence-and-sampling-trade-offs-for-riemannian-2609.36568",
+      "resolved_id": "2609.36568v1",
+      "pdf_sha256": "828ba8fadf80950dd6e34bd019fdc5b64f456cbf02aeb620471ca331bb683aef",
+      "source_sha256": "2db608dbfd9352f0163763c9759a187ca25ab41c51fd425fee973a7e050ee6aa",
+      "extraction": {
+        "state": "verified-existing",
+        "bundle_sha256": "2db608dbfd9352f0163763c9759a187ca25ab41c51fd425fee973a7e050ee6aa",
+        "archive_file_count": 17,
+        "checked_at": "2026-10-19T16:40:49+00:00"
+      },
+      "status": "verified"
+    }
+  ]
+}

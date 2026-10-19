@@ -1,0 +1,50 @@
+{
+  "title": "Reinforcement Learning for Infinite-Horizon Average-Reward Linear MDPs via Approximation by Discounted-Reward MDPs",
+  "kind": "arxiv",
+  "identifier": "2405.15050",
+  "raw": "https://arxiv.org/abs/2405.15050",
+  "pdf_url": "https://arxiv.org/pdf/2405.15050.pdf",
+  "source_url": "https://export.arxiv.org/e-print/2405.15050",
+  "pdf_error": null,
+  "source_error": null,
+  "imported_from": {
+    "repository": "HaningZS/HaningZS_Notes",
+    "commit": "8ced9038b7611bcb8c2b2774fb870149df8ef780"
+  },
+  "edition_status": "pinned-cross-checked",
+  "artifacts": {
+    "pdf": {
+      "sha256": "2fc9c78f12d7975e4bdb8a50a5da71ae33734d7b8bb7b8278e8096fd52a07963",
+      "bytes": 348373
+    },
+    "source": {
+      "sha256": "d96adaaad8ef5337bb7b099f3e581038450af6bb6c206e410588cd75c8cce4f7",
+      "bytes": 39045
+    }
+  },
+  "topic": "rl-bandits",
+  "templates": [
+    "T06"
+  ],
+  "path": "proof_ref/recent-accepted-2025-2026/reinforcement-learning-for-infinite-horizon-average-reward-linear-2405.15050",
+  "last_checked_at": "2026-09-26T05:54:22+00:00",
+  "errors": {},
+  "authors": [
+    "Hong, Kihyuk",
+    "Chae, Woojin",
+    "Zhang, Yufan",
+    "Lee, Dabeen",
+    "Tewari, Ambuj"
+  ],
+  "published": "2024/05/23",
+  "resolved_id": "2405.15050v3",
+  "metadata_url": "https://arxiv.org/abs/2405.15050v3",
+  "metadata_checked_at": "2026-10-19T16:37:46+00:00",
+  "version_verification": {
+    "checked_at": "2026-10-19T16:37:49+00:00",
+    "pdf_marker": "2405.15050v3",
+    "source_url": "https://arxiv.org/src/2405.15050v3",
+    "method": "Unique arXiv version marker in local PDF pages 1-2; local PDF/source hashes match recorded metadata; exact hash match with newly downloaded official versioned source.",
+    "report": "reports/legacy_version_verification.json"
+  }
+}

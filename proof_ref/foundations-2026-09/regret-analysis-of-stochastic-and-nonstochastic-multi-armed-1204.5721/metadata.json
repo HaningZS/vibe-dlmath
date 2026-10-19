@@ -1,0 +1,35 @@
+{
+  "title": "Regret Analysis of Stochastic and Nonstochastic Multi-armed Bandit Problems",
+  "authors": [
+    "Bubeck, Sébastien",
+    "Cesa-Bianchi, Nicolò"
+  ],
+  "published": "2012/04/25",
+  "resolved_id": "1204.5721v2",
+  "metadata_url": "https://arxiv.org/abs/1204.5721v2",
+  "metadata_checked_at": "2026-09-26T05:41:17+00:00",
+  "download_urls": {
+    "source": "https://export.arxiv.org/e-print/1204.5721v2",
+    "pdf": "https://export.arxiv.org/pdf/1204.5721v2"
+  },
+  "artifacts": {
+    "source": {
+      "sha256": "b490265a10e4cf79d3c7c362238200a6cb24a1bd64aaec24eb9343d62bc7224b",
+      "bytes": 96031
+    },
+    "pdf": {
+      "sha256": "52e871fa30c9aaa2eb8292df169a681b89976e22db899563879225d5755e16a2",
+      "bytes": 891341
+    }
+  },
+  "identifier": "1204.5721",
+  "topic": "rl-bandits",
+  "templates": [
+    "T06",
+    "T08",
+    "T12"
+  ],
+  "path": "proof_ref/foundations-2026-09/regret-analysis-of-stochastic-and-nonstochastic-multi-armed-1204.5721",
+  "last_checked_at": "2026-09-26T05:54:20+00:00",
+  "errors": {}
+}

@@ -1,0 +1,47 @@
+{
+  "title": "High-accuracy sampling for diffusion models and log-concave distributions",
+  "kind": "arxiv",
+  "identifier": "2602.01338",
+  "raw": "https://arxiv.org/abs/2602.01338",
+  "pdf_url": "https://arxiv.org/pdf/2602.01338.pdf",
+  "source_url": "https://export.arxiv.org/e-print/2602.01338",
+  "pdf_error": null,
+  "source_error": null,
+  "imported_from": {
+    "repository": "HaningZS/HaningZS_Notes",
+    "commit": "8ced9038b7611bcb8c2b2774fb870149df8ef780"
+  },
+  "edition_status": "pinned-cross-checked",
+  "artifacts": {
+    "pdf": {
+      "sha256": "3262376a641f1305f0734d52e44787307bb4fadd25a50bee4608dabcfab16f82",
+      "bytes": 990985
+    },
+    "source": {
+      "sha256": "4461cfd4938c5024e1c41f0096a020d60654c049eabe0dc4c9ece81ad2be3aa9",
+      "bytes": 66332
+    }
+  },
+  "topic": "generative",
+  "templates": [],
+  "path": "proof_ref/recent-accepted-2025-2026/high-accuracy-sampling-for-diffusion-models-and-log-2602.01338",
+  "last_checked_at": "2026-09-26T05:54:22+00:00",
+  "errors": {},
+  "authors": [
+    "Chen, Fan",
+    "Chewi, Sinho",
+    "Daskalakis, Constantinos",
+    "Rakhlin, Alexander"
+  ],
+  "published": "2026/02/01",
+  "resolved_id": "2602.01338v2",
+  "metadata_url": "https://arxiv.org/abs/2602.01338v2",
+  "metadata_checked_at": "2026-10-19T16:37:08+00:00",
+  "version_verification": {
+    "checked_at": "2026-10-19T16:37:12+00:00",
+    "pdf_marker": "2602.01338v2",
+    "source_url": "https://arxiv.org/src/2602.01338v2",
+    "method": "Unique arXiv version marker in local PDF pages 1-2; local PDF/source hashes match recorded metadata; exact hash match with newly downloaded official versioned source.",
+    "report": "reports/legacy_version_verification.json"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "identifier": "2011.13456",
+  "title": "Score-Based Generative Modeling through Stochastic Differential Equations",
+  "topic": "generative",
+  "templates": [
+    "T13"
+  ],
+  "path": "proof_ref/foundations-2026-09/score-based-generative-modeling-through-stochastic-differential-equations-2011.13456",
+  "last_checked_at": "2026-09-26T05:54:21+00:00",
+  "errors": {},
+  "authors": [
+    "Song, Yang",
+    "Sohl-Dickstein, Jascha",
+    "Kingma, Diederik P.",
+    "Kumar, Abhishek",
+    "Ermon, Stefano",
+    "Poole, Ben"
+  ],
+  "published": "2020/11/26",
+  "resolved_id": "2011.13456v2",
+  "metadata_url": "https://arxiv.org/abs/2011.13456v2",
+  "metadata_checked_at": "2026-09-26T05:51:32+00:00",
+  "download_urls": {
+    "pdf": "https://arxiv.org/pdf/2011.13456v2",
+    "source": "https://arxiv.org/src/2011.13456v2"
+  },
+  "artifacts": {
+    "pdf": {
+      "sha256": "b244b740e60628d01bc3d4b98d721c2343be1fb9b67ad22593c8555e66f4d4a6",
+      "bytes": 26918820
+    },
+    "source": {
+      "sha256": "2f699f06ee25d923206ee4fd3632e2188bb592db737460df6f51e95183547022",
+      "bytes": 58213481
+    }
+  }
+}

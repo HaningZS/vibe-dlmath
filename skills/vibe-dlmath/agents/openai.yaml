@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vibe DLMath"
+  short_description: "蒸馏经典与前沿证明，逐条核对假设、量词、来源证据和未闭合义务"
+  default_prompt: "使用 $vibe-dlmath 完成或审查我的数学证明：先保留原命题，再逐条推导，并明确每个结论的证据与未闭合义务。"

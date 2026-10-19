@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "description": "DL 专项理论补全：二阶优化、Barron 逼近、结构表达力、鲁棒认证、隐私与联邦优化。",
+  "papers": [
+    {"arxiv_id":"1703.00887","title":"How to Escape Saddle Points Efficiently","topic":"optimization","templates":["T40"],"why":"区分二阶驻点、负曲率下降和仅使用一阶 oracle 的扰动 GD 复杂度。"},
+    {"arxiv_id":"1906.08039","title":"The Barron Space and the Flow-induced Function Spaces for Neural Network Models","topic":"approximation","templates":["T41","T34"],"why":"理解函数空间与表示范数如何控制高维网络逼近；检查维度藏在什么常数中。"},
+    {"arxiv_id":"1602.07576","title":"Group Equivariant Convolutional Networks","topic":"architecture","templates":["T43"],"why":"把参数共享、群作用和等变性写成可验证的架构恒等式。"},
+    {"arxiv_id":"1810.00826","title":"How Powerful are Graph Neural Networks?","topic":"architecture","templates":["T44","T20B"],"review_status":"core-claim-checked","why":"通过 1-WL 与邻域多重集理解消息传递 GNN 的表达力上界和失败实例；核验范围见论文核验笔记。"},
+    {"arxiv_id":"1902.02918","title":"Certified Adversarial Robustness via Randomized Smoothing","topic":"robustness","templates":["T45"],"review_status":"core-claim-checked","why":"从高斯分布平移和类别概率界推导可认证的 L2 扰动半径；核验范围见论文核验笔记。"},
+    {"arxiv_id":"1702.07476","title":"Renyi Differential Privacy","topic":"privacy","templates":["T46"],"review_status":"core-claim-checked","why":"核对 Gaussian 机制的 Rényi 散度、条件组合和隐私损失尾界；核验范围见论文核验笔记。"},
+    {"arxiv_id":"1607.00133","title":"Deep Learning with Differential Privacy","topic":"privacy","templates":["T46","T16"],"why":"理解 per-example clipping、噪声与采样机制在 DP-SGD 中分别承担的角色。"},
+    {"arxiv_id":"1805.09767","title":"Local SGD Converges Fast and Communicates Little","topic":"distributed-optimization","templates":["T47","T02"],"why":"分开计算步、通信轮和本地漂移，避免把集中式 SGD 定理直接用于 local SGD。"},
+    {"arxiv_id":"1910.06378","title":"SCAFFOLD: Stochastic Controlled Averaging for Federated Learning","topic":"distributed-optimization","templates":["T47","T03"],"why":"理解异质客户端的 drift 及 control variate 如何改变误差递推。"}
+  ]
+}

@@ -1,0 +1,1656 @@
+{
+  "schema_version": 1,
+  "refined": "2026-10-20",
+  "topics": {
+    "optimization": "优化与随机估计",
+    "generalization": "泛化与信息论",
+    "sequential-decision": "在线决策与策略几何",
+    "statistics": "统计估计与覆盖",
+    "deep-learning": "神经网络、表示与训练机制",
+    "generation-transport": "生成模型与分布输运",
+    "lower-bounds-expressivity": "信息下界与表达能力",
+    "evaluation-monitoring": "评价、校准与在线监测"
+  },
+  "templates": [
+    {
+      "id": "T01",
+      "topic": "optimization",
+      "kind": "proof-template",
+      "summary": "把单步目标下降累积成平均梯度平方界。",
+      "keywords": [
+        "SGD",
+        "descent",
+        "stationarity",
+        "无偏",
+        "随机梯度",
+        "收敛",
+        "梯度范数"
+      ],
+      "related": [
+        "T02",
+        "T03",
+        "T15",
+        "T16",
+        "T40",
+        "T47"
+      ],
+      "primitives": [
+        "P01",
+        "P02"
+      ],
+      "sources": [
+        "1405.4980",
+        "1606.04838"
+      ],
+      "title": "Descent lemma + telescoping",
+      "path": "proofs/optimization/T01-descent.md",
+      "status": "refined",
+      "legacy_anchor": "t01-descent-lemma--telescoping",
+      "legacy_blocks": [
+        "t01-sgd-bound"
+      ]
+    },
+    {
+      "id": "T02",
+      "topic": "optimization",
+      "kind": "proof-template",
+      "summary": "给辅助状态误差记账，让联合势函数下降。",
+      "keywords": [
+        "Lyapunov",
+        "momentum",
+        "Adam",
+        "EMA",
+        "error feedback",
+        "动量",
+        "势函数",
+        "状态误差"
+      ],
+      "related": [
+        "T01",
+        "T03",
+        "T16",
+        "T47"
+      ],
+      "primitives": [
+        "P02",
+        "P07"
+      ],
+      "sources": [
+        "2605.31594",
+        "2503.10537"
+      ],
+      "title": "Lyapunov / potential function",
+      "path": "proofs/optimization/T02-lyapunov.md",
+      "status": "needs-instantiation",
+      "legacy_anchor": "t02-lyapunov--potential-function",
+      "legacy_blocks": []
+    },
+    {
+      "id": "T03",
+      "topic": "optimization",
+      "kind": "proof-template",
+      "summary": "用同一随机样本的梯度差，把估计误差绑定到移动路径。",
+      "keywords": [
+        "SPIDER",
+        "SARAH",
+        "SVRG",
+        "variance reduction",
+        "方差缩减",
+        "mini-batch",
+        "估计误差"
+      ],
+      "related": [
+        "T01",
+        "T02",
+        "T47"
+      ],
+      "primitives": [
+        "P02",
+        "P04"
+      ],
+      "sources": [
+        "1807.01695",
+        "1202.6258"
+      ],
+      "title": "Variance reduction estimator recursion",
+      "path": "proofs/optimization/T03-variance-reduction.md",
+      "status": "refined",
+      "legacy_anchor": "t03-variance-reduction-estimator-recursion",
+      "legacy_blocks": [
+        "t03-vr-recursion"
+      ]
+    },
+    {
+      "id": "T04",
+      "topic": "generalization",
+      "kind": "proof-template",
+      "summary": "耦合相邻训练集的算法轨迹，控制期望泛化差。",
+      "keywords": [
+        "stability",
+        "replace-one",
+        "generalization",
+        "leave-one-out",
+        "稳定性",
+        "泛化",
+        "early stopping"
+      ],
+      "related": [
+        "T05",
+        "T01",
+        "T50"
+      ],
+      "primitives": [
+        "P01",
+        "P07",
+        "P09"
+      ],
+      "sources": [
+        "1509.01240"
+      ],
+      "title": "Algorithmic stability / leave-one-out generalization",
+      "path": "proofs/generalization/T04-stability.md",
+      "status": "bounded-scope",
+      "legacy_anchor": "t04-algorithmic-stability--leave-one-out-generalization",
+      "legacy_blocks": []
+    },
+    {
+      "id": "T05",
+      "topic": "generalization",
+      "kind": "proof-template",
+      "summary": "分开使用 PAC-Bayes 高概率界和互信息期望界。",
+      "keywords": [
+        "PAC-Bayes",
+        "mutual information",
+        "互信息",
+        "期望界",
+        "高概率界",
+        "信息论",
+        "KL",
+        "Gibbs",
+        "高概率泛化",
+        "期望泛化",
+        "先验",
+        "posterior"
+      ],
+      "related": [
+        "T04",
+        "T12",
+        "T46"
+      ],
+      "primitives": [
+        "P01",
+        "P05",
+        "P09"
+      ],
+      "sources": [
+        "2110.11216",
+        "1705.07809",
+        "2410.13577"
+      ],
+      "title": "PAC-Bayes / information-theoretic generalization",
+      "path": "proofs/generalization/T05-pac-bayes-information.md",
+      "status": "refined + claim-checked",
+      "legacy_anchor": "t05-pac-bayes--information-theoretic-generalization",
+      "legacy_blocks": [
+        "t05-pac-bayes-kl",
+        "t05-mi-bound"
+      ]
+    },
+    {
+      "id": "T06",
+      "topic": "sequential-decision",
+      "kind": "proof-template",
+      "summary": "用置信椭球、optimism 与 elliptical potential 控制 pseudo-regret。",
+      "keywords": [
+        "linear bandit",
+        "UCB",
+        "optimism",
+        "self-normalized",
+        "regret",
+        "置信椭球",
+        "探索"
+      ],
+      "related": [
+        "T07",
+        "T08",
+        "T12"
+      ],
+      "primitives": [
+        "P03",
+        "P04",
+        "P08"
+      ],
+      "sources": [
+        "1102.2670",
+        "1204.5721",
+        "2310.09100"
+      ],
+      "title": "Optimism + self-normalized concentration + elliptical potential",
+      "path": "proofs/sequential-decision/T06-linear-bandit.md",
+      "status": "refined + claim-checked",
+      "legacy_anchor": "t06-optimism--self-normalized-concentration--elliptical-potential",
+      "legacy_blocks": [
+        "t06-linear-bandit-confidence"
+      ]
+    },
+    {
+      "id": "T07",
+      "topic": "sequential-decision",
+      "kind": "proof-template",
+      "summary": "在正确策略的 occupancy 下展开 Bellman 价值误差。",
+      "keywords": [
+        "Bellman",
+        "offline RL",
+        "pessimism",
+        "occupancy",
+        "value",
+        "离线强化学习",
+        "策略价值"
+      ],
+      "related": [
+        "T06",
+        "T08",
+        "T11"
+      ],
+      "primitives": [
+        "P02",
+        "P03",
+        "P04"
+      ],
+      "sources": [
+        "1907.05388",
+        "2012.15085",
+        "1502.05477"
+      ],
+      "title": "Bellman telescoping: online optimism and offline pessimism",
+      "path": "proofs/sequential-decision/T07-bellman.md",
+      "status": "refined + claim-checked",
+      "legacy_anchor": "t07-bellman-telescoping-online-optimism-and-offline-pessimism",
+      "legacy_blocks": []
+    },
+    {
+      "id": "T08",
+      "topic": "sequential-decision",
+      "kind": "proof-template",
+      "summary": "用三点恒等式与 Bregman 几何分析在线/策略更新。",
+      "keywords": [
+        "mirror descent",
+        "Bregman",
+        "KL policy",
+        "DPO",
+        "RLHF",
+        "OCO",
+        "镜像下降",
+        "策略更新"
+      ],
+      "related": [
+        "T05",
+        "T07"
+      ],
+      "primitives": [
+        "P02",
+        "P06"
+      ],
+      "sources": [
+        "1405.4980",
+        "2305.18290",
+        "2312.11456"
+      ],
+      "title": "Mirror descent / Bregman / KL geometry",
+      "path": "proofs/sequential-decision/T08-mirror-descent.md",
+      "status": "refined + claim-checked",
+      "legacy_anchor": "t08-mirror-descent--bregman--kl-geometry",
+      "legacy_blocks": [
+        "t08-omd-bound"
+      ]
+    },
+    {
+      "id": "T09",
+      "topic": "deep-learning",
+      "kind": "proof-template",
+      "summary": "闭合初始谱、核稳定、下降与参数移动的联合归纳。",
+      "keywords": [
+        "NTK",
+        "overparameterization",
+        "Gram",
+        "lazy training",
+        "过参数化",
+        "核稳定",
+        "宽网络"
+      ],
+      "related": [
+        "T02",
+        "T10",
+        "T14",
+        "T42"
+      ],
+      "primitives": [
+        "P02",
+        "P07",
+        "P08"
+      ],
+      "sources": [
+        "1806.07572",
+        "1902.06720",
+        "1812.07956"
+      ],
+      "title": "NTK / overparameterization induction",
+      "path": "proofs/deep-learning/T09-ntk.md",
+      "status": "bounded-scope",
+      "legacy_anchor": "t09-ntk--overparameterization-induction",
+      "legacy_blocks": []
+    },
+    {
+      "id": "T10",
+      "topic": "deep-learning",
+      "kind": "proof-template",
+      "summary": "分开控制极限动力学优化误差与有限粒子近似误差。",
+      "keywords": [
+        "mean field",
+        "propagation of chaos",
+        "feature learning",
+        "平均场",
+        "粒子",
+        "PDE"
+      ],
+      "related": [
+        "T09",
+        "T13",
+        "T19",
+        "T42"
+      ],
+      "primitives": [
+        "P01",
+        "P07"
+      ],
+      "sources": [
+        "1804.06561"
+      ],
+      "title": "Mean-field / propagation of chaos",
+      "path": "proofs/deep-learning/T10-mean-field.md",
+      "status": "bounded-scope",
+      "legacy_anchor": "t10-mean-field--propagation-of-chaos",
+      "legacy_blocks": []
+    },
+    {
+      "id": "T11",
+      "topic": "statistics",
+      "kind": "proof-template",
+      "summary": "用残差校正把 nuisance 的一阶误差变成乘积余项。",
+      "keywords": [
+        "doubly robust",
+        "DR",
+        "cross-fitting",
+        "orthogonal",
+        "OPE",
+        "双重稳健",
+        "因果",
+        "nuisance"
+      ],
+      "related": [
+        "T07",
+        "T18",
+        "T48"
+      ],
+      "primitives": [
+        "P01",
+        "P04",
+        "P09"
+      ],
+      "sources": [
+        "1511.03722",
+        "1608.00060"
+      ],
+      "title": "Doubly robust / orthogonal decomposition",
+      "path": "proofs/statistics/T11-doubly-robust.md",
+      "status": "refined-contextual",
+      "legacy_anchor": "t11-doubly-robust--orthogonal-decomposition",
+      "legacy_blocks": [
+        "t11-contextual-dr"
+      ]
+    },
+    {
+      "id": "T12",
+      "topic": "lower-bounds-expressivity",
+      "kind": "proof-template",
+      "summary": "由困难实例的不可区分性推出指定算法类的风险下界。",
+      "keywords": [
+        "Fano",
+        "Le Cam",
+        "Assouad",
+        "Yao",
+        "minimax",
+        "lower bound",
+        "下界",
+        "packing"
+      ],
+      "related": [
+        "T06",
+        "T20B"
+      ],
+      "primitives": [
+        "P05",
+        "P10"
+      ],
+      "sources": [
+        "1901.00555",
+        "1912.02365",
+        "2410.05117"
+      ],
+      "title": "Fano / Le Cam / Assouad / interactive lower bound",
+      "path": "proofs/lower-bounds-expressivity/T12-information-lower-bounds.md",
+      "status": "refined + claim-checked",
+      "legacy_anchor": "t12-fano--le-cam--assouad--interactive-lower-bound",
+      "legacy_blocks": [
+        "t12-interactive-kl"
+      ]
+    },
+    {
+      "id": "T13",
+      "topic": "generation-transport",
+      "kind": "proof-template",
+      "summary": "在同一度量中组合连续过程、学习与离散采样误差。",
+      "keywords": [
+        "diffusion",
+        "score",
+        "sampler",
+        "SDE",
+        "ODE",
+        "Girsanov",
+        "采样误差",
+        "扩散",
+        "Flow Matching"
+      ],
+      "related": [
+        "T10",
+        "T19",
+        "T51"
+      ],
+      "primitives": [
+        "P05",
+        "P07"
+      ],
+      "sources": [
+        "2011.13456",
+        "2209.11215",
+        "2210.02747",
+        "2409.18959"
+      ],
+      "title": "Diffusion sampler error decomposition in one chosen metric",
+      "path": "proofs/generation-transport/T13-sampler-error.md",
+      "status": "refined + claim-checked",
+      "legacy_anchor": "t13-diffusion-sampler-error-decomposition-in-one-chosen-metric",
+      "legacy_blocks": []
+    },
+    {
+      "id": "T14",
+      "topic": "deep-learning",
+      "kind": "proof-template",
+      "summary": "通过逐层构造与稳定性说明受限网络能模拟哪个算法。",
+      "keywords": [
+        "Transformer",
+        "ICL",
+        "algorithm simulation",
+        "in-context",
+        "construction",
+        "算法模拟",
+        "表达能力",
+        "learnability"
+      ],
+      "related": [
+        "T09",
+        "T20A",
+        "T20B",
+        "T43"
+      ],
+      "primitives": [
+        "P01",
+        "P02",
+        "P07"
+      ],
+      "sources": [
+        "2212.07677",
+        "2211.15661",
+        "2111.02080",
+        "2502.08136"
+      ],
+      "title": "Transformer algorithm simulation: construction, learnability, and dynamics are separate claims",
+      "path": "proofs/deep-learning/T14-algorithm-simulation.md",
+      "status": "bounded-scope + claim-checked",
+      "legacy_anchor": "t14-transformer-algorithm-simulation-construction-learnability-and-dynamics-are-separate-claims",
+      "legacy_blocks": []
+    },
+    {
+      "id": "T15",
+      "topic": "optimization",
+      "kind": "proof-template",
+      "summary": "曲率随梯度变化时，先证明局部下降和轨迹闭合。",
+      "keywords": [
+        "generalized smoothness",
+        "L0 L1",
+        "localization",
+        "广义光滑",
+        "局部曲率",
+        "stopping time"
+      ],
+      "related": [
+        "T01",
+        "T02",
+        "T16"
+      ],
+      "primitives": [
+        "P02",
+        "P07"
+      ],
+      "sources": [
+        "2303.02854"
+      ],
+      "title": "Generalized smoothness / unbounded smoothness",
+      "path": "proofs/optimization/T15-generalized-smoothness.md",
+      "status": "refined + claim-checked",
+      "legacy_anchor": "t15-generalized-smoothness--unbounded-smoothness",
+      "legacy_blocks": [
+        "t15-localization"
+      ]
+    },
+    {
+      "id": "T16",
+      "topic": "optimization",
+      "kind": "proof-template",
+      "summary": "把裁剪梯度分成 centered martingale 与 clipping bias。",
+      "keywords": [
+        "heavy tail",
+        "clipped SGD",
+        "clipping",
+        "martingale",
+        "重尾",
+        "裁剪",
+        "高概率",
+        "Freedman"
+      ],
+      "related": [
+        "T01",
+        "T02",
+        "T15",
+        "T46"
+      ],
+      "primitives": [
+        "P03",
+        "P04",
+        "P07"
+      ],
+      "sources": [
+        "2406.04443"
+      ],
+      "title": "Heavy-tailed noise + clipping high-probability proof",
+      "path": "proofs/optimization/T16-heavy-tail-clipping.md",
+      "status": "refined + claim-checked",
+      "legacy_anchor": "t16-heavy-tailed-noise--clipping-high-probability-proof",
+      "legacy_blocks": [
+        "t16-clipping-decomposition"
+      ]
+    },
+    {
+      "id": "T17",
+      "topic": "evaluation-monitoring",
+      "kind": "method-card",
+      "summary": "将 calibration 连接到特定在线问题的成本分解。",
+      "keywords": [
+        "calibration",
+        "algorithms with predictions",
+        "consistency robustness",
+        "校准",
+        "置信度",
+        "在线建议"
+      ],
+      "related": [
+        "T22",
+        "T23",
+        "T18"
+      ],
+      "primitives": [
+        "P01",
+        "P03"
+      ],
+      "sources": [
+        "2502.02861"
+      ],
+      "title": "Calibrated predictions in algorithms-with-predictions: problem-specific design pattern",
+      "path": "proofs/evaluation-monitoring/T17-calibrated-predictions.md",
+      "status": "method-card-only",
+      "legacy_anchor": "t17-calibrated-predictions-in-algorithms-with-predictions-problem-specific-design-pattern",
+      "legacy_blocks": []
+    },
+    {
+      "id": "T18",
+      "topic": "statistics",
+      "kind": "proof-template",
+      "summary": "用交换性和名次对称性证明边际覆盖。",
+      "keywords": [
+        "conformal",
+        "coverage",
+        "prediction set",
+        "exchangeability",
+        "覆盖",
+        "校准集",
+        "risk control"
+      ],
+      "related": [
+        "T11",
+        "T23",
+        "T45"
+      ],
+      "primitives": [
+        "P01",
+        "P03"
+      ],
+      "sources": [
+        "2107.07511",
+        "2208.02814",
+        "1604.04173"
+      ],
+      "title": "Split conformal marginal coverage; risk control is a separate extension",
+      "path": "proofs/statistics/T18-split-conformal.md",
+      "status": "refined + claim-checked",
+      "legacy_anchor": "t18-split-conformal-marginal-coverage-risk-control-is-a-separate-extension",
+      "legacy_blocks": []
+    },
+    {
+      "id": "T19",
+      "topic": "generation-transport",
+      "kind": "proof-template",
+      "summary": "先指定 joint/label 条件，再把 transport cost 连接到风险差。",
+      "keywords": [
+        "optimal transport",
+        "Wasserstein",
+        "domain adaptation",
+        "partial OT",
+        "分布漂移",
+        "标签漂移",
+        "风险迁移"
+      ],
+      "related": [
+        "T13",
+        "T05",
+        "T48",
+        "T51"
+      ],
+      "primitives": [
+        "P05",
+        "P06"
+      ],
+      "sources": [
+        "1803.00567",
+        "1306.0895"
+      ],
+      "title": "OT domain-adaptation bounds require joint/label assumptions",
+      "path": "proofs/generation-transport/T19-transport-risk.md",
+      "status": "bounded-scope",
+      "legacy_anchor": "t19-ot-domain-adaptation-bounds-require-jointlabel-assumptions",
+      "legacy_blocks": []
+    },
+    {
+      "id": "T20",
+      "topic": "lower-bounds-expressivity",
+      "kind": "router",
+      "summary": "将构造性上界与能力下界路由到两个独立模板。",
+      "keywords": [
+        "formal language",
+        "circuit complexity",
+        "expressivity",
+        "finite precision",
+        "表达能力",
+        "形式语言",
+        "复杂度"
+      ],
+      "related": [
+        "T20A",
+        "T20B",
+        "T14",
+        "T12"
+      ],
+      "primitives": [
+        "P01",
+        "P10"
+      ],
+      "sources": [
+        "2502.06768"
+      ],
+      "title": "Formal language / circuit complexity for reasoning models",
+      "path": "proofs/lower-bounds-expressivity/T20-expressivity-router.md",
+      "status": "split-router",
+      "legacy_anchor": "t20-formal-language--circuit-complexity-for-reasoning-models",
+      "legacy_blocks": []
+    },
+    {
+      "id": "T20A",
+      "title": "Constructive simulation upper bounds",
+      "topic": "lower-bounds-expressivity",
+      "kind": "proof-template",
+      "summary": "显式构造满足资源约束的模型，并证明逐步模拟和组合误差。",
+      "keywords": [
+        "constructive",
+        "simulation",
+        "expressivity upper bound",
+        "构造",
+        "能力上界",
+        "电路模拟",
+        "存在性"
+      ],
+      "related": [
+        "T20",
+        "T20B",
+        "T14"
+      ],
+      "primitives": [
+        "P01",
+        "P02",
+        "P07"
+      ],
+      "sources": [],
+      "path": "proofs/lower-bounds-expressivity/T20A-constructive-simulation.md",
+      "status": "bounded-scope",
+      "legacy_anchor": null,
+      "legacy_blocks": []
+    },
+    {
+      "id": "T20B",
+      "title": "Expressivity limitations and computational lower bounds",
+      "topic": "lower-bounds-expressivity",
+      "kind": "proof-template",
+      "summary": "覆盖全部允许模型，用资源限制或归约证明能力下界。",
+      "keywords": [
+        "expressivity lower bound",
+        "circuit",
+        "impossibility",
+        "parity",
+        "表达下界",
+        "不可能",
+        "复杂度",
+        "能力限制"
+      ],
+      "related": [
+        "T20",
+        "T20A",
+        "T12",
+        "T44"
+      ],
+      "primitives": [
+        "P01",
+        "P10"
+      ],
+      "sources": [],
+      "path": "proofs/lower-bounds-expressivity/T20B-expressivity-lower-bound.md",
+      "status": "bounded-scope",
+      "legacy_anchor": null,
+      "legacy_blocks": []
+    },
+    {
+      "id": "T21",
+      "topic": "evaluation-monitoring",
+      "kind": "proof-template",
+      "summary": "结合预测先验与当前 likelihood，区分静态和动态状态证据累积。",
+      "keywords": [
+        "HMM",
+        "Bayesian filtering",
+        "log odds",
+        "evidence accumulation",
+        "贝叶斯过滤",
+        "后验",
+        "时序证据"
+      ],
+      "related": [
+        "T23",
+        "T22"
+      ],
+      "primitives": [
+        "P01",
+        "P02"
+      ],
+      "sources": [],
+      "title": "Bayesian filtering / log-odds evidence accumulation",
+      "path": "proofs/evaluation-monitoring/T21-bayesian-filtering.md",
+      "status": "refined-algebra",
+      "legacy_anchor": "t21-bayesian-filtering--log-odds-evidence-accumulation",
+      "legacy_blocks": [
+        "t21-filtering-odds"
+      ]
+    },
+    {
+      "id": "T22",
+      "topic": "evaluation-monitoring",
+      "kind": "proof-template",
+      "summary": "分开证明 AUROC 排序不变性与 Brier proper-scoring 分解。",
+      "keywords": [
+        "AUROC",
+        "Brier",
+        "proper scoring",
+        "ranking",
+        "概率校准",
+        "排序",
+        "评价指标"
+      ],
+      "related": [
+        "T17",
+        "T24",
+        "T49"
+      ],
+      "primitives": [
+        "P01"
+      ],
+      "sources": [],
+      "title": "Metric algebra: AUROC vs Brier / proper scoring",
+      "path": "proofs/evaluation-monitoring/T22-ranking-proper-scoring.md",
+      "status": "refined-algebra",
+      "legacy_anchor": "t22-metric-algebra-auroc-vs-brier--proper-scoring",
+      "legacy_blocks": [
+        "t22-brier-proper"
+      ]
+    },
+    {
+      "id": "T23",
+      "topic": "evaluation-monitoring",
+      "kind": "proof-template",
+      "summary": "从信息依赖图证明适应性和停止时间性质。",
+      "keywords": [
+        "prefix safety",
+        "adaptedness",
+        "filtration",
+        "leakage",
+        "stopping time",
+        "未来泄漏",
+        "在线监控",
+        "可测性"
+      ],
+      "related": [
+        "T21",
+        "T18",
+        "T16"
+      ],
+      "primitives": [
+        "P01",
+        "P02",
+        "P04"
+      ],
+      "sources": [
+        "1808.03204",
+        "1810.08240"
+      ],
+      "title": "Prefix-safety / adaptedness / filtration measurability",
+      "path": "proofs/evaluation-monitoring/T23-prefix-safety.md",
+      "status": "refined-lemma",
+      "legacy_anchor": "t23-prefix-safety--adaptedness--filtration-measurability",
+      "legacy_blocks": [
+        "t23-adaptedness"
+      ]
+    },
+    {
+      "id": "T24",
+      "topic": "evaluation-monitoring",
+      "kind": "project-tool",
+      "summary": "记录方法超过多种 baseline 的经验数值关系。",
+      "keywords": [
+        "audit baseline",
+        "max baseline",
+        "baseline gap",
+        "significance",
+        "基线",
+        "显著性",
+        "消融",
+        "经验差值"
+      ],
+      "related": [
+        "T22",
+        "T23"
+      ],
+      "primitives": [
+        "P01"
+      ],
+      "sources": [],
+      "title": "Project-specific empirical max-baseline algebra (not a significance proof)",
+      "path": "proofs/evaluation-monitoring/T24-baseline-gap.md",
+      "status": "project-tool",
+      "legacy_anchor": "t24-project-specific-empirical-max-baseline-algebra-not-a-significance-proof",
+      "legacy_blocks": []
+    },
+    {
+      "id": "T25",
+      "topic": "generation-transport",
+      "kind": "method-card",
+      "summary": "复现单篇 feature-localization 论文的模型与假设。",
+      "keywords": [
+        "feature localization",
+        "stochastic localization",
+        "critical window",
+        "sudden shift",
+        "特征定位",
+        "临界窗口",
+        "突变"
+      ],
+      "related": [
+        "T13",
+        "T10",
+        "T21"
+      ],
+      "primitives": [
+        "P01",
+        "P07"
+      ],
+      "sources": [
+        "2502.00921"
+      ],
+      "title": "Feature localization paper method card; not a universal localization theorem",
+      "path": "proofs/generation-transport/T25-feature-localization-card.md",
+      "status": "method-card-only",
+      "legacy_anchor": "t25-feature-localization-paper-method-card-not-a-universal-localization-theorem",
+      "legacy_blocks": []
+    },
+    {
+      "id": "T32",
+      "topic": "generalization",
+      "kind": "proof-template",
+      "summary": "把总体 excess risk 拆成逼近、统计估计与经验优化误差。",
+      "keywords": [
+        "excess risk",
+        "risk decomposition",
+        "approximation estimation optimization",
+        "风险分解",
+        "测试风险",
+        "Bayes",
+        "Bayes risk",
+        "梯度趋零",
+        "小梯度",
+        "学习保证",
+        "逼近误差",
+        "估计误差",
+        "优化误差",
+        "训练误差",
+        "测试误差"
+      ],
+      "related": [
+        "T01",
+        "T04",
+        "T05",
+        "T33",
+        "T34",
+        "T35",
+        "T38",
+        "T40",
+        "T41",
+        "T42",
+        "T49",
+        "T51"
+      ],
+      "primitives": [
+        "P01",
+        "P09"
+      ],
+      "sources": [
+        "2105.04026"
+      ],
+      "title": "Approximation–estimation–optimization decomposition",
+      "path": "proofs/generalization/T32-excess-risk-decomposition.md",
+      "status": "self-contained-core",
+      "legacy_anchor": null,
+      "legacy_blocks": []
+    },
+    {
+      "id": "T33",
+      "topic": "generalization",
+      "kind": "proof-template",
+      "summary": "从固定函数类、ghost sample 和随机符号推出统一泛化界。",
+      "keywords": [
+        "uniform convergence",
+        "Rademacher",
+        "covering number",
+        "contraction",
+        "一致收敛",
+        "经验过程",
+        "函数类",
+        "覆盖数",
+        "统计复杂度"
+      ],
+      "related": [
+        "T32",
+        "T35",
+        "T38",
+        "T04",
+        "T05",
+        "T41",
+        "T43",
+        "T44",
+        "T49",
+        "T50",
+        "T51"
+      ],
+      "primitives": [
+        "P04",
+        "P09"
+      ],
+      "sources": [
+        "2105.04026",
+        "1706.08498"
+      ],
+      "title": "Uniform convergence, Rademacher complexity and covering",
+      "path": "proofs/generalization/T33-uniform-convergence.md",
+      "status": "self-contained-core",
+      "legacy_anchor": null,
+      "legacy_blocks": []
+    },
+    {
+      "id": "T34",
+      "topic": "deep-learning",
+      "kind": "proof-template",
+      "summary": "把网络存在性变成指定函数类、误差范数与资源的定量逼近。",
+      "keywords": [
+        "universal approximation",
+        "ReLU",
+        "approximation",
+        "Sobolev",
+        "Barron",
+        "逼近",
+        "万能逼近",
+        "表达能力",
+        "深度分离"
+      ],
+      "related": [
+        "T32",
+        "T09",
+        "T20A",
+        "T38",
+        "T41"
+      ],
+      "primitives": [
+        "P01",
+        "P02"
+      ],
+      "sources": [
+        "1610.01145",
+        "2105.04026"
+      ],
+      "title": "Quantitative neural-network approximation",
+      "path": "proofs/deep-learning/T34-neural-approximation.md",
+      "status": "self-contained-core",
+      "legacy_anchor": null,
+      "legacy_blocks": []
+    },
+    {
+      "id": "T35",
+      "topic": "generalization",
+      "kind": "proof-template",
+      "summary": "用 normalized margin 与函数复杂度连接经验分类和总体风险。",
+      "keywords": [
+        "margin",
+        "spectral norm",
+        "norm bound",
+        "normalized margin",
+        "间隔",
+        "谱范数",
+        "归一化",
+        "范数泛化"
+      ],
+      "related": [
+        "T33",
+        "T32",
+        "T36",
+        "T45"
+      ],
+      "primitives": [
+        "P04",
+        "P09"
+      ],
+      "sources": [
+        "1706.08498"
+      ],
+      "title": "Margin and norm-based generalization",
+      "path": "proofs/generalization/T35-margin-norm.md",
+      "status": "self-contained-core",
+      "legacy_anchor": null,
+      "legacy_blocks": []
+    },
+    {
+      "id": "T36",
+      "topic": "deep-learning",
+      "kind": "proof-template",
+      "summary": "区分 loss、参数与方向收敛，核对优化器的隐式偏置。",
+      "keywords": [
+        "implicit bias",
+        "directional convergence",
+        "max margin",
+        "logistic",
+        "隐式偏置",
+        "方向收敛",
+        "权重发散",
+        "参数收敛"
+      ],
+      "related": [
+        "T01",
+        "T09",
+        "T35",
+        "T32",
+        "T42"
+      ],
+      "primitives": [
+        "P01",
+        "P02"
+      ],
+      "sources": [
+        "1710.10345",
+        "2105.04026"
+      ],
+      "title": "Implicit bias and directional convergence",
+      "path": "proofs/deep-learning/T36-implicit-bias.md",
+      "status": "bounded-scope",
+      "legacy_anchor": null,
+      "legacy_blocks": []
+    },
+    {
+      "id": "T37",
+      "topic": "deep-learning",
+      "kind": "proof-template",
+      "summary": "先证明对比目标的采样/信息关系，再单独连接下游任务风险。",
+      "keywords": [
+        "InfoNCE",
+        "contrastive",
+        "representation",
+        "transfer",
+        "对比学习",
+        "表示学习",
+        "下游",
+        "迁移",
+        "数据增强"
+      ],
+      "related": [
+        "T32",
+        "T33",
+        "T05",
+        "T19"
+      ],
+      "primitives": [
+        "P01",
+        "P05"
+      ],
+      "sources": [
+        "1807.03748",
+        "1902.09229",
+        "2005.10242"
+      ],
+      "title": "Contrastive objectives and downstream transfer",
+      "path": "proofs/deep-learning/T37-contrastive-transfer.md",
+      "status": "self-contained-core",
+      "legacy_anchor": null,
+      "legacy_blocks": []
+    },
+    {
+      "id": "T38",
+      "topic": "generalization",
+      "kind": "proof-template",
+      "summary": "用真实编码长度与统一事件控制压缩模型的泛化。",
+      "keywords": [
+        "compression",
+        "description length",
+        "MDL",
+        "Kraft",
+        "压缩",
+        "描述长度",
+        "编码",
+        "泛化",
+        "sample compression"
+      ],
+      "related": [
+        "T05",
+        "T32",
+        "T35",
+        "T33"
+      ],
+      "primitives": [
+        "P03",
+        "P05"
+      ],
+      "sources": [
+        "1802.05296"
+      ],
+      "title": "Compression, description length and generalization",
+      "path": "proofs/generalization/T38-compression.md",
+      "status": "self-contained-core",
+      "legacy_anchor": null,
+      "legacy_blocks": []
+    },
+    {
+      "id": "T39",
+      "topic": "optimization",
+      "kind": "proof-template",
+      "summary": "识别 smooth-plus-convex 结构，用 gradient mapping 处理复合目标。",
+      "keywords": [
+        "proximal",
+        "gradient mapping",
+        "nonsmooth",
+        "ReLU",
+        "L1",
+        "非光滑",
+        "次梯度",
+        "近端",
+        "正则化"
+      ],
+      "related": [
+        "T01",
+        "T02",
+        "T32",
+        "T15",
+        "T40"
+      ],
+      "primitives": [
+        "P02",
+        "P06"
+      ],
+      "sources": [
+        "1405.4980",
+        "2105.04026"
+      ],
+      "title": "Proximal-gradient mapping and nonsmooth boundaries",
+      "path": "proofs/optimization/T39-proximal-nonsmooth.md",
+      "status": "self-contained-core",
+      "legacy_anchor": null,
+      "legacy_blocks": []
+    },
+    {
+      "id": "T40",
+      "topic": "optimization",
+      "kind": "proof-template",
+      "summary": "用负曲率下降补一阶驻点，并显式区分 Hessian oracle 与一阶逃逸复杂度。",
+      "keywords": [
+        "second order",
+        "negative curvature",
+        "saddle",
+        "鞍点",
+        "二阶驻点",
+        "负曲率",
+        "鞍点逃逸"
+      ],
+      "related": [
+        "T01",
+        "T39",
+        "T32"
+      ],
+      "primitives": [
+        "P02",
+        "P08"
+      ],
+      "sources": [
+        "1703.00887"
+      ],
+      "title": "Second-order stationarity and negative-curvature descent",
+      "path": "proofs/optimization/T40-second-order-stationarity.md",
+      "status": "self-contained-core",
+      "legacy_anchor": null,
+      "legacy_blocks": []
+    },
+    {
+      "id": "T41",
+      "topic": "deep-learning",
+      "kind": "proof-template",
+      "summary": "用表示范数与 Hilbert-space 方差控制高维随机特征的逼近误差。",
+      "keywords": [
+        "Barron",
+        "random features",
+        "高维逼近",
+        "随机特征",
+        "表示范数",
+        "variation norm"
+      ],
+      "related": [
+        "T34",
+        "T33",
+        "T32"
+      ],
+      "primitives": [
+        "P04",
+        "P09"
+      ],
+      "sources": [
+        "1906.08039"
+      ],
+      "title": "Barron representation and random-feature approximation",
+      "path": "proofs/deep-learning/T41-barron-random-feature-approximation.md",
+      "status": "self-contained-core",
+      "legacy_anchor": null,
+      "legacy_blocks": []
+    },
+    {
+      "id": "T42",
+      "topic": "deep-learning",
+      "kind": "proof-template",
+      "summary": "精确跟踪时变核、参数移动与冻结核近似，不把核变化当下游收益。",
+      "keywords": [
+        "feature drift",
+        "kernel drift",
+        "feature learning",
+        "核变化",
+        "核漂移",
+        "特征学习",
+        "有限宽",
+        "Jacobian"
+      ],
+      "related": [
+        "T09",
+        "T10",
+        "T36",
+        "T32"
+      ],
+      "primitives": [
+        "P07",
+        "P08"
+      ],
+      "sources": [
+        "1812.07956",
+        "1902.06720"
+      ],
+      "title": "Finite-network feature drift and kernel dynamics",
+      "path": "proofs/deep-learning/T42-feature-drift-kernel-dynamics.md",
+      "status": "self-contained-core",
+      "legacy_anchor": null,
+      "legacy_blocks": []
+    },
+    {
+      "id": "T43",
+      "topic": "deep-learning",
+      "kind": "proof-template",
+      "summary": "以群作用和层间恒等式证明等变性，并核对 attention 的位置与 mask。",
+      "keywords": [
+        "equivariance",
+        "group averaging",
+        "symmetry",
+        "等变",
+        "群作用",
+        "对称化",
+        "排列等变",
+        "mask"
+      ],
+      "related": [
+        "T44",
+        "T14",
+        "T33"
+      ],
+      "primitives": [
+        "P01",
+        "P06"
+      ],
+      "sources": [
+        "1602.07576"
+      ],
+      "title": "Equivariance symmetry and group averaging",
+      "path": "proofs/deep-learning/T43-equivariance-symmetry.md",
+      "status": "self-contained-core",
+      "legacy_anchor": null,
+      "legacy_blocks": []
+    },
+    {
+      "id": "T44",
+      "topic": "lower-bounds-expressivity",
+      "kind": "proof-template",
+      "summary": "通过 1-WL 归纳和具体图对证明消息传递 GNN 的表达力限制。",
+      "keywords": [
+        "GNN",
+        "1-WL",
+        "Weisfeiler",
+        "message passing",
+        "图网络",
+        "消息传递",
+        "连通性",
+        "图表达力"
+      ],
+      "related": [
+        "T43",
+        "T20B",
+        "T33"
+      ],
+      "primitives": [
+        "P02",
+        "P10"
+      ],
+      "sources": [
+        "1810.00826"
+      ],
+      "title": "Message-passing GNN and Weisfeiler-Lehman limitations",
+      "path": "proofs/lower-bounds-expressivity/T44-message-passing-wl.md",
+      "status": "self-contained-core",
+      "legacy_anchor": null,
+      "legacy_blocks": []
+    },
+    {
+      "id": "T45",
+      "topic": "generalization",
+      "kind": "proof-template",
+      "summary": "从 Lipschitz margin 或 Gaussian 平移事件推导指定范数的认证半径。",
+      "keywords": [
+        "certified robustness",
+        "randomized smoothing",
+        "Gaussian smoothing",
+        "对抗鲁棒",
+        "鲁棒认证",
+        "随机平滑",
+        "认证半径"
+      ],
+      "related": [
+        "T35",
+        "T18"
+      ],
+      "primitives": [
+        "P04",
+        "P05"
+      ],
+      "sources": [
+        "1902.02918"
+      ],
+      "title": "Certified robustness Lipschitz margins and Gaussian smoothing",
+      "path": "proofs/generalization/T45-certified-robustness.md",
+      "status": "self-contained-core",
+      "legacy_anchor": null,
+      "legacy_blocks": []
+    },
+    {
+      "id": "T46",
+      "topic": "statistics",
+      "kind": "proof-template",
+      "summary": "显式计算 Gaussian RDP、条件组合和 DP 转换，区分裁剪对象与采样。",
+      "keywords": [
+        "differential privacy",
+        "Renyi",
+        "RDP",
+        "DP-SGD",
+        "隐私",
+        "差分隐私",
+        "隐私预算",
+        "per-example clipping"
+      ],
+      "related": [
+        "T16",
+        "T05",
+        "T50"
+      ],
+      "primitives": [
+        "P04",
+        "P05"
+      ],
+      "sources": [
+        "1702.07476",
+        "1607.00133"
+      ],
+      "title": "Gaussian mechanism and Renyi privacy accounting",
+      "path": "proofs/statistics/T46-gaussian-privacy-accounting.md",
+      "status": "self-contained-core",
+      "legacy_anchor": null,
+      "legacy_blocks": []
+    },
+    {
+      "id": "T47",
+      "topic": "optimization",
+      "kind": "proof-template",
+      "summary": "分解 local training 的位置偏差并控制客户端分歧、通信与输出。",
+      "keywords": [
+        "local SGD",
+        "FedAvg",
+        "SCAFFOLD",
+        "client drift",
+        "联邦",
+        "分布式",
+        "本地训练",
+        "客户端漂移",
+        "通信"
+      ],
+      "related": [
+        "T02",
+        "T03",
+        "T01"
+      ],
+      "primitives": [
+        "P02",
+        "P07"
+      ],
+      "sources": [
+        "1805.09767",
+        "1910.06378"
+      ],
+      "title": "Local training client drift and communication",
+      "path": "proofs/optimization/T47-local-training-client-drift.md",
+      "status": "self-contained-core",
+      "legacy_anchor": null,
+      "legacy_blocks": []
+    },
+    {
+      "id": "T48",
+      "topic": "statistics",
+      "kind": "proof-template",
+      "summary": "先用识别假设连接干预与观察 law，再分析 DR 或深度表示的估计误差。",
+      "keywords": [
+        "causal identification",
+        "g-formula",
+        "ATE",
+        "潜在结果",
+        "因果识别",
+        "混杂",
+        "因果效应"
+      ],
+      "related": [
+        "T11",
+        "T19"
+      ],
+      "primitives": [
+        "P01",
+        "P05"
+      ],
+      "sources": [
+        "1608.00060"
+      ],
+      "title": "Causal identification and the g-formula",
+      "path": "proofs/statistics/T48-causal-identification.md",
+      "status": "self-contained-core",
+      "legacy_anchor": null,
+      "legacy_blocks": []
+    },
+    {
+      "id": "T49",
+      "topic": "generalization",
+      "kind": "proof-template",
+      "summary": "由 binary log-loss excess 推到分类 excess，并保留模型与裁剪误差。",
+      "keywords": [
+        "surrogate",
+        "classification calibration",
+        "log-loss",
+        "cross entropy",
+        "交叉熵",
+        "分类风险",
+        "Bayes 分类",
+        "替代损失",
+        "裁剪偏差"
+      ],
+      "related": [
+        "T32",
+        "T33",
+        "T22"
+      ],
+      "primitives": [
+        "P01",
+        "P05"
+      ],
+      "sources": [
+        "2105.04026"
+      ],
+      "title": "Surrogate calibration and Bayes classification risk",
+      "path": "proofs/generalization/T49-surrogate-bayes-risk.md",
+      "status": "self-contained-core",
+      "legacy_anchor": null,
+      "legacy_blocks": []
+    },
+    {
+      "id": "T50",
+      "topic": "generalization",
+      "kind": "proof-template",
+      "summary": "用指数距离上包络把观测证书接到总体期望，保持量词与选择预算。",
+      "keywords": [
+        "smooth sensitivity",
+        "certificate envelope",
+        "data-specific",
+        "McDiarmid",
+        "证书",
+        "指数包络",
+        "样本特定",
+        "期望泛化差"
+      ],
+      "related": [
+        "T04",
+        "T33",
+        "T46"
+      ],
+      "primitives": [
+        "P03",
+        "P04",
+        "P09"
+      ],
+      "sources": [
+        "2610.06238"
+      ],
+      "title": "Data-dependent certificate envelopes and expected generalization",
+      "path": "proofs/generalization/T50-data-dependent-certificate-envelope.md",
+      "status": "self-contained-core",
+      "legacy_anchor": null,
+      "legacy_blocks": []
+    },
+    {
+      "id": "T51",
+      "topic": "generation-transport",
+      "kind": "proof-template",
+      "summary": "在真实边缘分布下控制速度误差，用学习场 Lipschitz 与耦合推出 Wasserstein 界。",
+      "keywords": [
+        "flow matching",
+        "trajectory error",
+        "drift error",
+        "coupling",
+        "速度误差",
+        "轨迹误差",
+        "误差分布",
+        "学习场",
+        "Wasserstein"
+      ],
+      "related": [
+        "T13",
+        "T19",
+        "T32",
+        "T33"
+      ],
+      "primitives": [
+        "P05",
+        "P07"
+      ],
+      "sources": [
+        "2609.38918",
+        "2210.02747"
+      ],
+      "title": "Flow trajectory error and Wasserstein transfer",
+      "path": "proofs/generation-transport/T51-flow-trajectory-error.md",
+      "status": "self-contained-core",
+      "legacy_anchor": null,
+      "legacy_blocks": []
+    }
+  ]
+}

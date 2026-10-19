@@ -1,0 +1,44 @@
+{
+  "title": "Improved Generalization Bounds for Transductive Learning by Transductive Local Complexity and Its Applications",
+  "kind": "arxiv",
+  "identifier": "2309.16858",
+  "raw": "https://arxiv.org/abs/2309.16858",
+  "pdf_url": "https://arxiv.org/pdf/2309.16858.pdf",
+  "source_url": "https://export.arxiv.org/e-print/2309.16858",
+  "pdf_error": null,
+  "source_error": null,
+  "imported_from": {
+    "repository": "HaningZS/HaningZS_Notes",
+    "commit": "8ced9038b7611bcb8c2b2774fb870149df8ef780"
+  },
+  "edition_status": "pinned-cross-checked",
+  "artifacts": {
+    "pdf": {
+      "sha256": "fb6a9e77a302462ee41f0c6cba3864a2d4091eaed64ca0aa0a042268b125a108",
+      "bytes": 1001450
+    },
+    "source": {
+      "sha256": "00e044cb47324b05981f4faf4dc7b55f45934396387c147804ea0b0d357a8049",
+      "bytes": 3767764
+    }
+  },
+  "topic": "generalization",
+  "templates": [],
+  "path": "proof_ref/recent-accepted-2025-2026/improved-generalization-bounds-for-transductive-learning-by-transductive-2309.16858",
+  "last_checked_at": "2026-09-26T05:54:22+00:00",
+  "errors": {},
+  "authors": [
+    "Yang, Yingzhen"
+  ],
+  "published": "2023/09/28",
+  "resolved_id": "2309.16858v5",
+  "metadata_url": "https://arxiv.org/abs/2309.16858v5",
+  "metadata_checked_at": "2026-10-19T16:37:15+00:00",
+  "version_verification": {
+    "checked_at": "2026-10-19T16:37:19+00:00",
+    "pdf_marker": "2309.16858v5",
+    "source_url": "https://arxiv.org/src/2309.16858v5",
+    "method": "Unique arXiv version marker in local PDF pages 1-2; local PDF/source hashes match recorded metadata; exact hash match with newly downloaded official versioned source.",
+    "report": "reports/legacy_version_verification.json"
+  }
+}

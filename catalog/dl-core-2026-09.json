@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "description": "DL 核心理论补全：综述、定量逼近、间隔、压缩与对比学习的原始来源。",
+  "papers": [
+    {"arxiv_id":"2105.04026","title":"The Modern Mathematics of Deep Learning","topic":"dl-foundations","templates":["T32","T33","T34","T35","T36","T39"],"why":"对照逼近、优化、统计学习与学习机制几个理论支柱，建立整体问题地图。"},
+    {"arxiv_id":"1610.01145","title":"Error bounds for approximations with deep ReLU networks","topic":"approximation","templates":["T34"],"why":"把 universal approximation 的存在性推进到函数类、范数和网络复杂度的定量界。"},
+    {"arxiv_id":"1706.08498","title":"Spectrally-normalized margin bounds for neural networks","topic":"generalization","templates":["T33","T35"],"why":"理解间隔、谱范数和网络复杂度的联合控制，以及原始 margin 的缩放问题。"},
+    {"arxiv_id":"1802.05296","title":"Stronger generalization bounds for deep nets via a compression approach","topic":"generalization","templates":["T38"],"why":"从可编码模型、压缩扰动与泛化连接，区分参数少和真实描述长度短。"},
+    {"arxiv_id":"1807.03748","title":"Representation Learning with Contrastive Predictive Coding","topic":"representation","templates":["T37"],"why":"核对 InfoNCE 的采样机制与互信息目标，并区分下游任务保证。"}
+  ]
+}

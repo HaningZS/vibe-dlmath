@@ -1,0 +1,48 @@
+{
+  "title": "The Surprising Difficulty of Search in Model-Based Reinforcement Learning",
+  "kind": "arxiv",
+  "identifier": "2601.21306",
+  "raw": "https://arxiv.org/abs/2601.21306",
+  "pdf_url": "https://arxiv.org/pdf/2601.21306.pdf",
+  "source_url": "https://export.arxiv.org/e-print/2601.21306",
+  "pdf_error": null,
+  "source_error": null,
+  "imported_from": {
+    "repository": "HaningZS/HaningZS_Notes",
+    "commit": "8ced9038b7611bcb8c2b2774fb870149df8ef780"
+  },
+  "edition_status": "pinned-cross-checked",
+  "artifacts": {
+    "pdf": {
+      "sha256": "60dc8046515f260659e705e5db180cab1d513011c8253cea2acd6a8ca90048a9",
+      "bytes": 10304657
+    },
+    "source": {
+      "sha256": "7c27dab2024d0e28b4e1092338962d3e161c1ca9c449dd16d19245969df76a91",
+      "bytes": 11797480
+    }
+  },
+  "topic": "rl-bandits",
+  "templates": [],
+  "path": "proof_ref/core-theory-2026-09/the-surprising-difficulty-of-search-in-model-based-2601.21306",
+  "last_checked_at": "2026-09-26T05:54:22+00:00",
+  "errors": {},
+  "authors": [
+    "Chang, Wei-Di",
+    "Henaff, Mikael",
+    "Amos, Brandon",
+    "Dudek, Gregory",
+    "Fujimoto, Scott"
+  ],
+  "published": "2026/01/29",
+  "resolved_id": "2601.21306v2",
+  "metadata_url": "https://arxiv.org/abs/2601.21306v2",
+  "metadata_checked_at": "2026-10-19T16:35:53+00:00",
+  "version_verification": {
+    "checked_at": "2026-10-19T16:36:00+00:00",
+    "pdf_marker": "2601.21306v2",
+    "source_url": "https://arxiv.org/src/2601.21306v2",
+    "method": "Unique arXiv version marker in local PDF pages 1-2; local PDF/source hashes match recorded metadata; exact hash match with newly downloaded official versioned source.",
+    "report": "reports/legacy_version_verification.json"
+  }
+}

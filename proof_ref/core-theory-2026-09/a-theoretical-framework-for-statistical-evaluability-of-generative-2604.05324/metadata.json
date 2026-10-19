@@ -1,0 +1,47 @@
+{
+  "title": "A Theoretical Framework for Statistical Evaluability of Generative Models",
+  "kind": "arxiv",
+  "identifier": "2604.05324",
+  "raw": "https://arxiv.org/abs/2604.05324",
+  "pdf_url": "https://arxiv.org/pdf/2604.05324.pdf",
+  "source_url": "https://export.arxiv.org/e-print/2604.05324",
+  "pdf_error": null,
+  "source_error": null,
+  "imported_from": {
+    "repository": "HaningZS/HaningZS_Notes",
+    "commit": "8ced9038b7611bcb8c2b2774fb870149df8ef780"
+  },
+  "edition_status": "pinned-cross-checked",
+  "artifacts": {
+    "pdf": {
+      "sha256": "b27cad26bddf86498f3d36473929b74f822fc60e425d5736efbe191969546299",
+      "bytes": 640999
+    },
+    "source": {
+      "sha256": "53a7c3603f48547708d6483db2416fcb9cdb52aeb58f98be28d40a2b7e73e8f5",
+      "bytes": 33479
+    }
+  },
+  "topic": "statistics",
+  "templates": [],
+  "path": "proof_ref/core-theory-2026-09/a-theoretical-framework-for-statistical-evaluability-of-generative-2604.05324",
+  "last_checked_at": "2026-09-26T05:54:22+00:00",
+  "errors": {},
+  "authors": [
+    "Aiyer, Shashaank",
+    "Mansour, Yishay",
+    "Moran, Shay",
+    "Shao, Han"
+  ],
+  "published": "2026/04/07",
+  "resolved_id": "2604.05324v3",
+  "metadata_url": "https://arxiv.org/abs/2604.05324v3",
+  "metadata_checked_at": "2026-10-19T16:32:56+00:00",
+  "version_verification": {
+    "checked_at": "2026-10-19T16:32:59+00:00",
+    "pdf_marker": "2604.05324v3",
+    "source_url": "https://arxiv.org/src/2604.05324v3",
+    "method": "Unique arXiv version marker in local PDF pages 1-2; local PDF/source hashes match recorded metadata; exact hash match with newly downloaded official versioned source.",
+    "report": "reports/legacy_version_verification.json"
+  }
+}

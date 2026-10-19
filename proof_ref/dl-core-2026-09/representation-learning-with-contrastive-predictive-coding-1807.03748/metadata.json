@@ -1,0 +1,34 @@
+{
+  "title": "Representation Learning with Contrastive Predictive Coding",
+  "authors": [
+    "Oord, Aaron van den",
+    "Li, Yazhe",
+    "Vinyals, Oriol"
+  ],
+  "published": "2018/07/10",
+  "resolved_id": "1807.03748v2",
+  "metadata_url": "https://arxiv.org/abs/1807.03748v2",
+  "metadata_checked_at": "2026-09-28T08:23:41+00:00",
+  "download_urls": {
+    "pdf": "https://arxiv.org/pdf/1807.03748v2",
+    "source": "https://arxiv.org/src/1807.03748v2"
+  },
+  "artifacts": {
+    "pdf": {
+      "sha256": "5ef5e1ab47d2273f418f01f66fb8eb1431ba9b185b7cba45e9955f0fee36427d",
+      "bytes": 3182089
+    },
+    "source": {
+      "sha256": "1781e27db6bac28518611ddbdcb427d868252bdb5a7cd6c4308066dc8acb8967",
+      "bytes": 3065027
+    }
+  },
+  "identifier": "1807.03748",
+  "topic": "representation",
+  "templates": [
+    "T37"
+  ],
+  "path": "proof_ref/dl-core-2026-09/representation-learning-with-contrastive-predictive-coding-1807.03748",
+  "last_checked_at": "2026-09-28T08:23:48+00:00",
+  "errors": {}
+}

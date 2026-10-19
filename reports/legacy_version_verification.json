@@ -1,0 +1,1065 @@
+{
+  "checked_at": "2026-10-19T16:38:19+00:00",
+  "scope": "Artifact version alignment, not mathematical proof verification",
+  "total": 42,
+  "matched": 42,
+  "results": [
+    {
+      "arxiv_id": "2604.05324",
+      "path": "proof_ref/core-theory-2026-09/a-theoretical-framework-for-statistical-evaluability-of-generative-2604.05324",
+      "status": "matched",
+      "pdf_sha256": "b27cad26bddf86498f3d36473929b74f822fc60e425d5736efbe191969546299",
+      "source_sha256": "53a7c3603f48547708d6483db2416fcb9cdb52aeb58f98be28d40a2b7e73e8f5",
+      "resolved_id": "2604.05324v3",
+      "checked_source_url": "https://arxiv.org/src/2604.05324v3",
+      "remote_source_sha256": "53a7c3603f48547708d6483db2416fcb9cdb52aeb58f98be28d40a2b7e73e8f5",
+      "metadata": {
+        "title": "A Theoretical Framework for Statistical Evaluability of Generative Models",
+        "authors": [
+          "Aiyer, Shashaank",
+          "Mansour, Yishay",
+          "Moran, Shay",
+          "Shao, Han"
+        ],
+        "published": "2026/04/07",
+        "resolved_id": "2604.05324v3",
+        "metadata_url": "https://arxiv.org/abs/2604.05324v3",
+        "metadata_checked_at": "2026-10-19T16:32:56+00:00"
+      },
+      "checked_at": "2026-10-19T16:32:59+00:00",
+      "evidence": "Unique arXiv version marker in local PDF pages 1-2; local PDF/source hashes match recorded metadata; exact hash match with newly downloaded official versioned source."
+    },
+    {
+      "arxiv_id": "2607.07470",
+      "path": "proof_ref/core-theory-2026-09/a-theory-of-contrastive-learning-with-natural-images-2607.07470",
+      "status": "matched",
+      "pdf_sha256": "25c8712dfa2a580d9afbd9cfa23ce34709309ac8e9c206d9d72775ab0b89586d",
+      "source_sha256": "ff9b800103b370932b8097bff8d1d271883975da19a9f524b2d084a402844056",
+      "resolved_id": "2607.07470v1",
+      "checked_source_url": "https://arxiv.org/src/2607.07470v1",
+      "remote_source_sha256": "ff9b800103b370932b8097bff8d1d271883975da19a9f524b2d084a402844056",
+      "metadata": {
+        "title": "A Theory of Contrastive Learning with Natural Images",
+        "authors": [
+          "Torralba, Antonio",
+          "Weiss, Yair"
+        ],
+        "published": "2026/07/08",
+        "resolved_id": "2607.07470v1",
+        "metadata_url": "https://arxiv.org/abs/2607.07470v1",
+        "metadata_checked_at": "2026-10-19T16:33:02+00:00"
+      },
+      "checked_at": "2026-10-19T16:33:14+00:00",
+      "evidence": "Unique arXiv version marker in local PDF pages 1-2; local PDF/source hashes match recorded metadata; exact hash match with newly downloaded official versioned source."
+    },
+    {
+      "arxiv_id": "2602.20062",
+      "path": "proof_ref/core-theory-2026-09/a-theory-of-how-pretraining-shapes-inductive-bias-2602.20062",
+      "status": "matched",
+      "pdf_sha256": "c0f5e47a9962d9b91d373a501afeb18a988e941f9afae2cf86d024db476ea365",
+      "source_sha256": "1e7dca42c7ac9956b1f3580c8322cb2874cbb783d57991431dbfb57430e8452c",
+      "resolved_id": "2602.20062v2",
+      "checked_source_url": "https://arxiv.org/src/2602.20062v2",
+      "remote_source_sha256": "1e7dca42c7ac9956b1f3580c8322cb2874cbb783d57991431dbfb57430e8452c",
+      "metadata": {
+        "title": "A Theory of How Pretraining Shapes Inductive Bias in Fine-Tuning",
+        "authors": [
+          "Anguita, Nicolas",
+          "Locatello, Francesco",
+          "Saxe, Andrew M.",
+          "Mondelli, Marco",
+          "Mancini, Flavia",
+          "Lippl, Samuel",
+          "Domine, Clementine"
+        ],
+        "published": "2026/02/23",
+        "resolved_id": "2602.20062v2",
+        "metadata_url": "https://arxiv.org/abs/2602.20062v2",
+        "metadata_checked_at": "2026-10-19T16:33:15+00:00"
+      },
+      "checked_at": "2026-10-19T16:33:24+00:00",
+      "evidence": "Unique arXiv version marker in local PDF pages 1-2; local PDF/source hashes match recorded metadata; exact hash match with newly downloaded official versioned source."
+    },
+    {
+      "arxiv_id": "2605.31594",
+      "path": "proof_ref/core-theory-2026-09/a-tight-theory-of-error-feedback-algorithms-in-2605.31594",
+      "status": "matched",
+      "pdf_sha256": "29d0469a9f0c1afa8ee2b6b3b0de91afe419c53b2993a5bedb545a2c8e962605",
+      "source_sha256": "97d6fecbf03e7d55ce3e493ede5780097588a6890af987fbe403e02f05da47f5",
+      "resolved_id": "2605.31594v1",
+      "checked_source_url": "https://arxiv.org/src/2605.31594v1",
+      "remote_source_sha256": "97d6fecbf03e7d55ce3e493ede5780097588a6890af987fbe403e02f05da47f5",
+      "metadata": {
+        "title": "A Tight Theory of Error Feedback Algorithms in Distributed Optimization",
+        "authors": [
+          "Thomsen, Daniel Berg",
+          "Taylor, Adrien",
+          "Dieuleveut, Aymeric"
+        ],
+        "published": "2026/05/29",
+        "resolved_id": "2605.31594v1",
+        "metadata_url": "https://arxiv.org/abs/2605.31594v1",
+        "metadata_checked_at": "2026-10-19T16:33:24+00:00"
+      },
+      "checked_at": "2026-10-19T16:33:28+00:00",
+      "evidence": "Unique arXiv version marker in local PDF pages 1-2; local PDF/source hashes match recorded metadata; exact hash match with newly downloaded official versioned source."
+    },
+    {
+      "arxiv_id": "2502.02861",
+      "path": "proof_ref/core-theory-2026-09/algorithms-with-calibrated-machine-learning-predictions-2502.02861",
+      "status": "matched",
+      "pdf_sha256": "aa25509754021c48b782952c0912dc1d420a4150b88231bb026b823668b922e0",
+      "source_sha256": "42494cc25c01a61f1ba3cc90a3927282f6c551f14ec949a3f8e715be53321041",
+      "resolved_id": "2502.02861v4",
+      "checked_source_url": "https://arxiv.org/src/2502.02861v4",
+      "remote_source_sha256": "42494cc25c01a61f1ba3cc90a3927282f6c551f14ec949a3f8e715be53321041",
+      "metadata": {
+        "title": "Algorithms with Calibrated Machine Learning Predictions",
+        "authors": [
+          "Shen, Judy Hanwen",
+          "Vitercik, Ellen",
+          "Wikum, Anders"
+        ],
+        "published": "2025/02/05",
+        "resolved_id": "2502.02861v4",
+        "metadata_url": "https://arxiv.org/abs/2502.02861v4",
+        "metadata_checked_at": "2026-10-19T16:33:31+00:00"
+      },
+      "checked_at": "2026-10-19T16:33:34+00:00",
+      "evidence": "Unique arXiv version marker in local PDF pages 1-2; local PDF/source hashes match recorded metadata; exact hash match with newly downloaded official versioned source."
+    },
+    {
+      "arxiv_id": "2410.05117",
+      "path": "proof_ref/core-theory-2026-09/assouad-fano-and-le-cam-with-interaction-a-2410.05117",
+      "status": "matched",
+      "pdf_sha256": "529ccbec88a678f7c3efcd6b502f06114c1c161c15337db2c23191e5f3352f15",
+      "source_sha256": "9d7b80197fd384ebf3e07ce2fb5953308873246ea3cea674f28636ffd1878bdc",
+      "resolved_id": "2410.05117v2",
+      "checked_source_url": "https://arxiv.org/src/2410.05117v2",
+      "remote_source_sha256": "9d7b80197fd384ebf3e07ce2fb5953308873246ea3cea674f28636ffd1878bdc",
+      "metadata": {
+        "title": "Assouad, Fano, and Le Cam with Interaction: A Unifying Lower Bound Framework and Characterization for Bandit Learnability",
+        "authors": [
+          "Chen, Fan",
+          "Foster, Dylan J.",
+          "Han, Yanjun",
+          "Qian, Jian",
+          "Rakhlin, Alexander",
+          "Xu, Yunbei"
+        ],
+        "published": "2024/10/07",
+        "resolved_id": "2410.05117v2",
+        "metadata_url": "https://arxiv.org/abs/2410.05117v2",
+        "metadata_checked_at": "2026-10-19T16:33:37+00:00"
+      },
+      "checked_at": "2026-10-19T16:33:43+00:00",
+      "evidence": "Unique arXiv version marker in local PDF pages 1-2; local PDF/source hashes match recorded metadata; exact hash match with newly downloaded official versioned source."
+    },
+    {
+      "arxiv_id": "2502.00921",
+      "path": "proof_ref/core-theory-2026-09/blink-of-an-eye-a-simple-theory-for-2502.00921",
+      "status": "matched",
+      "pdf_sha256": "456b297deefda29a45276a33bc8dfb12298a3fd9e22226c8bc509762f157f7fd",
+      "source_sha256": "b977496bd08af60294fa361c75ec77b577f3ad69a8027639ee786c7bed17f570",
+      "resolved_id": "2502.00921v2",
+      "checked_source_url": "https://arxiv.org/src/2502.00921v2",
+      "remote_source_sha256": "b977496bd08af60294fa361c75ec77b577f3ad69a8027639ee786c7bed17f570",
+      "metadata": {
+        "title": "Blink of an eye: a simple theory for feature localization in generative models",
+        "authors": [
+          "Li, Marvin",
+          "Karan, Aayush",
+          "Chen, Sitan"
+        ],
+        "published": "2025/02/02",
+        "resolved_id": "2502.00921v2",
+        "metadata_url": "https://arxiv.org/abs/2502.00921v2",
+        "metadata_checked_at": "2026-10-19T16:33:43+00:00"
+      },
+      "checked_at": "2026-10-19T16:34:15+00:00",
+      "evidence": "Unique arXiv version marker in local PDF pages 1-2; local PDF/source hashes match recorded metadata; exact hash match with newly downloaded official versioned source."
+    },
+    {
+      "arxiv_id": "2406.04443",
+      "path": "proof_ref/core-theory-2026-09/clipping-improves-adam-norm-and-adagrad-norm-when-2406.04443",
+      "status": "matched",
+      "pdf_sha256": "4675dcbcafc15a333a5fc54f6794b441fbfecec5e3f76b1c20874035e9af1019",
+      "source_sha256": "a5faec5aca6b62657892fd70acbcb08eac2709c0a586ba391c64c23dc6478818",
+      "resolved_id": "2406.04443v3",
+      "checked_source_url": "https://arxiv.org/src/2406.04443v3",
+      "remote_source_sha256": "a5faec5aca6b62657892fd70acbcb08eac2709c0a586ba391c64c23dc6478818",
+      "metadata": {
+        "title": "Clipping Improves Adam-Norm and AdaGrad-Norm when the Noise Is Heavy-Tailed",
+        "authors": [
+          "Chezhegov, Savelii",
+          "Klyukin, Yaroslav",
+          "Semenov, Andrei",
+          "Beznosikov, Aleksandr",
+          "Gasnikov, Alexander",
+          "Horváth, Samuel",
+          "Takáč, Martin",
+          "Gorbunov, Eduard"
+        ],
+        "published": "2024/06/06",
+        "resolved_id": "2406.04443v3",
+        "metadata_url": "https://arxiv.org/abs/2406.04443v3",
+        "metadata_checked_at": "2026-10-19T16:34:15+00:00"
+      },
+      "checked_at": "2026-10-19T16:34:29+00:00",
+      "evidence": "Unique arXiv version marker in local PDF pages 1-2; local PDF/source hashes match recorded metadata; exact hash match with newly downloaded official versioned source."
+    },
+    {
+      "arxiv_id": "2305.18290",
+      "path": "proof_ref/core-theory-2026-09/direct-preference-optimization-your-language-model-is-secretly-2305.18290",
+      "status": "matched",
+      "pdf_sha256": "92cb3a2b71362acda98a789b03d88688fd33cf5fcf13f81d2b1de30ee7d3b67a",
+      "source_sha256": "750054a6d13d9f79559d6defbfa68432e2a8c8959f0b7e7e37c622c1740653cc",
+      "resolved_id": "2305.18290v3",
+      "checked_source_url": "https://arxiv.org/src/2305.18290v3",
+      "remote_source_sha256": "750054a6d13d9f79559d6defbfa68432e2a8c8959f0b7e7e37c622c1740653cc",
+      "metadata": {
+        "title": "Direct Preference Optimization: Your Language Model is Secretly a Reward Model",
+        "authors": [
+          "Rafailov, Rafael",
+          "Sharma, Archit",
+          "Mitchell, Eric",
+          "Ermon, Stefano",
+          "Manning, Christopher D.",
+          "Finn, Chelsea"
+        ],
+        "published": "2023/05/29",
+        "resolved_id": "2305.18290v3",
+        "metadata_url": "https://arxiv.org/abs/2305.18290v3",
+        "metadata_checked_at": "2026-10-19T16:34:30+00:00"
+      },
+      "checked_at": "2026-10-19T16:34:34+00:00",
+      "evidence": "Unique arXiv version marker in local PDF pages 1-2; local PDF/source hashes match recorded metadata; exact hash match with newly downloaded official versioned source."
+    },
+    {
+      "arxiv_id": "1604.04173",
+      "path": "proof_ref/core-theory-2026-09/distribution-free-predictive-inference-for-regression-1604.04173",
+      "status": "matched",
+      "pdf_sha256": "28bbed19a871a5dd748953a3ea4f9d58cb03f00bb9e3f7f26f8d46398c399914",
+      "source_sha256": "926aab6403af4a1f67028e0e46b2c335dd63938877912038757c7b7e847089b1",
+      "resolved_id": "1604.04173v2",
+      "checked_source_url": "https://arxiv.org/src/1604.04173v2",
+      "remote_source_sha256": "926aab6403af4a1f67028e0e46b2c335dd63938877912038757c7b7e847089b1",
+      "metadata": {
+        "title": "Distribution-Free Predictive Inference For Regression",
+        "authors": [
+          "Lei, Jing",
+          "G'Sell, Max",
+          "Rinaldo, Alessandro",
+          "Tibshirani, Ryan J.",
+          "Wasserman, Larry"
+        ],
+        "published": "2016/04/14",
+        "resolved_id": "1604.04173v2",
+        "metadata_url": "https://arxiv.org/abs/1604.04173v2",
+        "metadata_checked_at": "2026-10-19T16:34:36+00:00"
+      },
+      "checked_at": "2026-10-19T16:34:40+00:00",
+      "evidence": "Unique arXiv version marker in local PDF pages 1-2; local PDF/source hashes match recorded metadata; exact hash match with newly downloaded official versioned source."
+    },
+    {
+      "arxiv_id": "2605.06977",
+      "path": "proof_ref/core-theory-2026-09/f-divergence-regularized-rlhf-two-tales-of-sampling-2605.06977",
+      "status": "matched",
+      "pdf_sha256": "14376bfa221fd090a8068072735a08f48c623c3e5f9361d3fca2fb4415b435d5",
+      "source_sha256": "c963e7688f0cc6c38f20bff2ce0c8dc7fd11b9224936eecdb8860e51d0cf2763",
+      "resolved_id": "2605.06977v1",
+      "checked_source_url": "https://arxiv.org/src/2605.06977v1",
+      "remote_source_sha256": "c963e7688f0cc6c38f20bff2ce0c8dc7fd11b9224936eecdb8860e51d0cf2763",
+      "metadata": {
+        "title": "$f$-Divergence Regularized RLHF: Two Tales of Sampling and Unified Analyses",
+        "authors": [
+          "Wu, Di",
+          "Shi, Chengshuai",
+          "Yang, Jing",
+          "Shen, Cong"
+        ],
+        "published": "2026/05/07",
+        "resolved_id": "2605.06977v1",
+        "metadata_url": "https://arxiv.org/abs/2605.06977v1",
+        "metadata_checked_at": "2026-10-19T16:34:42+00:00"
+      },
+      "checked_at": "2026-10-19T16:34:46+00:00",
+      "evidence": "Unique arXiv version marker in local PDF pages 1-2; local PDF/source hashes match recorded metadata; exact hash match with newly downloaded official versioned source."
+    },
+    {
+      "arxiv_id": "2605.15417",
+      "path": "proof_ref/core-theory-2026-09/f-trajectory-balance-a-loss-family-for-tuning-2605.15417",
+      "status": "matched",
+      "pdf_sha256": "408099e7c8a1605170863869c011840f3650cc5be9cf3a8f12a46f22cee2a660",
+      "source_sha256": "9728c5a391450fc0af62c4bf005f709471412535a506ca5b8dc44737e8ece842",
+      "resolved_id": "2605.15417v1",
+      "checked_source_url": "https://arxiv.org/src/2605.15417v1",
+      "remote_source_sha256": "9728c5a391450fc0af62c4bf005f709471412535a506ca5b8dc44737e8ece842",
+      "metadata": {
+        "title": "$f$-Trajectory Balance: A Loss Family for Tuning GFlowNets, Generative Models, and LLMs with Off- and On-Policy Data",
+        "authors": [
+          "Fawkes, Jake",
+          "Hartford, Jason"
+        ],
+        "published": "2026/05/14",
+        "resolved_id": "2605.15417v1",
+        "metadata_url": "https://arxiv.org/abs/2605.15417v1",
+        "metadata_checked_at": "2026-10-19T16:34:49+00:00"
+      },
+      "checked_at": "2026-10-19T16:34:54+00:00",
+      "evidence": "Unique arXiv version marker in local PDF pages 1-2; local PDF/source hashes match recorded metadata; exact hash match with newly downloaded official versioned source."
+    },
+    {
+      "arxiv_id": "2303.02854",
+      "path": "proof_ref/core-theory-2026-09/generalized-smooth-nonconvex-optimization-is-as-efficient-as-2303.02854",
+      "status": "matched",
+      "pdf_sha256": "db6bcae1153a1ac01e64ebef585ff77d600c7e4a4aed85ac18547955e4b41991",
+      "source_sha256": "f0ad8d6754c2dea44acc1395fdf52d0cddef4f50e4d272a383b49515780452a1",
+      "resolved_id": "2303.02854v2",
+      "checked_source_url": "https://arxiv.org/src/2303.02854v2",
+      "remote_source_sha256": "f0ad8d6754c2dea44acc1395fdf52d0cddef4f50e4d272a383b49515780452a1",
+      "metadata": {
+        "title": "Generalized-Smooth Nonconvex Optimization is As Efficient As Smooth Nonconvex Optimization",
+        "authors": [
+          "Chen, Ziyi",
+          "Zhou, Yi",
+          "Liang, Yingbin",
+          "Lu, Zhaosong"
+        ],
+        "published": "2023/03/06",
+        "resolved_id": "2303.02854v2",
+        "metadata_url": "https://arxiv.org/abs/2303.02854v2",
+        "metadata_checked_at": "2026-10-19T16:34:55+00:00"
+      },
+      "checked_at": "2026-10-19T16:34:59+00:00",
+      "evidence": "Unique arXiv version marker in local PDF pages 1-2; local PDF/source hashes match recorded metadata; exact hash match with newly downloaded official versioned source."
+    },
+    {
+      "arxiv_id": "2411.16549",
+      "path": "proof_ref/core-theory-2026-09/in-context-deep-learning-via-transformer-models-2411.16549",
+      "status": "matched",
+      "pdf_sha256": "3c701d4e970db7d74fc60e02d82eb62bc6c305f61b5f7f9ee6e599143a628091",
+      "source_sha256": "57dd63f39ea3b9e964ad3f53634f450aa9cb5dbeaf8d106837e85a000eb9c079",
+      "resolved_id": "2411.16549v2",
+      "checked_source_url": "https://arxiv.org/src/2411.16549v2",
+      "remote_source_sha256": "57dd63f39ea3b9e964ad3f53634f450aa9cb5dbeaf8d106837e85a000eb9c079",
+      "metadata": {
+        "title": "In-Context Deep Learning via Transformer Models",
+        "authors": [
+          "Wu, Weimin",
+          "Su, Maojiang",
+          "Hu, Jerry Yao-Chieh",
+          "Song, Zhao",
+          "Liu, Han"
+        ],
+        "published": "2024/11/25",
+        "resolved_id": "2411.16549v2",
+        "metadata_url": "https://arxiv.org/abs/2411.16549v2",
+        "metadata_checked_at": "2026-10-19T16:35:01+00:00"
+      },
+      "checked_at": "2026-10-19T16:35:04+00:00",
+      "evidence": "Unique arXiv version marker in local PDF pages 1-2; local PDF/source hashes match recorded metadata; exact hash match with newly downloaded official versioned source."
+    },
+    {
+      "arxiv_id": "2312.11456",
+      "path": "proof_ref/core-theory-2026-09/iterative-preference-learning-from-human-feedback-bridging-theory-2312.11456",
+      "status": "matched",
+      "pdf_sha256": "9c7b9f33c52f2ebc1041f9f1482a8eabee2995fd7820ed1af454473bae821ef5",
+      "source_sha256": "639d737fa4ebd612dbfea94249a104644b850467eba4a4fa0a311f13c5a2cb36",
+      "resolved_id": "2312.11456v4",
+      "checked_source_url": "https://arxiv.org/src/2312.11456v4",
+      "remote_source_sha256": "639d737fa4ebd612dbfea94249a104644b850467eba4a4fa0a311f13c5a2cb36",
+      "metadata": {
+        "title": "Iterative Preference Learning from Human Feedback: Bridging Theory and Practice for RLHF under KL-Constraint",
+        "authors": [
+          "Xiong, Wei",
+          "Dong, Hanze",
+          "Ye, Chenlu",
+          "Wang, Ziqi",
+          "Zhong, Han",
+          "Ji, Heng",
+          "Jiang, Nan",
+          "Zhang, Tong"
+        ],
+        "published": "2023/12/18",
+        "resolved_id": "2312.11456v4",
+        "metadata_url": "https://arxiv.org/abs/2312.11456v4",
+        "metadata_checked_at": "2026-10-19T16:35:07+00:00"
+      },
+      "checked_at": "2026-10-19T16:35:12+00:00",
+      "evidence": "Unique arXiv version marker in local PDF pages 1-2; local PDF/source hashes match recorded metadata; exact hash match with newly downloaded official versioned source."
+    },
+    {
+      "arxiv_id": "2409.18959",
+      "path": "proof_ref/core-theory-2026-09/o-d-t-convergence-theory-for-diffusion-probabilistic-2409.18959",
+      "status": "matched",
+      "pdf_sha256": "aafe1cfdf454c5b5ff6f9a61d81f1fcd69f5f746d2e7c6a6cd78281c9fd89f7d",
+      "source_sha256": "b57b2b7fbb43f39f4b16d3039206113d28ff97977b25d086ff75fdf45a337136",
+      "resolved_id": "2409.18959v2",
+      "checked_source_url": "https://arxiv.org/src/2409.18959v2",
+      "remote_source_sha256": "b57b2b7fbb43f39f4b16d3039206113d28ff97977b25d086ff75fdf45a337136",
+      "metadata": {
+        "title": "O(d/T) Convergence Theory for Diffusion Probabilistic Models under Minimal Assumptions",
+        "authors": [
+          "Li, Gen",
+          "Yan, Yuling"
+        ],
+        "published": "2024/09/27",
+        "resolved_id": "2409.18959v2",
+        "metadata_url": "https://arxiv.org/abs/2409.18959v2",
+        "metadata_checked_at": "2026-10-19T16:35:13+00:00"
+      },
+      "checked_at": "2026-10-19T16:35:17+00:00",
+      "evidence": "Unique arXiv version marker in local PDF pages 1-2; local PDF/source hashes match recorded metadata; exact hash match with newly downloaded official versioned source."
+    },
+    {
+      "arxiv_id": "2406.16213",
+      "path": "proof_ref/core-theory-2026-09/provable-statistical-rates-for-consistency-diffusion-models-2406.16213",
+      "status": "matched",
+      "pdf_sha256": "8fc9c86081272501823c0c1cc24df0d8b4bd178e6c70d8deeb50d7dc567c263f",
+      "source_sha256": "41c351d442e9e2a7c6844749253592ab0bad638eb25997fd681159b66e27995a",
+      "resolved_id": "2406.16213v1",
+      "checked_source_url": "https://arxiv.org/src/2406.16213v1",
+      "remote_source_sha256": "41c351d442e9e2a7c6844749253592ab0bad638eb25997fd681159b66e27995a",
+      "metadata": {
+        "title": "Provable Statistical Rates for Consistency Diffusion Models",
+        "authors": [
+          "Dou, Zehao",
+          "Chen, Minshuo",
+          "Wang, Mengdi",
+          "Yang, Zhuoran"
+        ],
+        "published": "2024/06/23",
+        "resolved_id": "2406.16213v1",
+        "metadata_url": "https://arxiv.org/abs/2406.16213v1",
+        "metadata_checked_at": "2026-10-19T16:35:20+00:00"
+      },
+      "checked_at": "2026-10-19T16:35:24+00:00",
+      "evidence": "Unique arXiv version marker in local PDF pages 1-2; local PDF/source hashes match recorded metadata; exact hash match with newly downloaded official versioned source."
+    },
+    {
+      "arxiv_id": "1907.05388",
+      "path": "proof_ref/core-theory-2026-09/provably-efficient-reinforcement-learning-with-linear-function-approximation-1907.05388",
+      "status": "matched",
+      "pdf_sha256": "5984f3eae6e8619dea065f015a1b49abdba2e7be94ac7a2ba9f36e2b3765d644",
+      "source_sha256": "7c6bdbf1d9d27eb6e502dd6a8f58bc111aea9bb4b8405114d2437e4b571a06c0",
+      "resolved_id": "1907.05388v2",
+      "checked_source_url": "https://arxiv.org/src/1907.05388v2",
+      "remote_source_sha256": "7c6bdbf1d9d27eb6e502dd6a8f58bc111aea9bb4b8405114d2437e4b571a06c0",
+      "metadata": {
+        "title": "Provably Efficient Reinforcement Learning with Linear Function Approximation",
+        "authors": [
+          "Jin, Chi",
+          "Yang, Zhuoran",
+          "Wang, Zhaoran",
+          "Jordan, Michael I."
+        ],
+        "published": "2019/07/11",
+        "resolved_id": "1907.05388v2",
+        "metadata_url": "https://arxiv.org/abs/1907.05388v2",
+        "metadata_checked_at": "2026-10-19T16:35:26+00:00"
+      },
+      "checked_at": "2026-10-19T16:35:29+00:00",
+      "evidence": "Unique arXiv version marker in local PDF pages 1-2; local PDF/source hashes match recorded metadata; exact hash match with newly downloaded official versioned source."
+    },
+    {
+      "arxiv_id": "2503.05631",
+      "path": "proof_ref/core-theory-2026-09/strategy-coopetition-explains-the-emergence-and-transience-of-2503.05631",
+      "status": "matched",
+      "pdf_sha256": "7b3634ec192553bd03cc8fc643f216aa62fd981ee86b13d3d28d2f12d4ff6462",
+      "source_sha256": "071b6c6903b9c1c76eb171550e41212b47fb3ee01ba17588fed4e70afe0f5d0b",
+      "resolved_id": "2503.05631v2",
+      "checked_source_url": "https://arxiv.org/src/2503.05631v2",
+      "remote_source_sha256": "071b6c6903b9c1c76eb171550e41212b47fb3ee01ba17588fed4e70afe0f5d0b",
+      "metadata": {
+        "title": "Strategy Coopetition Explains the Emergence and Transience of In-Context Learning",
+        "authors": [
+          "Singh, Aaditya K.",
+          "Moskovitz, Ted",
+          "Dragutinovic, Sara",
+          "Hill, Felix",
+          "Chan, Stephanie C. Y.",
+          "Saxe, Andrew M."
+        ],
+        "published": "2025/03/07",
+        "resolved_id": "2503.05631v2",
+        "metadata_url": "https://arxiv.org/abs/2503.05631v2",
+        "metadata_checked_at": "2026-10-19T16:35:32+00:00"
+      },
+      "checked_at": "2026-10-19T16:35:37+00:00",
+      "evidence": "Unique arXiv version marker in local PDF pages 1-2; local PDF/source hashes match recorded metadata; exact hash match with newly downloaded official versioned source."
+    },
+    {
+      "arxiv_id": "2511.22283",
+      "path": "proof_ref/core-theory-2026-09/the-hidden-cost-of-approximation-in-online-mirror-2511.22283",
+      "status": "matched",
+      "pdf_sha256": "ccd0d85469cee7f2dea26464d71fe8f1e06d6eae492b6c6a98b6428f94a417fd",
+      "source_sha256": "11aff1124273e1a47811a967355a07dcf7f688d1b738c475ab061555dd8dab80",
+      "resolved_id": "2511.22283v2",
+      "checked_source_url": "https://arxiv.org/src/2511.22283v2",
+      "remote_source_sha256": "11aff1124273e1a47811a967355a07dcf7f688d1b738c475ab061555dd8dab80",
+      "metadata": {
+        "title": "The Hidden Cost of Approximation in Online Mirror Descent",
+        "authors": [
+          "Schlisselberg, Ofir",
+          "Sherman, Uri",
+          "Koren, Tomer",
+          "Mansour, Yishay"
+        ],
+        "published": "2025/11/27",
+        "resolved_id": "2511.22283v2",
+        "metadata_url": "https://arxiv.org/abs/2511.22283v2",
+        "metadata_checked_at": "2026-10-19T16:35:38+00:00"
+      },
+      "checked_at": "2026-10-19T16:35:41+00:00",
+      "evidence": "Unique arXiv version marker in local PDF pages 1-2; local PDF/source hashes match recorded metadata; exact hash match with newly downloaded official versioned source."
+    },
+    {
+      "arxiv_id": "2605.26489",
+      "path": "proof_ref/core-theory-2026-09/the-stability-of-singular-distribution-a-spectral-perspective-2605.26489",
+      "status": "matched",
+      "pdf_sha256": "3dd2a2144d182a84aed5eb58d72ae739a83f0e9ce31710591a108c474fd60284",
+      "source_sha256": "f16735eb39895a4c1abb037f28865de016fdfecc89eb73574466c177854459b0",
+      "resolved_id": "2605.26489v1",
+      "checked_source_url": "https://arxiv.org/src/2605.26489v1",
+      "remote_source_sha256": "f16735eb39895a4c1abb037f28865de016fdfecc89eb73574466c177854459b0",
+      "metadata": {
+        "title": "The Stability of Singular Distribution: A Spectral Perspective on the Two-Phase Dynamics of Language Model Pre-training",
+        "authors": [
+          "Zhang, Hongtao",
+          "Zhou, Wenjie",
+          "Jia, Chenxi",
+          "Chen, Wei",
+          "Cheng, Xueqi"
+        ],
+        "published": "2026/05/26",
+        "resolved_id": "2605.26489v1",
+        "metadata_url": "https://arxiv.org/abs/2605.26489v1",
+        "metadata_checked_at": "2026-10-19T16:35:45+00:00"
+      },
+      "checked_at": "2026-10-19T16:35:52+00:00",
+      "evidence": "Unique arXiv version marker in local PDF pages 1-2; local PDF/source hashes match recorded metadata; exact hash match with newly downloaded official versioned source."
+    },
+    {
+      "arxiv_id": "2601.21306",
+      "path": "proof_ref/core-theory-2026-09/the-surprising-difficulty-of-search-in-model-based-2601.21306",
+      "status": "matched",
+      "pdf_sha256": "60dc8046515f260659e705e5db180cab1d513011c8253cea2acd6a8ca90048a9",
+      "source_sha256": "7c27dab2024d0e28b4e1092338962d3e161c1ca9c449dd16d19245969df76a91",
+      "resolved_id": "2601.21306v2",
+      "checked_source_url": "https://arxiv.org/src/2601.21306v2",
+      "remote_source_sha256": "7c27dab2024d0e28b4e1092338962d3e161c1ca9c449dd16d19245969df76a91",
+      "metadata": {
+        "title": "The Surprising Difficulty of Search in Model-Based Reinforcement Learning",
+        "authors": [
+          "Chang, Wei-Di",
+          "Henaff, Mikael",
+          "Amos, Brandon",
+          "Dudek, Gregory",
+          "Fujimoto, Scott"
+        ],
+        "published": "2026/01/29",
+        "resolved_id": "2601.21306v2",
+        "metadata_url": "https://arxiv.org/abs/2601.21306v2",
+        "metadata_checked_at": "2026-10-19T16:35:53+00:00"
+      },
+      "checked_at": "2026-10-19T16:36:00+00:00",
+      "evidence": "Unique arXiv version marker in local PDF pages 1-2; local PDF/source hashes match recorded metadata; exact hash match with newly downloaded official versioned source."
+    },
+    {
+      "arxiv_id": "1509.01240",
+      "path": "proof_ref/core-theory-2026-09/train-faster-generalize-better-stability-of-stochastic-gradient-1509.01240",
+      "status": "matched",
+      "pdf_sha256": "f25c44207c24f6a940eb92e06cb36bc53ed4c57a7632850be1b78b334022749e",
+      "source_sha256": "155cd6d6d177fd27473b972fe996f21035d9a121f7a2b1cf45e26675310448bb",
+      "resolved_id": "1509.01240v2",
+      "checked_source_url": "https://arxiv.org/src/1509.01240v2",
+      "remote_source_sha256": "155cd6d6d177fd27473b972fe996f21035d9a121f7a2b1cf45e26675310448bb",
+      "metadata": {
+        "title": "Train faster, generalize better: Stability of stochastic gradient descent",
+        "authors": [
+          "Hardt, Moritz",
+          "Recht, Benjamin",
+          "Singer, Yoram"
+        ],
+        "published": "2015/09/03",
+        "resolved_id": "1509.01240v2",
+        "metadata_url": "https://arxiv.org/abs/1509.01240v2",
+        "metadata_checked_at": "2026-10-19T16:36:01+00:00"
+      },
+      "checked_at": "2026-10-19T16:36:04+00:00",
+      "evidence": "Unique arXiv version marker in local PDF pages 1-2; local PDF/source hashes match recorded metadata; exact hash match with newly downloaded official versioned source."
+    },
+    {
+      "arxiv_id": "2502.06768",
+      "path": "proof_ref/core-theory-2026-09/train-for-the-worst-plan-for-the-best-2502.06768",
+      "status": "matched",
+      "pdf_sha256": "622b56cf0efd627ec5dcf179ed907c4693b923e6affa34bd4dd01c9f0e8f6121",
+      "source_sha256": "4be2ded31d22265148d259f1f411bcb9d3a2e1c0dfdcc91777686a0d355fda37",
+      "resolved_id": "2502.06768v3",
+      "checked_source_url": "https://arxiv.org/src/2502.06768v3",
+      "remote_source_sha256": "4be2ded31d22265148d259f1f411bcb9d3a2e1c0dfdcc91777686a0d355fda37",
+      "metadata": {
+        "title": "Train for the Worst, Plan for the Best: Understanding Token Ordering in Masked Diffusions",
+        "authors": [
+          "Kim, Jaeyeon",
+          "Shah, Kulin",
+          "Kontonis, Vasilis",
+          "Kakade, Sham",
+          "Chen, Sitan"
+        ],
+        "published": "2025/02/10",
+        "resolved_id": "2502.06768v3",
+        "metadata_url": "https://arxiv.org/abs/2502.06768v3",
+        "metadata_checked_at": "2026-10-19T16:36:07+00:00"
+      },
+      "checked_at": "2026-10-19T16:36:11+00:00",
+      "evidence": "Unique arXiv version marker in local PDF pages 1-2; local PDF/source hashes match recorded metadata; exact hash match with newly downloaded official versioned source."
+    },
+    {
+      "arxiv_id": "2501.16265",
+      "path": "proof_ref/core-theory-2026-09/training-dynamics-of-in-context-learning-in-linear-2501.16265",
+      "status": "matched",
+      "pdf_sha256": "7149120cccaed6bee1bacd49d784a2451bd6e465f2adc5cd18939fd432f99c8b",
+      "source_sha256": "e8fce35c989de1e8db6af3c05390feb335cf9982d05789aa66b6a927e89f6c06",
+      "resolved_id": "2501.16265v2",
+      "checked_source_url": "https://arxiv.org/src/2501.16265v2",
+      "remote_source_sha256": "e8fce35c989de1e8db6af3c05390feb335cf9982d05789aa66b6a927e89f6c06",
+      "metadata": {
+        "title": "Training Dynamics of In-Context Learning in Linear Attention",
+        "authors": [
+          "Zhang, Yedi",
+          "Singh, Aaditya K.",
+          "Latham, Peter E.",
+          "Saxe, Andrew"
+        ],
+        "published": "2025/01/27",
+        "resolved_id": "2501.16265v2",
+        "metadata_url": "https://arxiv.org/abs/2501.16265v2",
+        "metadata_checked_at": "2026-10-19T16:36:13+00:00"
+      },
+      "checked_at": "2026-10-19T16:36:25+00:00",
+      "evidence": "Unique arXiv version marker in local PDF pages 1-2; local PDF/source hashes match recorded metadata; exact hash match with newly downloaded official versioned source."
+    },
+    {
+      "arxiv_id": "2410.01969",
+      "path": "proof_ref/core-theory-2026-09/which-algorithms-have-tight-generalization-bounds-2410.01969",
+      "status": "matched",
+      "pdf_sha256": "94787754b3ab3b5f4e9e3a60db59f619878ae6e7b85f455e2b952f127fc800b9",
+      "source_sha256": "da0661c49e16832e8300ab6670ddd0d7bb32a02a60d3a092babeefe5865f4c39",
+      "resolved_id": "2410.01969v1",
+      "checked_source_url": "https://arxiv.org/src/2410.01969v1",
+      "remote_source_sha256": "da0661c49e16832e8300ab6670ddd0d7bb32a02a60d3a092babeefe5865f4c39",
+      "metadata": {
+        "title": "Which Algorithms Have Tight Generalization Bounds?",
+        "authors": [
+          "Gastpar, Michael",
+          "Nachum, Ido",
+          "Shafer, Jonathan",
+          "Weinberger, Thomas"
+        ],
+        "published": "2024/10/02",
+        "resolved_id": "2410.01969v1",
+        "metadata_url": "https://arxiv.org/abs/2410.01969v1",
+        "metadata_checked_at": "2026-10-19T16:36:25+00:00"
+      },
+      "checked_at": "2026-10-19T16:36:28+00:00",
+      "evidence": "Unique arXiv version marker in local PDF pages 1-2; local PDF/source hashes match recorded metadata; exact hash match with newly downloaded official versioned source."
+    },
+    {
+      "arxiv_id": "2602.02908",
+      "path": "proof_ref/recent-accepted-2025-2026/a-random-matrix-theory-perspective-on-the-consistency-2602.02908",
+      "status": "matched",
+      "pdf_sha256": "d3855e619518a64cd328577a598a10778bb82c94b42c0d86537c605d69f3cdc1",
+      "source_sha256": "d315b147972a42b0672876faa771b7a27d759659ad2ffa49e44f68494d4f3f3d",
+      "resolved_id": "2602.02908v2",
+      "checked_source_url": "https://arxiv.org/src/2602.02908v2",
+      "remote_source_sha256": "d315b147972a42b0672876faa771b7a27d759659ad2ffa49e44f68494d4f3f3d",
+      "metadata": {
+        "title": "A Random Matrix Theory Perspective on the Consistency of Diffusion Models",
+        "authors": [
+          "Wang, Binxu",
+          "Zavatone-Veth, Jacob",
+          "Pehlevan, Cengiz"
+        ],
+        "published": "2026/02/02",
+        "resolved_id": "2602.02908v2",
+        "metadata_url": "https://arxiv.org/abs/2602.02908v2",
+        "metadata_checked_at": "2026-10-19T16:36:31+00:00"
+      },
+      "checked_at": "2026-10-19T16:36:39+00:00",
+      "evidence": "Unique arXiv version marker in local PDF pages 1-2; local PDF/source hashes match recorded metadata; exact hash match with newly downloaded official versioned source."
+    },
+    {
+      "arxiv_id": "2505.10880",
+      "path": "proof_ref/recent-accepted-2025-2026/approximation-and-generalization-abilities-of-score-based-neural-2505.10880",
+      "status": "matched",
+      "pdf_sha256": "0c4c0da120f7ac4508e69b71f08c389403c7d1422e8c84ef6a18173ea5385fd0",
+      "source_sha256": "8486023245f7c0244d56430be7e5359adb110af394ced6bce6ba444e450acf79",
+      "resolved_id": "2505.10880v2",
+      "checked_source_url": "https://arxiv.org/src/2505.10880v2",
+      "remote_source_sha256": "8486023245f7c0244d56430be7e5359adb110af394ced6bce6ba444e450acf79",
+      "metadata": {
+        "title": "Approximation and Generalization Abilities of Score-based Neural Network Generative Models for Sub-Gaussian Distributions",
+        "authors": [
+          "Fu, Guoji",
+          "Lee, Wee Sun"
+        ],
+        "published": "2025/05/16",
+        "resolved_id": "2505.10880v2",
+        "metadata_url": "https://arxiv.org/abs/2505.10880v2",
+        "metadata_checked_at": "2026-10-19T16:36:40+00:00"
+      },
+      "checked_at": "2026-10-19T16:36:43+00:00",
+      "evidence": "Unique arXiv version marker in local PDF pages 1-2; local PDF/source hashes match recorded metadata; exact hash match with newly downloaded official versioned source."
+    },
+    {
+      "arxiv_id": "2503.19856",
+      "path": "proof_ref/recent-accepted-2025-2026/capacity-constrained-online-learning-with-delays-scheduling-frameworks-2503.19856",
+      "status": "matched",
+      "pdf_sha256": "cc6fd81926bdbba7dd297bf50d6dae59965418a88610294096411ca3fea7d7c0",
+      "source_sha256": "9604d6c9a8e92b359e6d694b3a730f89a27a7a7b8e909f31142d9450ffe6119b",
+      "resolved_id": "2503.19856v2",
+      "checked_source_url": "https://arxiv.org/src/2503.19856v2",
+      "remote_source_sha256": "9604d6c9a8e92b359e6d694b3a730f89a27a7a7b8e909f31142d9450ffe6119b",
+      "metadata": {
+        "title": "Capacity-Constrained Online Learning with Delays: Scheduling Frameworks and Regret Trade-offs",
+        "authors": [
+          "Ryabchenko, Alexander",
+          "Attias, Idan",
+          "Roy, Daniel M."
+        ],
+        "published": "2025/03/25",
+        "resolved_id": "2503.19856v2",
+        "metadata_url": "https://arxiv.org/abs/2503.19856v2",
+        "metadata_checked_at": "2026-10-19T16:36:46+00:00"
+      },
+      "checked_at": "2026-10-19T16:36:49+00:00",
+      "evidence": "Unique arXiv version marker in local PDF pages 1-2; local PDF/source hashes match recorded metadata; exact hash match with newly downloaded official versioned source."
+    },
+    {
+      "arxiv_id": "2410.13577",
+      "path": "proof_ref/recent-accepted-2025-2026/generalization-bounds-via-meta-learned-model-representations-pac-2410.13577",
+      "status": "matched",
+      "pdf_sha256": "7c4b5afb92b71b2eb4f7ed28756bcce19294f39c9b095b4da8101665aacb632f",
+      "source_sha256": "8b0ea492c4971e849e820a6b0a48c20213c2fc86bc96fb0285ecd3b1f51fd057",
+      "resolved_id": "2410.13577v3",
+      "checked_source_url": "https://arxiv.org/src/2410.13577v3",
+      "remote_source_sha256": "8b0ea492c4971e849e820a6b0a48c20213c2fc86bc96fb0285ecd3b1f51fd057",
+      "metadata": {
+        "title": "Generalization Bounds via Meta-Learned Model Representations: PAC-Bayes and Sample Compression Hypernetworks",
+        "authors": [
+          "Leblanc, Benjamin",
+          "Bazinet, Mathieu",
+          "D'Amours, Nathaniel",
+          "Drouin, Alexandre",
+          "Germain, Pascal"
+        ],
+        "published": "2024/10/17",
+        "resolved_id": "2410.13577v3",
+        "metadata_url": "https://arxiv.org/abs/2410.13577v3",
+        "metadata_checked_at": "2026-10-19T16:36:52+00:00"
+      },
+      "checked_at": "2026-10-19T16:36:58+00:00",
+      "evidence": "Unique arXiv version marker in local PDF pages 1-2; local PDF/source hashes match recorded metadata; exact hash match with newly downloaded official versioned source."
+    },
+    {
+      "arxiv_id": "2505.11298",
+      "path": "proof_ref/recent-accepted-2025-2026/graph-representational-learning-when-does-more-expressivity-hurt-2505.11298",
+      "status": "matched",
+      "pdf_sha256": "faac47519ff875c0f92958331c74e19502c4ff228ad9a18f6356d118506cba99",
+      "source_sha256": "ebfeb89b1494b1ba675bde5e07f44b02cc075d811b028f6570c9fe4494eb5b74",
+      "resolved_id": "2505.11298v1",
+      "checked_source_url": "https://arxiv.org/src/2505.11298v1",
+      "remote_source_sha256": "ebfeb89b1494b1ba675bde5e07f44b02cc075d811b028f6570c9fe4494eb5b74",
+      "metadata": {
+        "title": "Graph Representational Learning: When Does More Expressivity Hurt Generalization?",
+        "authors": [
+          "Maskey, Sohir",
+          "Paolino, Raffaele",
+          "Jogl, Fabian",
+          "Kutyniok, Gitta",
+          "Lutzeyer, Johannes F."
+        ],
+        "published": "2025/05/16",
+        "resolved_id": "2505.11298v1",
+        "metadata_url": "https://arxiv.org/abs/2505.11298v1",
+        "metadata_checked_at": "2026-10-19T16:36:59+00:00"
+      },
+      "checked_at": "2026-10-19T16:37:08+00:00",
+      "evidence": "Unique arXiv version marker in local PDF pages 1-2; local PDF/source hashes match recorded metadata; exact hash match with newly downloaded official versioned source."
+    },
+    {
+      "arxiv_id": "2602.01338",
+      "path": "proof_ref/recent-accepted-2025-2026/high-accuracy-sampling-for-diffusion-models-and-log-2602.01338",
+      "status": "matched",
+      "pdf_sha256": "3262376a641f1305f0734d52e44787307bb4fadd25a50bee4608dabcfab16f82",
+      "source_sha256": "4461cfd4938c5024e1c41f0096a020d60654c049eabe0dc4c9ece81ad2be3aa9",
+      "resolved_id": "2602.01338v2",
+      "checked_source_url": "https://arxiv.org/src/2602.01338v2",
+      "remote_source_sha256": "4461cfd4938c5024e1c41f0096a020d60654c049eabe0dc4c9ece81ad2be3aa9",
+      "metadata": {
+        "title": "High-accuracy sampling for diffusion models and log-concave distributions",
+        "authors": [
+          "Chen, Fan",
+          "Chewi, Sinho",
+          "Daskalakis, Constantinos",
+          "Rakhlin, Alexander"
+        ],
+        "published": "2026/02/01",
+        "resolved_id": "2602.01338v2",
+        "metadata_url": "https://arxiv.org/abs/2602.01338v2",
+        "metadata_checked_at": "2026-10-19T16:37:08+00:00"
+      },
+      "checked_at": "2026-10-19T16:37:12+00:00",
+      "evidence": "Unique arXiv version marker in local PDF pages 1-2; local PDF/source hashes match recorded metadata; exact hash match with newly downloaded official versioned source."
+    },
+    {
+      "arxiv_id": "2309.16858",
+      "path": "proof_ref/recent-accepted-2025-2026/improved-generalization-bounds-for-transductive-learning-by-transductive-2309.16858",
+      "status": "matched",
+      "pdf_sha256": "fb6a9e77a302462ee41f0c6cba3864a2d4091eaed64ca0aa0a042268b125a108",
+      "source_sha256": "00e044cb47324b05981f4faf4dc7b55f45934396387c147804ea0b0d357a8049",
+      "resolved_id": "2309.16858v5",
+      "checked_source_url": "https://arxiv.org/src/2309.16858v5",
+      "remote_source_sha256": "00e044cb47324b05981f4faf4dc7b55f45934396387c147804ea0b0d357a8049",
+      "metadata": {
+        "title": "Improved Generalization Bounds for Transductive Learning by Transductive Local Complexity and Its Applications",
+        "authors": [
+          "Yang, Yingzhen"
+        ],
+        "published": "2023/09/28",
+        "resolved_id": "2309.16858v5",
+        "metadata_url": "https://arxiv.org/abs/2309.16858v5",
+        "metadata_checked_at": "2026-10-19T16:37:15+00:00"
+      },
+      "checked_at": "2026-10-19T16:37:19+00:00",
+      "evidence": "Unique arXiv version marker in local PDF pages 1-2; local PDF/source hashes match recorded metadata; exact hash match with newly downloaded official versioned source."
+    },
+    {
+      "arxiv_id": "2602.00869",
+      "path": "proof_ref/recent-accepted-2025-2026/improving-flow-matching-by-aligning-flow-divergence-2602.00869",
+      "status": "matched",
+      "pdf_sha256": "e54a1d133672fbe9d1b27f9ca01c33442657b825db44c30a8fd7a657329b89b9",
+      "source_sha256": "8a1addb588245602781ad8fd7b5de9ac32b47b5d9ae1f51a666129406564b77f",
+      "resolved_id": "2602.00869v1",
+      "checked_source_url": "https://arxiv.org/src/2602.00869v1",
+      "remote_source_sha256": "8a1addb588245602781ad8fd7b5de9ac32b47b5d9ae1f51a666129406564b77f",
+      "metadata": {
+        "title": "Improving Flow Matching by Aligning Flow Divergence",
+        "authors": [
+          "Huang, Yuhao",
+          "Transue, Taos",
+          "Wang, Shih-Hsin",
+          "Feldman, William",
+          "Zhang, Hong",
+          "Wang, Bao"
+        ],
+        "published": "2026/01/31",
+        "resolved_id": "2602.00869v1",
+        "metadata_url": "https://arxiv.org/abs/2602.00869v1",
+        "metadata_checked_at": "2026-10-19T16:37:21+00:00"
+      },
+      "checked_at": "2026-10-19T16:37:27+00:00",
+      "evidence": "Unique arXiv version marker in local PDF pages 1-2; local PDF/source hashes match recorded metadata; exact hash match with newly downloaded official versioned source."
+    },
+    {
+      "arxiv_id": "2502.08136",
+      "path": "proof_ref/recent-accepted-2025-2026/in-context-learning-of-linear-dynamical-systems-with-2502.08136",
+      "status": "matched",
+      "pdf_sha256": "4e9d1823c3a74e12e457b7554110801d522d3b4816a70e1d63d4918a25c13398",
+      "source_sha256": "9f2bb848091a6121f87810a0c124382f3a74bfb11449ae5e954c757ebcc11125",
+      "resolved_id": "2502.08136v3",
+      "checked_source_url": "https://arxiv.org/src/2502.08136v3",
+      "remote_source_sha256": "9f2bb848091a6121f87810a0c124382f3a74bfb11449ae5e954c757ebcc11125",
+      "metadata": {
+        "title": "In-Context Learning of Linear Dynamical Systems with Transformers: Approximation Bounds and Depth-Separation",
+        "authors": [
+          "Cole, Frank",
+          "Zhao, Yuxuan",
+          "Lu, Yulong",
+          "Zhang, Tianhao"
+        ],
+        "published": "2025/02/12",
+        "resolved_id": "2502.08136v3",
+        "metadata_url": "https://arxiv.org/abs/2502.08136v3",
+        "metadata_checked_at": "2026-10-19T16:37:27+00:00"
+      },
+      "checked_at": "2026-10-19T16:37:31+00:00",
+      "evidence": "Unique arXiv version marker in local PDF pages 1-2; local PDF/source hashes match recorded metadata; exact hash match with newly downloaded official versioned source."
+    },
+    {
+      "arxiv_id": "2502.14060",
+      "path": "proof_ref/recent-accepted-2025-2026/new-lower-bounds-for-stochastic-non-convex-optimization-2502.14060",
+      "status": "matched",
+      "pdf_sha256": "f45f487eb04eef737a7995f5edab93798076c20cd573184b6a9d87bafcc2c7dd",
+      "source_sha256": "6b4465509b14ba4c794c84e1dad2b0481e53c4c5b20dd92ce47ef2480aeae52b",
+      "resolved_id": "2502.14060v2",
+      "checked_source_url": "https://arxiv.org/src/2502.14060v2",
+      "remote_source_sha256": "6b4465509b14ba4c794c84e1dad2b0481e53c4c5b20dd92ce47ef2480aeae52b",
+      "metadata": {
+        "title": "New Lower Bounds for Stochastic Non-Convex Optimization through Divergence Decomposition",
+        "authors": [
+          "Saad, El Mehdi",
+          "Lee, Wei-Cheng",
+          "Orabona, Francesco"
+        ],
+        "published": "2025/02/19",
+        "resolved_id": "2502.14060v2",
+        "metadata_url": "https://arxiv.org/abs/2502.14060v2",
+        "metadata_checked_at": "2026-10-19T16:37:34+00:00"
+      },
+      "checked_at": "2026-10-19T16:37:38+00:00",
+      "evidence": "Unique arXiv version marker in local PDF pages 1-2; local PDF/source hashes match recorded metadata; exact hash match with newly downloaded official versioned source."
+    },
+    {
+      "arxiv_id": "2510.02779",
+      "path": "proof_ref/recent-accepted-2025-2026/optimal-rates-for-generalization-of-gradient-descent-for-2510.02779",
+      "status": "matched",
+      "pdf_sha256": "e8eed299e872969ae0d32bde77a813171a2e25526b8af690a8435024037d9661",
+      "source_sha256": "8d51e7d81de2ca5f3aeb6bf3bf0b67e18038bc450456c704f6a0c5a75bfd2818",
+      "resolved_id": "2510.02779v4",
+      "checked_source_url": "https://arxiv.org/src/2510.02779v4",
+      "remote_source_sha256": "8d51e7d81de2ca5f3aeb6bf3bf0b67e18038bc450456c704f6a0c5a75bfd2818",
+      "metadata": {
+        "title": "Optimal Rates for Generalization of Gradient Descent for Deep ReLU Classification",
+        "authors": [
+          "Li, Yuanfan",
+          "Lei, Yunwen",
+          "Guo, Zheng-Chu",
+          "Ying, Yiming"
+        ],
+        "published": "2025/10/03",
+        "resolved_id": "2510.02779v4",
+        "metadata_url": "https://arxiv.org/abs/2510.02779v4",
+        "metadata_checked_at": "2026-10-19T16:37:40+00:00"
+      },
+      "checked_at": "2026-10-19T16:37:43+00:00",
+      "evidence": "Unique arXiv version marker in local PDF pages 1-2; local PDF/source hashes match recorded metadata; exact hash match with newly downloaded official versioned source."
+    },
+    {
+      "arxiv_id": "2405.15050",
+      "path": "proof_ref/recent-accepted-2025-2026/reinforcement-learning-for-infinite-horizon-average-reward-linear-2405.15050",
+      "status": "matched",
+      "pdf_sha256": "2fc9c78f12d7975e4bdb8a50a5da71ae33734d7b8bb7b8278e8096fd52a07963",
+      "source_sha256": "d96adaaad8ef5337bb7b099f3e581038450af6bb6c206e410588cd75c8cce4f7",
+      "resolved_id": "2405.15050v3",
+      "checked_source_url": "https://arxiv.org/src/2405.15050v3",
+      "remote_source_sha256": "d96adaaad8ef5337bb7b099f3e581038450af6bb6c206e410588cd75c8cce4f7",
+      "metadata": {
+        "title": "Reinforcement Learning for Infinite-Horizon Average-Reward Linear MDPs via Approximation by Discounted-Reward MDPs",
+        "authors": [
+          "Hong, Kihyuk",
+          "Chae, Woojin",
+          "Zhang, Yufan",
+          "Lee, Dabeen",
+          "Tewari, Ambuj"
+        ],
+        "published": "2024/05/23",
+        "resolved_id": "2405.15050v3",
+        "metadata_url": "https://arxiv.org/abs/2405.15050v3",
+        "metadata_checked_at": "2026-10-19T16:37:46+00:00"
+      },
+      "checked_at": "2026-10-19T16:37:49+00:00",
+      "evidence": "Unique arXiv version marker in local PDF pages 1-2; local PDF/source hashes match recorded metadata; exact hash match with newly downloaded official versioned source."
+    },
+    {
+      "arxiv_id": "2510.24966",
+      "path": "proof_ref/recent-accepted-2025-2026/sequences-of-logits-reveal-the-low-rank-structure-2510.24966",
+      "status": "matched",
+      "pdf_sha256": "c7b2c7c61bde391afedabfe5290fe81003f49746a842148613347fd4aa64d43d",
+      "source_sha256": "164b791e3ea4987743604f7db28dcd0fde8a846cbe1725507e1d3bb3389945fc",
+      "resolved_id": "2510.24966v1",
+      "checked_source_url": "https://arxiv.org/src/2510.24966v1",
+      "remote_source_sha256": "164b791e3ea4987743604f7db28dcd0fde8a846cbe1725507e1d3bb3389945fc",
+      "metadata": {
+        "title": "Sequences of Logits Reveal the Low Rank Structure of Language Models",
+        "authors": [
+          "Golowich, Noah",
+          "Liu, Allen",
+          "Shetty, Abhishek"
+        ],
+        "published": "2025/10/28",
+        "resolved_id": "2510.24966v1",
+        "metadata_url": "https://arxiv.org/abs/2510.24966v1",
+        "metadata_checked_at": "2026-10-19T16:37:52+00:00"
+      },
+      "checked_at": "2026-10-19T16:37:56+00:00",
+      "evidence": "Unique arXiv version marker in local PDF pages 1-2; local PDF/source hashes match recorded metadata; exact hash match with newly downloaded official versioned source."
+    },
+    {
+      "arxiv_id": "2503.10537",
+      "path": "proof_ref/recent-accepted-2025-2026/structured-preconditioners-in-adaptive-optimization-a-unified-analysis-2503.10537",
+      "status": "matched",
+      "pdf_sha256": "19143bdc57a6711dbb33b35fc1cf036025a031a71cb29787a3df5a219e81c09f",
+      "source_sha256": "94c5dfcfb8788a38d043b079eccdeba17c9253d80b8d60402185463bf1e862af",
+      "resolved_id": "2503.10537v2",
+      "checked_source_url": "https://arxiv.org/src/2503.10537v2",
+      "remote_source_sha256": "94c5dfcfb8788a38d043b079eccdeba17c9253d80b8d60402185463bf1e862af",
+      "metadata": {
+        "title": "Structured Preconditioners in Adaptive Optimization: A Unified Analysis",
+        "authors": [
+          "Xie, Shuo",
+          "Wang, Tianhao",
+          "Reddi, Sashank",
+          "Kumar, Sanjiv",
+          "Li, Zhiyuan"
+        ],
+        "published": "2025/03/13",
+        "resolved_id": "2503.10537v2",
+        "metadata_url": "https://arxiv.org/abs/2503.10537v2",
+        "metadata_checked_at": "2026-10-19T16:37:59+00:00"
+      },
+      "checked_at": "2026-10-19T16:38:02+00:00",
+      "evidence": "Unique arXiv version marker in local PDF pages 1-2; local PDF/source hashes match recorded metadata; exact hash match with newly downloaded official versioned source."
+    },
+    {
+      "arxiv_id": "2310.09100",
+      "path": "proof_ref/recent-accepted-2025-2026/time-uniform-self-normalized-concentration-for-vector-valued-2310.09100",
+      "status": "matched",
+      "pdf_sha256": "6a05a405b9a81650b439252ce11dfba397e93fbd2798d1cbbd74023dfd44fbda",
+      "source_sha256": "fb46a15eae05801661da291ccbe1cc7f59e10fb10f01615e42f234b3d9ee2a31",
+      "resolved_id": "2310.09100v2",
+      "checked_source_url": "https://arxiv.org/src/2310.09100v2",
+      "remote_source_sha256": "fb46a15eae05801661da291ccbe1cc7f59e10fb10f01615e42f234b3d9ee2a31",
+      "metadata": {
+        "title": "Time-Uniform Self-Normalized Concentration for Vector-Valued Processes",
+        "authors": [
+          "Whitehouse, Justin",
+          "Wu, Zhiwei Steven",
+          "Ramdas, Aaditya"
+        ],
+        "published": "2023/10/13",
+        "resolved_id": "2310.09100v2",
+        "metadata_url": "https://arxiv.org/abs/2310.09100v2",
+        "metadata_checked_at": "2026-10-19T16:38:05+00:00"
+      },
+      "checked_at": "2026-10-19T16:38:08+00:00",
+      "evidence": "Unique arXiv version marker in local PDF pages 1-2; local PDF/source hashes match recorded metadata; exact hash match with newly downloaded official versioned source."
+    },
+    {
+      "arxiv_id": "2601.19791",
+      "path": "proof_ref/recent-accepted-2025-2026/to-grok-grokking-provable-grokking-in-ridge-regression-2601.19791",
+      "status": "matched",
+      "pdf_sha256": "49124546cb1c153b3aef2355bee9bb4185a3c82f8f3a23a5e6d1fe4cbf148d08",
+      "source_sha256": "9579f56263149672b13e23706cf44c4f1b14c784ee3880642e88b281ec3e90a3",
+      "resolved_id": "2601.19791v4",
+      "checked_source_url": "https://arxiv.org/src/2601.19791v4",
+      "remote_source_sha256": "9579f56263149672b13e23706cf44c4f1b14c784ee3880642e88b281ec3e90a3",
+      "metadata": {
+        "title": "To Grok Grokking: Provable Grokking in Ridge Regression",
+        "authors": [
+          "Xu, Mingyue",
+          "Vardi, Gal",
+          "Safran, Itay"
+        ],
+        "published": "2026/01/27",
+        "resolved_id": "2601.19791v4",
+        "metadata_url": "https://arxiv.org/abs/2601.19791v4",
+        "metadata_checked_at": "2026-10-19T16:38:11+00:00"
+      },
+      "checked_at": "2026-10-19T16:38:19+00:00",
+      "evidence": "Unique arXiv version marker in local PDF pages 1-2; local PDF/source hashes match recorded metadata; exact hash match with newly downloaded official versioned source."
+    }
+  ]
+}

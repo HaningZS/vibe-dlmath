@@ -1,0 +1,51 @@
+{
+  "title": "Direct Preference Optimization: Your Language Model is Secretly a Reward Model",
+  "kind": "arxiv",
+  "identifier": "2305.18290",
+  "raw": "https://arxiv.org/abs/2305.18290",
+  "pdf_url": "https://arxiv.org/pdf/2305.18290.pdf",
+  "source_url": "https://export.arxiv.org/e-print/2305.18290",
+  "pdf_error": null,
+  "source_error": null,
+  "imported_from": {
+    "repository": "HaningZS/HaningZS_Notes",
+    "commit": "8ced9038b7611bcb8c2b2774fb870149df8ef780"
+  },
+  "edition_status": "pinned-cross-checked",
+  "artifacts": {
+    "pdf": {
+      "sha256": "92cb3a2b71362acda98a789b03d88688fd33cf5fcf13f81d2b1de30ee7d3b67a",
+      "bytes": 1299212
+    },
+    "source": {
+      "sha256": "750054a6d13d9f79559d6defbfa68432e2a8c8959f0b7e7e37c622c1740653cc",
+      "bytes": 1023207
+    }
+  },
+  "topic": "post-training",
+  "templates": [
+    "T08"
+  ],
+  "path": "proof_ref/core-theory-2026-09/direct-preference-optimization-your-language-model-is-secretly-2305.18290",
+  "last_checked_at": "2026-09-26T05:54:22+00:00",
+  "errors": {},
+  "authors": [
+    "Rafailov, Rafael",
+    "Sharma, Archit",
+    "Mitchell, Eric",
+    "Ermon, Stefano",
+    "Manning, Christopher D.",
+    "Finn, Chelsea"
+  ],
+  "published": "2023/05/29",
+  "resolved_id": "2305.18290v3",
+  "metadata_url": "https://arxiv.org/abs/2305.18290v3",
+  "metadata_checked_at": "2026-10-19T16:34:30+00:00",
+  "version_verification": {
+    "checked_at": "2026-10-19T16:34:34+00:00",
+    "pdf_marker": "2305.18290v3",
+    "source_url": "https://arxiv.org/src/2305.18290v3",
+    "method": "Unique arXiv version marker in local PDF pages 1-2; local PDF/source hashes match recorded metadata; exact hash match with newly downloaded official versioned source.",
+    "report": "reports/legacy_version_verification.json"
+  }
+}

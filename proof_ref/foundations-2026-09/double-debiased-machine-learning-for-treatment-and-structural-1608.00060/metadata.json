@@ -1,0 +1,38 @@
+{
+  "title": "Double/Debiased Machine Learning for Treatment and Causal Parameters",
+  "authors": [
+    "Chernozhukov, Victor",
+    "Chetverikov, Denis",
+    "Demirer, Mert",
+    "Duflo, Esther",
+    "Hansen, Christian",
+    "Newey, Whitney",
+    "Robins, James"
+  ],
+  "published": "2016/07/30",
+  "resolved_id": "1608.00060v7",
+  "metadata_url": "https://arxiv.org/abs/1608.00060v7",
+  "metadata_checked_at": "2026-09-26T05:41:54+00:00",
+  "download_urls": {
+    "pdf": "https://arxiv.org/pdf/1608.00060v7",
+    "source": "https://arxiv.org/src/1608.00060v7"
+  },
+  "artifacts": {
+    "pdf": {
+      "sha256": "3186133dacb9f4a31c004a00150627de1e5cf26e203d1522a25a5444c7dbdf78",
+      "bytes": 1120996
+    },
+    "source": {
+      "sha256": "5bee6318942693e3ffa13632a73c6e1a4d6335773f23a47be1e7fc664fd71df2",
+      "bytes": 133116
+    }
+  },
+  "identifier": "1608.00060",
+  "topic": "statistics",
+  "templates": [
+    "T11"
+  ],
+  "path": "proof_ref/foundations-2026-09/double-debiased-machine-learning-for-treatment-and-structural-1608.00060",
+  "last_checked_at": "2026-09-26T05:54:20+00:00",
+  "errors": {}
+}

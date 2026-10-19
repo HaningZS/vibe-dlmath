@@ -1,0 +1,47 @@
+{
+  "title": "$f$-Divergence Regularized RLHF: Two Tales of Sampling and Unified Analyses",
+  "kind": "arxiv",
+  "identifier": "2605.06977",
+  "raw": "https://arxiv.org/abs/2605.06977",
+  "pdf_url": "https://arxiv.org/pdf/2605.06977.pdf",
+  "source_url": "https://export.arxiv.org/e-print/2605.06977",
+  "pdf_error": null,
+  "source_error": null,
+  "imported_from": {
+    "repository": "HaningZS/HaningZS_Notes",
+    "commit": "8ced9038b7611bcb8c2b2774fb870149df8ef780"
+  },
+  "edition_status": "pinned-cross-checked",
+  "artifacts": {
+    "pdf": {
+      "sha256": "14376bfa221fd090a8068072735a08f48c623c3e5f9361d3fca2fb4415b435d5",
+      "bytes": 908973
+    },
+    "source": {
+      "sha256": "c963e7688f0cc6c38f20bff2ce0c8dc7fd11b9224936eecdb8860e51d0cf2763",
+      "bytes": 452926
+    }
+  },
+  "topic": "post-training",
+  "templates": [],
+  "path": "proof_ref/core-theory-2026-09/f-divergence-regularized-rlhf-two-tales-of-sampling-2605.06977",
+  "last_checked_at": "2026-09-26T05:54:22+00:00",
+  "errors": {},
+  "authors": [
+    "Wu, Di",
+    "Shi, Chengshuai",
+    "Yang, Jing",
+    "Shen, Cong"
+  ],
+  "published": "2026/05/07",
+  "resolved_id": "2605.06977v1",
+  "metadata_url": "https://arxiv.org/abs/2605.06977v1",
+  "metadata_checked_at": "2026-10-19T16:34:42+00:00",
+  "version_verification": {
+    "checked_at": "2026-10-19T16:34:46+00:00",
+    "pdf_marker": "2605.06977v1",
+    "source_url": "https://arxiv.org/src/2605.06977v1",
+    "method": "Unique arXiv version marker in local PDF pages 1-2; local PDF/source hashes match recorded metadata; exact hash match with newly downloaded official versioned source.",
+    "report": "reports/legacy_version_verification.json"
+  }
+}

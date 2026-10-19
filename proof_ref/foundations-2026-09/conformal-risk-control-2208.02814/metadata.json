@@ -1,0 +1,36 @@
+{
+  "title": "Conformal Risk Control",
+  "authors": [
+    "Angelopoulos, Anastasios N.",
+    "Bates, Stephen",
+    "Fisch, Adam",
+    "Lei, Lihua",
+    "Schuster, Tal"
+  ],
+  "published": "2022/08/04",
+  "resolved_id": "2208.02814v4",
+  "metadata_url": "https://arxiv.org/abs/2208.02814v4",
+  "metadata_checked_at": "2026-09-26T05:42:15+00:00",
+  "download_urls": {
+    "pdf": "https://arxiv.org/pdf/2208.02814v4",
+    "source": "https://arxiv.org/src/2208.02814v4"
+  },
+  "artifacts": {
+    "pdf": {
+      "sha256": "32c3b9689cb69dbec96ce87ba8b0fe98293bb1c9a59247480b16dbae6aa37df2",
+      "bytes": 1623636
+    },
+    "source": {
+      "sha256": "a71d0ce824b1aa291da2304c13ce833f25a23878caf976f9bf57dc0f5ab8f7f1",
+      "bytes": 1134907
+    }
+  },
+  "identifier": "2208.02814",
+  "topic": "statistics",
+  "templates": [
+    "T18"
+  ],
+  "path": "proof_ref/foundations-2026-09/conformal-risk-control-2208.02814",
+  "last_checked_at": "2026-09-26T05:54:20+00:00",
+  "errors": {}
+}

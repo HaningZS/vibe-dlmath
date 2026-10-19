@@ -1,0 +1,49 @@
+{
+  "title": "Training Dynamics of In-Context Learning in Linear Attention",
+  "kind": "arxiv",
+  "identifier": "2501.16265",
+  "raw": "https://arxiv.org/abs/2501.16265",
+  "pdf_url": "https://arxiv.org/pdf/2501.16265.pdf",
+  "source_url": "https://export.arxiv.org/e-print/2501.16265",
+  "pdf_error": null,
+  "source_error": null,
+  "imported_from": {
+    "repository": "HaningZS/HaningZS_Notes",
+    "commit": "8ced9038b7611bcb8c2b2774fb870149df8ef780"
+  },
+  "edition_status": "pinned-cross-checked",
+  "artifacts": {
+    "pdf": {
+      "sha256": "7149120cccaed6bee1bacd49d784a2451bd6e465f2adc5cd18939fd432f99c8b",
+      "bytes": 2071667
+    },
+    "source": {
+      "sha256": "e8fce35c989de1e8db6af3c05390feb335cf9982d05789aa66b6a927e89f6c06",
+      "bytes": 1098344
+    }
+  },
+  "topic": "transformer-icl",
+  "templates": [
+    "T14"
+  ],
+  "path": "proof_ref/core-theory-2026-09/training-dynamics-of-in-context-learning-in-linear-2501.16265",
+  "last_checked_at": "2026-09-26T05:54:22+00:00",
+  "errors": {},
+  "authors": [
+    "Zhang, Yedi",
+    "Singh, Aaditya K.",
+    "Latham, Peter E.",
+    "Saxe, Andrew"
+  ],
+  "published": "2025/01/27",
+  "resolved_id": "2501.16265v2",
+  "metadata_url": "https://arxiv.org/abs/2501.16265v2",
+  "metadata_checked_at": "2026-10-19T16:36:13+00:00",
+  "version_verification": {
+    "checked_at": "2026-10-19T16:36:25+00:00",
+    "pdf_marker": "2501.16265v2",
+    "source_url": "https://arxiv.org/src/2501.16265v2",
+    "method": "Unique arXiv version marker in local PDF pages 1-2; local PDF/source hashes match recorded metadata; exact hash match with newly downloaded official versioned source.",
+    "report": "reports/legacy_version_verification.json"
+  }
+}

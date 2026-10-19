@@ -1,0 +1,40 @@
+{
+  "generated_at": "2026-10-19T15:50:56+00:00",
+  "total": 3,
+  "failed": 0,
+  "results": [
+    {
+      "arxiv_id": "2610.06238",
+      "title": "Certification-Enhanced Generalization Bounds",
+      "path": "proof_ref/proof-distillation-2026-10/certification-enhanced-generalization-bounds-2610.06238",
+      "actions": {
+        "pdf": "downloaded",
+        "source": "downloaded"
+      },
+      "errors": {},
+      "checked_at": "2026-10-19T15:50:32+00:00"
+    },
+    {
+      "arxiv_id": "2609.38918",
+      "title": "Flow Matching under Noisy Latent Structure: Beyond Exact Low-Dimensional Support",
+      "path": "proof_ref/proof-distillation-2026-10/flow-matching-under-noisy-latent-structure-beyond-exact-2609.38918",
+      "actions": {
+        "pdf": "downloaded",
+        "source": "downloaded"
+      },
+      "errors": {},
+      "checked_at": "2026-10-19T15:50:41+00:00"
+    },
+    {
+      "arxiv_id": "2609.36568",
+      "title": "Sharp Convergence and Sampling Trade-offs for Riemannian Diffusion under Nonnegative Ricci Curvature",
+      "path": "proof_ref/proof-distillation-2026-10/sharp-convergence-and-sampling-trade-offs-for-riemannian-2609.36568",
+      "actions": {
+        "pdf": "downloaded",
+        "source": "downloaded"
+      },
+      "errors": {},
+      "checked_at": "2026-10-19T15:50:55+00:00"
+    }
+  ]
+}

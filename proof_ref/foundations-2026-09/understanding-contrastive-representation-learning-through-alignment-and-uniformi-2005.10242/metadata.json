@@ -1,0 +1,34 @@
+{
+  "title": "Understanding Contrastive Representation Learning through Alignment and Uniformity on the Hypersphere",
+  "authors": [
+    "Wang, Tongzhou",
+    "Isola, Phillip"
+  ],
+  "published": "2020/05/20",
+  "resolved_id": "2005.10242v10",
+  "metadata_url": "https://arxiv.org/abs/2005.10242v10",
+  "metadata_checked_at": "2026-09-26T05:46:33+00:00",
+  "download_urls": {
+    "pdf": "https://arxiv.org/pdf/2005.10242v10",
+    "source": "https://export.arxiv.org/e-print/2005.10242v10"
+  },
+  "artifacts": {
+    "pdf": {
+      "sha256": "1b5e644e94cbc4b2fbd3177c115b153be44c622863aaec779bc66672b2e7deb7",
+      "bytes": 4185717
+    },
+    "source": {
+      "sha256": "798c01a50a83053e64aa4d54e8ab3af76ae9fb659a021b67d93389bb342f279b",
+      "bytes": 23591616
+    }
+  },
+  "identifier": "2005.10242",
+  "topic": "representation",
+  "templates": [
+    "T05",
+    "T19"
+  ],
+  "path": "proof_ref/foundations-2026-09/understanding-contrastive-representation-learning-through-alignment-and-uniformi-2005.10242",
+  "last_checked_at": "2026-09-26T05:54:22+00:00",
+  "errors": {}
+}

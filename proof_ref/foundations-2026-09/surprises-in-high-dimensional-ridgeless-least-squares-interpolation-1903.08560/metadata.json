@@ -1,0 +1,35 @@
+{
+  "title": "Surprises in High-Dimensional Ridgeless Least Squares Interpolation",
+  "authors": [
+    "Hastie, Trevor",
+    "Montanari, Andrea",
+    "Rosset, Saharon",
+    "Tibshirani, Ryan J."
+  ],
+  "published": "2019/03/19",
+  "resolved_id": "1903.08560v5",
+  "metadata_url": "https://arxiv.org/abs/1903.08560v5",
+  "metadata_checked_at": "2026-09-26T05:39:39+00:00",
+  "download_urls": {
+    "pdf": "https://arxiv.org/pdf/1903.08560v5",
+    "source": "https://export.arxiv.org/e-print/1903.08560v5"
+  },
+  "artifacts": {
+    "pdf": {
+      "sha256": "b671592188609aae4a4b99bfeb6505dcd8fadffb8916126a71570e2d0b658814",
+      "bytes": 1673553
+    },
+    "source": {
+      "sha256": "c6f3755694dea4877ed5486bcd0cf89ad0dca12336c7707db2125510ca57318a",
+      "bytes": 550084
+    }
+  },
+  "identifier": "1903.08560",
+  "topic": "generalization",
+  "templates": [
+    "T09"
+  ],
+  "path": "proof_ref/foundations-2026-09/surprises-in-high-dimensional-ridgeless-least-squares-interpolation-1903.08560",
+  "last_checked_at": "2026-09-26T05:54:20+00:00",
+  "errors": {}
+}

@@ -1,0 +1,17 @@
+# Downloadable paper cache. Manifests, metadata and human review cards are tracked.
+proof_ref/**/paper.pdf
+proof_ref/**/source.tar.gz
+proof_ref/**/source/
+.download.lock
+.partial-*
+.extract-*/
+__pycache__/
+*.pyc
+.venv/
+.DS_Store
+.env
+.env.*
+.obsidian/
+reports/download_checkpoint.json
+# Completed development records are recoverable locally, not public dependencies.
+/.local-archive/

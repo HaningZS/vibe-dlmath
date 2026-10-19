@@ -1,0 +1,35 @@
+{
+  "title": "A Stochastic Gradient Method with an Exponential Convergence Rate for Finite Training Sets",
+  "authors": [
+    "Roux, Nicolas Le",
+    "Schmidt, Mark",
+    "Bach, Francis"
+  ],
+  "published": "2012/02/28",
+  "resolved_id": "1202.6258v4",
+  "metadata_url": "https://arxiv.org/abs/1202.6258v4",
+  "metadata_checked_at": "2026-09-26T05:38:49+00:00",
+  "download_urls": {
+    "source": "https://export.arxiv.org/e-print/1202.6258v4",
+    "pdf": "https://export.arxiv.org/pdf/1202.6258v4"
+  },
+  "artifacts": {
+    "source": {
+      "sha256": "7ec1df1da6cc414053f1f8c9c750a6e5e8c30f4d6ed55f2fefe79c5f31b46948",
+      "bytes": 221766
+    },
+    "pdf": {
+      "sha256": "1f7445347699c7354d16bbe859cbedd395b37833891a671e5bfbf534d7cdff3b",
+      "bytes": 733084
+    }
+  },
+  "identifier": "1202.6258",
+  "topic": "optimization",
+  "templates": [
+    "T02",
+    "T03"
+  ],
+  "path": "proof_ref/foundations-2026-09/a-stochastic-gradient-method-with-an-exponential-convergence-1202.6258",
+  "last_checked_at": "2026-09-26T05:54:20+00:00",
+  "errors": {}
+}

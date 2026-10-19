@@ -1,0 +1,48 @@
+{
+  "title": "Time-Uniform Self-Normalized Concentration for Vector-Valued Processes",
+  "kind": "arxiv",
+  "identifier": "2310.09100",
+  "raw": "https://arxiv.org/abs/2310.09100",
+  "pdf_url": "https://arxiv.org/pdf/2310.09100.pdf",
+  "source_url": "https://export.arxiv.org/e-print/2310.09100",
+  "pdf_error": null,
+  "source_error": null,
+  "imported_from": {
+    "repository": "HaningZS/HaningZS_Notes",
+    "commit": "8ced9038b7611bcb8c2b2774fb870149df8ef780"
+  },
+  "edition_status": "pinned-cross-checked",
+  "artifacts": {
+    "pdf": {
+      "sha256": "6a05a405b9a81650b439252ce11dfba397e93fbd2798d1cbbd74023dfd44fbda",
+      "bytes": 906697
+    },
+    "source": {
+      "sha256": "fb46a15eae05801661da291ccbe1cc7f59e10fb10f01615e42f234b3d9ee2a31",
+      "bytes": 333636
+    }
+  },
+  "topic": "concentration",
+  "templates": [
+    "T06"
+  ],
+  "path": "proof_ref/recent-accepted-2025-2026/time-uniform-self-normalized-concentration-for-vector-valued-2310.09100",
+  "last_checked_at": "2026-09-26T05:54:22+00:00",
+  "errors": {},
+  "authors": [
+    "Whitehouse, Justin",
+    "Wu, Zhiwei Steven",
+    "Ramdas, Aaditya"
+  ],
+  "published": "2023/10/13",
+  "resolved_id": "2310.09100v2",
+  "metadata_url": "https://arxiv.org/abs/2310.09100v2",
+  "metadata_checked_at": "2026-10-19T16:38:05+00:00",
+  "version_verification": {
+    "checked_at": "2026-10-19T16:38:08+00:00",
+    "pdf_marker": "2310.09100v2",
+    "source_url": "https://arxiv.org/src/2310.09100v2",
+    "method": "Unique arXiv version marker in local PDF pages 1-2; local PDF/source hashes match recorded metadata; exact hash match with newly downloaded official versioned source.",
+    "report": "reports/legacy_version_verification.json"
+  }
+}

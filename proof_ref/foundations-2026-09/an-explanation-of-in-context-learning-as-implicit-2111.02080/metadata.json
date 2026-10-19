@@ -1,0 +1,36 @@
+{
+  "title": "An Explanation of In-context Learning as Implicit Bayesian Inference",
+  "authors": [
+    "Xie, Sang Michael",
+    "Raghunathan, Aditi",
+    "Liang, Percy",
+    "Ma, Tengyu"
+  ],
+  "published": "2021/11/03",
+  "resolved_id": "2111.02080v6",
+  "metadata_url": "https://arxiv.org/abs/2111.02080v6",
+  "metadata_checked_at": "2026-09-26T05:41:04+00:00",
+  "download_urls": {
+    "pdf": "https://arxiv.org/pdf/2111.02080v6",
+    "source": "https://arxiv.org/src/2111.02080v6"
+  },
+  "artifacts": {
+    "pdf": {
+      "sha256": "ad9be01798fcf4fdc66ff3630f7a6f1cc157c04d51d0821d7798e028cb175c4b",
+      "bytes": 1240973
+    },
+    "source": {
+      "sha256": "74b1f5ae57f75099e7883e40f48d9be5913402e17be25a8cf4b7a3d7cbc4029b",
+      "bytes": 1430180
+    }
+  },
+  "identifier": "2111.02080",
+  "topic": "transformer-icl",
+  "templates": [
+    "T14",
+    "T21"
+  ],
+  "path": "proof_ref/foundations-2026-09/an-explanation-of-in-context-learning-as-implicit-2111.02080",
+  "last_checked_at": "2026-09-26T05:54:20+00:00",
+  "errors": {}
+}

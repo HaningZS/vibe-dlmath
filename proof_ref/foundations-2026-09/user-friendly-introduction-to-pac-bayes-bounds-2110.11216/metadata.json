@@ -1,0 +1,32 @@
+{
+  "title": "User-friendly introduction to PAC-Bayes bounds",
+  "authors": [
+    "Alquier, Pierre"
+  ],
+  "published": "2021/10/21",
+  "resolved_id": "2110.11216v6",
+  "metadata_url": "https://arxiv.org/abs/2110.11216v6",
+  "metadata_checked_at": "2026-09-26T05:39:02+00:00",
+  "download_urls": {
+    "pdf": "https://arxiv.org/pdf/2110.11216v6",
+    "source": "https://arxiv.org/src/2110.11216v6"
+  },
+  "artifacts": {
+    "pdf": {
+      "sha256": "8776454b6a8daafbacb1bf75f8e161a3aa84b4452cfa8f8e0b0d6cec32fbda53",
+      "bytes": 1335440
+    },
+    "source": {
+      "sha256": "5bb4296e5319c1699c4338187ebccd869dbf930670f5a87b4617feef31402ba7",
+      "bytes": 144035
+    }
+  },
+  "identifier": "2110.11216",
+  "topic": "generalization",
+  "templates": [
+    "T05"
+  ],
+  "path": "proof_ref/foundations-2026-09/user-friendly-introduction-to-pac-bayes-bounds-2110.11216",
+  "last_checked_at": "2026-09-26T05:54:20+00:00",
+  "errors": {}
+}

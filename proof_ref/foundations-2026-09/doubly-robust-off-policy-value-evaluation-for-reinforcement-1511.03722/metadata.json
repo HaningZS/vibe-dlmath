@@ -1,0 +1,33 @@
+{
+  "title": "Doubly Robust Off-policy Value Evaluation for Reinforcement Learning",
+  "authors": [
+    "Jiang, Nan",
+    "Li, Lihong"
+  ],
+  "published": "2015/11/11",
+  "resolved_id": "1511.03722v3",
+  "metadata_url": "https://arxiv.org/abs/1511.03722v3",
+  "metadata_checked_at": "2026-09-26T05:50:47+00:00",
+  "download_urls": {
+    "pdf": "https://arxiv.org/pdf/1511.03722v3",
+    "source": "https://export.arxiv.org/e-print/1511.03722v3"
+  },
+  "artifacts": {
+    "pdf": {
+      "sha256": "df2a2a5c0e5eb6545413143ad44ea185bc97d7f08d56d2308263825791e459e9",
+      "bytes": 500519
+    },
+    "source": {
+      "sha256": "be5c9781c6409852118af121116aaada7425c92a9029bf1dd7278f88314ab7ee",
+      "bytes": 103616
+    }
+  },
+  "identifier": "1511.03722",
+  "topic": "statistics",
+  "templates": [
+    "T11"
+  ],
+  "path": "proof_ref/foundations-2026-09/doubly-robust-off-policy-value-evaluation-for-reinforcement-1511.03722",
+  "last_checked_at": "2026-09-26T05:54:20+00:00",
+  "errors": {}
+}

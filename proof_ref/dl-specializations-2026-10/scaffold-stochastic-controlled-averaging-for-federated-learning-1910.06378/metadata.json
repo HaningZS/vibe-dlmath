@@ -1,0 +1,38 @@
+{
+  "title": "SCAFFOLD: Stochastic Controlled Averaging for Federated Learning",
+  "authors": [
+    "Karimireddy, Sai Praneeth",
+    "Kale, Satyen",
+    "Mohri, Mehryar",
+    "Reddi, Sashank J.",
+    "Stich, Sebastian U.",
+    "Suresh, Ananda Theertha"
+  ],
+  "published": "2019/10/14",
+  "resolved_id": "1910.06378v4",
+  "metadata_url": "https://arxiv.org/abs/1910.06378v4",
+  "metadata_checked_at": "2026-10-02T07:18:04+00:00",
+  "download_urls": {
+    "pdf": "https://arxiv.org/pdf/1910.06378v4",
+    "source": "https://arxiv.org/src/1910.06378v4"
+  },
+  "artifacts": {
+    "pdf": {
+      "sha256": "efe06c86acc7a06116e372a7ab6386c300f4d0dc9c7ba2dd5c82e95111a1d694",
+      "bytes": 4381988
+    },
+    "source": {
+      "sha256": "6b7773cb8ba2de4670a72437fb8cb48378cf6432088ab40fd69d4ad66ccb716c",
+      "bytes": 3674183
+    }
+  },
+  "identifier": "1910.06378",
+  "topic": "distributed-optimization",
+  "templates": [
+    "T47",
+    "T03"
+  ],
+  "path": "proof_ref/dl-specializations-2026-10/scaffold-stochastic-controlled-averaging-for-federated-learning-1910.06378",
+  "last_checked_at": "2026-10-02T07:18:12+00:00",
+  "errors": {}
+}

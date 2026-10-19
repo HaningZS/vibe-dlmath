@@ -1,0 +1,33 @@
+{
+  "title": "Introduction to the non-asymptotic analysis of random matrices",
+  "authors": [
+    "Vershynin, Roman"
+  ],
+  "published": "2010/11/12",
+  "resolved_id": "1011.3027v7",
+  "metadata_url": "https://arxiv.org/abs/1011.3027v7",
+  "metadata_checked_at": "2026-09-26T05:37:31+00:00",
+  "download_urls": {
+    "pdf": "https://arxiv.org/pdf/1011.3027v7",
+    "source": "https://export.arxiv.org/e-print/1011.3027v7"
+  },
+  "artifacts": {
+    "pdf": {
+      "sha256": "4e8c5b3684f9d0ae41f749ec773166624ed1c847e8c1a74d6959f423e584d8ca",
+      "bytes": 685849
+    },
+    "source": {
+      "sha256": "72ebb73021e41cfc46753da3471613bafc14dd4e72093e4f7c47824e4dab9b4e",
+      "bytes": 54397
+    }
+  },
+  "identifier": "1011.3027",
+  "topic": "concentration",
+  "templates": [
+    "T06",
+    "T16"
+  ],
+  "path": "proof_ref/foundations-2026-09/introduction-to-the-non-asymptotic-analysis-of-random-1011.3027",
+  "last_checked_at": "2026-09-26T05:54:20+00:00",
+  "errors": {}
+}
