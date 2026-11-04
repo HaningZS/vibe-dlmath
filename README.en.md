@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/readme-hero.svg" alt="vibe-dlmath: intuition, explicit assumptions, reusable arguments, and evidence for deep learning theory" width="100%">
+  <img src="assets/readme-hero.svg" alt="vibe-dlmath banner: the title and the tagline “Intuition into arguments. Every assumption in the open.” beside a spiral galaxy whose two arms are heavy-ball optimization paths spiralling along loss level sets into the minimizer θ*" width="100%">
 </p>
 
 <p align="center">
@@ -9,11 +9,11 @@
 
 <p align="center">
   <a href="README.md">简体中文</a> · English<br>
+  <a href="Math%20基础/Math%20基础目录.md">Math prerequisites</a> ·
   <a href="proofs/README.md">Proof library</a> ·
-  <a href="docs/SKILL.md">Install the skill</a> ·
-  <a href="docs/AI_PROOF_CONTRACT.md">AI proof contract</a> ·
   <a href="docs/PROOF_DISTILLATION.md">Proof distillation</a> ·
-  <a href="docs/OPEN_SOURCE.md">Maintenance and releases</a>
+  <a href="docs/AI_PROOF_CONTRACT.md">AI proof contract</a> ·
+  <a href="docs/SKILL.md">Install the skill</a>
 </p>
 
 ---
@@ -32,6 +32,26 @@ This library connects learning with review: explain concepts through intuition a
 
 The goal is reusable, traceable, reviewable mathematical work—not one-click correct proofs. A template does not replace a theorem, and skill instructions are not formal verification. Important conclusions still need step-by-step review.
 
+## What a card looks like
+
+The example from the motivation, a vanishing training gradient versus optimal test risk, becomes three separately proved terms in [T32](proofs/generalization/T32-excess-risk-decomposition.md):
+
+$$
+R(\widehat h)-R^\star
+\leq\epsilon_{\rm app}+2\Delta_S+\epsilon_{\rm opt}
+$$
+
+Here $\widehat h$ is the trained output and $R^\star$ is the comparison risk (the Bayes risk when the infimum ranges over all measurable predictors). The approximation error $\epsilon_{\rm app}$ asks how close the best hypothesis in the class comes to that benchmark; the estimation term $\Delta_S$, the largest gap between empirical and population risk over the class, asks whether the finite sample evaluates candidates reliably; the optimization gap $\epsilon_{\rm opt}$ asks whether training found a candidate with low enough empirical risk. A vanishing gradient is a stationarity statement: it controls the third term only through an extra bridge such as PL, convexity, or an NTK regime, and the first two terms need their own proofs.
+
+> **Failure example:** for $f(w)=(w^2-1)^2$, the gradient at $w=0$ is zero, yet the function value is 1 above the global minimum. A small gradient is not automatically a small optimization gap.
+
+Every card follows the same structure: a reuse contract (input objects, conclusion, required assumptions, failure example), the derivation, interfaces to other templates, and the obligations to discharge when instantiating it, for example:
+
+- [ ] State whether the target is population excess risk, the empirical optimization gap, or stationarity.
+- [ ] Give a valid bound for each of approximation, estimation, and optimization.
+
+These excerpts are translated; the card itself is written in Chinese.
+
 ## Choose an entry point
 
 | Your task | Start here |
@@ -45,7 +65,7 @@ The goal is reusable, traceable, reviewable mathematical work—not one-click co
 
 ## Start offline
 
-First obtain the complete repository. If access is restricted, authenticate with a GitHub account that has permission to read it.
+First obtain the complete repository:
 
 ```bash
 git clone https://github.com/HaningZS/vibe-dlmath.git
@@ -58,16 +78,34 @@ Use **Python 3.11+** consistently. If your system `python3` is older, use an ins
 Run the following commands from the repository root. No third-party Python packages are required.
 
 ```bash
-python3 scripts/proof_templates.py search "Bayes risk"
+# Search offline: each hit gives an ID, a one-line purpose, and the card path.
+python3 scripts/proof_templates.py search "Bayes risk" --limit 3
+```
+
+```text
+T32 [proof-template] 把总体 excess risk 拆成逼近、统计估计与经验优化误差。
+  proofs/generalization/T32-excess-risk-decomposition.md
+T49 [proof-template] 由 binary log-loss excess 推到分类 excess，并保留模型与裁剪误差。
+  proofs/generalization/T49-surrogate-bayes-risk.md
+T18 [proof-template] 用交换性和名次对称性证明边际覆盖。
+  proofs/statistics/T18-split-conformal.md
+```
+
+Card summaries are in Chinese; English keywords such as "Bayes risk" still retrieve them.
+
+```bash
+# Read a candidate's assumptions, conclusion, and failure boundaries.
 python3 scripts/proof_templates.py show T32
 
-# Optional: link the skill into your Codex skills directory.
+# Optional: install the skill (pick one). Codex, linked into ~/.codex/skills:
 python3 scripts/install_skill.py
+# Claude Code, linked into your personal skills directory:
+python3 scripts/install_skill.py --target ~/.claude/skills/vibe-dlmath
 ```
 
 Keep the repository at a stable location: the installer creates a symlink and refuses to replace unrelated existing content. See [skill setup](docs/SKILL.md) for custom paths and use with other tools that support `SKILL.md`.
 
-An example request after installation:
+An example request after installation (invoke the skill with `$vibe-dlmath` in Codex or `/vibe-dlmath` in Claude Code):
 
 ```text
 Use $vibe-dlmath to review this claim:

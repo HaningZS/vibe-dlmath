@@ -24,9 +24,9 @@ reviewed: 2026-09-01
 - 一个子空间**必须**包含**原点**（零向量）。
 
 
-你提到的 $y=x+1$ 这条直线，当 $x=0$ 时，$y=1$。它经过点 $(0, 1)$，但**不经过原点 $(0, 0)$**。
+你提到的 $y=x+1$ 这条直线，当 $x=0$ 时， $y=1$。它经过点 $(0, 1)$，但**不经过原点 $(0, 0)$**。
 
-因此，$y=x+1$ 这条线**不能**是任何矩阵的 Image。
+因此， $y=x+1$ 这条线**不能**是任何矩阵的 Image。
 
 ---
 
@@ -93,7 +93,7 @@ $T(x) = A \cdot x = \begin{bmatrix} 1 \\ 1 \end{bmatrix} [x] = \begin{bmatrix} x
 
 ## Q2: 矩阵变换中的image和kernel
 ***再给我举个例子，因为你目前设定的x是一个标量，x是否也可以是一个多维度的向量***
-是的，$x$ 当然可以是多维向量，这也是矩阵变换 $T(x)=Ax$ 的一般情形。
+是的， $x$ 当然可以是多维向量，这也是矩阵变换 $T(x)=Ax$ 的一般情形。
 
 我们来看一个 **$x$ 是多维向量**的例子。
 
@@ -115,7 +115,7 @@ $T\left(\begin{bmatrix} x \\ y \\ z \end{bmatrix}\right) = \begin{bmatrix} x \\ 
 
 $A = \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 0 \end{bmatrix}$
 
-（你可以验证一下：$\begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 0 \end{bmatrix} \begin{bmatrix} x \\ y \\ z \end{bmatrix} = \begin{bmatrix} (1 \cdot x + 0 \cdot y + 0 \cdot z) \\ (0 \cdot x + 1 \cdot y + 0 \cdot z) \\ (0 \cdot x + 0 \cdot y + 0 \cdot z) \end{bmatrix} = \begin{bmatrix} x \\ y \\ 0 \end{bmatrix}$。 正确！）
+（你可以验证一下： $\begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 0 \end{bmatrix} \begin{bmatrix} x \\ y \\ z \end{bmatrix} = \begin{bmatrix} (1 \cdot x + 0 \cdot y + 0 \cdot z) \\ (0 \cdot x + 1 \cdot y + 0 \cdot z) \\ (0 \cdot x + 0 \cdot y + 0 \cdot z) \end{bmatrix} = \begin{bmatrix} x \\ y \\ 0 \end{bmatrix}$。 正确！）
 
 现在，我们来分析这个矩阵 $A$ 的 **Image** 和 **Kernel**：
 
@@ -136,7 +136,7 @@ Image 是**所有可能的输出**的集合。
     - $A \cdot \begin{bmatrix} 1 \\ 2 \\ 0 \end{bmatrix} = \begin{bmatrix} 1 \\ 2 \\ 0 \end{bmatrix}$
 
 
-    所有这些输出向量有什么共同点？它们的第三个分量（$z$ 坐标）永远是 0。
+    所有这些输出向量有什么共同点？它们的第三个分量（ $z$ 坐标）永远是 0。
 
     所有 $z$ 坐标为 0 的向量 $\begin{bmatrix} x \\ y \\ 0 \end{bmatrix}$ 组成了什么？
 
@@ -144,7 +144,7 @@ Image 是**所有可能的输出**的集合。
 
 - 数学定义：
 
-    Image 是 $A$ 的列空间。$A$ 的列向量是 $\begin{bmatrix} 1 \\ 0 \\ 0 \end{bmatrix}$, $\begin{bmatrix} 0 \\ 1 \\ 0 \end{bmatrix}$ 和 $\begin{bmatrix} 0 \\ 0 \\ 0 \end{bmatrix}$。
+    Image 是 $A$ 的列空间。 $A$ 的列向量是 $\begin{bmatrix} 1 \\ 0 \\ 0 \end{bmatrix}$, $\begin{bmatrix} 0 \\ 1 \\ 0 \end{bmatrix}$ 和 $\begin{bmatrix} 0 \\ 0 \\ 0 \end{bmatrix}$。
 
     $\text{Im}(A) = \text{span}\left(\begin{bmatrix} 1 \\ 0 \\ 0 \end{bmatrix}, \begin{bmatrix} 0 \\ 1 \\ 0 \end{bmatrix}, \begin{bmatrix} 0 \\ 0 \\ 0 \end{bmatrix}\right) = \text{span}\left(\begin{bmatrix} 1 \\ 0 \\ 0 \end{bmatrix}, \begin{bmatrix} 0 \\ 1 \\ 0 \end{bmatrix}\right)$
 
@@ -154,7 +154,7 @@ Image 是**所有可能的输出**的集合。
 
     这个 Image ( $xy$ 平面) 是由两个线性无关的基向量 $\left\{ \begin{bmatrix} 1 \\ 0 \\ 0 \end{bmatrix}, \begin{bmatrix} 0 \\ 1 \\ 0 \end{bmatrix} \right\}$ 张成的。
 
-    所以，$\dim(\text{Im}(A)) = 2$。
+    所以， $\dim(\text{Im}(A)) = 2$。
 
 
 ---
@@ -180,9 +180,9 @@ Kernel 是所有被变换到**零向量** $\begin{bmatrix} 0 \\ 0 \\ 0 \end{bmat
     - $0 = 0$ (这个方程对 $z$ 没有任何限制！)
 
 
-    所以，只要 $x=0$ 且 $y=0$，$z$ 可以是任何数。
+    所以，只要 $x=0$ 且 $y=0$， $z$ 可以是任何数。
 
-    这些向量长什么样？它们长这样：$\begin{bmatrix} 0 \\ 0 \\ z \end{bmatrix}$。
+    这些向量长什么样？它们长这样： $\begin{bmatrix} 0 \\ 0 \\ z \end{bmatrix}$。
 
     （例如 $\begin{bmatrix} 0 \\ 0 \\ 1 \end{bmatrix}$, $\begin{bmatrix} 0 \\ 0 \\ 5 \end{bmatrix}$, $\begin{bmatrix} 0 \\ 0 \\ -10 \end{bmatrix}$ 等）
 
@@ -198,14 +198,14 @@ Kernel 是所有被变换到**零向量** $\begin{bmatrix} 0 \\ 0 \\ 0 \end{bmat
 
     这个 Kernel ($z$ 轴) 是由一个基向量 $\left\{ \begin{bmatrix} 0 \\ 0 \\ 1 \end{bmatrix} \right\}$ 张成的。
 
-    所以，$\dim(\text{Ker}(A)) = 1$。
+    所以， $\dim(\text{Ker}(A)) = 1$。
 
 
 ---
 
 ### 总结这个例子
 
-- **输入空间**：$\mathbb{R}^3$（3维空间）， $n=3$。
+- **输入空间**： $\mathbb{R}^3$（3维空间）， $n=3$。
 
 - **Image (像)**： $xy$ 平面。 维度 (Rank) = 2。
 

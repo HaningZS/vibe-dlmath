@@ -42,7 +42,7 @@ online convex optimization、policy optimization、RLHF、DPO、preference learn
 
 ## 核心不等式
 
-设 $\mathcal X$ 闭且凸、$u\in\mathcal X$，$\psi$ 在其有效域相对内部可微并相对范数 $\|\cdot\|$ 为 $\sigma$-strongly convex；假设下面的 argmin 存在且迭代留在 Bregman 有效域。记 $D_\psi$ 为 Bregman divergence，$\|\cdot\|_\ast$ 为对偶范数。对常步长 $\eta>0$，Online Mirror Descent 更新：
+设 $\mathcal X$ 闭且凸、 $u\in\mathcal X$， $\psi$ 在其有效域相对内部可微并相对范数 $\|\cdot\|$ 为 $\sigma$-strongly convex；假设下面的 argmin 存在且迭代留在 Bregman 有效域。记 $D_\psi$ 为 Bregman divergence， $\|\cdot\|_\ast$ 为对偶范数。对常步长 $\eta>0$，Online Mirror Descent 更新：
 
 $$
 x_{t+1}

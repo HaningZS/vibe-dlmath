@@ -44,7 +44,7 @@ status: "refined + claim-checked"
 
 ### Le Cam
 
-两点法：构造参数 $\theta_0,\theta_1$ 及对应观测分布 $P_0,P_1$。对等先验二元 $0$--$1$ 测试，
+两点法：构造参数 $\theta_0,\theta_1$ 及对应观测分布 $P_0,P_1$。对等先验二元 0-1 测试，
 
 $$
 \inf_{\hat\theta}\sup_{\theta\in\{0,1\}}

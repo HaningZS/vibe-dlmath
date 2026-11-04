@@ -85,13 +85,13 @@ $$
 p\sim\operatorname{Beta}(\alpha,\beta).
 $$
 
-观察到 $s$ 次成功、$f$ 次失败后，后验为
+观察到 $s$ 次成功、 $f$ 次失败后，后验为
 
 $$
 p\mid D\sim\operatorname{Beta}(\alpha+s,\beta+f).
 $$
 
-在这种更新规则中，$\alpha$ 和 $\beta$ 常被口语化为“伪计数”。更精确地说，若以均匀先验 $\operatorname{Beta}(1,1)$ 为基准，先验相对增加的成功/失败计数是 $\alpha-1$ 和 $\beta-1$。不同参数化或基准先验下，不应机械地把 $\alpha,\beta$ 当作真实观测次数。
+在这种更新规则中， $\alpha$ 和 $\beta$ 常被口语化为“伪计数”。更精确地说，若以均匀先验 $\operatorname{Beta}(1,1)$ 为基准，先验相对增加的成功/失败计数是 $\alpha-1$ 和 $\beta-1$。不同参数化或基准先验下，不应机械地把 $\alpha,\beta$ 当作真实观测次数。
 
 ## “无信息先验”需要说明选择
 

@@ -83,7 +83,7 @@ R(A(S,U))-\widehat R_S(A(S,U))
 \mathbb E_{S,Z_i',U}\|A(S,U)-A(S^{(i)},U)\|.
 $$
 
-这里 $S^{(i)}$ 用独立的 $Z_i'\sim\mathcal D$ 替换第 $i$ 个训练样本，$U$ 是独立于样本的算法随机性，两次训练使用同一个 $U$。$R$ 与 $\widehat R_S$ 分别为总体和经验风险，并假设相关期望存在。
+这里 $S^{(i)}$ 用独立的 $Z_i'\sim\mathcal D$ 替换第 $i$ 个训练样本， $U$ 是独立于样本的算法随机性，两次训练使用同一个 $U$。 $R$ 与 $\widehat R_S$ 分别为总体和经验风险，并假设相关期望存在。
 
 证明的关键是用独立替换把测试风险写成相邻训练集的损失期望，再用 loss 的 $L_\ell$-Lipschitz 性。左边是 **期望 gap 的绝对值**，不是绝对 gap 的期望；这两者也都不自动等于 high-probability generalization。
 

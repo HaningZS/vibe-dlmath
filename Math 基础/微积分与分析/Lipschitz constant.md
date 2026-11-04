@@ -25,7 +25,7 @@ $$
 =\sup_{x\ne y}\frac{\|f(x)-f(y)\|}{\|x-y\|}.
 $$
 
-“$f$ 是 1-Lipschitz”通常表示可取 $L=1$，即 $\operatorname{Lip}(f)\le1$，并不要求最优常数恰好等于 1。
+“ $f$ 是 1-Lipschitz”通常表示可取 $L=1$，即 $\operatorname{Lip}(f)\le1$，并不要求最优常数恰好等于 1。
 
 Lipschitz 连续蕴含一致连续，但反过来不总成立。
 
@@ -49,7 +49,7 @@ $$
 
 ## 复合与神经网络
 
-若 $f$ 是 $L_f$-Lipschitz，$g$ 是 $L_g$-Lipschitz，则
+若 $f$ 是 $L_f$-Lipschitz， $g$ 是 $L_g$-Lipschitz，则
 
 $$
 \operatorname{Lip}(f\circ g)\le L_fL_g.

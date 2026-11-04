@@ -11,9 +11,9 @@ status: self-contained-core
 
 ## 复用契约
 
-**对象**：固定非负权重 $p_i$、$\sum_i p_i=1$，目标 $F=\sum_i p_if_i$。所有客户端参与，同一步长，精确本地梯度；每至多 $\tau$ 步同步到加权平均。
+**对象**：固定非负权重 $p_i$、 $\sum_i p_i=1$，目标 $F=\sum_i p_if_i$。所有客户端参与，同一步长，精确本地梯度；每至多 $\tau$ 步同步到加权平均。
 
-**条件**：$f_i$ 均 $L$-smooth，$F$ 下有界；$0<\eta\le1/L$。若使用下面的粗漂移界，还要求实际局部路径上 $\|\nabla f_i\|\le G$。
+**条件**： $f_i$ 均 $L$-smooth， $F$ 下有界； $0<\eta\le1/L$。若使用下面的粗漂移界，还要求实际局部路径上 $\|\nabla f_i\|\le G$。
 
 **结论**：virtual averaged iterate 的平均梯度平方界与通信误差项。随机梯度、客户端抽样、压缩或异步不是本卡基本定理的一部分。
 
@@ -32,7 +32,7 @@ status: self-contained-core
 
 ## 2. 不隐藏 drift 的精确更新
 
-定义 $\bar x_k=\sum_i p_ix_{i,k}$、$D_k=\sum_i p_i\|x_{i,k}-\bar x_k\|^2$。两次同步之间
+定义 $\bar x_k=\sum_i p_ix_{i,k}$、 $D_k=\sum_i p_i\|x_{i,k}-\bar x_k\|^2$。两次同步之间
 
 $$
 \bar x_{k+1}=\bar x_k-\eta(\nabla F(\bar x_k)+e_k),

@@ -53,12 +53,12 @@ $$
 =\nabla_\theta\int p_\theta(x)\,dx=0.
 $$
 
-如果支持集依赖参数或边界项不消失，这个等式可能失效；Uniform$(0,\theta)$ 是经典反例之一。
+如果支持集依赖参数或边界项不消失，这个等式可能失效； $\mathrm{Uniform}(0,\theta)$ 是经典反例之一。
 
 ### 2.1 不要混淆两种 score
 
-- Fisher score：$\nabla_\theta\log p_\theta(x)$，对**参数**求导；
-- diffusion score：$\nabla_x\log p_t(x)$，对**样本位置**求导。
+- Fisher score： $\nabla_\theta\log p_\theta(x)$，对**参数**求导；
+- diffusion score： $\nabla_x\log p_t(x)$，对**样本位置**求导。
 
 名字相同是因为两者都是 log-density 的梯度，但变量和用途不同。
 
@@ -79,7 +79,7 @@ v^\top Fv
 =\mathbb E[(v^\top s_\theta(X))^2]\ge0.
 $$
 
-只有在 regular、可辨识的参数化中，或去掉冗余方向后的商空间上，$F$ 正定时才严格给出 Riemannian metric。若 Fisher 奇异，它在原参数空间只是退化的半度量；后文会讨论 pseudoinverse 与 damping。
+只有在 regular、可辨识的参数化中，或去掉冗余方向后的商空间上， $F$ 正定时才严格给出 Riemannian metric。若 Fisher 奇异，它在原参数空间只是退化的半度量；后文会讨论 pseudoinverse 与 damping。
 
 在更强的正则条件下还有 information equality：
 
@@ -106,7 +106,7 @@ $$
 F_p(p)=\frac1{p(1-p)}.
 $$
 
-在概率边界附近，$p$ 的微小绝对变化会让分布更容易区分，故 Fisher 变大。
+在概率边界附近， $p$ 的微小绝对变化会让分布更容易区分，故 Fisher 变大。
 
 改用 logit $\eta$ 后：
 
@@ -186,7 +186,7 @@ $$
 神经网络常有缩放、排列和冗余参数，使不同 $\theta$ 表示同一分布，Fisher 因而只有半正定。实践会使用：
 
 - Moore–Penrose pseudoinverse；
-- damping：$F+\lambda I$；
+- damping： $F+\lambda I$；
 - trust-region 截断；
 - block-diagonal、diagonal 或 Kronecker-factored 近似。
 

@@ -11,7 +11,7 @@ status: self-contained-core
 
 ## 复用契约
 
-**对象**：binary label $Y\in\{0,1\}$，$\eta(x)=P(Y=1\mid X=x)$，预测概率 $p(x)\in(0,1)$；$h_p(x)=1\{p(x)\ge1/2\}$。自然对数交叉熵风险有限。
+**对象**：binary label $Y\in\{0,1\}$， $\eta(x)=P(Y=1\mid X=x)$，预测概率 $p(x)\in(0,1)$； $h_p(x)=1\{p(x)\ge1/2\}$。自然对数交叉熵风险有限。
 
 **结论**：log-loss excess 等于条件 Bernoulli KL 的期望，且 $R_{01}(h_p)-R_{01}^*\le\sqrt{2(R_{log}(p)-R_{log}^*)}$。
 
@@ -49,7 +49,7 @@ $$
 
 Bayes 决策是 $h_*=1\{\eta\ge1/2\}$；不同决策的额外错误率为
 $|2\eta-1|1\{h_p\ne h_*\}$。
-若决策不同，$p$ 与 $\eta$ 位于阈值两侧，所以 $|\eta-1/2|\le|p-\eta|$，从而
+若决策不同， $p$ 与 $\eta$ 位于阈值两侧，所以 $|\eta-1/2|\le|p-\eta|$，从而
 
 $$
 R_{01}(h_p)-R_{01}^*\le2\mathbb E|p-\eta|.
@@ -73,9 +73,9 @@ $$
 
 ## 5. 与 T32 合成真正的学习结论
 
-若 [T32](T32-excess-risk-decomposition.md) 已得到总体 log-loss excess $\le a+2b+c$，其中 $a$ 是相对 Bayes 的模型误差、$b$ 是统一偏差、$c$ 是经验优化 gap，则同一事件上分类 excess $\le\sqrt{2(a+2b+c)}$。
+若 [T32](T32-excess-risk-decomposition.md) 已得到总体 log-loss excess $\le a+2b+c$，其中 $a$ 是相对 Bayes 的模型误差、 $b$ 是统一偏差、 $c$ 是经验优化 gap，则同一事件上分类 excess $\le\sqrt{2(a+2b+c)}$。
 
-若使用 $p\in[\kappa,1-\kappa]$、$0<\kappa<1/2$ 使 log loss 有界，令 $\eta_\kappa$ 为裁剪后的 Bayes 概率。裁剪导致的 log excess 至多 $-\log(1-\kappa)$：对 $\eta<\kappa$，条件 KL 关于 $\eta$ 凸，区间最大值在 0 或 $\kappa$，分别为 $-\log(1-\kappa)$ 与 0；另一端同理。该项必须计入 $a$。
+若使用 $p\in[\kappa,1-\kappa]$、 $0<\kappa<1/2$ 使 log loss 有界，令 $\eta_\kappa$ 为裁剪后的 Bayes 概率。裁剪导致的 log excess 至多 $-\log(1-\kappa)$：对 $\eta<\kappa$，条件 KL 关于 $\eta$ 凸，区间最大值在 0 或 $\kappa$，分别为 $-\log(1-\kappa)$ 与 0；另一端同理。该项必须计入 $a$。
 
 语言模型 token cross-entropy 的改善不自动给任务成功率、推理能力或用户偏好保证；目标 law 和 loss 改变后，仍需自己的桥。
 

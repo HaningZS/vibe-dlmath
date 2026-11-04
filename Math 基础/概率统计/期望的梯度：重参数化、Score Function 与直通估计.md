@@ -107,7 +107,7 @@ J(\theta)
 [f_\theta(T_\theta(\varepsilon))].
 $$
 
-在可交换梯度与期望、$T_\theta$ 和 $f$ 可微等条件下：
+在可交换梯度与期望、 $T_\theta$ 和 $f$ 可微等条件下：
 
 $$
 \nabla_\theta J
@@ -208,7 +208,7 @@ baseline 改变方差，不改变期望。直觉是从每个 reward 中减去“
 
 ### 5.1 Baseline 可以依赖什么
 
-在 policy gradient 中，$b$ 可以依赖 state/context，因为在给定 state 后它不随当前 sampled action 改变：
+在 policy gradient 中， $b$ 可以依赖 state/context，因为在给定 state 后它不随当前 sampled action 改变：
 
 $$
 \mathbb E_{A\sim\pi(\cdot\mid s)}
@@ -268,7 +268,7 @@ $$
 A=\arg\max_k(\log\pi_k+G_k)
 $$
 
-精确服从 Categorical$(\pi)$。但 `argmax` 仍不可导。
+精确服从 $\mathrm{Categorical}(\pi)$。但 `argmax` 仍不可导。
 
 ### 7.2 Concrete / Gumbel–Softmax 松弛
 
@@ -324,7 +324,7 @@ binary quantization 中把 `sign` 的导数假装成 1，或 Gumbel-ST 中前向
 
 ## 10. 可运行示例一：pathwise 与 score-function 方差
 
-令 $X\sim\mathcal N(\mu,\sigma^2)$，$J(\mu)=\mathbb E[X^2]$，真梯度是 $2\mu$。
+令 $X\sim\mathcal N(\mu,\sigma^2)$， $J(\mu)=\mathbb E[X^2]$，真梯度是 $2\mu$。
 
 ```python
 import numpy as np
@@ -422,7 +422,7 @@ temperature 变小时，bias 往往下降但梯度方差/尖锐程度会上升�
 5. **“减去平均 reward 永远是最优 baseline。”** 最优值还受 score 大小和条件结构影响。
 6. **“pathwise 永远低方差。”** 这是常见经验，不是无条件定理。
 7. **“Gumbel–Max 本身可导。”** 精确采样仍含 argmax；可导的是 soft relaxation。
-8. **“$\tau\to0$ 就同时得到零偏差、零方差。”** 低温会让梯度尖锐，有限样本和数值问题更严重。
+8. **“ $\tau\to0$ 就同时得到零偏差、零方差。”** 低温会让梯度尖锐，有限样本和数值问题更严重。
 9. **“straight-through 是真实链式法则。”** 它故意用 surrogate derivative，通常有偏。
 10. **“reward model 可微，就能从 reward 直接反传到 sampled token。”** 离散 token 选择仍阻断普通 pathwise 梯度。
 11. **“Fisher score 与 diffusion score 是同一个导数。”** 前者对参数求导，后者对样本位置求导。
@@ -431,7 +431,7 @@ temperature 变小时，bias 往往下降但梯度方差/尖锐程度会上升�
 
 1. 为什么把 $X\sim p_\theta$ 的一次样本当常数，会漏掉分布移动的梯度？
 2. 从积分推导 score-function identity，并列出支持集相关的条件。
-3. 对 $X=\mu+\sigma\varepsilon$，写出关于 $\mu$、$\sigma$ 的 pathwise gradient。
+3. 对 $X=\mu+\sigma\varepsilon$，写出关于 $\mu$、 $\sigma$ 的 pathwise gradient。
 4. baseline 为什么能减方差却不改期望？它允许依赖 state、为什么通常不能依赖 sampled action？
 5. 完整 policy gradient 相比单步 Categorical REINFORCE 还要处理什么？
 6. Gumbel–Max 与 Gumbel–Softmax 分别是精确采样还是连续松弛？

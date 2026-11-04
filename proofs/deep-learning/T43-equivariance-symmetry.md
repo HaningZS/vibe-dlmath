@@ -73,7 +73,7 @@ $$
 
 ## 5. 无位置 self-attention 的排列证明
 
-令 $A(X)=\operatorname{softmax}_{row}(QK^\top/\sqrt d)V$，$Q=XW_Q$ 等。排列矩阵 $P$ 作用后 $Q'=PQ$ 等，且
+令 $A(X)=\operatorname{softmax}_{row}(QK^\top/\sqrt d)V$， $Q=XW_Q$ 等。排列矩阵 $P$ 作用后 $Q'=PQ$ 等，且
 
 $$
 \operatorname{softmax}_{row}(PMP^\top)
@@ -81,7 +81,7 @@ $$
 \qquad A(PX)=PA(X).
 $$
 
-每行共享的 FFN、LayerNorm 和 residual 同样保持排列等变。加固定位置表 $E$ 时，$PX+E$ 通常不等于 $P(X+E)$。固定 mask $M$ 只保留满足 $PMP^\top=M$ 的排列；causal mask 不允许任意 token 重排。对称 readout 才把 token 级等变转成全局不变。
+每行共享的 FFN、LayerNorm 和 residual 同样保持排列等变。加固定位置表 $E$ 时， $PX+E$ 通常不等于 $P(X+E)$。固定 mask $M$ 只保留满足 $PMP^\top=M$ 的排列；causal mask 不允许任意 token 重排。对称 readout 才把 token 级等变转成全局不变。
 
 ## 前置、关联与证据
 

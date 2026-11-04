@@ -164,10 +164,10 @@ $$
 
 ## 6. 链式法则不要求显式形成巨大 Jacobian
 
-若 $Y=g(X)$、$L=f(Y)$，完整 Jacobian 可能有四个甚至更多索引。实际自动微分通常计算：
+若 $Y=g(X)$、 $L=f(Y)$，完整 Jacobian 可能有四个甚至更多索引。实际自动微分通常计算：
 
-- **JVP**：$J_g(X)v$，问输入沿 $v$ 变化时输出怎样变；
-- **VJP**：$u^\top J_g(X)$，把上游梯度从输出拉回输入。
+- **JVP**： $J_g(X)v$，问输入沿 $v$ 变化时输出怎样变；
+- **VJP**： $u^\top J_g(X)$，把上游梯度从输出拉回输入。
 
 标量损失对海量参数的训练适合反向模式，因为最终只需 VJP，不需要存下完整 Jacobian。
 
@@ -217,12 +217,12 @@ P=\operatorname{softmax}_{\text{row}}(S),
 O=PV.
 $$
 
-若 $Q,K\in\mathbb R^{n\times d}$、$V\in\mathbb R^{n\times d_v}$，则：
+若 $Q,K\in\mathbb R^{n\times d}$、 $V\in\mathbb R^{n\times d_v}$，则：
 
 - $S,P\in\mathbb R^{n\times n}$；
 - $O\in\mathbb R^{n\times d_v}$。
 
-反向时，$O=PV$ 首先给出
+反向时， $O=PV$ 首先给出
 
 $$
 dO=dP\,V+P\,dV.
@@ -251,7 +251,7 @@ $$
 
 ## 10. 广播与 reduction 是工程求导的隐藏部分
 
-假设 $Y=X+b$，其中 $X$ 是 batch 矩阵，$b$ 沿 batch 维广播。前向看似只是加法，反向对 $b$ 的梯度却要沿所有被广播的维度求和。
+假设 $Y=X+b$，其中 $X$ 是 batch 矩阵， $b$ 沿 batch 维广播。前向看似只是加法，反向对 $b$ 的梯度却要沿所有被广播的维度求和。
 
 同样，loss 使用 `sum` 还是 `mean` 会让梯度相差 batch size 等比例。数学推导与代码对不上时，优先检查：
 
@@ -304,7 +304,7 @@ assert np.allclose(softmax_jacobian @ np.ones_like(z), 0.0)
 
 1. **“矩阵导数公式在所有资料中形状都一样。”** Jacobian 布局约定可能不同，先检查微分关系和形状。
 2. **“trace 里可以随意交换矩阵顺序。”** 只能循环移动，不能一般地交换。
-3. **“$x^\top Ax$ 的梯度永远是 $2Ax$。”** 只有对称 $A$ 才如此。
+3. **“ $x^\top Ax$ 的梯度永远是 $2Ax$。”** 只有对称 $A$ 才如此。
 4. **“自动微分不用理解矩阵微分。”** autograd 会算，但研究者仍需检查目标、形状、reduction 和数值是否符合意图。
 5. **“反向传播要存完整 Jacobian。”** 通常直接组合 VJP。
 6. **“有限差分通过就证明所有点都正确。”** 它只检查当前输入与方向，还受 epsilon 和浮点误差影响。

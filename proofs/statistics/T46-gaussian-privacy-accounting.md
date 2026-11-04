@@ -11,7 +11,7 @@ status: self-contained-core
 
 ## 复用契约
 
-**对象**：相邻数据集关系、机制 $M$ 和完整发布 transcript；Gaussian query $M(D)=q(D)+N(0,\sigma^2I)$，$q$ 的 $L^2$ sensitivity 为 $\Delta$。
+**对象**：相邻数据集关系、机制 $M$ 和完整发布 transcript；Gaussian query $M(D)=q(D)+N(0,\sigma^2I)$， $q$ 的 $L^2$ sensitivity 为 $\Delta$。
 
 **结论**：阶数 $\alpha>1$ 的 RDP 预算 $\rho_\alpha=\alpha\Delta^2/(2\sigma^2)$，统一条件预算的自适应组合，以及 $(\epsilon,\delta)$ 转换。这里不使用 subsampling amplification。
 
@@ -35,7 +35,7 @@ status: self-contained-core
 ## 2. Gaussian 散度的直接计算
 
 定义 $D_\alpha(P\|Q)=(\alpha-1)^{-1}\log\mathbb E_P e^{(\alpha-1)L}$，其中 $L=\log(dP/dQ)$。
-取 $P=N(\mu,\sigma^2I)$、$Q=N(\mu',\sigma^2I)$，$d=\mu-\mu'$，在 $P$ 下写 $Z=\mu+\sigma\xi$。有
+取 $P=N(\mu,\sigma^2I)$、 $Q=N(\mu',\sigma^2I)$， $d=\mu-\mu'$，在 $P$ 下写 $Z=\mu+\sigma\xi$。有
 
 $$
 L(Z)=\frac{\|d\|^2}{2\sigma^2}+\frac{d^\top\xi}{\sigma},\qquad\xi\sim N(0,I).
@@ -72,7 +72,7 @@ $$
 初始化与原始数据独立。固定样本数 $n$，replace-one 邻接，每个样本梯度先裁到范数 $C$：
 $q(D)=n^{-1}\sum_i\operatorname{clip}_C(g_i)$。在同一已发布参数历史下，只替换一个项，故 $\Delta\le2C/n$。
 
-每步向平均梯度加标准差 $\sigma=zC/n$ 的噪声，则 $\rho_t=2\alpha/z^2$；$T$ 步预算为 $2T\alpha/z^2$。参数更新只使用这些带噪查询和与数据独立的随机性；最后参数是 noisy transcript 的后处理，不增加预算。若有另一个读取原始梯度的内部状态，也需重新证明它在相同发布历史下的条件 sensitivity。
+每步向平均梯度加标准差 $\sigma=zC/n$ 的噪声，则 $\rho_t=2\alpha/z^2$； $T$ 步预算为 $2T\alpha/z^2$。参数更新只使用这些带噪查询和与数据独立的随机性；最后参数是 noisy transcript 的后处理，不增加预算。若有另一个读取原始梯度的内部状态，也需重新证明它在相同发布历史下的条件 sensitivity。
 
 这是 full-batch、固定大小、replace-one 的原型。add-remove、user-level、多步抽样和 Poisson minibatch 的常数/放大公式都要重新核对。把“抽了小 batch”直接乘一个采样率不构成证明。
 

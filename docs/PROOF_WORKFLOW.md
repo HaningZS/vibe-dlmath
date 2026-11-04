@@ -67,7 +67,7 @@ $$
 \leq(1-\kappa)E_t+dG_t+r_t,
 $$
 
-其中 $a,\kappa>0$，$b,d\geq0$，所有期望存在，残差可积。令
+其中 $a,\kappa>0$， $b,d\geq0$，所有期望存在，残差可积。令
 $\Phi_t=A_t+\lambda E_t$，则
 
 $$
@@ -78,7 +78,7 @@ $$
 
 要吸收状态误差且保留进展，就需要
 $\lambda\geq b/\kappa$ 且 $a-\lambda d>0$。
-当 $d>0$ 时，可行性的关键是 $bd<a\kappa$；$d=0$ 时只需 $a>0$ 与下界条件。
+当 $d>0$ 时，可行性的关键是 $bd<a\kappa$； $d=0$ 时只需 $a>0$ 与下界条件。
 
 若此外 $\Phi_T\geq\Phi_{\inf}$，则
 

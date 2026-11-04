@@ -13,7 +13,7 @@ reviewed: 2026-08-24
 
 ## 参数形式
 
-令 $\theta$ 是未知参数，$D$ 是观测数据：
+令 $\theta$ 是未知参数， $D$ 是观测数据：
 
 $$
 p(\theta\mid D)
@@ -40,7 +40,7 @@ $$
 
 ## 一个离散例子
 
-设 $R$ 表示下雨，$C$ 表示看到乌云：
+设 $R$ 表示下雨， $C$ 表示看到乌云：
 
 $$
 P(R\mid C)=\frac{P(C\mid R)P(R)}{P(C)}.
@@ -61,8 +61,8 @@ $$
 
 ## 与最大似然、MAP 的区别
 
-- 最大似然：$\hat\theta_{\mathrm{MLE}}=\arg\max_\theta p(D\mid\theta)$；
-- 最大后验：$\hat\theta_{\mathrm{MAP}}=\arg\max_\theta p(D\mid\theta)p(\theta)$；
+- 最大似然： $\hat\theta_{\mathrm{MLE}}=\arg\max_\theta p(D\mid\theta)$；
+- 最大后验： $\hat\theta_{\mathrm{MAP}}=\arg\max_\theta p(D\mid\theta)p(\theta)$；
 - 完整贝叶斯推断：保留整个 $p(\theta\mid D)$，而不只保留单个最优参数。
 
 # 与 LLM 的关系：哪些是严格结论，哪些只是类比

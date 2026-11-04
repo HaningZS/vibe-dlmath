@@ -91,7 +91,7 @@ $$
 
 ### 求和之前，先检查势函数的下界
 
-若 $\alpha_t\geq0$、$\sum_{t<T}\alpha_t>0$，并已证明
+若 $\alpha_t\geq0$、 $\sum_{t<T}\alpha_t>0$，并已证明
 $\Phi_T\geq\Phi_{\inf}$，则
 
 $$
@@ -111,7 +111,7 @@ $$
 \leq\mathbb E\Phi_0-\Phi_{\inf}+\sum_{t<T}\mathbb E[r_t],
 $$
 
-其中 $r_t$ 是相应的可积随机残差。$\alpha_t$ 与梯度通常由同一历史决定，因此可预测性不意味着二者独立。例如 $Z\sim\operatorname{Bernoulli}(1/2)$、$\alpha=Z$ 时，$\mathbb E[\alpha Z]=1/2$，而 $\mathbb E\alpha\,\mathbb EZ=1/4$。
+其中 $r_t$ 是相应的可积随机残差。 $\alpha_t$ 与梯度通常由同一历史决定，因此可预测性不意味着二者独立。例如 $Z\sim\operatorname{Bernoulli}(1/2)$、 $\alpha=Z$ 时， $\mathbb E[\alpha Z]=1/2$，而 $\mathbb E\alpha\,\mathbb EZ=1/4$。
 
 确定权重可令独立输出 $R$ 满足 $\Pr(R=t)=\alpha_t/\sum_s\alpha_s$，直接得到加权平均保证。若在看到完整轨迹后按随机权重抽 $R$，输出对应的是
 $\mathbb E[\sum_t\alpha_t\|\nabla f(x_t)\|^2/\sum_t\alpha_t]$，不是期望的比值；还需证明总权重为正并控制这个随机分母，才能给出输出界。

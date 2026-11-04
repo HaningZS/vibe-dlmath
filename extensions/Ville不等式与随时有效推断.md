@@ -42,7 +42,7 @@ $$
 \mathbb E[M_{\tau\wedge N}]\leq1.
 $$
 
-在事件 $\{\tau\leq N\}$ 上，$M_{\tau\wedge N}\geq1/\delta$；其余事件上财富非负。于是
+在事件 $\{\tau\leq N\}$ 上， $M_{\tau\wedge N}\geq1/\delta$；其余事件上财富非负。于是
 
 $$
 1\geq\mathbb E[M_{\tau\wedge N}]
@@ -92,7 +92,7 @@ $$
 \widetilde M_t=\int M_t(\lambda)\,\pi(d\lambda).
 $$
 
-非负性允许用 Tonelli 交换积分与条件期望，$\widetilde M_t$ 仍是超鞅。另一条路线是对分段时刻/参数分配失败概率，称为 stitching。
+非负性允许用 Tonelli 交换积分与条件期望， $\widetilde M_t$ 仍是超鞅。另一条路线是对分段时刻/参数分配失败概率，称为 stitching。
 
 两者都会为“看了许多种尺度”付出相应代价。
 

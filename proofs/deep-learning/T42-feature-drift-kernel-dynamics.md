@@ -53,7 +53,7 @@ $$
 \le\sqrt{t(\mathcal L_0-\mathcal L_t)}.
 $$
 
-若在该区域 $\|J_\theta\|_{op}\le B_J$、$\|J_\theta-J_{\theta_0}\|_{op}\le L_J\|\theta-\theta_0\|$，则
+若在该区域 $\|J_\theta\|_{op}\le B_J$、 $\|J_\theta-J_{\theta_0}\|_{op}\le L_J\|\theta-\theta_0\|$，则
 
 $$
 \|K_t-K_0\|_{op}
@@ -64,7 +64,7 @@ $$
 
 ## 4. 与固定核近似比较
 
-令 $\bar r_t=e^{-K_0t}r_0$，$E_t=K_t-K_0$。Duhamel 给出
+令 $\bar r_t=e^{-K_0t}r_0$， $E_t=K_t-K_0$。Duhamel 给出
 
 $$
 r_t-\bar r_t=-\int_0^t e^{-K_0(t-s)}E_sr_sds.

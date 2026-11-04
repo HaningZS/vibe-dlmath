@@ -72,7 +72,7 @@ H(p,q)=-\sum_x p(x)\log q(x)
 =\mathbb E_{X\sim p}[-\log q(X)].
 $$
 
-在 one-hot 分类标签下，$p$ 只在真实类别 $y$ 上为 1，所以
+在 one-hot 分类标签下， $p$ 只在真实类别 $y$ 上为 1，所以
 
 $$
 H(p,q)=-\log q(y).

@@ -17,7 +17,7 @@ status: self-contained-core
 
 必需假设：风险与相关 infimum 有意义；训练输出属于所分析的类；经验优化 gap 有界。分解本身是确定性代数，概率保证来自另行证明的 uniform deviation。
 
-**失败例子**：在 $f(w)=(w^2-1)^2$ 中，$w=0$ 的梯度为零，函数值却比全局最小值高 1。小梯度不能自动充当小 optimization gap。
+**失败例子**：在 $f(w)=(w^2-1)^2$ 中， $w=0$ 的梯度为零，函数值却比全局最小值高 1。小梯度不能自动充当小 optimization gap。
 
 ## 实例化时必须完成
 
@@ -96,7 +96,7 @@ $$
 
 ### 一个直接的 DL 反例
 
-取 $X\in[0,1]$、$Y\equiv1$，平方损失，以及
+取 $X\in[0,1]$、 $Y\equiv1$，平方损失，以及
 
 $$
 f_\theta(x)=\sum_{j=1}^m a_j\operatorname{ReLU}(b_jx+c_j).

@@ -2,6 +2,11 @@
 
 [中文首页](README.md) · [English](README.en.md) · [核验范围](证明模板核验状态.md)
 
+## Unreleased
+
+- README 换用新封面，并加入一张卡的示例（[T32](proofs/generalization/T32-excess-risk-decomposition.md)）、检索输出示例和 Claude Code 的安装与调用方式；[Skill 使用](docs/SKILL.md)同步更新。
+- 修正 390 处在 GitHub 上不渲染的行内公式：`$` 前紧贴中文、中文标点、不换行空格或英文字母时，GitHub 不识别公式。只调整空格与少量措辞，数学内容和核验状态不变。
+
 ## Initial release candidate
 
 面向 AI researcher 的数学学习与证明复用工具，包含：

@@ -47,7 +47,7 @@ $$
 
 ## 3. 多维线性 logistic 的方向结论
 
-令 $X=[x_1,\ldots,x_n]\in\mathbb R^{d\times n}$，$n\geq1$，标签 $y_i\in\{-1,1\}$，数据严格线性可分。使用
+令 $X=[x_1,\ldots,x_n]\in\mathbb R^{d\times n}$， $n\geq1$，标签 $y_i\in\{-1,1\}$，数据严格线性可分。使用
 
 $$
 F(w)=\sum_i\log(1+\exp(-y_iw^\top x_i)).

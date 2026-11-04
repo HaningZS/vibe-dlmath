@@ -49,7 +49,7 @@ PAC-Bayes 特别适合 compressed model、posterior over weights、Bayesian-look
 
 ## PAC-Bayes：先写可核验的 kl 形式
 
-设 $n\ge2$、$\delta\in(0,1)$、$S=(Z_1,\ldots,Z_n)\sim\mathcal D^n$，损失 $\ell(h,z)\in[0,1]$。令先验 $P$ 独立于 $S$，后验 $Q=Q(S)$ 可以依赖 $S$ 且 $Q\ll P$，并定义 Gibbs risks
+设 $n\ge2$、 $\delta\in(0,1)$、 $S=(Z_1,\ldots,Z_n)\sim\mathcal D^n$，损失 $\ell(h,z)\in[0,1]$。令先验 $P$ 独立于 $S$，后验 $Q=Q(S)$ 可以依赖 $S$ 且 $Q\ll P$，并定义 Gibbs risks
 
 $$
 \widehat L_S(Q)=\mathbb E_{h\sim Q}\frac1n\sum_{i=1}^n\ell(h,Z_i),
@@ -131,9 +131,9 @@ $$
 \le\frac{I(W;S)}{\lambda}+\frac{\lambda\sigma^2}{2n}.
 $$
 
-当 $0<I(W;S)<\infty$ 时取 $\lambda=\sqrt{2nI(W;S)/\sigma^2}$，便得到所列平方根界。$I=0$ 时令 $\lambda\downarrow0$；$I=\infty$ 时该界为空泛上界。证明始终控制 $|\mathbb E G|$，没有把绝对值移入期望。
+当 $0<I(W;S)<\infty$ 时取 $\lambda=\sqrt{2nI(W;S)/\sigma^2}$，便得到所列平方根界。 $I=0$ 时令 $\lambda\downarrow0$； $I=\infty$ 时该界为空泛上界。证明始终控制 $|\mathbb E G|$，没有把绝对值移入期望。
 
-源文在 Theorem 1 前用一句话从 fixed-$w$ 损失的 sub-Gaussian 性转到未逐 $w$ 中心化的混合 empirical risk。该中间推断一般需要额外条件；上面通过 $G$ 补足它，不改变所用定理的结论。这里核对的是这一确切推导，不对整篇论文作错误与否的概括判断。
+源文在 Theorem 1 前用一句话从固定 $w$ 时损失的 sub-Gaussian 性转到未逐 $w$ 中心化的混合 empirical risk。该中间推断一般需要额外条件；上面通过 $G$ 补足它，不改变所用定理的结论。这里核对的是这一确切推导，不对整篇论文作错误与否的概括判断。
 
 <a id="t05-mi-bound"></a>
 

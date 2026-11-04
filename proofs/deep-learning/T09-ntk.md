@@ -85,7 +85,7 @@ $$
 ### 离散非线性网络还欠一个余项
 
 以平方损失 $\frac12\|f_\theta(X)-y\|^2$ 为例，记
-$r_t=y-f_{\theta_t}(X)$、$J_t=D_\theta f_{\theta_t}(X)$、$K_t=J_tJ_t^\top$。
+$r_t=y-f_{\theta_t}(X)$、 $J_t=D_\theta f_{\theta_t}(X)$、 $K_t=J_tJ_t^\top$。
 若损失含 $1/n$，应同时调整下面的 $K_t$ 或步长。
 
 真实网络沿参数更新展开为
@@ -96,7 +96,7 @@ $$
 
 其中 $\rho_t$ 是非线性 Taylor remainder。若在同一个归纳区域中
 $\lambda_{\min}(K_t)\geq\lambda_0/2$、
-$\lambda_{\max}(K_t)\leq\Lambda$、$\eta\leq1/\Lambda$，且
+$\lambda_{\max}(K_t)\leq\Lambda$、 $\eta\leq1/\Lambda$，且
 $\|\rho_t\|\leq\eta\lambda_0\|r_t\|/4$，则
 
 $$

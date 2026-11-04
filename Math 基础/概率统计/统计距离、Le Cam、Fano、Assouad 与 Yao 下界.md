@@ -97,7 +97,7 @@ $$
 =\frac12\int |p-q|.
 $$
 
-TV 的范围是 $[0,1]$。$0$ 表示同分布，$1$ 表示存在一个事件能把它们完全分开。
+TV 的范围是 $[0,1]$。 $0$ 表示同分布， $1$ 表示存在一个事件能把它们完全分开。
 
 在常见的离散空间或标准 Borel 空间中，一个核心 coupling 表示是
 
@@ -535,7 +535,7 @@ assert abs(empirical_error - bayes_error) < 0.005
 - Tsybakov, *Introduction to Nonparametric Estimation*, Springer, 2009：Chapter 2 的 minimax lower-bound 工具。
 - Yu, [Assouad, Fano, and Le Cam](https://www.stat.berkeley.edu/~binyu/ps/LeCam.pdf), 1997。
 - Cover & Thomas, *Elements of Information Theory*, 2nd ed., Wiley, 2006：KL、data processing、mutual information 与 Fano。
-- Csiszár, “Information-type measures of difference of probability distributions and indirect observations,” *Studia Scientiarum Mathematicarum Hungarica*, 1967：$f$-divergence。
+- Csiszár, “Information-type measures of difference of probability distributions and indirect observations,” *Studia Scientiarum Mathematicarum Hungarica*, 1967： $f$-divergence。
 - Lattimore & Szepesvári, [*Bandit Algorithms*](https://tor-lattimore.com/downloads/book/book.pdf), Cambridge University Press, 2020：change of measure 与交互下界。
 - Duchi, *Lecture Notes on Statistics and Information Theory*, 2023：统计距离、检验与 minimax lower bounds。
 - [Interactive lower-bound 核验卡](../../proof_ref/core-theory-2026-09/assouad-fano-and-le-cam-with-interaction-a-2410.05117/%E6%A0%B8%E9%AA%8C%E7%AC%94%E8%AE%B0.md)。

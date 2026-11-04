@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/readme-hero.svg" alt="vibe-dlmath：从数学直觉、明确假设与经典证明，走向可审查的 AI 研究论证" width="100%">
+  <img src="assets/readme-hero.svg" alt="vibe-dlmath 封面：标题与标语“Intuition into arguments. Every assumption in the open.”，旁边是一个旋涡星系，两条旋臂是动量法的优化轨迹，沿损失等高线螺旋收敛到最优点 θ*" width="100%">
 </p>
 
 <p align="center">
@@ -9,11 +9,11 @@
 
 <p align="center">
   简体中文 · <a href="README.en.md">English</a><br>
+  <a href="Math%20基础/Math%20基础目录.md">数学前置</a> ·
   <a href="proofs/README.md">模板目录</a> ·
-  <a href="docs/SKILL.md">安装 Skill</a> ·
-  <a href="docs/AI_PROOF_CONTRACT.md">AI 证明合同</a> ·
   <a href="docs/PROOF_DISTILLATION.md">证明蒸馏</a> ·
-  <a href="docs/OPEN_SOURCE.md">维护与发布</a>
+  <a href="docs/AI_PROOF_CONTRACT.md">AI 证明合同</a> ·
+  <a href="docs/SKILL.md">安装 Skill</a>
 </p>
 
 ---
@@ -32,6 +32,24 @@ AI 让推导变得更快，也让写得流畅、却缺少依据的证明更容�
 
 我们追求的是可复用、可追溯、可审查的数学工作方式，不是一键生成正确证明。模板不是定理的替代品，skill 约束也不是形式化验证；重要结论仍需要研究者逐步核对。
 
+## 一张卡长什么样
+
+动机里的例子——“训练梯度趋于零”推不出“测试风险达到最优”——在 [T32](proofs/generalization/T32-excess-risk-decomposition.md) 中被拆成三笔需要分别证明的误差：
+
+$$
+R(\widehat h)-R^\star
+\leq\epsilon_{\rm app}+2\Delta_S+\epsilon_{\rm opt}
+$$
+
+其中 $\widehat h$ 是训练输出；比较基准 $R^\star$ 对全部可测预测器取 inf 时就是 Bayes 风险。逼近误差 $\epsilon_{\rm app}$ 问假设类中最好的预测器离基准还有多远；估计项 $\Delta_S$ 是经验风险与总体风险在整个类上的最大偏差，问有限样本能否可靠地评价候选；优化 gap $\epsilon_{\rm opt}$ 问训练是否找到了经验风险足够低的解。“梯度趋于零”只是驻点性质：要借助 PL、凸性或 NTK 区域等额外桥梁才能控制第三项，前两项还需要另行证明。
+
+> **失败例子**：在 $f(w)=(w^2-1)^2$ 中， $w=0$ 的梯度为零，函数值却比全局最小值高 1。小梯度不能自动充当小 optimization gap。
+
+每张卡都按同一结构组织：复用契约（输入对象、输出结论、必需假设、失败例子）、逐步推导、与其他模板的接口，以及实例化时必须逐条完成的义务，例如：
+
+- [ ] 指明目标是 population excess risk、经验优化 gap，还是 stationarity。
+- [ ] 分别给出 approximation、estimation 和 optimization 的合法上界。
+
 ## 先找到你的入口
 
 | 你现在想做什么 | 从这里开始 |
@@ -45,7 +63,7 @@ AI 让推导变得更快，也让写得流畅、却缺少依据的证明更容�
 
 ## 快速开始：先读一张卡，再提出一个可检查的问题
 
-先取得完整仓库；如果访问受限，需要使用有仓库权限的 GitHub 账号认证：
+先取得完整仓库：
 
 ```bash
 git clone https://github.com/HaningZS/vibe-dlmath.git
@@ -58,17 +76,32 @@ python3 --version
 以下命令在仓库根目录运行，无第三方 Python 依赖：
 
 ```bash
-# 离线检索候选，并阅读它的假设、结论与失败边界。
-python3 scripts/proof_templates.py search "梯度趋零 Bayes 风险"
+# 离线检索候选：每条给出编号、一句话用途和正文位置。
+python3 scripts/proof_templates.py search "梯度趋零 Bayes 风险" --limit 3
+```
+
+```text
+T32 [proof-template] 把总体 excess risk 拆成逼近、统计估计与经验优化误差。
+  proofs/generalization/T32-excess-risk-decomposition.md
+T12 [proof-template] 由困难实例的不可区分性推出指定算法类的风险下界。
+  proofs/lower-bounds-expressivity/T12-information-lower-bounds.md
+T19 [proof-template] 先指定 joint/label 条件，再把 transport cost 连接到风险差。
+  proofs/generation-transport/T19-transport-risk.md
+```
+
+```bash
+# 阅读候选卡的假设、结论与失败边界。
 python3 scripts/proof_templates.py show T32
 
-# 可选：安装为 Codex skill，链接到当前仓库。
+# 可选：安装 skill（二选一）。Codex，链接到 ~/.codex/skills：
 python3 scripts/install_skill.py
+# Claude Code，链接到个人 skills 目录：
+python3 scripts/install_skill.py --target ~/.claude/skills/vibe-dlmath
 ```
 
 仓库应保留在稳定位置：安装器创建符号链接；已有不同内容时会保留并报错。完整说明见 [Skill 使用](docs/SKILL.md)。其他支持 `SKILL.md` 的工具可按该文档加载完整仓库。
 
-安装后可以这样提问：
+安装后可以这样提问（Codex 用 `$vibe-dlmath` 调用，Claude Code 用 `/vibe-dlmath`）：
 
 ```text
 使用 $vibe-dlmath，审查“训练梯度趋于零，所以测试风险趋于 Bayes 风险”。

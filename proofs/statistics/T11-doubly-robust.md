@@ -43,7 +43,7 @@ off-policy evaluation、contextual bandit、causal inference、logged data、age
 
 ## Contextual-bandit estimator
 
-设 logged data $Z_i=(X_i,A_i,Y_i)$ 独立同分布，behavior propensity 为 $e(a\mid x)$，目标 policy 可随机选择动作，记为 $\pi(a\mid x)$；令 $m(x,a)=\mathbb E[Y\mid X=x,A=a]$。要求 target support 上 positivity：$e(a\mid x)>0$。目标 $V(\pi)=\mathbb E_X\sum_a\pi(a\mid X)m(X,a)$。
+设 logged data $Z_i=(X_i,A_i,Y_i)$ 独立同分布，behavior propensity 为 $e(a\mid x)$，目标 policy 可随机选择动作，记为 $\pi(a\mid x)$；令 $m(x,a)=\mathbb E[Y\mid X=x,A=a]$。要求 target support 上 positivity： $e(a\mid x)>0$。目标 $V(\pi)=\mathbb E_X\sum_a\pi(a\mid X)m(X,a)$。
 
 本节先考虑预先固定的 $\pi$，或只使用独立 fit 数据训练出的 $\pi$。用独立训练样本或 cross-fitting 得到 nuisance estimates $\widehat m,\widehat e$；**policy 与 nuisance 都必须和用于评估它们的 held-out observation 分离**。允许 policy 对动作随机化，不等于允许它读取该条评估数据的 reward 后再选动作。
 
@@ -118,9 +118,9 @@ $$
 
 ## 反例：正确 nuisance 也不能补救偷看评估 reward 的 policy
 
-取单个评估样本，$X$ 为常数，$A,Y$ 是相互独立的公平 Bernoulli。两个动作的真实均值都是 $m(a)=1/2$，behavior 为 $e(a)=1/2$；直接使用真值 $\widehat m=m,\widehat e=e$。
+取单个评估样本， $X$ 为常数， $A,Y$ 是相互独立的公平 Bernoulli。两个动作的真实均值都是 $m(a)=1/2$，behavior 为 $e(a)=1/2$；直接使用真值 $\widehat m=m,\widehat e=e$。
 
-现在观察该条评估数据后选 policy：$Y=1$ 时选刚看到的动作 $A$，$Y=0$ 时选另一个动作 $1-A$。不论选哪个动作，在独立新样本上的真实价值均为 $V(\pi)=1/2$，但
+现在观察该条评估数据后选 policy： $Y=1$ 时选刚看到的动作 $A$， $Y=0$ 时选另一个动作 $1-A$。不论选哪个动作，在独立新样本上的真实价值均为 $V(\pi)=1/2$，但
 
 $$
 \widehat\phi_{DR}

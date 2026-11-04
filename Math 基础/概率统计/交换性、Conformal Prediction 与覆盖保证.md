@@ -72,7 +72,7 @@ $$
 
 这不是中心极限定理，也不是大样本近似；在 exchangeability 成立时，它是有限样本的组合对称性。
 
-有 ties 时，rank 不再严格均匀。使用“$\le$ 阈值”的常见构造仍给保守的至少覆盖；若需要精确等式，必须显式随机化 tie-breaking，不能假装 ties 不存在。
+有 ties 时，rank 不再严格均匀。使用“ $\le$ 阈值”的常见构造仍给保守的至少覆盖；若需要精确等式，必须显式随机化 tie-breaking，不能假装 ties 不存在。
 
 ## 3. Nonconformity score：把“离谱”变成数字
 
@@ -178,7 +178,7 @@ $$
 
 ### 5.2 $k=n+1$ 不是程序崩了
 
-当 calibration set 很小或要求覆盖极高时，$k$ 可能等于 $n+1$。此时没有第 $n+1$ 个 calibration order statistic；安全 convention 是 $q=+\infty$，返回整个标签空间。它很宽，但诚实地表达了“这么少的数据不足以给出有限阈值同时保证所需覆盖”。
+当 calibration set 很小或要求覆盖极高时， $k$ 可能等于 $n+1$。此时没有第 $n+1$ 个 calibration order statistic；安全 convention 是 $q=+\infty$，返回整个标签空间。它很宽，但诚实地表达了“这么少的数据不足以给出有限阈值同时保证所需覆盖”。
 
 ## 6. 有限样本 marginal coverage 到底保证什么
 
@@ -231,7 +231,7 @@ $$
 - set size 或区间长度；
 - false positive 数量；
 - segmentation 中未覆盖像素比例；
-- top-$k$ 候选集合的成本；
+- $\text{top-}k$ 候选集合的成本；
 - 选择性预测中的错误率。
 
 Risk-controlling prediction sets 会先定义损失、嵌套集合族和风险上置信界，再校准集合大小。它与 conformal rank 思想相关，但**不能由普通 coverage theorem 自动推出**。
@@ -242,8 +242,8 @@ Risk-controlling prediction sets 会先定义损失、嵌套集合族和风险�
 
 标准 split conformal 默认 calibration 与 test 来自同一可交换机制。部署时常见三种变化：
 
-1. **Covariate shift**：$P_X$ 变了，但 $P_{Y\mid X}$ 不变；在 density ratio 可得且满足条件时，可用 weighted conformal。
-2. **Label/concept shift**：$P_{Y\mid X}$ 也变了；只给 calibration scores 加权通常不够。
+1. **Covariate shift**： $P_X$ 变了，但 $P_{Y\mid X}$ 不变；在 density ratio 可得且满足条件时，可用 weighted conformal。
+2. **Label/concept shift**： $P_{Y\mid X}$ 也变了；只给 calibration scores 加权通常不够。
 3. **Online/adaptive shift**：数据分布随时间或模型行动改变；需要 online conformal、martingale 或专门的 adaptive guarantee。
 
 估计权重会引入额外误差；“double robust”也只在特定 nuisance assumptions 和相应 theorem 下成立，常常是渐近结论。不能把 vanilla split conformal 的 exact finite-sample guarantee 原样搬过去。
@@ -324,7 +324,7 @@ Step 7. 若数据有时间、群组或 shift 结构，停止套 vanilla theorem�
 1. 用自己的话区分 IID 与 exchangeability，并举一个“exchangeable 但不独立”的例子。
 2. 为什么测试点在分位数修正中贡献了那个额外的 $+1$？
 3. 当 $k=n+1$ 时，为什么 $q=+\infty$ 是诚实而不是 bug？
-4. 写出 marginal coverage 与 conditional-on-$X=x$ coverage 的概率公式，并解释量词差异。
+4. 写出 marginal coverage 与以 $X=x$ 为条件的 coverage 的概率公式，并解释量词差异。
 5. 为什么用 calibration labels 选择 score 后再校准可能失效？
 6. 一个方法在 90% 样本上覆盖 100%、另 10% 上覆盖 0%，它满足 90% marginal coverage 吗？这说明了什么？
 7. Covariate shift 与 concept shift 对 conformal 的影响为什么不同？

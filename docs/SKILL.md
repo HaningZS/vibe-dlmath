@@ -11,12 +11,18 @@ Skill 的源文件位于 [skills/vibe-dlmath/SKILL.md](../skills/vibe-dlmath/SKI
 在你长期保留的仓库目录里运行：
 
 ~~~bash
+# Codex：链接到 CODEX_HOME/skills（未设置时为 ~/.codex/skills）。
 python3 scripts/install_skill.py
+
+# Claude Code：链接到个人 skills 目录。
+python3 scripts/install_skill.py --target ~/.claude/skills/vibe-dlmath
 ~~~
 
-安装器在 CODEX_HOME/skills（未设置时为 ~/.codex/skills）创建指向本仓库 skill 的链接。已有不同内容时会报错，不覆盖；重复安装同一个链接是 no-op。仓库应保留在稳定位置，移动后需要更新该链接。
+安装器创建指向本仓库 skill 的符号链接。已有不同内容时会报错，不覆盖；重复安装同一个链接是 no-op。仓库应保留在稳定位置，移动后需要更新该链接。
 
-选择自定义目标可用 --target。其他支持 SKILL.md 的工具也可加载源目录；若复制单独的 skill 文件夹，需要用 VIBE_DLMATH_ROOT 或 helper 的 --repo 指向完整仓库。
+Claude Code 从 `~/.claude/skills/<名称>/SKILL.md` 读取个人 skill，该目录可以是符号链接。只在某个项目中使用时，把 `--target` 换成该项目的 `.claude/skills/vibe-dlmath`。
+
+其他支持 SKILL.md 的工具也可用 --target 链接或直接加载源目录；若复制单独的 skill 文件夹，需要用 VIBE_DLMATH_ROOT 或 helper 的 --repo 指向完整仓库。
 
 ## 使用例子
 
@@ -30,7 +36,7 @@ python3 scripts/install_skill.py
 并用我给出的精度、深度和输入模型写清量词。
 ~~~
 
-Skill 允许正常自动发现，也可以显式调用。它不会因为关键词命中就认定模板适用，也不会把下载状态改成证明核验状态。
+Skill 允许正常自动发现，也可以显式调用：Codex 中写 `$vibe-dlmath`，Claude Code 中写 `/vibe-dlmath`。它不会因为关键词命中就认定模板适用，也不会把下载状态改成证明核验状态。
 
 ## 独立 CLI
 

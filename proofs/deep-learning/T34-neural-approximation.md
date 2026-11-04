@@ -54,13 +54,13 @@ h_m(x)=f(0)+s_0x+
 \sum_{k=1}^{m-1}(s_k-s_{k-1})\operatorname{ReLU}(x-x_k).
 $$
 
-每越过一个节点，一个新 ReLU 改变斜率；把这些“折页”拼起来，就得到插值曲线。由于 $x\geq0$，$s_0x$ 也可写为 $s_0\operatorname{ReLU}(x)$，所以标准单隐藏层网络使用至多 $m$ 个隐藏单元即可实现这段构造。
+每越过一个节点，一个新 ReLU 改变斜率；把这些“折页”拼起来，就得到插值曲线。由于 $x\geq0$， $s_0x$ 也可写为 $s_0\operatorname{ReLU}(x)$，所以标准单隐藏层网络使用至多 $m$ 个隐藏单元即可实现这段构造。
 
 这里先使用精确实数权重。有限精度实现还需加入参数量化和数值计算造成的误差。
 
 ## 3. Lipschitz 目标的误差
 
-若 $f$ 是 $L$-Lipschitz，令 $x=(1-t)x_k+tx_{k+1}$、$h=1/m$，则
+若 $f$ 是 $L$-Lipschitz，令 $x=(1-t)x_k+tx_{k+1}$、 $h=1/m$，则
 
 $$
 \begin{aligned}

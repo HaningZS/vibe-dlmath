@@ -11,11 +11,11 @@ status: self-contained-core
 
 ## 复用契约
 
-**输入对象**：复合目标 $F=f+g$，其中 $f$ 可非凸但为 $L$-smooth，$g$ proper、closed、convex 且可计算 proximal map；$F$ 有有限下界。
+**输入对象**：复合目标 $F=f+g$，其中 $f$ 可非凸但为 $L$-smooth， $g$ proper、closed、convex 且可计算 proximal map； $F$ 有有限下界。
 
 **输出结论**：proximal-gradient mapping 的下降与平均 stationarity 界，不把不可微 $F$ 的普通梯度当作目标量。
 
-**失败例子**：$F(w)=(\operatorname{ReLU}(w)-1)^2$ 在 0 处左右导数分别为 0 与 -2，既不能直接套全局 smooth descent，也不能把任意 ReLU 网络目标视为本卡的 smooth-plus-convex 结构。
+**失败例子**： $F(w)=(\operatorname{ReLU}(w)-1)^2$ 在 0 处左右导数分别为 0 与 -2，既不能直接套全局 smooth descent，也不能把任意 ReLU 网络目标视为本卡的 smooth-plus-convex 结构。
 
 ## 实例化时必须完成
 
@@ -35,7 +35,7 @@ g(z)+\frac1{2\eta}\|z-x+\eta\nabla f(x)\|^2
 \right\}.
 $$
 
-例如 $g$ 是凸集的 indicator 时，prox 就是 Euclidean projection；$g(x)=\lambda\|x\|_1$ 时，prox 是 soft thresholding。
+例如 $g$ 是凸集的 indicator 时，prox 就是 Euclidean projection； $g(x)=\lambda\|x\|_1$ 时，prox 是 soft thresholding。
 
 ## 2. 定义正确的 stationarity 量
 

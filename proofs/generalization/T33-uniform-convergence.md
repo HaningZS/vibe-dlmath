@@ -11,7 +11,7 @@ status: self-contained-core
 
 ## 复用契约
 
-**输入对象**：$S\sim\mathcal D^n$、预先固定的非空 loss class $\mathcal G\subseteq[0,1]^{\mathcal Z}$。假设涉及的 supremum 可测，例如使用可数或适当可分的类。
+**输入对象**： $S\sim\mathcal D^n$、预先固定的非空 loss class $\mathcal G\subseteq[0,1]^{\mathcal Z}$。假设涉及的 supremum 可测，例如使用可数或适当可分的类。
 
 **输出结论**：同一事件上对整个类成立的 population–empirical deviation，允许训练后从该类选模型。
 
@@ -68,7 +68,7 @@ $$
 
 ## 3. 从期望到高概率
 
-改变一个样本，$\sup_g(Pg-P_ng)$ 至多改变 $1/n$。McDiarmid 因而给出
+改变一个样本， $\sup_g(Pg-P_ng)$ 至多改变 $1/n$。McDiarmid 因而给出
 
 $$
 \forall g\in\mathcal G:\quad

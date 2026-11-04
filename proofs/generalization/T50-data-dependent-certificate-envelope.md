@@ -11,11 +11,11 @@ status: self-contained-core
 
 ## 复用契约
 
-**对象**：$S=(Z_1,\ldots,Z_n)\sim\mathcal D^n$，样本独立；预先固定非负函数 $\epsilon(S)$、$\beta>0$、$\delta\in(0,1)$。$d(S,S')$ 是替换了几个坐标的 Hamming 距离。
+**对象**： $S=(Z_1,\ldots,Z_n)\sim\mathcal D^n$，样本独立；预先固定非负函数 $\epsilon(S)$、 $\beta>0$、 $\delta\in(0,1)$。 $d(S,S')$ 是替换了几个坐标的 Hamming 距离。
 
 定义
 $$B_\beta(S)=\sup_{S'}\epsilon(S')e^{-\beta d(S,S')}.$$
-假设包络可测且有限。若不恒为零，它处处正；$\log B_\beta$ 有界，所用期望存在。
+假设包络可测且有限。若不恒为零，它处处正； $\log B_\beta$ 有界，所用期望存在。
 
 **输出**：以至少 $1-\delta$ 的概率抽到 $S_{obs}$ 时，
 $$\mathbb E_S\epsilon(S)\le B_\beta(S_{obs})\exp\!\left(\beta\sqrt{\frac n2\log\frac1\delta}+\frac{n\beta^2}{8}\right).$$
@@ -33,7 +33,7 @@ $$\mathbb E_S\epsilon(S)\le B_\beta(S_{obs})\exp\!\left(\beta\sqrt{\frac n2\log\
 
 同一算法换一个训练点，证书可能跳变。包络向附近乃至更远的数据集看去，按距离打折，取最大的潜在影响。这样观察到的小值不会仅仅来自刚好避开一个紧邻的坏数据集。
 
-折扣越快（$\beta$ 大），包络越贴近局部，但从观测值推总体期望时付出的浓缩代价越大。
+折扣越快（ $\beta$ 大），包络越贴近局部，但从观测值推总体期望时付出的浓缩代价越大。
 
 ## 2. 上包络为什么是 log-Lipschitz
 
@@ -47,7 +47,7 @@ $$|\log B_\beta(S)-\log B_\beta(V)|\le\beta d(S,V).$$
 
 写 $g(S)=\log B_\beta(S)$。替换一个坐标改变 $g$ 至多 $\beta$，McDiarmid 下尾给出
 $$\Pr\{\mathbb Eg-g(S_{obs})>t\}\le e^{-2t^2/(n\beta^2)}.$$
-故概率至少 $1-\delta$ 时，$\mathbb Eg\le g(S_{obs})+\beta\sqrt{n\log(1/\delta)/2}$。
+故概率至少 $1-\delta$ 时， $\mathbb Eg\le g(S_{obs})+\beta\sqrt{n\log(1/\delta)/2}$。
 
 还不能直接把 $\mathbb E e^g$ 写成 $e^{\mathbb Eg}$。依次揭示独立坐标，构造 $g$ 的 Doob martingale；每个中心化增量的条件取值区间长度至多 $\beta$。Hoeffding 引理在指数参数 1 下给出每步因子 $e^{\beta^2/8}$，逐步条件化得到
 $$\mathbb E e^{g-\mathbb Eg}\le e^{n\beta^2/8}.$$
@@ -71,7 +71,7 @@ $$\mathbb E_S[R(A(S))-\widehat R_S(A(S))]
 
 预先取 $\beta=c/\sqrt n$ 可使指数因子不随 $n$ 增长，但还需证明包络本身下降，不能凭此宣称一致性。对预先固定的有限候选 $\beta_j$，可给各自 $\delta_j$ 且 $\sum_j\delta_j\le\delta$，联合事件上再选择最小上界。
 
-若只有可认证的 $\widehat B(S_{obs})\ge B_\beta(S_{obs})$，代入仍合法；$\widehat B$ 自己不必 smooth。独立验证集能估计哪些 expectation、所需域何时固定，则按具体认证算法另证。
+若只有可认证的 $\widehat B(S_{obs})\ge B_\beta(S_{obs})$，代入仍合法； $\widehat B$ 自己不必 smooth。独立验证集能估计哪些 expectation、所需域何时固定，则按具体认证算法另证。
 
 ## 经典来源与近期证据
 

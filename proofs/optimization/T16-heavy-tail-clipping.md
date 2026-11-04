@@ -53,7 +53,7 @@ g_t=\nabla f(x_t)+\xi_t,
 \quad p>1.
 $$
 
-阈值 $\tau_t$ 必须是可预测的（$\mathcal F_t$-可测）。明确采用 radial clipping：
+阈值 $\tau_t$ 必须是可预测的（ $\mathcal F_t$-可测）。明确采用 radial clipping：
 
 $$
 \operatorname{clip}(v,\tau)=v\min\left\{1,\frac{\tau}{\|v\|}\right\},
@@ -147,7 +147,7 @@ $$
 \frac{\sigma^p}{\tau^p}.
 $$
 
-以及（$p>1$）
+以及（ $p>1$）
 
 $$
 \mathbb{E}[\|\xi_t\|\mathbf{1}\{\|\xi_t\|>\tau\}\mid\mathcal F_t]

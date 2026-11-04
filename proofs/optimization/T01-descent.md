@@ -48,7 +48,7 @@ x_{t+1} = x_t - eta_t * estimator_t
 
 ## 核心证明骨架
 
-令 $(\mathcal F_t)_{t\ge0}$ 是算法历史，$x_t$ 为 $\mathcal F_t$-可测。假设 $f:\mathbb R^d\to\mathbb R$ 可微、$L$-smooth 且下有界于 $f_\star$：
+令 $(\mathcal F_t)_{t\ge0}$ 是算法历史， $x_t$ 为 $\mathcal F_t$-可测。假设 $f:\mathbb R^d\to\mathbb R$ 可微、 $L$-smooth 且下有界于 $f_\star$：
 
 $$
 f(y) \le f(x) + \langle \nabla f(x), y-x \rangle + \frac{L}{2}\|y-x\|^2.

@@ -11,11 +11,11 @@ status: self-contained-core
 
 ## 复用契约
 
-**对象**：固定分类器、指定输入范数。路线 A 控制 logits 的 Lipschitz 常数；路线 B 定义 Gaussian smoothing 后的分类器 $g(x)=\arg\max_c\Pr(f(x+Z)=c)$，$Z\sim N(0,\sigma^2I)$。
+**对象**：固定分类器、指定输入范数。路线 A 控制 logits 的 Lipschitz 常数；路线 B 定义 Gaussian smoothing 后的分类器 $g(x)=\arg\max_c\Pr(f(x+Z)=c)$， $Z\sim N(0,\sigma^2I)$。
 
 **结论**：针对指定点、指定模型和指定范数的认证半径。平滑证书针对 $g$；Monte Carlo 估计须提供真实类别概率的有效置信界。
 
-**条件**：类别有限、预测事件可测；$\sigma>0$，公式使用 $p_A,p_B\in(0,1)$；概率下/上界同时成立。半径用 strict inequality，边界 tie 不自动认证；概率端点可另取极限。
+**条件**：类别有限、预测事件可测； $\sigma>0$，公式使用 $p_A,p_B\in(0,1)$；概率下/上界同时成立。半径用 strict inequality，边界 tie 不自动认证；概率端点可另取极限。
 
 **失败例子**：攻击器没找到对抗例只说明这次搜索失败；不能给出“所有半径内扰动”的量词。
 
@@ -34,7 +34,7 @@ margin 是当前领先类别的优势；Lipschitz 常数是扰动能改变这种
 
 ## 2. 确定性 logit 证书
 
-设当前类别 $a$，$s_a(x)-s_b(x)\ge\gamma_b>0$。若 $s_c$ 在球内为 $L_c$-Lipschitz，则
+设当前类别 $a$， $s_a(x)-s_b(x)\ge\gamma_b>0$。若 $s_c$ 在球内为 $L_c$-Lipschitz，则
 
 $$
 s_a(x+u)-s_b(x+u)\ge\gamma_b-(L_a+L_b)\|u\|.
@@ -46,7 +46,7 @@ $$
 
 ## 3. Gaussian 平移的最坏事件
 
-令 $P=N(x,\sigma^2I)$、$Q=N(x+u,\sigma^2I)$，$k=\|u\|_2/\sigma$。沿 $u$ 的标准化投影记为 $z$；$P$ 下 $z\sim N(0,1)$，$Q$ 下 $z\sim N(k,1)$，密度比 $dQ/dP=e^{kz-k^2/2}$ 单调增加。
+令 $P=N(x,\sigma^2I)$、 $Q=N(x+u,\sigma^2I)$， $k=\|u\|_2/\sigma$。沿 $u$ 的标准化投影记为 $z$； $P$ 下 $z\sim N(0,1)$， $Q$ 下 $z\sim N(k,1)$，密度比 $dQ/dP=e^{kz-k^2/2}$ 单调增加。
 
 固定 $P(A)=p$，最小 $Q(A)$ 的集合是左半空间 $H=\{z\le\Phi^{-1}(p)\}$。证明：令其边界密度比为 $c$，则
 $\int(1_A-1_H)(dQ-c\,dP)\ge0$；在 $H$ 内两个因子均非正，在外均非负，且 $P(A)-P(H)=0$。所以 $Q(A)\ge Q(H)$。
@@ -60,7 +60,7 @@ $$
 
 ## 4. 多类别平滑半径
 
-若 $p_A$ 是领先类别真实概率的下界，$p_B$ 是所有其他类别概率的共同上界，$p_A>p_B$，则
+若 $p_A$ 是领先类别真实概率的下界， $p_B$ 是所有其他类别概率的共同上界， $p_A>p_B$，则
 
 $$
 R=\frac\sigma2\big[\Phi^{-1}(p_A)-\Phi^{-1}(p_B)\big]

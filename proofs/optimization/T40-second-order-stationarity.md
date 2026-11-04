@@ -11,11 +11,11 @@ status: self-contained-core
 
 ## 复用契约
 
-**对象**：二次连续可微、下有界的 $f:\mathbb R^d\to\mathbb R$；梯度为 $L$-Lipschitz，Hessian 为 $\rho$-Lipschitz，$L,\rho>0$。范数均为 Euclidean/operator norm。
+**对象**：二次连续可微、下有界的 $f:\mathbb R^d\to\mathbb R$；梯度为 $L$-Lipschitz，Hessian 为 $\rho$-Lipschitz， $L,\rho>0$。范数均为 Euclidean/operator norm。
 
-**结论**：在精确梯度和负曲率方向 oracle 下，有限次更新到达 $\|\nabla f\|\le\epsilon_g$、$\lambda_{\min}(\nabla^2f)\ge-\epsilon_H$。这里计算的是更新次数；寻找特征向量的成本另外记账。
+**结论**：在精确梯度和负曲率方向 oracle 下，有限次更新到达 $\|\nabla f\|\le\epsilon_g$、 $\lambda_{\min}(\nabla^2f)\ge-\epsilon_H$。这里计算的是更新次数；寻找特征向量的成本另外记账。
 
-**失败例子**：$f(x)=x^3$ 在 0 处梯度、Hessian 都为 0，却不是局部极小。二阶必要条件仍不是一般全局最优证书；此例用于说明逻辑关系，不满足本卡全局下有界假设。
+**失败例子**： $f(x)=x^3$ 在 0 处梯度、Hessian 都为 0，却不是局部极小。二阶必要条件仍不是一般全局最优证书；此例用于说明逻辑关系，不满足本卡全局下有界假设。
 
 ## 实例化时必须完成
 

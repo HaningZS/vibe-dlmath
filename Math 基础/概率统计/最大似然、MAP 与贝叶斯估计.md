@@ -35,7 +35,7 @@ reviewed: 2026-09-01
 
 似然通常**不是参数上的概率分布**，不必对 $\theta$ 积分为 1。它只比较不同参数对同一批数据的相对解释力。
 
-例如连续模型里，$p(x\mid\theta)$ 是密度，不是“参数为 $\theta$ 的概率”。把 $P(\theta\mid x)$ 与 $p(x\mid\theta)$ 对调，是最常见的 Bayes 错误。
+例如连续模型里， $p(x\mid\theta)$ 是密度，不是“参数为 $\theta$ 的概率”。把 $P(\theta\mid x)$ 与 $p(x\mid\theta)$ 对调，是最常见的 Bayes 错误。
 
 ## 2. 最大似然估计（MLE）
 
@@ -119,7 +119,7 @@ $$
 
 ### 3.2 Beta–Bernoulli 的 MAP
 
-令先验 $p\sim\operatorname{Beta}(\alpha,\beta)$，观测 $s$ 次成功、$f=n-s$ 次失败，则
+令先验 $p\sim\operatorname{Beta}(\alpha,\beta)$，观测 $s$ 次成功、 $f=n-s$ 次失败，则
 
 $$
 p\mid D\sim\operatorname{Beta}(\alpha+s,\beta+f).

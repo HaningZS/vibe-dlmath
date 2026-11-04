@@ -42,7 +42,7 @@ status: "refined-algebra"
 
 ## AUROC pairwise 形式
 
-令 $P$ 是 positive 样本集合，$N$ 是 negative 样本集合，并要求 $|P|,|N|>0$：
+令 $P$ 是 positive 样本集合， $N$ 是 negative 样本集合，并要求 $|P|,|N|>0$：
 
 $$
 \mathrm{AUROC}(r,y)

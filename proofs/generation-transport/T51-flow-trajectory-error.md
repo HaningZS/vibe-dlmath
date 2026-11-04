@@ -11,9 +11,9 @@ status: self-contained-core
 
 ## 复用契约
 
-**对象**：给定训练数据后，固定真实场 $v_t$ 与学习场 $u_t$。用共同初值 $X_0=Y_0$ 耦合 $\dot X_t=v_t(X_t)$、$\dot Y_t=u_t(Y_t)$，真实边缘 law 为 $\rho_t$，学习流 law 为 $\widehat\rho_t$。
+**对象**：给定训练数据后，固定真实场 $v_t$ 与学习场 $u_t$。用共同初值 $X_0=Y_0$ 耦合 $\dot X_t=v_t(X_t)$、 $\dot Y_t=u_t(Y_t)$，真实边缘 law 为 $\rho_t$，学习流 law 为 $\widehat\rho_t$。
 
-**假设**：区间 $[0,T]$ 上两条 ODE 适定；初值有有限二阶矩；学习场的空间 Lipschitz 常数 $\gamma(t)\ge0$ 可积；$e(t)=\mathbb E_{X\sim\rho_t}\|u_t(X)-v_t(X)\|^2$ 可积。需要足够增长/可积条件使二阶矩及其求导合法；例如两场有可积的线性增长控制且对应乘积可积。
+**假设**：区间 $[0,T]$ 上两条 ODE 适定；初值有有限二阶矩；学习场的空间 Lipschitz 常数 $\gamma(t)\ge0$ 可积； $e(t)=\mathbb E_{X\sim\rho_t}\|u_t(X)-v_t(X)\|^2$ 可积。需要足够增长/可积条件使二阶矩及其求导合法；例如两场有可积的线性增长控制且对应乘积可积。
 
 **输出**：
 $$W_2^2(\widehat\rho_T,\rho_T)
@@ -38,7 +38,7 @@ $$W_2^2(\widehat\rho_T,\rho_T)
 
 训练数据决定 $u_t$，先对它条件化。以下期望只对共同初值取；训练阶段的高概率事件在最后合并。若 $\gamma$ 也随训练变化，必须在相应事件内控制，才能声称一个统一 rate。
 
-令 $R_t=\mathbb E\|Y_t-X_t\|^2$。由于这是一种 coupling，$W_2^2(\widehat\rho_t,\rho_t)\le R_t$。
+令 $R_t=\mathbb E\|Y_t-X_t\|^2$。由于这是一种 coupling， $W_2^2(\widehat\rho_t,\rho_t)\le R_t$。
 
 ## 3. 加减哪一项，决定误差在哪个 law 下
 
@@ -59,13 +59,13 @@ $$W_2^2(\widehat\rho_1,\rho_1)
 
 在 $v=0,u=c$、同一确定初值的简单例子中，真实终点平方误差为 $\|c\|^2T^2$，上式的 $T e^T\|c\|^2$ 是合法但较松的界。这有助于理解该推导没有承诺最紧常数。
 
-删除学习场正则性/唯一性的具体反例：$v=0$、$u(x)=2\sqrt{|x|}$，共同初值为 0。真实轨迹恒为 0，故真实路径上的 $e(t)=0$；学习 ODE 却同时允许 $Y_t=0$ 和 $Y_t=t^2$。选后者就有正误差。此例违反本卡的 Lipschitz/适定性条件，说明这两项不能从回归误差很小自动推出。
+删除学习场正则性/唯一性的具体反例： $v=0$、 $u(x)=2\sqrt{|x|}$，共同初值为 0。真实轨迹恒为 0，故真实路径上的 $e(t)=0$；学习 ODE 却同时允许 $Y_t=0$ 和 $Y_t=t^2$。选后者就有正误差。此例违反本卡的 Lipschitz/适定性条件，说明这两项不能从回归误差很小自动推出。
 
 ## 5. 接训练统计率与离散采样
 
 有限训练集的经验 FM loss 不能直接代入 $\int e$：先用 [CFM 条件期望](../../extensions/条件期望怎样连接CFM与FM.md) 确认目标，再用 [T32](../generalization/T32-excess-risk-decomposition.md)/[T33](../generalization/T33-uniform-convergence.md) 分析模型、统计与优化误差。
 
-Euler 等数值方案另需时间正则性等条件。应先证明 $W_2(\rho_T^{num},\widehat\rho_T)$，再用同一种距离的三角不等式；$W_2^2$ 直接相加会漏交叉项或常数。
+Euler 等数值方案另需时间正则性等条件。应先证明 $W_2(\rho_T^{num},\widehat\rho_T)$，再用同一种距离的三角不等式； $W_2^2$ 直接相加会漏交叉项或常数。
 
 若训练目标 $\rho_T$ 本身带噪声，当前定理恢复的是带噪声目标。去噪或 $\sigma\to0$ 的极限还需目标差异与常数控制。
 

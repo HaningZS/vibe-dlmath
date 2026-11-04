@@ -107,7 +107,7 @@ $$
 \le a_t\Delta_t+b_t\mathbf1\{\text{本步碰到被替换样本}\}.
 $$
 
-$a_t$ 描述更新会放大还是收缩已有差异，$b_t$ 描述真正遇到不同样本时注入多少新差异。最后用 loss 的 Lipschitz 性把参数距离转成预测损失差。
+$a_t$ 描述更新会放大还是收缩已有差异， $b_t$ 描述真正遇到不同样本时注入多少新差异。最后用 loss 的 Lipschitz 性把参数距离转成预测损失差。
 
 ### 2.2 Stability 有多种，不要只写一个词
 
@@ -265,7 +265,7 @@ $$
 
 ## 6. Covering number 与 $\varepsilon$-net：用有限代表覆盖无限类
 
-在度量 $d$ 下，$\varepsilon$-cover 是有限集合
+在度量 $d$ 下， $\varepsilon$-cover 是有限集合
 
 $$
 \{f_1,\ldots,f_M\}
@@ -337,7 +337,7 @@ $$
 
 ### 8.1 Prior 与 posterior 在这里是什么意思
 
-设 $P$ 是训练前固定、独立于当前训练样本的 hypothesis distribution，$Q=Q(S)$ 是看过数据后选择的 distribution。PAC-Bayes 中的 “posterior” 不一定是由真实 Bayesian likelihood 得到的后验；它可以是为证书设计的任意 $Q$。
+设 $P$ 是训练前固定、独立于当前训练样本的 hypothesis distribution， $Q=Q(S)$ 是看过数据后选择的 distribution。PAC-Bayes 中的 “posterior” 不一定是由真实 Bayesian likelihood 得到的后验；它可以是为证书设计的任意 $Q$。
 
 对 Gibbs predictor 定义
 
@@ -372,7 +372,7 @@ $$
 
 ### 8.3 一个常用 PAC-Bayes-kl 形式
 
-若损失在 $[0,1]$、$S\sim\mathcal D^n$、$n\ge2$，且 prior $P$ 与 $S$ 独立，则以至少 $1-\delta$ 的概率，同时对所有 $Q\ll P$：
+若损失在 $[0,1]$、 $S\sim\mathcal D^n$、 $n\ge2$，且 prior $P$ 与 $S$ 独立，则以至少 $1-\delta$ 的概率，同时对所有 $Q\ll P$：
 
 $$
 \operatorname{kl}

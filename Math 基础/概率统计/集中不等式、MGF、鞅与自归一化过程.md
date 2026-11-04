@@ -290,7 +290,7 @@ $$
 
 ## 6. 从独立和到鞅：允许下一步依赖过去
 
-在线学习、RL 和自适应数据收集里，动作 $x_t$ 会根据过去选择，$X_t$ 通常不独立。正确替代品是 filtration 和 martingale difference。
+在线学习、RL 和自适应数据收集里，动作 $x_t$ 会根据过去选择， $X_t$ 通常不独立。正确替代品是 filtration 和 martingale difference。
 
 设 $\mathcal F_t$ 表示看到时刻 $t$ 为止的全部信息。若
 
@@ -308,7 +308,7 @@ $$
 
 是鞅。
 
-人话解释：$X_t$ 可以受过去影响，但在已经知道过去的前提下，它仍然没有可预测的系统偏差。像“每一步都可能根据旧牌调整策略，但庄家下一张牌仍公平”。
+人话解释： $X_t$ 可以受过去影响，但在已经知道过去的前提下，它仍然没有可预测的系统偏差。像“每一步都可能根据旧牌调整策略，但庄家下一张牌仍公平”。
 
 ### 6.1 Azuma–Hoeffding：鞅的范围型界
 
@@ -350,7 +350,7 @@ $$
 它看起来像 Bernstein，只是普通方差换成了条件方差账本。
 
 > [!warning] 不能随意把随机 $V_t$ 代入固定 $v$
-> 上式同时控制“$M_t$ 很大且 $V_t\le v$”。若要得到直接依赖观察到的 $V_t$ 的边界，通常还要 peeling、stitching 或更专门的 empirical-Bernstein/confidence-sequence 结果。
+> 上式同时控制“ $M_t$ 很大且 $V_t\le v$”。若要得到直接依赖观察到的 $V_t$ 的边界，通常还要 peeling、stitching 或更专门的 empirical-Bernstein/confidence-sequence 结果。
 
 ## 7. 停时与 time-uniform：为什么“训练到看起来够好就停”会改变问题
 
@@ -495,7 +495,7 @@ $$
 2\log\frac{\det(V_T)}{\det(V_0)}.
 $$
 
-直觉是：第一次探索一个新方向时，$V_{t-1}$ 在那里很小，所以不确定性大；反复访问后，那个方向的特征值上升，后续 bonus 自动缩小。线性 bandit 和 LSVI-UCB 就用它把逐轮置信宽度压成总体 regret。
+直觉是：第一次探索一个新方向时， $V_{t-1}$ 在那里很小，所以不确定性大；反复访问后，那个方向的特征值上升，后续 bonus 自动缩小。线性 bandit 和 LSVI-UCB 就用它把逐轮置信宽度压成总体 regret。
 
 注意区分两个工具：
 
@@ -567,7 +567,7 @@ assert elliptical_sum <= potential_bound + 1e-12
 7. **设计是否 predictable？** $x_t$ 必须在看到当前噪声前确定。
 8. **随机方差能否直接代入？** 还是需要 peeling/stitching/empirical-Bernstein？
 9. **重尾处理是否记了 bias？** clipping 后不能继续假设原来的无偏性。
-10. **最终 bound 的 metric 是什么？** 欧氏范数、$V_t$-norm、函数值还是 regret？
+10. **最终 bound 的 metric 是什么？** 欧氏范数、 $V_t$-norm、函数值还是 regret？
 
 ## 12. 常见误区
 
@@ -590,7 +590,7 @@ assert elliptical_sum <= potential_bound + 1e-12
 4. 为什么 $\mathbb E[X_t]=0$ 不足以保证 $(X_t)$ 是 martingale difference？
 5. Azuma 与 Freedman 分别忽略和利用了什么信息？
 6. 为什么固定时间高概率界不能直接用于“看到显著就停止”？
-7. 在线线性回归里，$x_t$ 可以依赖过去，却为什么不能依赖当前 $\eta_t$？
+7. 在线线性回归里， $x_t$ 可以依赖过去，却为什么不能依赖当前 $\eta_t$？
 8. $\log\det(V_T/V_0)$ 在几何上和信息上分别表示什么？
 9. self-normalized concentration 与 elliptical potential lemma 在 regret 证明中各控制哪一部分？
 10. 对重尾梯度做 clipping 后，高概率误差应拆成哪两项？

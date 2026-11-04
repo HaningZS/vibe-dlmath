@@ -76,7 +76,7 @@ $$
 dX_t=f(X_t,t)\,dt+G(X_t,t)\,dW_t,
 $$
 
-其中 $f$ 是 drift，$G$ 是 diffusion coefficient，$W_t$ 是 Brownian motion。
+其中 $f$ 是 drift， $G$ 是 diffusion coefficient， $W_t$ 是 Brownian motion。
 
 全局 Lipschitz 与线性增长是保证强解存在唯一的一组常用充分条件；更弱条件也可能成立，但若系数不规则或增长过快，解可能不唯一或发生爆炸。SDE 的建模公式并不自动附送良定性。
 
@@ -258,7 +258,7 @@ assert abs(x_ode - true_mean) < 0.01
 ## 10. 常见误区
 
 1. **“ODE 只是连续层数的 ResNet。”** 这是有用类比，但严格分析还涉及解的存在唯一性、solver 与伴随梯度误差。
-2. **“$dW$ 和 $dt$ 同阶。”** Brownian 增量尺度是 $\sqrt{dt}$。
+2. **“ $dW$ 和 $dt$ 同阶。”** Brownian 增量尺度是 $\sqrt{dt}$。
 3. **“SDE 路径可以普通求导。”** Brownian 路径几乎处处不可导，需要随机微积分；Itô 与 Stratonovich 约定也不能不加 drift 修正地互换。
 4. **“Fokker–Planck 描述一条样本轨迹。”** 它描述整个边缘密度。
 5. **“reverse SDE 只把 drift 加负号。”** 还会出现依赖 score 的修正项，且时间约定决定符号。

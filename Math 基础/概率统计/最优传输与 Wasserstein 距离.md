@@ -26,7 +26,7 @@ reviewed: 2026-09-01
 
 ## 1. Coupling：决定每一份质量从哪搬到哪
 
-给定分布 $\mu$ 和 $\nu$，coupling $\gamma(x,y)$ 是一个联合分布，其两个边缘分别为 $\mu$、$\nu$：
+给定分布 $\mu$ 和 $\nu$，coupling $\gamma(x,y)$ 是一个联合分布，其两个边缘分别为 $\mu$、 $\nu$：
 
 $$
 \gamma\in\Pi(\mu,\nu).
@@ -62,9 +62,9 @@ $$
 
 Monge map 不一定存在：一个原子不能通过确定映射拆成两个目标原子；Kantorovich coupling 可以拆分，因此可行性和凸性更好。合适条件下最优 coupling 可能由一个 map 诱导，但不能默认如此。
 
-## 3. Wasserstein-$p$ 距离
+## 3. $p$-Wasserstein 距离
 
-在度量空间上取 ground distance $d(x,y)$。若 $\mu,\nu$ 都有有限 $p$ 阶矩，$p\ge1$，定义
+在度量空间上取 ground distance $d(x,y)$。若 $\mu,\nu$ 都有有限 $p$ 阶矩， $p\ge1$，定义
 
 $$
 W_p(\mu,\nu)
@@ -90,13 +90,13 @@ W_p(\mu,\nu)^p
 |F_\mu^{-1}(u)-F_\nu^{-1}(u)|^p\,du.
 $$
 
-直觉是不能“交叉运输”：若 $x_1<x_2$ 却把 $x_1$ 搬到更右的目标、$x_2$ 搬到更左的目标，交换目的地通常不会增加凸距离成本。
+直觉是不能“交叉运输”：若 $x_1<x_2$ 却把 $x_1$ 搬到更右的目标、 $x_2$ 搬到更左的目标，交换目的地通常不会增加凸距离成本。
 
 这条公式让一维经验 Wasserstein 非常容易计算：等权、等样本数时，分别排序后逐项比较即可。高维没有这么简单的统一排序。
 
 ## 5. Kantorovich–Rubinstein 对偶与 WGAN
 
-对合适的度量空间，$W_1$ 有对偶形式
+对合适的度量空间， $W_1$ 有对偶形式
 
 $$
 W_1(\mu,\nu)
@@ -237,7 +237,7 @@ assert np.isclose(empirical_wasserstein_1d(samples, shifted, 2), 2.0)
 6. **“flow matching 轨迹就是 OT geodesic。”** 需要额外的最优 coupling 与动能条件。
 7. **“FID 是真实数据分布之间的 Wasserstein 距离。”** 它是特定 feature 空间中的高斯近似量。
 8. **“熵正则只加速、不改变答案。”** 它改变优化目标并引入可控偏差。
-9. **“$W_2^2$ 也是距离。”** $W_2$ 是距离；平方后一般不满足三角不等式。
+9. **“ $W_2^2$ 也是距离。”** $W_2$ 是距离；平方后一般不满足三角不等式。
 
 ## 12. 自测
 

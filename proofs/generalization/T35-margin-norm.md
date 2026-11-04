@@ -50,7 +50,7 @@ $$
 
 ## 2. 线性类给出可以算清的例子
 
-考虑 $f_w(x)=\langle w,x\rangle$、$\|w\|_2\leq W$、$\|X\|_2\leq B$，其中 $W,B,\gamma$ 事先固定。
+考虑 $f_w(x)=\langle w,x\rangle$、 $\|w\|_2\leq W$、 $\|X\|_2\leq B$，其中 $W,B,\gamma$ 事先固定。
 
 对任一固定样本，margin class 的单侧 Rademacher complexity 是
 

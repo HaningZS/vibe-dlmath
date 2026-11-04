@@ -73,7 +73,7 @@ $$
 
 对 $\gamma$ 取 inf 得 $|R_T(h)-R_S(h)|\leq L_h W_1(P_S^{XY},P_T^{XY})$。这是关于 **joint law** 的界；若把它换成 feature marginal，label 信息已经丢失，必须另加假设。
 
-若 $\ell_h\in[0,1]$，$\gamma$ 是质量 $m$ 的 partial joint coupling，且其两个边缘分别被 $P_S,P_T$ 支配，则一个粗的一侧界是
+若 $\ell_h\in[0,1]$， $\gamma$ 是质量 $m$ 的 partial joint coupling，且其两个边缘分别被 $P_S,P_T$ 支配，则一个粗的一侧界是
 
 $$
 R_T(h)\leq R_S(h)+L_h\int d(z,z')\,d\gamma+(1-m).
