@@ -13,7 +13,7 @@ status: self-contained-core
 
 **对象**：固定非负权重 $p_i$、 $\sum_i p_i=1$，目标 $F=\sum_i p_if_i$。所有客户端参与，同一步长，精确本地梯度；每至多 $\tau$ 步同步到加权平均。
 
-**条件**： $f_i$ 均 $L$-smooth， $F$ 下有界； $0<\eta\le1/L$。若使用下面的粗漂移界，还要求实际局部路径上 $\|\nabla f_i\|\le G$。
+**条件**： $f_i$ 均 $L$-smooth， $F$ 下有界； $0<\eta\le1/L$。若使用下面的粗漂移界，还要求实际局部路径上 $\Vert\nabla f_i\Vert\le G$。
 
 **结论**：virtual averaged iterate 的平均梯度平方界与通信误差项。随机梯度、客户端抽样、压缩或异步不是本卡基本定理的一部分。
 
@@ -32,32 +32,32 @@ status: self-contained-core
 
 ## 2. 不隐藏 drift 的精确更新
 
-定义 $\bar x_k=\sum_i p_ix_{i,k}$、 $D_k=\sum_i p_i\|x_{i,k}-\bar x_k\|^2$。两次同步之间
+定义 $\bar x_k=\sum_i p_ix_{i,k}$、 $D_k=\sum_i p_i\Vert x_{i,k}-\bar x_k\Vert^2$。两次同步之间
 
 $$
 \bar x_{k+1}=\bar x_k-\eta(\nabla F(\bar x_k)+e_k),
 \quad e_k=\sum_i p_i[\nabla f_i(x_{i,k})-\nabla f_i(\bar x_k)].
 $$
 
-Jensen 与 smoothness 给出 $\|e_k\|^2\le L^2D_k$。同步把所有 $x_i$ 设为平均，不改变 $\bar x$，并让下一轮初始 $D$ 为 0。
+Jensen 与 smoothness 给出 $\Vert e_k\Vert^2\le L^2D_k$。同步把所有 $x_i$ 设为平均，不改变 $\bar x$，并让下一轮初始 $D$ 为 0。
 
 ## 3. 带确定性偏差的一步下降
 
 令 $g=\nabla F(\bar x_k)$。利用
-$-\langle g,g+e\rangle=-\|g\|^2/2-\|g+e\|^2/2+\|e\|^2/2$，smoothness 得到
+$-\langle g,g+e\rangle=-\Vert g\Vert^2/2-\Vert g+e\Vert^2/2+\Vert e\Vert^2/2$，smoothness 得到
 
 $$
 F(\bar x_{k+1})\le F(\bar x_k)
--\tfrac\eta2\|g\|^2+\tfrac\eta2\|e_k\|^2
-\le F(\bar x_k)-\tfrac\eta2\|g\|^2+\tfrac{\eta L^2}2D_k.
+-\tfrac\eta2\Vert g\Vert^2+\tfrac\eta2\Vert e_k\Vert^2
+\le F(\bar x_k)-\tfrac\eta2\Vert g\Vert^2+\tfrac{\eta L^2}2D_k.
 $$
 
-因 $\eta\le1/L$，省略的 $\|g+e\|^2$ 系数非正。望远镜相加得到
+因 $\eta\le1/L$，省略的 $\Vert g+e\Vert^2$ 系数非正。望远镜相加得到
 
 $$
-\frac1K\sum_{k<K}\|\nabla F(\bar x_k)\|^2
+\frac1K\sum_{k< K}\Vert\nabla F(\bar x_k)\Vert^2
 \le\frac{2(F(\bar x_0)-\inf F)}{\eta K}
-+\frac{L^2}{K}\sum_{k<K}D_k.
++\frac{L^2}{K}\sum_{k< K}D_k.
 $$
 
 这已经明确了下一条需要证明的 lemma：控制客户端分歧，而不是把 $e_k$ 当成无偏噪声。
@@ -65,13 +65,13 @@ $$
 ## 4. 一个粗但完整的漂移闭合
 
 一轮开始时共同位置为 $x^{round}$。若本地路径梯度至多 $G$，轮内第 $j$ 步有
-$\|x_{i,j}-x^{round}\|\le\eta Gj$，平均同样成立。于是
+$\Vert x_{i,j}-x^{round}\Vert\le\eta Gj$，平均同样成立。于是
 $D_j\le4\eta^2G^2j^2\le4\eta^2G^2\tau^2$。
 
 代回得到
 
 $$
-\frac1K\sum_{k<K}\|\nabla F(\bar x_k)\|^2
+\frac1K\sum_{k< K}\Vert\nabla F(\bar x_k)\Vert^2
 \le\frac{2\Delta_F}{\eta K}+4L^2\eta^2G^2\tau^2.
 $$
 

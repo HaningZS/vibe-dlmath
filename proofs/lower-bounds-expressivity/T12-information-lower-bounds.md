@@ -47,7 +47,7 @@ status: "refined + claim-checked"
 两点法：构造参数 $\theta_0,\theta_1$ 及对应观测分布 $P_0,P_1$。对等先验二元 0-1 测试，
 
 $$
-\inf_{\hat\theta}\sup_{\theta\in\{0,1\}}
+\inf_{\hat\theta}\sup_{\theta\in\lbrace0,1\rbrace}
 \mathbb{P}_\theta(\hat\theta\ne\theta)
 \ge
 \frac{1}{2}(1-\mathrm{TV}(P_0,P_1)).
@@ -56,10 +56,10 @@ $$
 若损失度量满足 $d(\theta_0,\theta_1)=\Delta$，由估计器诱导最近邻测试可得
 
 $$
-\inf_{\widehat\theta}\sup_{i\in\{0,1\}}
+\inf_{\widehat\theta}\sup_{i\in\lbrace0,1\rbrace}
 \mathbb E_i d(\widehat\theta,\theta_i)
 \ge
-\frac{\Delta}{4}\left(1-\operatorname{TV}(P_0,P_1)\right).
+\frac{\Delta}{4}\left(1-\mathop{\mathrm{TV}}(P_0,P_1)\right).
 $$
 
 因此从 testing error 转成 estimation risk 时不能漏掉参数间距 $\Delta$。
@@ -78,26 +78,25 @@ $$
 
 ### Assouad
 
-hypercube：构造 $\theta\in\{-1,+1\}^d$，把风险下界分解为逐坐标二元测试。需要明确 Hamming separation、相邻顶点诱导分布的 TV/KL，以及目标损失如何控制 Hamming error。
+hypercube：构造 $\theta\in\lbrace-1,+1\rbrace^d$，把风险下界分解为逐坐标二元测试。需要明确 Hamming separation、相邻顶点诱导分布的 TV/KL，以及目标损失如何控制 Hamming error。
 
 若 $\omega^{(j)}$ 表示翻转第 $j$ 位，并令
 
 $$
 \alpha_{\mathrm{TV}}
-=
-\max_{\omega,j}\operatorname{TV}(P_\omega,P_{\omega^{(j)}}),
+=\max_{\omega,j}\mathop{\mathrm{TV}}(P_\omega,P_{\omega^{(j)}}),
 $$
 
 则一个常用的 Assouad 形式是
 
 $$
-\inf_{\widehat\omega}\sup_{\omega\in\{-1,+1\}^d}
+\inf_{\widehat\omega}\sup_{\omega\in\lbrace-1,+1\rbrace^d}
 \mathbb E_\omega d_H(\widehat\omega,\omega)
 \ge
 \frac d2(1-\alpha_{\mathrm{TV}}).
 $$
 
-若原问题损失下界为 $c\,d_H(\widehat\omega,\omega)$，再乘 $c$ 转回 minimax risk。
+若原问题损失下界为 $c\thinspace d_H(\widehat\omega,\omega)$，再乘 $c$ 转回 minimax risk。
 
 ### Yao minimax principle
 
@@ -134,12 +133,11 @@ $$
 设算法在两个环境中使用**同一个**可测 action kernel（其随机种子分布也相同），并假设所需绝对连续性。对 transcript 概率作链式分解时，action-kernel 的 KL 项抵消，于是
 
 $$
-\mathrm{KL}(P_\theta^{H_T}\|P_{\theta'}^{H_T})
-=
-\sum_{t=1}^T
+\mathrm{KL}(P_\theta^{H_T}\Vert P_{\theta'}^{H_T})
+=\sum_{t=1}^T
 \mathbb{E}_{\theta}
 \left[
-\mathrm{KL}(P_\theta(o_t|H_{t-1},a_t)\|P_{\theta'}(o_t|H_{t-1},a_t))
+\mathrm{KL}(P_\theta(o_t|H_{t-1},a_t)\Vert P_{\theta'}(o_t|H_{t-1},a_t))
 \right].
 $$
 

@@ -49,15 +49,15 @@ $$
 给定从 $x$ 搬到 $y$ 的成本 $c(x,y)$：
 
 $$
-\operatorname{OT}_c(\mu,\nu)
+\mathop{\mathrm{OT}}\nolimits_c(\mu,\nu)
 =\inf_{\gamma\in\Pi(\mu,\nu)}
-\int c(x,y)\,d\gamma(x,y).
+\int c(x,y)\thinspace d\gamma(x,y).
 $$
 
-这是 Kantorovich 的“可以拆分质量”版本。更早的 Monge 问题寻找确定映射 $T$，使 $T_\#\mu=\nu$ 并最小化
+这是 Kantorovich 的“可以拆分质量”版本。更早的 Monge 问题寻找确定映射 $T$，使 $T_\sharp\mu=\nu$ 并最小化
 
 $$
-\int c(x,T(x))\,d\mu(x).
+\int c(x,T(x))\thinspace d\mu(x).
 $$
 
 Monge map 不一定存在：一个原子不能通过确定映射拆成两个目标原子；Kantorovich coupling 可以拆分，因此可行性和凸性更好。合适条件下最优 coupling 可能由一个 map 诱导，但不能默认如此。
@@ -87,7 +87,7 @@ $$
 $$
 W_p(\mu,\nu)^p
 =\int_0^1
-|F_\mu^{-1}(u)-F_\nu^{-1}(u)|^p\,du.
+|F_\mu^{-1}(u)-F_\nu^{-1}(u)|^p\thinspace du.
 $$
 
 直觉是不能“交叉运输”：若 $x_1<x_2$ 却把 $x_1$ 搬到更右的目标、 $x_2$ 搬到更左的目标，交换目的地通常不会增加凸距离成本。
@@ -100,7 +100,7 @@ $$
 
 $$
 W_1(\mu,\nu)
-=\sup_{\|f\|_{\mathrm{Lip}}\le1}
+=\sup_{\Vert f\Vert_{\mathrm{Lip}}\le1}
 \left(
 \mathbb E_{X\sim\mu}[f(X)]
 -\mathbb E_{Y\sim\nu}[f(Y)]
@@ -140,7 +140,7 @@ $$
 W_2(\mu_0,\mu_1)^2
 =\inf_{(\rho_t,v_t)}
 \int_0^1\int
-\|v_t(x)\|^2\rho_t(x)\,dx\,dt,
+\Vert v_t(x)\Vert^2\rho_t(x)\thinspace dx\thinspace dt,
 $$
 
 约束为
@@ -161,7 +161,7 @@ $$
 $$
 \min_{\gamma\in\Pi(\mu,\nu)}
 \langle C,\gamma\rangle
-+\varepsilon\operatorname{KL}(\gamma\|\mu\otimes\nu)
++\varepsilon\mathop{\mathrm{KL}}(\gamma\Vert\mu\otimes\nu)
 $$
 
 可用 Sinkhorn 矩阵缩放高效求解，并得到更平滑的 coupling。
@@ -179,8 +179,8 @@ $$
 它们的平方 $W_2$ 为
 
 $$
-\|m_r-m_g\|_2^2
-+\operatorname{Tr}\left(
+\Vert m_r-m_g\Vert_2^2
++\mathop{\mathrm{Tr}}\left(
 C_r+C_g
 -2(C_r^{1/2}C_gC_r^{1/2})^{1/2}
 \right).

@@ -13,7 +13,7 @@ Beta 分布是一族定义在单位区间上的连续概率分布，常用于表
 
 ## 定义
 
-若 $X\sim\operatorname{Beta}(\alpha,\beta)$，其中 $\alpha>0,\beta>0$，则在 $0<x<1$ 上
+若 $X\sim\mathop{\mathrm{Beta}}(\alpha,\beta)$，其中 $\alpha>0,\beta>0$，则在 $0<x<1$ 上
 
 $$
 f(x;\alpha,\beta)
@@ -24,7 +24,7 @@ $$
 
 $$
 B(\alpha,\beta)
-=\int_0^1 t^{\alpha-1}(1-t)^{\beta-1}\,dt.
+=\int_0^1 t^{\alpha-1}(1-t)^{\beta-1}\thinspace dt.
 $$
 
 端点处的密度值取决于参数并可能发散；分布本身仍可定义在闭区间 $[0,1]$ 上。
@@ -40,7 +40,7 @@ $$
 方差：
 
 $$
-\operatorname{Var}(X)
+\mathop{\mathrm{Var}}(X)
 =\frac{\alpha\beta}
 {(\alpha+\beta)^2(\alpha+\beta+1)}.
 $$
@@ -48,7 +48,7 @@ $$
 当 $\alpha>1,\beta>1$ 时，众数为
 
 $$
-\operatorname{mode}(X)
+\mathop{\mathrm{mode}}(X)
 =\frac{\alpha-1}{\alpha+\beta-2}.
 $$
 
@@ -82,20 +82,20 @@ $$
 设未知成功概率为 $p$：
 
 $$
-p\sim\operatorname{Beta}(\alpha,\beta).
+p\sim\mathop{\mathrm{Beta}}(\alpha,\beta).
 $$
 
 观察到 $s$ 次成功、 $f$ 次失败后，后验为
 
 $$
-p\mid D\sim\operatorname{Beta}(\alpha+s,\beta+f).
+p\mid D\sim\mathop{\mathrm{Beta}}(\alpha+s,\beta+f).
 $$
 
-在这种更新规则中， $\alpha$ 和 $\beta$ 常被口语化为“伪计数”。更精确地说，若以均匀先验 $\operatorname{Beta}(1,1)$ 为基准，先验相对增加的成功/失败计数是 $\alpha-1$ 和 $\beta-1$。不同参数化或基准先验下，不应机械地把 $\alpha,\beta$ 当作真实观测次数。
+在这种更新规则中， $\alpha$ 和 $\beta$ 常被口语化为“伪计数”。更精确地说，若以均匀先验 $\mathop{\mathrm{Beta}}(1,1)$ 为基准，先验相对增加的成功/失败计数是 $\alpha-1$ 和 $\beta-1$。不同参数化或基准先验下，不应机械地把 $\alpha,\beta$ 当作真实观测次数。
 
 ## “无信息先验”需要说明选择
 
-$\operatorname{Beta}(1,1)$ 是对 $p$ 均匀的先验，但“均匀”依赖参数化，不等于唯一、公认的无信息先验。Bernoulli 参数常见的 Jeffreys 先验是 $\operatorname{Beta}(1/2,1/2)$。使用哪一种应根据建模目标说明。
+$\mathop{\mathrm{Beta}}(1,1)$ 是对 $p$ 均匀的先验，但“均匀”依赖参数化，不等于唯一、公认的无信息先验。Bernoulli 参数常见的 Jeffreys 先验是 $\mathop{\mathrm{Beta}}(1/2,1/2)$。使用哪一种应根据建模目标说明。
 
 ## 使用边界
 

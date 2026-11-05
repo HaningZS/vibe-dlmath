@@ -49,27 +49,27 @@ y_t=\langle x_t,\theta_\star\rangle+\varepsilon_t,
 \qquad
 \mathbb E[e^{u\varepsilon_t}\mid\mathcal F_{t-1}]\le e^{u^2R^2/2},
 \qquad
-\|\theta_\star\|_2\le S,
+\Vert\theta_\star\Vert_2\le S,
 \quad
-\|x_t\|_2\le L_x.
+\Vert x_t\Vert_2\le L_x.
 $$
 
 设计矩阵：
 
 $$
-V_t = \lambda I + \sum_{\tau<t} x_\tau x_\tau^\top.
+V_t = \lambda I + \sum_{\tau< t} x_\tau x_\tau^\top.
 $$
 
 least-squares estimator：
 
 $$
-\hat\theta_t = V_t^{-1}\sum_{\tau<t}x_\tau y_\tau.
+\hat\theta_t = V_t^{-1}\sum_{\tau< t}x_\tau y_\tau.
 $$
 
 self-normalized concentration 给出一个常用的 simultaneous confidence radius：以至少 $1-\delta$ 的概率，对所有 $t$，
 
 $$
-\|\hat\theta_t-\theta_\star\|_{V_t}
+\Vert\hat\theta_t-\theta_\star\Vert_{V_t}
 \le
 \beta_t(\delta)
 :=
@@ -81,9 +81,8 @@ optimistic action：
 
 $$
 a_t
-=
-\arg\max_a
-\max_{\theta:\|\theta-\hat\theta_t\|_{V_t}\le\beta_t}
+=\arg\max_a
+\max_{\theta:\Vert\theta-\hat\theta_t\Vert_{V_t}\le\beta_t}
 \langle x(a),\theta\rangle.
 $$
 
@@ -92,13 +91,13 @@ $$
 $$
 \langle x(a_t^\star)-x_t,\theta_\star\rangle
 \le
-2\beta_t\|x_t\|_{V_t^{-1}}.
+2\beta_t\Vert x_t\Vert_{V_t^{-1}}.
 $$
 
 这不是含 observation noise 的 realized regret 恒等式。Elliptical potential 的精确常用形式是
 
 $$
-\sum_{t=1}^T \min\{1,\|x_t\|_{V_t^{-1}}^2\}
+\sum_{t=1}^T \min\lbrace1,\Vert x_t\Vert_{V_t^{-1}}^2\rbrace
 \le
 2\log\frac{\det(V_{T+1})}{\det(V_1)}
 \le
@@ -114,13 +113,13 @@ $$
 ### 从截断的椭圆势到未截断的 regret
 
 必须补上 $\lambda>0$。若进一步选 $\lambda\geq L_x^2$，则
-$\|x_t\|_{V_t^{-1}}\leq1$，此时 $\min\{1,\|x_t\|_{V_t^{-1}}^2\}$ 才能直接去掉。由 Cauchy–Schwarz 和 $\beta_t$ 单调性，
+$\Vert x_t\Vert_{V_t^{-1}}\leq1$，此时 $\min\lbrace1,\Vert x_t\Vert_{V_t^{-1}}^2\rbrace$ 才能直接去掉。由 Cauchy–Schwarz 和 $\beta_t$ 单调性，
 
 $$
-\operatorname{PseudoRegret}(T)
+\mathop{\mathrm{PseudoRegret}}(T)
 \leq
 2\beta_{T+1}
-\sqrt{2Td\log\!\left(1+\frac{TL_x^2}{\lambda d}\right)}.
+\sqrt{2Td\log\negthinspace\left(1+\frac{TL_x^2}{\lambda d}\right)}.
 $$
 
 若不采用这一归一化，必须另外处理大 uncertainty 的步，或使用带额外系数的未截断求和界；不能只从截断势函数公式跳到上述 rate。

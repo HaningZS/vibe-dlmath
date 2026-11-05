@@ -73,9 +73,9 @@ $$
 对固定或 $\mathcal F_0$-可测阈值 $c$，
 
 $$
-\tau=\inf\{t\ge0:\widehat s_t\ge c\},
+\tau=\inf\lbrace t\ge0:\widehat s_t\ge c\rbrace,
 \qquad
-\{\tau\le t\}=\bigcup_{k=0}^t\{\widehat s_k\ge c\}\in\mathcal F_t,
+\lbrace\tau\le t\rbrace=\bigcup_{k=0}^t\lbrace\widehat s_k\ge c\rbrace\in\mathcal F_t,
 $$
 
 所以 $\tau$ 是 stopping time。任意依赖完整轨迹后处理的“最佳停止点”不满足这个论证。

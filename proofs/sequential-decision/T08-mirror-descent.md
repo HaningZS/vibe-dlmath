@@ -42,15 +42,14 @@ online convex optimization、policy optimization、RLHF、DPO、preference learn
 
 ## 核心不等式
 
-设 $\mathcal X$ 闭且凸、 $u\in\mathcal X$， $\psi$ 在其有效域相对内部可微并相对范数 $\|\cdot\|$ 为 $\sigma$-strongly convex；假设下面的 argmin 存在且迭代留在 Bregman 有效域。记 $D_\psi$ 为 Bregman divergence， $\|\cdot\|_\ast$ 为对偶范数。对常步长 $\eta>0$，Online Mirror Descent 更新：
+设 $\mathcal X$ 闭且凸、 $u\in\mathcal X$， $\psi$ 在其有效域相对内部可微并相对范数 $\Vert\cdot\Vert$ 为 $\sigma$-strongly convex；假设下面的 argmin 存在且迭代留在 Bregman 有效域。记 $D_\psi$ 为 Bregman divergence， $\Vert\cdot\Vert_\ast$ 为对偶范数。对常步长 $\eta>0$，Online Mirror Descent 更新：
 
 $$
 x_{t+1}
-=
-\arg\min_{x\in\mathcal{X}}
-\left\{
+=\arg\min_{x\in\mathcal{X}}
+\left\lbrace
 \eta\langle g_t,x\rangle + D_\psi(x,x_t)
-\right\}.
+\right\rbrace.
 $$
 
 由最优性条件、three-point identity 和 Young 不等式得到
@@ -59,8 +58,7 @@ $$
 \langle g_t, x_t-u\rangle
 \le
 \frac{D_\psi(u,x_t)-D_\psi(u,x_{t+1})}{\eta}
-+
-\frac{\eta}{2\sigma}\|g_t\|_\ast^2.
++\frac{\eta}{2\sigma}\Vert g_t\Vert_\ast^2.
 $$
 
 求和后 Bregman term 在**常步长**下 telescope：
@@ -69,8 +67,7 @@ $$
 \sum_{t=1}^T \langle g_t,x_t-u\rangle
 \le
 \frac{D_\psi(u,x_1)}{\eta}
-+
-\frac{\eta}{2\sigma}\sum_{t=1}^T\|g_t\|_\ast^2.
++\frac{\eta}{2\sigma}\sum_{t=1}^T\Vert g_t\Vert_\ast^2.
 $$
 
 若 $\eta_t$ 随时间变化，则 $D_\psi(u,x_t)/\eta_t$ 会产生额外差分项；不能继续照抄上式。
@@ -85,20 +82,17 @@ $$
 
 $$
 D_\psi(\pi,\pi_t)
-=
-\mathbb E_{s\sim d}\!\left[\operatorname{KL}\bigl(\pi(\cdot\mid s)\|\pi_t(\cdot\mid s)\bigr)\right].
+=\mathbb E_{s\sim d}\negthinspace\left[\mathop{\mathrm{KL}}\bigl(\pi(\cdot\mid s)\Vert\pi_t(\cdot\mid s)\bigr)\right].
 $$
 
 若各状态上 reference policy 的支撑覆盖候选 policy，policy update 可写成
 
 $$
 \pi_{t+1}
-=
-\arg\max_\pi
+=\arg\max_\pi
 \left[
 \mathbb E_{s\sim d,a\sim\pi(\cdot\mid s)}\widehat r_t(s,a)
--
-\frac{1}{\eta}\mathbb E_{s\sim d}\operatorname{KL}(\pi(\cdot\mid s)\|\pi_t(\cdot\mid s))
+-\frac{1}{\eta}\mathbb E_{s\sim d}\mathop{\mathrm{KL}}(\pi(\cdot\mid s)\Vert\pi_t(\cdot\mid s))
 \right].
 $$
 

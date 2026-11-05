@@ -49,12 +49,11 @@ x_t, momentum_t, adaptive_denominator_t, compressed_error_t, adapter_state_t, me
 
 $$
 \Phi_t
-=
-f(x_t)
-+a_t\|m_t\|^2
-+b_t\|x_t-x_{t-1}\|^2
-+c_t\|e_t\|^2
-+d_t\|v_t-v_{t-1}\|^2
+=f(x_t)
++a_t\Vert m_t\Vert^2
++b_t\Vert x_t-x_{t-1}\Vert^2
++c_t\Vert e_t\Vert^2
++d_t\Vert v_t-v_{t-1}\Vert^2
 +\cdots.
 $$
 
@@ -72,10 +71,8 @@ $$
 \mathbb{E}\Phi_{t+1}
 \le
 \mathbb{E}\Phi_t
--
-\alpha_t\mathbb{E}\|\nabla f(x_t)\|^2
-+
-\mathrm{residual}_t.
+-\alpha_t\mathbb{E}\Vert\nabla f(x_t)\Vert^2
++\mathrm{residual}_t.
 $$
 
 再证明 residual 可求和或可被 progress 吸收：
@@ -83,7 +80,7 @@ $$
 $$
 \sum_t \mathrm{residual}_t
 \le
-\frac{1}{2}\sum_t\alpha_t\mathbb{E}\|\nabla f(x_t)\|^2
+\frac{1}{2}\sum_t\alpha_t\mathbb{E}\Vert\nabla f(x_t)\Vert^2
 +\mathrm{small\ constant}.
 $$
 
@@ -95,9 +92,9 @@ $$
 $\Phi_T\geq\Phi_{\inf}$，则
 
 $$
-\sum_{t<T}\alpha_t\mathbb E\|\nabla f(x_t)\|^2
+\sum_{t< T}\alpha_t\mathbb E\Vert\nabla f(x_t)\Vert^2
 \leq \mathbb E\Phi_0-\Phi_{\inf}
-+\sum_{t<T}\mathrm{residual}_t.
++\sum_{t< T}\mathrm{residual}_t.
 $$
 
 若残差能吸收一半左边，就把这一半移过去；若不能，残差必须留在最终界中。含交叉项的 $\Phi_t$ 需要证明整体下有界，不能因为其中包含 $f(x_t)$ 就视为已经完成。上述结论只给加权平均进展，last-iterate 收敛仍需另外连接。
@@ -107,14 +104,14 @@ $$
 若实际算法产生可预测、非负但随机的 $\alpha_t$，并且下式各项可积，应从条件下降式出发，取全期望后保留
 
 $$
-\sum_{t<T}\mathbb E[\alpha_t\|\nabla f(x_t)\|^2]
-\leq\mathbb E\Phi_0-\Phi_{\inf}+\sum_{t<T}\mathbb E[r_t],
+\sum_{t< T}\mathbb E[\alpha_t\Vert\nabla f(x_t)\Vert^2]
+\leq\mathbb E\Phi_0-\Phi_{\inf}+\sum_{t< T}\mathbb E[r_t],
 $$
 
-其中 $r_t$ 是相应的可积随机残差。 $\alpha_t$ 与梯度通常由同一历史决定，因此可预测性不意味着二者独立。例如 $Z\sim\operatorname{Bernoulli}(1/2)$、 $\alpha=Z$ 时， $\mathbb E[\alpha Z]=1/2$，而 $\mathbb E\alpha\,\mathbb EZ=1/4$。
+其中 $r_t$ 是相应的可积随机残差。 $\alpha_t$ 与梯度通常由同一历史决定，因此可预测性不意味着二者独立。例如 $Z\sim\mathop{\mathrm{Bernoulli}}(1/2)$、 $\alpha=Z$ 时， $\mathbb E[\alpha Z]=1/2$，而 $\mathbb E\alpha\thinspace\mathbb EZ=1/4$。
 
 确定权重可令独立输出 $R$ 满足 $\Pr(R=t)=\alpha_t/\sum_s\alpha_s$，直接得到加权平均保证。若在看到完整轨迹后按随机权重抽 $R$，输出对应的是
-$\mathbb E[\sum_t\alpha_t\|\nabla f(x_t)\|^2/\sum_t\alpha_t]$，不是期望的比值；还需证明总权重为正并控制这个随机分母，才能给出输出界。
+$\mathbb E[\sum_t\alpha_t\Vert\nabla f(x_t)\Vert^2/\sum_t\alpha_t]$，不是期望的比值；还需证明总权重为正并控制这个随机分母，才能给出输出界。
 
 ```text
 Step 1. 列出算法所有状态变量。
@@ -130,11 +127,11 @@ Step 8. 选超参数，得到 stationarity / regret / convergence rate。
 ## 常用不等式
 
 $$
-2\langle a,b\rangle \le \gamma \|a\|^2 + \frac{1}{\gamma}\|b\|^2.
+2\langle a,b\rangle \le \gamma \Vert a\Vert^2 + \frac{1}{\gamma}\Vert b\Vert^2.
 $$
 
 $$
-\|a+b\|^2 \le (1+\gamma)\|a\|^2 + (1+1/\gamma)\|b\|^2.
+\Vert a+b\Vert^2 \le (1+\gamma)\Vert a\Vert^2 + (1+1/\gamma)\Vert b\Vert^2.
 $$
 
 这些用来处理 momentum 与 gradient error 的交叉项。

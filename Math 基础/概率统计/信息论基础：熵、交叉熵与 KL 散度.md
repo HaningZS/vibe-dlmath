@@ -85,23 +85,23 @@ $$
 KL 散度定义为
 
 $$
-D_{\mathrm{KL}}(p\|q)
+D_{\mathrm{KL}}(p\Vert q)
 =\sum_x p(x)\log\frac{p(x)}{q(x)}.
 $$
 
 把式子展开：
 
 $$
-H(p,q)=H(p)+D_{\mathrm{KL}}(p\|q).
+H(p,q)=H(p)+D_{\mathrm{KL}}(p\Vert q).
 $$
 
-训练时真实分布 $p$ 固定，因此最小化交叉熵等价于最小化前向 KL $D_{\mathrm{KL}}(p\|q)$。KL 满足非负性，并且当且仅当两个分布几乎处处相同时为 0。
+训练时真实分布 $p$ 固定，因此最小化交叉熵等价于最小化前向 KL $D_{\mathrm{KL}}(p\Vert q)$。KL 满足非负性，并且当且仅当两个分布几乎处处相同时为 0。
 
 但 KL **不是距离**：
 
-- 通常 $D_{\mathrm{KL}}(p\|q)\ne D_{\mathrm{KL}}(q\|p)$；
+- 通常 $D_{\mathrm{KL}}(p\Vert q)\ne D_{\mathrm{KL}}(q\Vert p)$；
 - 不满足三角不等式；
-- 若某处 $p(x)>0$ 而 $q(x)=0$，则 $D_{\mathrm{KL}}(p\|q)=\infty$。
+- 若某处 $p(x)>0$ 而 $q(x)=0$，则 $D_{\mathrm{KL}}(p\Vert q)=\infty$。
 
 方向很重要。前向 KL 对“漏掉真实分布有质量的区域”惩罚很重；反向 KL 的行为不同，常更偏向选择某个高密度模式，但“覆盖模式/寻找模式”只是直觉，具体结论依赖分布族和优化条件。
 
@@ -135,7 +135,7 @@ $$
 
 $$
 I(X;Y)=H(X)-H(X\mid Y)
-=D_{\mathrm{KL}}(p(x,y)\|p(x)p(y)).
+=D_{\mathrm{KL}}(p(x,y)\Vert p(x)p(y)).
 $$
 
 因此 $I(X;Y)=0$ 当且仅当 $X,Y$ 独立。[InfoNCE](https://github.com/HaningZS/HaningZS_Notes/blob/8ced9038b7611bcb8c2b2774fb870149df8ef780/ML%20%E5%9F%BA%E7%A1%80/%E6%8D%9F%E5%A4%B1%E5%87%BD%E6%95%B0/InfoNCE%20Loss.md#infonce-%E5%90%8D%E5%AD%97%E7%9A%84%E7%94%B1%E6%9D%A5) 在特定采样假设下给互信息下界，但不能把任意对比损失都无条件称为“等价最大化互信息”。
@@ -145,15 +145,15 @@ $$
 ELBO 有两种常用理解：
 
 $$
-\log p(x)=\operatorname{ELBO}(q)+D_{\mathrm{KL}}(q(z\mid x)\|p(z\mid x)),
+\log p(x)=\mathop{\mathrm{ELBO}}(q)+D_{\mathrm{KL}}(q(z\mid x)\Vert p(z\mid x)),
 $$
 
 以及 VAE 常用形式
 
 $$
-\operatorname{ELBO}
+\mathop{\mathrm{ELBO}}
 =\mathbb E_{q(z\mid x)}[\log p(x\mid z)]
--D_{\mathrm{KL}}(q(z\mid x)\|p(z)).
+-D_{\mathrm{KL}}(q(z\mid x)\Vert p(z)).
 $$
 
 第一式说明 ELBO 是证据下界；第二式把目标拆成重构项与潜变量正则项。详见 [Bayesian ELBO](https://github.com/HaningZS/HaningZS_Notes/blob/8ced9038b7611bcb8c2b2774fb870149df8ef780/ML%20%E5%9F%BA%E7%A1%80/%E6%A6%82%E7%8E%87%E5%BB%BA%E6%A8%A1/%E5%8F%98%E5%88%86%E6%8E%A8%E6%96%AD/Bayesian%20ELBO.md#vae-%E5%B8%B8%E7%94%A8%E5%BD%A2%E5%BC%8F)。

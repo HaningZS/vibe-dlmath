@@ -83,10 +83,10 @@ $\lambda\geq b/\kappa$ 且 $a-\lambda d>0$。
 若此外 $\Phi_T\geq\Phi_{\inf}$，则
 
 $$
-\frac1T\sum_{t<T}\mathbb E G_t
+\frac1T\sum_{t< T}\mathbb E G_t
 \leq
 \frac{\mathbb E\Phi_0-\Phi_{\inf}
-+\sum_{t<T}\mathbb E[c_t+\lambda r_t]}
++\sum_{t< T}\mathbb E[c_t+\lambda r_t]}
 {(a-\lambda d)T}.
 $$
 

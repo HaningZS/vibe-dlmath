@@ -31,7 +31,7 @@ $$P(x) = C \times k(x)$$
 
 $$\text{后验分布} \propto \text{似然函数} \times \text{先验分布}$$
 
-这里的 "$\propto$" (proportional to，正比于) 符号非常关键。它意味着我们在进行计算时，**可以完全忽略掉所有不依赖于目标参数的常数项**。
+这里的 $\propto$（proportional to，正比于）符号非常关键。它意味着我们在进行计算时，**可以完全忽略掉所有不依赖于目标参数的常数项**。
 
 我们只关心那些与参数（例如 $\theta$）相关的项。当我们把似然函数和先验分布相乘时，我们实际上**只需要把它们的 Kernel 相乘**。
 
@@ -67,7 +67,9 @@ $$\text{Kernel}(\text{后验}) \propto \text{Kernel}(\text{似然}) \times \text
 
 我们使用贝叶斯定理，只将两个 Kernel 相乘：
 
-$$\begin{aligned} \text{Kernel}(\text{后验}) &\propto \text{Kernel}(\text{似然}) \times \text{Kernel}(\text{先验}) \\ &\propto [\theta^k (1-\theta)^{n-k}] \times [\theta^{\alpha-1} (1-\theta)^{\beta-1}] \\ &= \theta^{\alpha+k-1} (1-\theta)^{\beta+n-k-1} \end{aligned}$$
+$$\begin{aligned} \text{Kernel}(\text{后验}) &\propto \text{Kernel}(\text{似然}) \times \text{Kernel}(\text{先验}) \\
+ &\propto [\theta^k (1-\theta)^{n-k}] \times [\theta^{\alpha-1} (1-\theta)^{\beta-1}] \\
+&= \theta^{\alpha+k-1} (1-\theta)^{\beta+n-k-1} \end{aligned}$$
 
 4. 识别后验分布
 

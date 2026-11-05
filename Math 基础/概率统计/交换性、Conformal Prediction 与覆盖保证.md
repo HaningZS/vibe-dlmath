@@ -8,7 +8,7 @@ reviewed: 2026-09-01
 
 # 交换性、Conformal Prediction 与覆盖保证
 
-假设你训练了一个回归模型，它预测明天温度是 $25^\circ$C。真正困难的问题不是再给一个小数位，而是：**怎样给出一个预测区间，并保证新观测以至少 90% 的概率落进去？**
+假设你训练了一个回归模型，它预测明天温度是 $25^\circ\mathrm{C}$。真正困难的问题不是再给一个小数位，而是：**怎样给出一个预测区间，并保证新观测以至少 90% 的概率落进去？**
 
 Conformal prediction 的妙处在于：它不要求残差是高斯，也不要求基础模型正确。它主要依赖一个很朴素的对称性：如果校准样本与新样本可以交换位置，而算法无法辨认谁是“最后来的那一个”，那么新样本的异常程度在所有异常分数中的排名也是对称的。
 
@@ -60,13 +60,13 @@ Conformal 的基础秩证明需要校准与测试 **scores** exchangeable，不�
 设 $S_1,\ldots,S_n,S_{n+1}$ 是 exchangeable nonconformity scores；分数越大表示越“不像训练分布中的正常样本”。若几乎必然没有 ties，则测试分数 $S_{n+1}$ 在 $n+1$ 个分数中的 rank 均匀分布于
 
 $$
-\{1,2,\ldots,n+1\}.
+\lbrace1,2,\ldots,n+1\rbrace.
 $$
 
 因此对整数 $k$：
 
 $$
-\mathbb P\bigl(\operatorname{rank}(S_{n+1})\le k\bigr)
+\mathbb P\bigl(\mathop{\mathrm{rank}}(S_{n+1})\le k\bigr)
 =\frac{k}{n+1}.
 $$
 
@@ -85,7 +85,7 @@ $$
 给定阈值 $q$，预测集合为
 
 $$
-C(x)=\{y:S(x,y)\le q\}
+C(x)=\lbrace y:S(x,y)\le q\rbrace
 =[\hat\mu(x)-q,\hat\mu(x)+q].
 $$
 
@@ -108,13 +108,13 @@ $$
 p_y
 =\frac{1}{n+1}
 \sum_{i=1}^{n+1}
-\mathbf{1}\{S_i^{(y)}\ge S_{n+1}^{(y)}\}.
+\mathbf{1}\lbrace S_i^{(y)}\ge S_{n+1}^{(y)}\rbrace.
 $$
 
 然后令
 
 $$
-C(x_{n+1})=\{y:p_y>\alpha\}.
+C(x_{n+1})=\lbrace y:p_y>\alpha\rbrace.
 $$
 
 full conformal 充分利用数据且对称性直观，但候选 $y$ 很多时可能需要反复拟合，计算昂贵。不同文献对严格/非严格不等号和随机 ties 有不同约定；证明与实现必须保持同一 convention。
@@ -151,7 +151,7 @@ $$
 最后输出
 
 $$
-C(x)=\{y:S(x,y)\le q\}.
+C(x)=\lbrace y:S(x,y)\le q\rbrace.
 $$
 
 给定 proper-training data 与独立拟合随机性后，若模型与 score 只由这些信息确定，不使用任何 calibration pair，且 $n$ 个 calibration points 与新点在该条件下 exchangeable，便有
@@ -186,13 +186,13 @@ $$
 
 $$
 \mathbb P_{\text{calibration},(X_{new},Y_{new})}
-\{Y_{new}\in C(X_{new})\}\ge1-\alpha.
+\lbrace Y_{new}\in C(X_{new})\rbrace\ge1-\alpha.
 $$
 
 它叫 marginal coverage。它不等于：
 
 $$
-\mathbb P\{Y_{new}\in C(X_{new})\mid X_{new}=x\}
+\mathbb P\lbrace Y_{new}\in C(X_{new})\mid X_{new}=x\rbrace
 \ge1-\alpha
 \quad\text{对每个 }x.
 $$
@@ -223,7 +223,7 @@ $$
 普通 conformal 控制的是 miss indicator：
 
 $$
-\ell(C(X),Y)=\mathbf{1}\{Y\notin C(X)\}.
+\ell(C(X),Y)=\mathbf{1}\lbrace Y\notin C(X)\rbrace.
 $$
 
 而实际任务可能关心：
@@ -258,7 +258,7 @@ $$
 k=\lceil21\times0.9\rceil=19.
 $$
 
-正确阈值是第 19 个 order statistic；若错误采用 $k=\lceil n(1-\alpha)\rceil$ 这一 order-statistic convention，就会取第 18 个，理论覆盖仅约 $18/21\approx85.7\%$。NumPy/R 的默认 quantile 还可能插值，不能笼统称为同一种“普通 quantile”。
+正确阈值是第 19 个 order statistic；若错误采用 $k=\lceil n(1-\alpha)\rceil$ 这一 order-statistic convention，就会取第 18 个，理论覆盖仅约 $18/21\approx85.7$%。NumPy/R 的默认 quantile 还可能插值，不能笼统称为同一种“普通 quantile”。
 
 ```python
 import numpy as np

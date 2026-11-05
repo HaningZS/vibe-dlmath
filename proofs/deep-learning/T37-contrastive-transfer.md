@@ -28,7 +28,7 @@ status: self-contained-core
 
 ## 1. 先把对比学习变成一道分类题
 
-随机选 $I\sim\mathrm{Unif}\{1,\ldots,K\}$。取 $X\sim P_X$，令
+随机选 $I\sim\mathrm{Unif}\lbrace1,\ldots,K\rbrace$。取 $X\sim P_X$，令
 $Y_I\sim P_{Y|X}$，其余 $Y_j$ 独立来自 $P_Y$。
 
 任务是看到 $(X,Y_1,\ldots,Y_K)$ 后猜哪个位置是 positive。softmax critic 定义
@@ -51,7 +51,7 @@ $$
 若互信息有限且所需绝对连续性成立，
 
 $$
-D_{\rm KL}(P\|Q)=I(X;Y).
+D_{\rm KL}(P\Vert Q)=I(X;Y).
 $$
 
 对索引 $I$ 与其余变量作 KL 分解：
@@ -59,7 +59,7 @@ $$
 $$
 I(X;Y)
 =I_P(I;X,Y_{1:K})
-+D_{\rm KL}\!\left(P_{X,Y_{1:K}}\middle\|P_XP_Y^{\otimes K}\right).
++D_{\rm KL}\negthinspace\left(P_{X,Y_{1:K}}\middle\Vert P_XP_Y^{\otimes K}\right).
 $$
 
 丢掉非负的第二项，再用 cross-entropy 不小于真实条件熵：
@@ -75,8 +75,8 @@ $$
 
 $$
 I(X;Y)-(\log K-L_{\rm NCE})
-=D_{\rm KL}(P_V\|P_XP_Y^{\otimes K})
-+\mathbb E_{P_V}D_{\rm KL}(P_{I|V}\|q_\theta(\cdot|V)).
+=D_{\rm KL}(P_V\Vert P_XP_Y^{\otimes K})
++\mathbb E_{P_V}D_{\rm KL}(P_{I|V}\Vert q_\theta(\cdot|V)).
 $$
 
 因此，即使 critic 达到 Bayes 分类器，有限 $K$ 的下界仍可能不等于原始互信息；不能称它为自动无偏的 MI 估计。

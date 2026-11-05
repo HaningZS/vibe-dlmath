@@ -49,59 +49,57 @@ g_t=\nabla f(x_t)+\xi_t,
 \qquad
 \mathbb E[\xi_t\mid\mathcal F_t]=0,
 \qquad
-\mathbb E[\|\xi_t\|^p\mid\mathcal F_t]\le\sigma^p,
+\mathbb E[\Vert\xi_t\Vert^p\mid\mathcal F_t]\le\sigma^p,
 \quad p>1.
 $$
 
 阈值 $\tau_t$ 必须是可预测的（ $\mathcal F_t$-可测）。明确采用 radial clipping：
 
 $$
-\operatorname{clip}(v,\tau)=v\min\left\{1,\frac{\tau}{\|v\|}\right\},
+\mathop{\mathrm{clip}}(v,\tau)=v\min\left\lbrace1,\frac{\tau}{\Vert v\Vert}\right\rbrace,
 \qquad
-\widetilde g_t=\operatorname{clip}(g_t,\tau_t).
+\widetilde g_t=\mathop{\mathrm{clip}}(g_t,\tau_t).
 $$
 
-约定 $\operatorname{clip}(0,\tau)=0$，并要求 $g_t,\widetilde g_t$ 为 $\mathcal F_{t+1}$-可测；这样下面的 $m_t$ 才是相对 $(\mathcal F_t)$ 的 martingale difference。
+约定 $\mathop{\mathrm{clip}}(0,\tau)=0$，并要求 $g_t,\widetilde g_t$ 为 $\mathcal F_{t+1}$-可测；这样下面的 $m_t$ 才是相对 $(\mathcal F_t)$ 的 martingale difference。
 
 算法实际裁剪的是完整 stochastic gradient $g_t$，而不是不可观测噪声 $\xi_t$。适合 martingale 分析的精确分解是
 
 $$
 \widetilde g_t-\nabla f(x_t)
-=
-\underbrace{\widetilde g_t-\mathbb E[\widetilde g_t\mid\mathcal F_t]}_{m_t\text{: centered martingale difference}}
-+
-\underbrace{\mathbb E[\widetilde g_t\mid\mathcal F_t]-\nabla f(x_t)}_{b_t\text{: clipping bias}}.
+=\underbrace{\widetilde g_t-\mathbb E[\widetilde g_t\mid\mathcal F_t]}_{m_t\text{: centered martingale difference}}
++\underbrace{\mathbb E[\widetilde g_t\mid\mathcal F_t]-\nabla f(x_t)}_{b_t\text{: clipping bias}}.
 $$
 
-其中 $\|m_t\|\le2\tau_t$，可以结合条件方差使用 Freedman/Bernstein 型 martingale 界。偏差必须单独控制：若直接假设 $\mathbb E[\|g_t\|^p\mid\mathcal F_t]\le G_p^p$，则
+其中 $\Vert m_t\Vert\le2\tau_t$，可以结合条件方差使用 Freedman/Bernstein 型 martingale 界。偏差必须单独控制：若直接假设 $\mathbb E[\Vert g_t\Vert^p\mid\mathcal F_t]\le G_p^p$，则
 
 $$
-\|b_t\|
+\Vert b_t\Vert
 \le
-\mathbb E[\|g_t\|\mathbf 1\{\|g_t\|>\tau_t\}\mid\mathcal F_t]
+\mathbb E[\Vert g_t\Vert\mathbf 1\lbrace\Vert g_t\Vert>\tau_t\rbrace\mid\mathcal F_t]
 \le
 \frac{G_p^p}{\tau_t^{p-1}}.
 $$
 
-若只有噪声矩界，则还需一个可预测的 gradient 上界 $\|\nabla f(x_t)\|\le G_t<\tau_t$；此时由 $\|g_t\|>\tau_t\Rightarrow\|\xi_t\|>\tau_t-G_t$ 可得相应的 $O(\sigma^p/(\tau_t-G_t)^{p-1})$ 偏差控制。没有 $G_t$ 或 localization argument 时，不能只用噪声尾界声称 clipping bias 已受控。
+若只有噪声矩界，则还需一个可预测的 gradient 上界 $\Vert\nabla f(x_t)\Vert\le G_t<\tau_t$；此时由 $\Vert g_t\Vert>\tau_t\Rightarrow\Vert\xi_t\Vert>\tau_t-G_t$ 可得相应的 $O(\sigma^p/(\tau_t-G_t)^{p-1})$ 偏差控制。没有 $G_t$ 或 localization argument 时，不能只用噪声尾界声称 clipping bias 已受控。
 
 对 $L$-smooth $f$ 与更新 $x_{t+1}=x_t-\eta\widetilde g_t$，条件期望的一步界可写为
 
 $$
 \mathbb E[f(x_{t+1})\mid\mathcal F_t]
 \le
-f(x_t)-\eta\|\nabla f(x_t)\|^2
+f(x_t)-\eta\Vert\nabla f(x_t)\Vert^2
 -\eta\langle\nabla f(x_t),b_t\rangle
-+\frac{L\eta^2}{2}\mathbb E[\|\widetilde g_t\|^2\mid\mathcal F_t].
++\frac{L\eta^2}{2}\mathbb E[\Vert\widetilde g_t\Vert^2\mid\mathcal F_t].
 $$
 
-再用 $\|\widetilde g_t\|\le\tau_t$ 与 Young 不等式，得到可接入 Lyapunov/telescoping 的版本
+再用 $\Vert\widetilde g_t\Vert\le\tau_t$ 与 Young 不等式，得到可接入 Lyapunov/telescoping 的版本
 
 $$
 \mathbb E[f(x_{t+1})\mid\mathcal F_t]
 \le
-f(x_t)-\frac\eta2\|\nabla f(x_t)\|^2
-+\frac\eta2\|b_t\|^2
+f(x_t)-\frac\eta2\Vert\nabla f(x_t)\Vert^2
++\frac\eta2\Vert b_t\Vert^2
 +\frac{L\eta^2\tau_t^2}{2}.
 $$
 
@@ -115,7 +113,7 @@ $$
 
 在下降分析中，常见对象是标量
 $Z_t=\langle\nabla f(x_t),m_t\rangle$，其中前一个因子对 $\mathcal F_t$ 可测。若已证明
-$\|\nabla f(x_t)\|\leq G_t$，则
+$\Vert\nabla f(x_t)\Vert\leq G_t$，则
 
 $$
 \mathbb E[Z_t\mid\mathcal F_t]=0,\qquad
@@ -142,7 +140,7 @@ Step 8. 显式写出 delta、步数、维数/范数和初始 gap 的依赖。
 条件矩界蕴含条件 tail probability：
 
 $$
-\mathbb{P}(\|\xi_t\|>\tau\mid\mathcal F_t)
+\mathbb{P}(\Vert\xi_t\Vert>\tau\mid\mathcal F_t)
 \le
 \frac{\sigma^p}{\tau^p}.
 $$
@@ -150,7 +148,7 @@ $$
 以及（ $p>1$）
 
 $$
-\mathbb{E}[\|\xi_t\|\mathbf{1}\{\|\xi_t\|>\tau\}\mid\mathcal F_t]
+\mathbb{E}[\Vert\xi_t\Vert\mathbf{1}\lbrace\Vert\xi_t\Vert>\tau\rbrace\mid\mathcal F_t]
 \le
 \frac{\sigma^p}{\tau^{p-1}}.
 $$

@@ -33,7 +33,7 @@ reviewed: 2026-09-01
 
 在 $p=0.5$ 附近改 $p$ 一点，与在 $p=0.999$ 附近改同样数值，对分布的可区分程度不同。换成 logit 后，参数增量的数值又完全不同。
 
-因此欧氏长度 $\|d\theta\|_2$ 依赖坐标选择。信息几何希望定义由分布族本身诱导的局部长度，使一一光滑重参数化不改变理想的无穷小方向。
+因此欧氏长度 $\Vert d\theta\Vert_2$ 依赖坐标选择。信息几何希望定义由分布族本身诱导的局部长度，使一一光滑重参数化不改变理想的无穷小方向。
 
 ## 2. Score：对数概率对参数的敏感度
 
@@ -49,8 +49,8 @@ $$
 
 $$
 \mathbb E_{X\sim p_\theta}[s_\theta(X)]
-=\int p_\theta(x)\nabla_\theta\log p_\theta(x)\,dx
-=\nabla_\theta\int p_\theta(x)\,dx=0.
+=\int p_\theta(x)\nabla_\theta\log p_\theta(x)\thinspace dx
+=\nabla_\theta\int p_\theta(x)\thinspace dx=0.
 $$
 
 如果支持集依赖参数或边界项不消失，这个等式可能失效； $\mathrm{Uniform}(0,\theta)$ 是经典反例之一。
@@ -93,7 +93,7 @@ $$
 
 ### 3.1 Bernoulli 例子
 
-对 $X\sim\operatorname{Bernoulli}(p)$：
+对 $X\sim\mathop{\mathrm{Bernoulli}}(p)$：
 
 $$
 \frac{\partial}{\partial p}\log p(X)
@@ -129,9 +129,9 @@ $$
 
 $$
 D_{\mathrm{KL}}
-\left(p_\theta\|p_{\theta+d\theta}\right)
+\left(p_\theta\Vert p_{\theta+d\theta}\right)
 =\frac12d\theta^\top F(\theta)d\theta
-+o(\|d\theta\|^2).
++o(\Vert d\theta\Vert^2).
 $$
 
 一阶项消失，因为 score 的期望为零；二阶项就是 Fisher。于是可定义无穷小长度
@@ -147,7 +147,7 @@ $$
 对满足正则条件的无偏估计量 $\hat\theta$，标量形式的 Cramér–Rao lower bound 为
 
 $$
-\operatorname{Var}(\hat\theta)
+\mathop{\mathrm{Var}}(\hat\theta)
 \ge\frac1{nF(\theta)}.
 $$
 
@@ -232,7 +232,7 @@ $$
 \max_\theta L_{\theta_{\mathrm{old}}}(\theta)
 \quad\text{s.t.}\quad
 \mathbb E_{s\sim d_{\mathrm{old}}}
-[D_{\mathrm{KL}}(\pi_{\mathrm{old}}\|\pi_\theta)]
+[D_{\mathrm{KL}}(\pi_{\mathrm{old}}\Vert\pi_\theta)]
 \le\delta.
 $$
 

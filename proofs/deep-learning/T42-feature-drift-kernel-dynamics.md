@@ -11,13 +11,13 @@ status: self-contained-core
 
 ## 复用契约
 
-**对象**：固定 $n$ 个训练样本，预测向量 $f_\theta\in\mathbb R^n$，残差 $r=f_\theta-y$；损失 $\mathcal L=\|r\|^2/(2n)$，Euclidean gradient flow $\dot\theta=-\nabla_\theta\mathcal L$。
+**对象**：固定 $n$ 个训练样本，预测向量 $f_\theta\in\mathbb R^n$，残差 $r=f_\theta-y$；损失 $\mathcal L=\Vert r\Vert^2/(2n)$，Euclidean gradient flow $\dot\theta=-\nabla_\theta\mathcal L$。
 
 **条件**：轨迹存在，预测沿轨迹可微，Jacobian 连续且相关积分有限。离散 GD、Adam 和非光滑参数切换需另外证明。
 
 **结论**：精确时变核方程及其条件性收敛/漂移界；不能由“核变了”直接推得表示更适合下游任务。
 
-**失败例子**：特征整体放大可改变核尺度，却保持全部相对方向。仅看 $\|K_t-K_0\|$ 无法排除这种情况。
+**失败例子**：特征整体放大可改变核尺度，却保持全部相对方向。仅看 $\Vert K_t-K_0\Vert$ 无法排除这种情况。
 
 ## 实例化时必须完成
 
@@ -46,18 +46,18 @@ $\mathcal L_t\le e^{-2\mu t}\mathcal L_0$。正半定只能说明 loss 不增；
 
 ## 3. 参数移动和核稳定怎样检查
 
-又有 $\dot{\mathcal L}=-\|\dot\theta\|^2$，故
+又有 $\dot{\mathcal L}=-\Vert\dot\theta\Vert^2$，故
 
 $$
-\|\theta_t-\theta_0\|\le\int_0^t\|\dot\theta_s\|ds
+\Vert\theta_t-\theta_0\Vert\le\int_0^t\Vert\dot\theta_s\Vert ds
 \le\sqrt{t(\mathcal L_0-\mathcal L_t)}.
 $$
 
-若在该区域 $\|J_\theta\|_{op}\le B_J$、 $\|J_\theta-J_{\theta_0}\|_{op}\le L_J\|\theta-\theta_0\|$，则
+若在该区域 $\Vert J_\theta\Vert_{op}\le B_J$、 $\Vert J_\theta-J_{\theta_0}\Vert_{op}\le L_J\Vert\theta-\theta_0\Vert$，则
 
 $$
-\|K_t-K_0\|_{op}
-\le\frac{2B_JL_J}{n}\|\theta_t-\theta_0\|.
+\Vert K_t-K_0\Vert_{op}
+\le\frac{2B_JL_J}{n}\Vert\theta_t-\theta_0\Vert.
 $$
 
 证明通常先设一个可验证的局部区域，在区域内得到这些界，再用移动界证明轨迹不退出。只有条件性谱下界却不关闭区域，就是未完成的 [T09](T09-ntk.md) 证明。
@@ -70,10 +70,10 @@ $$
 r_t-\bar r_t=-\int_0^t e^{-K_0(t-s)}E_sr_sds.
 $$
 
-若 $K_0\succeq0$，指数算子范数不超过 1；时变核也正半定，所以 $\|r_s\|\le\|r_0\|$。因此
+若 $K_0\succeq0$，指数算子范数不超过 1；时变核也正半定，所以 $\Vert r_s\Vert\le\Vert r_0\Vert$。因此
 
 $$
-\|r_t-\bar r_t\|\le\|r_0\|\int_0^t\|E_s\|ds.
+\Vert r_t-\bar r_t\Vert\le\Vert r_0\Vert\int_0^t\Vert E_s\Vert ds.
 $$
 
 固定核近似的误差看的是累计漂移，某个时刻的漂移小还不够保证长期近似。

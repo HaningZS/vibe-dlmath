@@ -13,11 +13,12 @@ status: self-contained-core
 
 **对象**：给定训练数据后，固定真实场 $v_t$ 与学习场 $u_t$。用共同初值 $X_0=Y_0$ 耦合 $\dot X_t=v_t(X_t)$、 $\dot Y_t=u_t(Y_t)$，真实边缘 law 为 $\rho_t$，学习流 law 为 $\widehat\rho_t$。
 
-**假设**：区间 $[0,T]$ 上两条 ODE 适定；初值有有限二阶矩；学习场的空间 Lipschitz 常数 $\gamma(t)\ge0$ 可积； $e(t)=\mathbb E_{X\sim\rho_t}\|u_t(X)-v_t(X)\|^2$ 可积。需要足够增长/可积条件使二阶矩及其求导合法；例如两场有可积的线性增长控制且对应乘积可积。
+**假设**：区间 $[0,T]$ 上两条 ODE 适定；初值有有限二阶矩；学习场的空间 Lipschitz 常数 $\gamma(t)\ge0$ 可积； $e(t)=\mathbb E_{X\sim\rho_t}\Vert u_t(X)-v_t(X)\Vert^2$ 可积。需要足够增长/可积条件使二阶矩及其求导合法；例如两场有可积的线性增长控制且对应乘积可积。
 
 **输出**：
+
 $$W_2^2(\widehat\rho_T,\rho_T)
-\le\int_0^T\exp\!\left((T-s)+2\int_s^T\gamma(r)dr\right)e(s)ds.$$
+\le\int_0^T\exp\negthinspace\left((T-s)+2\int_s^T\gamma(r)dr\right)e(s)ds.$$
 
 **失败例子**：训练误差在 $\rho_t$ 下，而证明改在 $\widehat\rho_t$ 下积分，二者未必接近；对真实场的 Lipschitz 界也不能直接替换此推导所需的学习场界。
 
@@ -38,14 +39,16 @@ $$W_2^2(\widehat\rho_T,\rho_T)
 
 训练数据决定 $u_t$，先对它条件化。以下期望只对共同初值取；训练阶段的高概率事件在最后合并。若 $\gamma$ 也随训练变化，必须在相应事件内控制，才能声称一个统一 rate。
 
-令 $R_t=\mathbb E\|Y_t-X_t\|^2$。由于这是一种 coupling， $W_2^2(\widehat\rho_t,\rho_t)\le R_t$。
+令 $R_t=\mathbb E\Vert Y_t-X_t\Vert^2$。由于这是一种 coupling， $W_2^2(\widehat\rho_t,\rho_t)\le R_t$。
 
 ## 3. 加减哪一项，决定误差在哪个 law 下
 
 写 $D_t=Y_t-X_t$，加减 $u_t(X_t)$：
+
 $$R_t'=2\mathbb E\langle D_t,u_t(Y_t)-u_t(X_t)\rangle
 +2\mathbb E\langle D_t,u_t(X_t)-v_t(X_t)\rangle.$$
-第一项用**学习场**的 Lipschitz 条件，至多 $2\gamma(t)R_t$；第二项用 $2\langle a,b\rangle\le\|a\|^2+\|b\|^2$，至多 $R_t+e(t)$。因此
+
+第一项用**学习场**的 Lipschitz 条件，至多 $2\gamma(t)R_t$；第二项用 $2\langle a,b\rangle\le\Vert a\Vert^2+\Vert b\Vert^2$，至多 $R_t+e(t)$。因此
 $$R_t'\le(1+2\gamma(t))R_t+e(t),\qquad R_0=0.$$
 
 这里误差恰好在真实 $X_t\sim\rho_t$ 下，所以能接训练时的 population regression error。若改为加减 $v_t(Y_t)$，就会得到另一套假设和误差 law，必须重新核对。
@@ -53,11 +56,13 @@ $$R_t'\le(1+2\gamma(t))R_t+e(t),\qquad R_0=0.$$
 ## 4. 积分因子给出完整结论
 
 乘 $\exp[-\int_0^t(1+2\gamma(r))dr]$ 并积分，得到契约中的加权误差界。对 $T=1$，进一步放松为
+
 $$W_2^2(\widehat\rho_1,\rho_1)
-\le e^{1+2\|\gamma\|_{L^1(0,1)}}\int_0^1e(t)dt.$$
+\le e^{1+2\Vert\gamma\Vert_{L^1(0,1)}}\int_0^1e(t)dt.$$
+
 若初值不完全相同，同一计算还会留下 $e^{T+2\int_0^T\gamma}R_0$；不能省掉初始化误差。
 
-在 $v=0,u=c$、同一确定初值的简单例子中，真实终点平方误差为 $\|c\|^2T^2$，上式的 $T e^T\|c\|^2$ 是合法但较松的界。这有助于理解该推导没有承诺最紧常数。
+在 $v=0,u=c$、同一确定初值的简单例子中，真实终点平方误差为 $\Vert c\Vert^2T^2$，上式的 $T e^T\Vert c\Vert^2$ 是合法但较松的界。这有助于理解该推导没有承诺最紧常数。
 
 删除学习场正则性/唯一性的具体反例： $v=0$、 $u(x)=2\sqrt{|x|}$，共同初值为 0。真实轨迹恒为 0，故真实路径上的 $e(t)=0$；学习 ODE 却同时允许 $Y_t=0$ 和 $Y_t=t^2$。选后者就有正误差。此例违反本卡的 Lipschitz/适定性条件，说明这两项不能从回归误差很小自动推出。
 

@@ -42,8 +42,7 @@ status: "refined"
 
 $$
 v_t
-=
-v_{t-1}
+=v_{t-1}
 +\frac1b\sum_{i\in B_t}
 \left(\nabla f_i(x_t)-\nabla f_i(x_{t-1})\right).
 $$
@@ -53,30 +52,29 @@ $$
 假设 component gradients 满足 mean-square smoothness
 
 $$
-\mathbb E_i\|\nabla f_i(x)-\nabla f_i(y)\|^2
-\le L^2\|x-y\|^2.
+\mathbb E_i\Vert\nabla f_i(x)-\nabla f_i(y)\Vert^2
+\le L^2\Vert x-y\Vert^2.
 $$
 
 令 $e_t=v_t-\nabla f(x_t)$。把 mini-batch difference 减去其条件均值后，cross term 为零，因此
 
 $$
-\mathbb E[\|e_t\|^2\mid\mathcal F_{t-1}]
+\mathbb E[\Vert e_t\Vert^2\mid\mathcal F_{t-1}]
 \le
-\|e_{t-1}\|^2
-+
-\frac{L^2}{b}\|x_t-x_{t-1}\|^2.
+\Vert e_{t-1}\Vert^2
++\frac{L^2}{b}\Vert x_t-x_{t-1}\Vert^2.
 $$
 
 在 epoch 起点 $q$ 刷新 $v_q$ 后递推，得到
 
 $$
-\mathbb E\|e_t\|^2
+\mathbb E\Vert e_t\Vert^2
 \le
-\mathbb E\|e_q\|^2
-+\frac{L^2}{b}\sum_{k=q+1}^t\mathbb E\|x_k-x_{k-1}\|^2.
+\mathbb E\Vert e_q\Vert^2
++\frac{L^2}{b}\sum_{k=q+1}^t\mathbb E\Vert x_k-x_{k-1}\Vert^2.
 $$
 
-刷新误差 $\mathbb E\|e_q\|^2$ 由 full gradient 或大 batch 单独控制。注意 $\mathbb E[e_t\mid\mathcal F_{t-1}]=e_{t-1}$，所以 SARAH/SPIDER estimator 一般**不是每一步对真实梯度条件无偏**，不能直接套 T01 的 unbiased-SGD 结论。
+刷新误差 $\mathbb E\Vert e_q\Vert^2$ 由 full gradient 或大 batch 单独控制。注意 $\mathbb E[e_t\mid\mathcal F_{t-1}]=e_{t-1}$，所以 SARAH/SPIDER estimator 一般**不是每一步对真实梯度条件无偏**，不能直接套 T01 的 unbiased-SGD 结论。
 
 <a id="t03-vr-recursion"></a>
 

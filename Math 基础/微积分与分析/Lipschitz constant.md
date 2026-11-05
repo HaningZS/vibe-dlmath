@@ -15,17 +15,17 @@ Lipschitz 条件给函数的变化速度一个**全局线性上界**。
 给定带范数的空间，若存在有限常数 $L\ge0$，使定义域内任意 $x,y$ 都满足
 
 $$
-\|f(x)-f(y)\|\le L\|x-y\|,
+\Vert f(x)-f(y)\Vert\le L\Vert x-y\Vert,
 $$
 
 则称 $f$ 是 $L$-Lipschitz 的。所有可行 $L$ 的下确界称为最优 Lipschitz 常数：
 
 $$
-\operatorname{Lip}(f)
-=\sup_{x\ne y}\frac{\|f(x)-f(y)\|}{\|x-y\|}.
+\mathop{\mathrm{Lip}}(f)
+=\sup_{x\ne y}\frac{\Vert f(x)-f(y)\Vert}{\Vert x-y\Vert}.
 $$
 
-“ $f$ 是 1-Lipschitz”通常表示可取 $L=1$，即 $\operatorname{Lip}(f)\le1$，并不要求最优常数恰好等于 1。
+“ $f$ 是 1-Lipschitz”通常表示可取 $L=1$，即 $\mathop{\mathrm{Lip}}(f)\le1$，并不要求最优常数恰好等于 1。
 
 Lipschitz 连续蕴含一致连续，但反过来不总成立。
 
@@ -36,7 +36,7 @@ Lipschitz 连续蕴含一致连续，但反过来不总成立。
 在凸域 $D\subset\mathbb R^n$ 上，若 $f$ 可微且
 
 $$
-\sup_{x\in D}\|J_f(x)\|_{\mathrm{op}}\le L,
+\sup_{x\in D}\Vert J_f(x)\Vert_{\mathrm{op}}\le L,
 $$
 
 则 $f$ 在该域上是 $L$-Lipschitz 的。这里必须说明输入、输出所用的范数，因为算子范数随范数选择而变。
@@ -52,10 +52,10 @@ $$
 若 $f$ 是 $L_f$-Lipschitz， $g$ 是 $L_g$-Lipschitz，则
 
 $$
-\operatorname{Lip}(f\circ g)\le L_fL_g.
+\mathop{\mathrm{Lip}}(f\circ g)\le L_fL_g.
 $$
 
-线性映射 $x\mapsto Wx$ 在欧氏范数下的 Lipschitz 常数是谱范数 $\|W\|_2$。因此，对
+线性映射 $x\mapsto Wx$ 在欧氏范数下的 Lipschitz 常数是谱范数 $\Vert W\Vert_2$。因此，对
 
 $$
 F(x)=\sigma(Wx+b),
@@ -64,7 +64,7 @@ $$
 有
 
 $$
-\operatorname{Lip}(F)\le \operatorname{Lip}(\sigma)\|W\|_2.
+\mathop{\mathrm{Lip}}(F)\le \mathop{\mathrm{Lip}}(\sigma)\Vert W\Vert_2.
 $$
 
 这只是上界；上界大于 1 不代表真实常数一定大于 1。
@@ -78,7 +78,7 @@ Banach 不动点定理要求：
 
 在这些条件下，迭代 $x_{k+1}=F(x_k)$ 收敛到唯一不动点。仅让某个激活函数的斜率小于 1 不够；必须控制**整个迭代映射**。
 
-例如 $F(x)=0.5\,\mathrm{ReLU}(3x)$ 在正半轴等于 $1.5x$，从正初值出发会发散。
+例如 $F(x)=0.5\thinspace\mathrm{ReLU}(3x)$ 在正半轴等于 $1.5x$，从正初值出发会发散。
 
 ## ODE 中的作用
 

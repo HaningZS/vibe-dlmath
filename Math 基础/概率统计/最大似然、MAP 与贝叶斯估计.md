@@ -39,7 +39,7 @@ reviewed: 2026-09-01
 
 ## 2. 最大似然估计（MLE）
 
-给定独立样本 $D=\{x_i\}_{i=1}^n$：
+给定独立样本 $D=\lbrace x_i\rbrace_{i=1}^n$：
 
 $$
 \hat\theta_{\mathrm{MLE}}
@@ -57,7 +57,7 @@ $$
 
 ### 2.1 Bernoulli 的 MLE
 
-若 $x_i\in\{0,1\}$ 且 $x_i\sim\operatorname{Bernoulli}(p)$，记成功次数 $s=\sum_i x_i$：
+若 $x_i\in\lbrace0,1\rbrace$ 且 $x_i\sim\mathop{\mathrm{Bernoulli}}(p)$，记成功次数 $s=\sum_i x_i$：
 
 $$
 \ell(p)=s\log p+(n-s)\log(1-p).
@@ -112,17 +112,17 @@ $$
 
 在特定概率模型和参数化下：
 
-- 零均值各向同性高斯先验 $p(\theta)\propto\exp(-\lambda\|\theta\|_2^2)$ 对应 L2 正则；
-- 独立 Laplace 先验 $p(\theta)\propto\exp(-\lambda\|\theta\|_1)$ 对应 L1 正则。
+- 零均值各向同性高斯先验 $p(\theta)\propto\exp(-\lambda\Vert\theta\Vert_2^2)$ 对应 L2 正则；
+- 独立 Laplace 先验 $p(\theta)\propto\exp(-\lambda\Vert\theta\Vert_1)$ 对应 L1 正则。
 
 但不要反过度：一个工程正则项未必代表我们真的相信该先验；MAP 也会依赖参数化，同一个模型换坐标后，密度最高点未必对应同一实体。
 
 ### 3.2 Beta–Bernoulli 的 MAP
 
-令先验 $p\sim\operatorname{Beta}(\alpha,\beta)$，观测 $s$ 次成功、 $f=n-s$ 次失败，则
+令先验 $p\sim\mathop{\mathrm{Beta}}(\alpha,\beta)$，观测 $s$ 次成功、 $f=n-s$ 次失败，则
 
 $$
-p\mid D\sim\operatorname{Beta}(\alpha+s,\beta+f).
+p\mid D\sim\mathop{\mathrm{Beta}}(\alpha+s,\beta+f).
 $$
 
 当 $\alpha+s>1,\beta+f>1$ 时，后验众数（MAP）为
@@ -145,8 +145,8 @@ $$
 对新观测 $x_*$，后验预测分布是
 
 $$
-p(x_*\mid D)
-=\int p(x_*\mid\theta)p(\theta\mid D)\,d\theta.
+p(x_\ast\mid D)
+=\int p(x_\ast\mid\theta)p(\theta\mid D)\thinspace d\theta.
 $$
 
 直觉上，它让每个可能参数都投票，权重就是后验概率，而不是只让最高点独断。

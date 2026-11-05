@@ -62,7 +62,7 @@ $$
 prediction set：
 
 $$
-C(x)=\{y:S(x,y)\le q\}.
+C(x)=\lbrace y:S(x,y)\le q\rbrace.
 $$
 
 假设条件于 proper-training data 与拟合随机性后， $n+1$ 个 calibration/test **scores** exchangeable。常规 split 构造中，训练得到的同一固定 score 逐点作用于条件可交换的 calibration/test pairs，就满足这个条件。于是
@@ -89,10 +89,10 @@ Step 7. 若目标是 selective/risk control，另定义 bounded loss、nested se
 
 ## 反例：没有看 labels，也可能破坏交换性
 
-令 $X\sim\operatorname{Unif}[0,1]$、 $Y\equiv0$，所有 calibration/test pairs 独立同分布。读取 calibration inputs 后、完全不读取 labels，定义
+令 $X\sim\mathop{\mathrm{Unif}}[0,1]$、 $Y\equiv0$，所有 calibration/test pairs 独立同分布。读取 calibration inputs 后、完全不读取 labels，定义
 
 $$
-s(x,y)=\mathbf1\{x\notin\{X_1,\ldots,X_n\}\}.
+s(x,y)=\mathbf1\lbrace x\notin\lbrace X_1,\ldots,X_n\rbrace\rbrace.
 $$
 
 取 $n=9,\alpha=0.1$，则 $k=9$，所有 calibration scores 都为 0，所以 $q=0$。独立 test input 撞上这有限个校准输入的概率为 0，因此 test score 几乎必然为 1，覆盖率为 0。

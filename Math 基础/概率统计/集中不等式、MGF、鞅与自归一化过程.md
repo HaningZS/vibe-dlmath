@@ -62,7 +62,7 @@ $$
 证明只有一行，但值得看懂：
 
 $$
-Y\ge a\,\mathbf 1\{Y\ge a\}.
+Y\ge a\thinspace\mathbf 1\lbrace Y\ge a\rbrace.
 $$
 
 两边取期望后，右边就是 $a\mathbb P(Y\ge a)$。
@@ -89,7 +89,7 @@ $$
 \begin{aligned}
 \mathbb P(X\ge t)
 &=\mathbb P(e^{\lambda X}\ge e^{\lambda t})\\
-&\le e^{-\lambda t}\,\mathbb E[e^{\lambda X}].
+&\le e^{-\lambda t}\thinspace\mathbb E[e^{\lambda X}].
 \end{aligned}
 $$
 
@@ -158,7 +158,7 @@ $$
 
 次高斯的重点不是“分布一定是 Gaussian”，而是尾部至少像 Gaussian 那样快。Gaussian 本身、中心化 Rademacher 变量和有界中心化变量都是典型例子。
 
-参数 $\sigma^2$ 是 **variance proxy**，不必恰好等于 $\operatorname{Var}(X)$；它是一个足以控制整个 MGF 的尺度。
+参数 $\sigma^2$ 是 **variance proxy**，不必恰好等于 $\mathop{\mathrm{Var}}(X)$；它是一个足以控制整个 MGF 的尺度。
 
 ### 3.2 次指数：中等偏差像高斯，极端偏差像指数
 
@@ -204,7 +204,7 @@ $$
 Clipping 不是“把噪声变成无偏有界噪声”。若
 
 $$
-\widetilde X=\operatorname{clip}(X,\tau),
+\widetilde X=\mathop{\mathrm{clip}}(X,\tau),
 $$
 
 通常
@@ -364,7 +364,7 @@ $$
 
 ### 7.1 Stopping time
 
-随机时间 $\tau$ 是 stopping time，意思是事件 $\{\tau\le t\}$ 只用 $\mathcal F_t$ 的信息就能判断。它允许“看到现在决定停”，不允许偷看未来。
+随机时间 $\tau$ 是 stopping time，意思是事件 $\lbrace\tau\le t\rbrace$ 只用 $\mathcal F_t$ 的信息就能判断。它允许“看到现在决定停”，不允许偷看未来。
 
 Optional stopping theorem 也不是一句“鞅在任意停时的期望不变”。常见充分条件包括有界停时、有界增量配合可积控制、uniform integrability 等；条件不满足时，赌徒策略可以制造反例。
 
@@ -413,10 +413,10 @@ V_t=\lambda_0 I+\sum_{s=1}^tx_sx_s^\top,
 \qquad \lambda_0>0.
 $$
 
-普通欧氏范数 $\|S_t\|_2$ 会把所有方向一视同仁；但数据可能在某些方向采得很多、另一些方向几乎没采。自归一化范数
+普通欧氏范数 $\Vert S_t\Vert_2$ 会把所有方向一视同仁；但数据可能在某些方向采得很多、另一些方向几乎没采。自归一化范数
 
 $$
-\|S_t\|_{V_t^{-1}}
+\Vert S_t\Vert_{V_t^{-1}}
 =\sqrt{S_t^\top V_t^{-1}S_t}
 $$
 
@@ -425,7 +425,7 @@ $$
 经典 self-normalized bound 的一种形式是：以至少 $1-\delta$ 的概率，对所有 $t$ 同时成立
 
 $$
-\|S_t\|_{V_t^{-1}}
+\Vert S_t\Vert_{V_t^{-1}}
 \le
 R\sqrt{
 2\log\left(
@@ -442,10 +442,10 @@ $$
 =V_t^{-1}\sum_{s=1}^tx_sy_s,
 $$
 
-且 $\|\theta_\star\|_2\le S$，还会有 ridge bias：
+且 $\Vert\theta_\star\Vert_2\le S$，还会有 ridge bias：
 
 $$
-\|\widehat\theta_t-\theta_\star\|_{V_t}
+\Vert\widehat\theta_t-\theta_\star\Vert_{V_t}
 \le
 R\sqrt{
 2\log\left(
@@ -475,7 +475,7 @@ $$
 $$
 \det(V_t)
 =\det(V_{t-1})
-\left(1+\|x_t\|_{V_{t-1}^{-1}}^2\right).
+\left(1+\Vert x_t\Vert_{V_{t-1}^{-1}}^2\right).
 $$
 
 取对数并求和：
@@ -483,14 +483,14 @@ $$
 $$
 \log\frac{\det(V_T)}{\det(V_0)}
 =\sum_{t=1}^T
-\log\left(1+\|x_t\|_{V_{t-1}^{-1}}^2\right).
+\log\left(1+\Vert x_t\Vert_{V_{t-1}^{-1}}^2\right).
 $$
 
 利用 $\min(1,u)\le2\log(1+u)$，得到 elliptical potential lemma：
 
 $$
 \sum_{t=1}^T
-\min\left(1,\|x_t\|_{V_{t-1}^{-1}}^2\right)
+\min\left(1,\Vert x_t\Vert_{V_{t-1}^{-1}}^2\right)
 \le
 2\log\frac{\det(V_T)}{\det(V_0)}.
 $$

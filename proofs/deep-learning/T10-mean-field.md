@@ -74,8 +74,7 @@ $$
 \mathrm{Risk}(\rho_t^m)-\mathrm{Risk}(\rho^\star)
 \le
 \left|\mathrm{Risk}(\rho_t^m)-\mathrm{Risk}(\rho_t)\right|
-+
-\left[\mathrm{Risk}(\rho_t)-\mathrm{Risk}(\rho^\star)\right].
++\left[\mathrm{Risk}(\rho_t)-\mathrm{Risk}(\rho^\star)\right].
 $$
 
 第一项才是有限粒子逼近误差，第二项是极限动力学的优化误差。若要用 Wasserstein 控制第一项，还需风险泛函对该距离的连续性。粒子误差一般也依赖 $t$、维度与矩；若算法离散执行，还应增加时间离散项。不能先取无限宽再无条件交换到无限训练时间。

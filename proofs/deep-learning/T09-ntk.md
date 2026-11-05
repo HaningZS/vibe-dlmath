@@ -63,28 +63,28 @@ $$
 kernel stability：
 
 $$
-\|K_t-K_0\| \le \lambda_0/2.
+\Vert K_t-K_0\Vert \le \lambda_0/2.
 $$
 
 linearized loss decrease：
 
 $$
-\|y-f_{\theta_{t+1}}(X)\|^2
+\Vert y-f_{\theta_{t+1}}(X)\Vert^2
 \le
-(1-c\eta\lambda_0)\|y-f_{\theta_t}(X)\|^2.
+(1-c\eta\lambda_0)\Vert y-f_{\theta_t}(X)\Vert^2.
 $$
 
 movement bound：
 
 $$
-\|\theta_t-\theta_0\| \le R.
+\Vert\theta_t-\theta_0\Vert \le R.
 $$
 
 ## 逐步证明模板
 
 ### 离散非线性网络还欠一个余项
 
-以平方损失 $\frac12\|f_\theta(X)-y\|^2$ 为例，记
+以平方损失 $\frac12\Vert f_\theta(X)-y\Vert^2$ 为例，记
 $r_t=y-f_{\theta_t}(X)$、 $J_t=D_\theta f_{\theta_t}(X)$、 $K_t=J_tJ_t^\top$。
 若损失含 $1/n$，应同时调整下面的 $K_t$ 或步长。
 
@@ -97,13 +97,13 @@ $$
 其中 $\rho_t$ 是非线性 Taylor remainder。若在同一个归纳区域中
 $\lambda_{\min}(K_t)\geq\lambda_0/2$、
 $\lambda_{\max}(K_t)\leq\Lambda$、 $\eta\leq1/\Lambda$，且
-$\|\rho_t\|\leq\eta\lambda_0\|r_t\|/4$，则
+$\Vert\rho_t\Vert\leq\eta\lambda_0\Vert r_t\Vert/4$，则
 
 $$
-\|r_{t+1}\|\leq(1-\eta\lambda_0/4)\|r_t\|.
+\Vert r_{t+1}\Vert\leq(1-\eta\lambda_0/4)\Vert r_t\Vert.
 $$
 
-再从 $\|\theta_{t+1}-\theta_t\|\leq\eta\|J_t\|_{\mathrm{op}}\|r_t\|$ 累计移动。只有累计量确实不超过前面使用的邻域半径，联合归纳才闭合。初始化谱下界不能替代余项控制。
+再从 $\Vert\theta_{t+1}-\theta_t\Vert\leq\eta\Vert J_t\Vert_{\mathrm{op}}\Vert r_t\Vert$ 累计移动。只有累计量确实不超过前面使用的邻域半径，联合归纳才闭合。初始化谱下界不能替代余项控制。
 
 ```text
 Step 1. 用随机初始化 concentration 证明 Gram matrix 初始条件。

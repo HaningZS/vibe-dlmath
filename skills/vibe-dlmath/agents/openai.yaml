@@ -1,4 +1,4 @@
 interface:
   display_name: "Vibe DLMath"
-  short_description: "蒸馏经典与前沿证明，逐条核对假设、量词、来源证据和未闭合义务"
-  default_prompt: "使用 $vibe-dlmath 完成或审查我的数学证明：先保留原命题，再逐条推导，并明确每个结论的证据与未闭合义务。"
+  short_description: "沿经典证明路线展开证明，偏离之处写成待补引理、新增假设或反例"
+  default_prompt: "使用 $vibe-dlmath 完成或审查我的数学证明：先找到库里最接近的证明路线，保留原命题，沿路线逐步推导，并说明每处偏离、每个结论的证据与未闭合义务。"

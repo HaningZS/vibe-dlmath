@@ -40,8 +40,8 @@ $$
 $\widehat z_{\ell+1}=F_\ell(\widehat z_\ell)$。在所有实际中间状态所在的域上，假设
 
 $$
-\|F_\ell(z)-A(z)\|\leq\epsilon_\ell,\qquad
-\|A(z)-A(z')\|\leq L_\ell\|z-z'\|.
+\Vert F_\ell(z)-A(z)\Vert\leq\epsilon_\ell,\qquad
+\Vert A(z)-A(z')\Vert\leq L_\ell\Vert z-z'\Vert.
 $$
 
 则 $e_{\ell+1}\leq L_\ell e_\ell+\epsilon_\ell$，进而

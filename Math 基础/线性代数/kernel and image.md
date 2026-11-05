@@ -39,7 +39,7 @@ Image（也称为 **Column Space / 列空间** 或 **Range / 值域**）是所�
 
 - 数学定义：
 
-    $\text{Im}(A) = \{ b \in \mathbb{R}^m \mid b = Ax \text{ 对于某个 } x \in \mathbb{R}^n \}$
+    $\text{Im}(A) = \lbrace b \in \mathbb{R}^m \mid b = Ax \text{ 对于某个 } x \in \mathbb{R}^n \rbrace$
 
 - 如何找到：
 
@@ -62,7 +62,7 @@ Kernel（也称为 **Null Space / 零空间**）是所有被矩阵 $A$ 映射到
 
 - 数学定义：
 
-    $\text{Ker}(A) = \{ x \in \mathbb{R}^n \mid Ax = 0 \}$
+    $\text{Ker}(A) = \lbrace x \in \mathbb{R}^n \mid Ax = 0 \rbrace$
 
 - 如何找到：
 

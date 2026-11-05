@@ -60,7 +60,7 @@ $$
 从积分写起：
 
 $$
-J(\theta)=\int f_\theta(x)p_\theta(x)\,dx.
+J(\theta)=\int f_\theta(x)p_\theta(x)\thinspace dx.
 $$
 
 我们想写
@@ -126,7 +126,7 @@ $$
 若
 
 $$
-Z\sim\mathcal N(\mu_\phi(x),\operatorname{diag}(\sigma_\phi(x)^2)),
+Z\sim\mathcal N(\mu_\phi(x),\mathop{\mathrm{diag}}(\sigma_\phi(x)^2)),
 $$
 
 可以写成
@@ -294,7 +294,7 @@ straight-through（ST）常写成概念形式：
 
 $$
 Y_{\mathrm{ST}}
-=\operatorname{stopgrad}(Y_{\mathrm{hard}}-Y_{\mathrm{soft}})
+=\mathop{\mathrm{stopgrad}}(Y_{\mathrm{hard}}-Y_{\mathrm{soft}})
 +Y_{\mathrm{soft}}.
 $$
 

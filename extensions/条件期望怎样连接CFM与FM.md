@@ -30,14 +30,14 @@ Conditional Flow Matching 的目标是
 
 $$
 L_{\mathrm{CFM}}(\theta)
-=\mathbb E\|v_\theta(X_T,T)-U_T\|^2.
+=\mathbb E\Vert v_\theta(X_T,T)-U_T\Vert^2.
 $$
 
 理想 marginal Flow Matching 目标为
 
 $$
 L_{\mathrm{FM}}(\theta)
-=\mathbb E\|v_\theta(X_T,T)-\bar u(X_T,T)\|^2.
+=\mathbb E\Vert v_\theta(X_T,T)-\bar u(X_T,T)\Vert^2.
 $$
 
 这里的 $\bar u$ 是总体条件期望，不是“把 minibatch 所有速度随意平均”。
@@ -67,7 +67,7 @@ $$
 $$
 L_{\mathrm{CFM}}(\theta)
 =L_{\mathrm{FM}}(\theta)
-+\underbrace{\mathbb E\|U_T-\bar u(X_T,T)\|^2}_{C}.
++\underbrace{\mathbb E\Vert U_T-\bar u(X_T,T)\Vert^2}_{C}.
 $$
 
 $C$ 是看不到端点身份造成的剩余不确定性，不依赖网络参数。只要可合法交换微分与期望，

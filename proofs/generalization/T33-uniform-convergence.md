@@ -51,7 +51,7 @@ $$
 \qquad \mathfrak R_n=\mathbb E_S\widehat{\mathfrak R}_S.
 $$
 
-$\sigma_i$ 独立、均匀取 $\{-1,1\}$。这个定义不在 supremum 内加绝对值。
+$\sigma_i$ 独立、均匀取 $\lbrace-1,1\rbrace$。这个定义不在 supremum 内加绝对值。
 
 引入独立 ghost sample $S'$，由 Jensen 与成对样本交换对称性，
 

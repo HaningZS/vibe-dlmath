@@ -35,7 +35,7 @@ $$
 的表达式叫作**线性组合**。所有线性组合构成的集合叫作它们的**张成空间**：
 
 $$
-\operatorname{span}(v_1,\ldots,v_k).
+\mathop{\mathrm{span}}(v_1,\ldots,v_k).
 $$
 
 例如，平面中的两个不共线向量能张成整个平面；两个共线向量仍只能张成一条直线。
@@ -48,7 +48,7 @@ $$
 2. 对向量加法封闭；
 3. 对标量乘法封闭。
 
-所以不经过原点的直线一般不是线性子空间。这也是 [为什么 $y=x+1$ 不能成为线性变换的像](QA%20about%20image%20and%20kernel.md#q1-%E5%9F%BA%E4%BA%8E%E7%9B%B4%E7%BA%BF%E7%90%86%E8%A7%A3image) 的根本原因。
+所以不经过原点的直线一般不是线性子空间。这也是 $y=x+1$ 不能成为线性变换的像的根本原因，见 [QA：基于直线理解 image](QA%20about%20image%20and%20kernel.md#q1-%E5%9F%BA%E4%BA%8E%E7%9B%B4%E7%BA%BF%E7%90%86%E8%A7%A3image)。
 
 ## 2. 线性无关、基与维数
 
@@ -91,21 +91,21 @@ $$
 矩阵的秩是列空间的维数，也等于行空间的维数：
 
 $$
-\operatorname{rank}(A)=\dim\operatorname{Im}(A).
+\mathop{\mathrm{rank}}(A)=\dim\mathop{\mathrm{Im}}(A).
 $$
 
 秩不是“非零元素的数量”，而是独立信息方向的数量。秩—零度定理给出：
 
 $$
-\operatorname{rank}(A)+\dim\ker(A)=n,
+\mathop{\mathrm{rank}}(A)+\dim\ker(A)=n,
 $$
 
 其中 $n$ 是输入空间维数。它说明输入方向只有两种去向：要么被保留到像空间中，要么落入核中而丢失。
 
 对 $n\times n$ 方阵，下列说法等价：
 
-- 满秩，即 $\operatorname{rank}(A)=n$；
-- $\ker(A)=\{0\}$；
+- 满秩，即 $\mathop{\mathrm{rank}}(A)=n$；
+- $\ker(A)=\lbrace0\rbrace$；
 - $Ax=b$ 对每个 $b$ 都有唯一解；
 - $A$ 可逆。
 
@@ -122,8 +122,8 @@ $$
 它同时编码长度和夹角：
 
 $$
-\|x\|_2=\sqrt{x^\top x},\qquad
-\cos\theta=\frac{x^\top y}{\|x\|_2\|y\|_2}.
+\Vert x\Vert_2=\sqrt{x^\top x},\qquad
+\cos\theta=\frac{x^\top y}{\Vert x\Vert_2\Vert y\Vert_2}.
 $$
 
 若 $x^\top y=0$，两向量正交。若一组基向量彼此正交且长度为 1，就是**标准正交基**。在这种基下，坐标可以直接用内积读出，数值计算也通常更稳定。
@@ -131,7 +131,7 @@ $$
 把 $x$ 投影到非零向量 $u$ 所在直线：
 
 $$
-\operatorname{proj}_u(x)=
+\mathop{\mathrm{proj}}\nolimits_u(x)=
 \frac{u^\top x}{u^\top u}u.
 $$
 

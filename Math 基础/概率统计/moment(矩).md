@@ -24,7 +24,7 @@ $$
 连续情形：
 
 $$
-\mathbb E[X^k]=\int x^kf(x)\,dx.
+\mathbb E[X^k]=\int x^kf(x)\thinspace dx.
 $$
 
 - 零阶矩通常为 1；
@@ -40,13 +40,13 @@ $$
 $$
 
 - 一阶中心矩为 0；
-- 二阶中心矩是方差： $\mu_2=\operatorname{Var}(X)$；
+- 二阶中心矩是方差： $\mu_2=\mathop{\mathrm{Var}}(X)$；
 - 三、四阶中心矩分别参与偏度和峰度的定义。
 
 原点二阶矩与方差的关系是
 
 $$
-\operatorname{Var}(X)=\mathbb E[X^2]-\mathbb E[X]^2.
+\mathop{\mathrm{Var}}(X)=\mathbb E[X^2]-\mathbb E[X]^2.
 $$
 
 ## 标准化矩
@@ -54,7 +54,7 @@ $$
 令标准差为 $\sigma>0$：
 
 $$
-\mathbb E\!\left[\left(\frac{X-\mu}{\sigma}\right)^k\right].
+\mathbb E\negthinspace\left[\left(\frac{X-\mu}{\sigma}\right)^k\right].
 $$
 
 - 三阶标准化矩是偏度；正值通常表示右尾更长，负值表示左尾更长。

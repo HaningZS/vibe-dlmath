@@ -45,11 +45,11 @@ status: "refined + claim-checked"
 不定义 `GenError`，也不把 $L^2$ score error、path KL、TV 和 Wasserstein 直接相加。固定目标度量，例如 total variation：
 
 $$
-\operatorname{TV}(p_0,\widehat p_0^{\mathrm{disc}})
+\mathop{\mathrm{TV}}(p_0,\widehat p_0^{\mathrm{disc}})
 \le
-\operatorname{TV}(p_0,p_0^{\mathrm{ideal}})
-+\operatorname{TV}(p_0^{\mathrm{ideal}},\widehat p_0^{\mathrm{cont}})
-+\operatorname{TV}(\widehat p_0^{\mathrm{cont}},\widehat p_0^{\mathrm{disc}}).
+\mathop{\mathrm{TV}}(p_0,p_0^{\mathrm{ideal}})
++\mathop{\mathrm{TV}}(p_0^{\mathrm{ideal}},\widehat p_0^{\mathrm{cont}})
++\mathop{\mathrm{TV}}(\widehat p_0^{\mathrm{cont}},\widehat p_0^{\mathrm{disc}}).
 $$
 
 三项分别对应 terminal/early-stopping mismatch、连续过程的 drift/score estimation error、以及 discretization error。所有项已经处于同一 metric。
@@ -57,23 +57,22 @@ $$
 若 learned 与 ideal reverse SDE 从**同一个初始 law** 出发、具有相同且在相关子空间上可逆/非退化的 diffusion coefficient，并满足绝对连续、可积性和 Novikov/Girsanov 条件，可先在 path space 上得到
 
 $$
-D_{\mathrm{KL}}(\mathbb P\,\|\,\widehat{\mathbb P})
-=
-\frac12\,
+D_{\mathrm{KL}}(\mathbb P\thinspace\Vert\thinspace\widehat{\mathbb P})
+=\frac12\thinspace
 \mathbb E_{\mathbb P}\int_0^T
-\|g_t^{-1}(b_t-\widehat b_t)(X_t)\|_2^2\,dt.
+\Vert g_t^{-1}(b_t-\widehat b_t)(X_t)\Vert_2^2\thinspace dt.
 $$
 
-若两条路径的初始 laws 分别为 $\nu$ 与 $\widehat\nu$，右侧还要加 $D_{\mathrm{KL}}(\nu\|\widehat\nu)$，不能省略 initialization mismatch。
+若两条路径的初始 laws 分别为 $\nu$ 与 $\widehat\nu$，右侧还要加 $D_{\mathrm{KL}}(\nu\Vert\widehat\nu)$，不能省略 initialization mismatch。
 
 再由 data processing 控制同一方向上的终点 marginal KL。记终点 laws 为 $\nu_T,\widehat\nu_T$，由 Pinsker：
 
 $$
-\operatorname{TV}(\nu_T,\widehat\nu_T)
+\mathop{\mathrm{TV}}(\nu_T,\widehat\nu_T)
 \le
-\sqrt{\tfrac12 D_{\mathrm{KL}}(\nu_T\|\widehat\nu_T)}
+\sqrt{\tfrac12 D_{\mathrm{KL}}(\nu_T\Vert\widehat\nu_T)}
 \le
-\sqrt{\tfrac12 D_{\mathrm{KL}}(\mathbb P\|\widehat{\mathbb P})}.
+\sqrt{\tfrac12 D_{\mathrm{KL}}(\mathbb P\Vert\widehat{\mathbb P})}.
 $$
 
 如果最终目标是 Wasserstein，可以用 coupling/stability 直接推导，也可以使用已核对假设、方向和常数的 transport-entropy 转换。不能把 Pinsker 得到的 TV 项无条件替换成 Wasserstein 项。
@@ -81,12 +80,12 @@ $$
 例如，在固定 ground metric 上，若参照分布 $Q$ 已被证明满足 $T_2(C)$，即对所需的 $P$ 有
 
 $$
-W_2^2(P,Q)\le 2C\,D_{\mathrm{KL}}(P\|Q),
+W_2^2(P,Q)\le 2C\thinspace D_{\mathrm{KL}}(P\Vert Q),
 $$
 
-那么同一方向的有限 marginal KL 界 $D_{\mathrm{KL}}(P\|Q)\le\epsilon$ 就给出 $W_2(P,Q)\le\sqrt{2C\epsilon}$。这里 $T_2(C)$ 是额外需要核验的分布性质，不由“存在密度”或 score loss 小自动得到；还要检查所用空间、矩条件和常数依赖。
+那么同一方向的有限 marginal KL 界 $D_{\mathrm{KL}}(P\Vert Q)\le\epsilon$ 就给出 $W_2(P,Q)\le\sqrt{2C\epsilon}$。这里 $T_2(C)$ 是额外需要核验的分布性质，不由“存在密度”或 score loss 小自动得到；还要检查所用空间、矩条件和常数依赖。
 
-特别是，上面的 Girsanov 路线给出 ideal $P$ 相对 learned $Q$ 的 KL。要这样转换，必须掌握 learned $Q$ 的对应 $T_2$ 性质；只有 ideal $P$ 的性质时，通常需要反方向 $D_{\mathrm{KL}}(Q\|P)$，不能把 KL 的参数交换。这条接口只陈述有条件的转换，不声称任意目标或学习分布都满足 $T_2$。前置见 [Wasserstein 距离](<../../Math 基础/概率统计/最优传输与 Wasserstein 距离.md>)。
+特别是，上面的 Girsanov 路线给出 ideal $P$ 相对 learned $Q$ 的 KL。要这样转换，必须掌握 learned $Q$ 的对应 $T_2$ 性质；只有 ideal $P$ 的性质时，通常需要反方向 $D_{\mathrm{KL}}(Q\Vert P)$，不能把 KL 的参数交换。这条接口只陈述有条件的转换，不声称任意目标或学习分布都满足 $T_2$。前置见 [Wasserstein 距离](<../../Math 基础/概率统计/最优传输与 Wasserstein 距离.md>)。
 
 ## 逐步证明模板
 

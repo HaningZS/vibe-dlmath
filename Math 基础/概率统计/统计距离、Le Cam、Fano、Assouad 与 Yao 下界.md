@@ -86,14 +86,14 @@ $$
 定义
 
 $$
-\operatorname{TV}(P,Q)
+\mathop{\mathrm{TV}}(P,Q)
 =\sup_A |P(A)-Q(A)|.
 $$
 
 若二者相对于共同测度有密度 $p,q$，则
 
 $$
-\operatorname{TV}(P,Q)
+\mathop{\mathrm{TV}}(P,Q)
 =\frac12\int |p-q|.
 $$
 
@@ -102,7 +102,7 @@ TV 的范围是 $[0,1]$。 $0$ 表示同分布， $1$ 表示存在一个事件�
 在常见的离散空间或标准 Borel 空间中，一个核心 coupling 表示是
 
 $$
-\operatorname{TV}(P,Q)
+\mathop{\mathrm{TV}}(P,Q)
 =\inf_{\gamma\in\Pi(P,Q)}\mathbb P_\gamma(X\neq Y).
 $$
 
@@ -114,7 +114,7 @@ $$
 
 $$
 \inf_\phi \frac12P_0(\phi=1)+\frac12P_1(\phi=0)
-=\frac12\bigl(1-\operatorname{TV}(P_0,P_1)\bigr).
+=\frac12\bigl(1-\mathop{\mathrm{TV}}(P_0,P_1)\bigr).
 $$
 
 这是 Le Cam 两点法的发动机：只要 TV 小，任何检验都不得不经常认错世界。
@@ -126,21 +126,21 @@ $$
 若 $P\ll Q$，即 $Q$ 认为不可能的事件在 $P$ 下也不发生，则
 
 $$
-D_{\mathrm{KL}}(P\|Q)
-=\int \log\frac{dP}{dQ}\,dP.
+D_{\mathrm{KL}}(P\Vert Q)
+=\int \log\frac{dP}{dQ}\thinspace dP.
 $$
 
 在离散情形中：
 
 $$
-D_{\mathrm{KL}}(P\|Q)
+D_{\mathrm{KL}}(P\Vert Q)
 =\sum_x p(x)\log\frac{p(x)}{q(x)}.
 $$
 
 一般有
 
 $$
-D_{\mathrm{KL}}(P\|Q)\neq D_{\mathrm{KL}}(Q\|P).
+D_{\mathrm{KL}}(P\Vert Q)\neq D_{\mathrm{KL}}(Q\Vert P).
 $$
 
 而且一个方向有限，反方向可能是 $+\infty$。证明中写“两个分布的 KL 很小”是不完整的；必须写清方向，以及期望究竟在哪个分布下取。
@@ -161,7 +161,7 @@ $H$ 对称，范围也在 $[0,1]$。平方根会削弱极小密度比的爆炸�
 
 $$
 H^2(P,Q)
-\le \operatorname{TV}(P,Q)
+\le \mathop{\mathrm{TV}}(P,Q)
 \le \sqrt2,H(P,Q).
 $$
 
@@ -172,8 +172,8 @@ $$
 令 $f:(0,\infty)\to\mathbb R$ 为凸函数，且 $f(1)=0$。在 $P\ll Q$ 时定义
 
 $$
-D_f(P\|Q)
-=\int f\!\left(\frac{dP}{dQ}\right)dQ.
+D_f(P\Vert Q)
+=\int f\negthinspace\left(\frac{dP}{dQ}\right)dQ.
 $$
 
 - $f(t)=t\log t$ 给 KL；
@@ -189,8 +189,8 @@ $$
 若 $T$ 是一个可测映射，或更一般地是同一个 Markov kernel，把原始观测加工成摘要，则
 
 $$
-D_f(T_\#P\|T_\#Q)
-\le D_f(P\|Q).
+D_f(T_\sharp P\Vert T_\sharp Q)
+\le D_f(P\Vert Q).
 $$
 
 人话是：把完整照片压成一个标签，不会让两个世界更容易区分。对 KL、TV、Hellinger 等 $f$-divergence 都成立。
@@ -205,8 +205,8 @@ $$
 Pinsker 不等式给出
 
 $$
-\operatorname{TV}(P,Q)
-\le \sqrt{\frac12D_{\mathrm{KL}}(P\|Q)}.
+\mathop{\mathrm{TV}}(P,Q)
+\le \sqrt{\frac12D_{\mathrm{KL}}(P\Vert Q)}.
 $$
 
 因此，小 KL 推出小 TV，再推出二元检验困难。
@@ -218,12 +218,12 @@ $$
 对序列 $Z_{1:T}$，若所需条件分布和绝对连续性成立，则
 
 $$
-D_{\mathrm{KL}}(P_{Z_{1:T}}\|Q_{Z_{1:T}})
+D_{\mathrm{KL}}(P_{Z_{1:T}}\Vert Q_{Z_{1:T}})
 =\sum_{t=1}^T
 \mathbb E_{P}
 \left[
 D_{\mathrm{KL}}
-\bigl(P(Z_t\mid Z_{<t})\|Q(Z_t\mid Z_{<t})\bigr)
+\bigl(P(Z_t\mid Z_{< t})\Vert Q(Z_t\mid Z_{< t})\bigr)
 \right].
 $$
 
@@ -231,13 +231,13 @@ $$
 
 1. 右边的外层期望在 $P$ 下；
 2. 每一步比较的是**给定同一段历史值**后的条件分布；
-3. 方向从头到尾都是 $P\|Q$，不能在某一步偷换。
+3. 方向从头到尾都是 $P\Vert Q$，不能在某一步偷换。
 
 IID 情形只是特例：若 $Z_t$ 独立同分布，则
 
 $$
-D_{\mathrm{KL}}(P^{\otimes T}\|Q^{\otimes T})
-=T D_{\mathrm{KL}}(P\|Q).
+D_{\mathrm{KL}}(P^{\otimes T}\Vert Q^{\otimes T})
+=T D_{\mathrm{KL}}(P\Vert Q).
 $$
 
 这解释了为什么样本数越多，两个很相近的单样本分布最终也可能被区分。
@@ -253,14 +253,14 @@ $$
 若两个环境中使用**同一个算法 kernel**，即给定相同历史时动作分布相同，则 action 部分的 KL 抵消：
 
 $$
-D_{\mathrm{KL}}(P_\theta^{H_T}\|P_{\theta'}^{H_T})
+D_{\mathrm{KL}}(P_\theta^{H_T}\Vert P_{\theta'}^{H_T})
 =\sum_{t=1}^T
 \mathbb E_\theta
 \left[
 D_{\mathrm{KL}}
 \bigl(
 P_\theta(O_t\mid H_{t-1},A_t)
-\|P_{\theta'}(O_t\mid H_{t-1},A_t)
+\Vert P_{\theta'}(O_t\mid H_{t-1},A_t)
 \bigr)
 \right].
 $$
@@ -302,11 +302,11 @@ $$
 
 $$
 \inf_{\widehat\theta}
-\sup_{i\in\{0,1\}}
+\sup_{i\in\lbrace0,1\rbrace}
 \mathbb E_i d(\widehat\theta,\theta_i)
 \ge
 \frac{\Delta}{4}
-\left(1-\operatorname{TV}(P_0,P_1)\right).
+\left(1-\mathop{\mathrm{TV}}(P_0,P_1)\right).
 $$
 
 再用 Pinsker：
@@ -315,7 +315,7 @@ $$
 \text{risk}
 \ge
 \frac{\Delta}{4}
-\left(1-\sqrt{\frac12D_{\mathrm{KL}}(P_0\|P_1)}\right).
+\left(1-\sqrt{\frac12D_{\mathrm{KL}}(P_0\Vert P_1)}\right).
 $$
 
 使用套路：
@@ -358,7 +358,7 @@ $$
 
 $$
 I(V;X)
-\le \frac1M\sum_{v=1}^M D_{\mathrm{KL}}(P_v\|Q).
+\le \frac1M\sum_{v=1}^M D_{\mathrm{KL}}(P_v\Vert Q).
 $$
 
 参考分布不一定属于困难族，但方向与绝对连续性仍要合法。
@@ -368,7 +368,7 @@ $$
 Assouad 构造超立方索引
 
 $$
-\omega\in\{-1,+1\}^d.
+\omega\in\lbrace-1,+1\rbrace^d.
 $$
 
 每个坐标代表一个局部二选一。若 $\omega^{(j)}$ 表示翻转第 $j$ 位，则重点比较相邻顶点 $P_\omega$ 与 $P_{\omega^{(j)}}$。
@@ -378,7 +378,7 @@ $$
 $$
 \alpha_{\mathrm{TV}}
 =\max_{\omega,j}
-\operatorname{TV}(P_\omega,P_{\omega^{(j)}}),
+\mathop{\mathrm{TV}}(P_\omega,P_{\omega^{(j)}}),
 $$
 
 则
@@ -395,7 +395,7 @@ $$
 
 $$
 L(\widehat\theta,\theta_\omega)
-\ge c\,d_H(\widehat\omega,\omega),
+\ge c\thinspace d_H(\widehat\omega,\omega),
 $$
 
 再把 Hamming 下界乘以 $c$。因此 Assouad 特别适合坐标可分、非参数估计、图像/函数局部块和高维稀疏构造。
@@ -511,7 +511,7 @@ assert abs(empirical_error - bayes_error) < 0.005
 5. **“Coupling 就是独立配对。”** 证明通常需要主动设计相关 coupling。
 6. **“Fano 写完公式就结束了。”** packing、信息预算和风险 separation 才是主体。
 7. **“Assouad 只要构造超立方。”** 还要把 Hamming 错误转换成原损失。
-8. **“交互数据也有 $T\,\mathrm{KL}$。”** 动作依赖历史时必须写 transcript chain rule。
+8. **“交互数据也有 $T\thinspace\mathrm{KL}$。”** 动作依赖历史时必须写 transcript chain rule。
 9. **“算法 kernel 总会抵消。”** 只有两个环境中条件动作规则相同且 transcript 定义完整时才抵消。
 10. **“Yao 证明了随机算法没有用。”** 它只是把 randomized worst-case 下界转成 deterministic average-case 下界。
 11. **“互换 KL 方向不影响数量级。”** 支撑不同时，一个方向可能直接变成无穷。

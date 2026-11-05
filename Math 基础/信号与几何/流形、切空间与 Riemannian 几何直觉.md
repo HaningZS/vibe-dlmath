@@ -26,7 +26,7 @@ AI 中的向量通常放在 $\mathbb R^D$ 里计算，但它们未必能任意�
 
 普通欧氏空间 $\mathbb R^D$ 允许沿任意方向走任意距离。但很多对象带有必须满足的约束：
 
-- 单位向量： $\|x\|_2=1$；
+- 单位向量： $\Vert x\Vert_2=1$；
 - 概率向量： $p_i\ge0$ 且 $\sum_i p_i=1$；
 - 三维旋转矩阵： $R^\top R=I$ 且 $\det R=1$；
 - 正定协方差矩阵： $A=A^\top$ 且 $x^\top Ax>0$。
@@ -44,7 +44,7 @@ AI 中的向量通常放在 $\mathbb R^D$ 里计算，但它们未必能任意�
 单位圆
 
 $$
-S^1=\{(x,y)\in\mathbb R^2:x^2+y^2=1\}
+S^1=\lbrace(x,y)\in\mathbb R^2:x^2+y^2=1\rbrace
 $$
 
 放在二维环境中，但沿圆只需一个角度 $\theta$ 就能描述局部位置，所以它的内在维数是 1，环境维数是 2。
@@ -52,7 +52,7 @@ $$
 单位球面
 
 $$
-S^{d-1}=\{x\in\mathbb R^d:\|x\|_2=1\}
+S^{d-1}=\lbrace x\in\mathbb R^d:\Vert x\Vert_2=1\rbrace
 $$
 
 放在 $\mathbb R^d$ 中，却只有 $d-1$ 个自由度，因为一个范数约束拿走了一个自由度。
@@ -93,13 +93,13 @@ $$
 
 $$
 T_xS^{d-1}
-=\{v\in\mathbb R^d:x^\top v=0\}.
+=\lbrace v\in\mathbb R^d:x^\top v=0\rbrace.
 $$
 
 也就是说，球面的切向量必须与半径正交。任意环境向量 $g$ 投影到切空间的方法是
 
 $$
-\operatorname{Proj}_x(g)
+\mathop{\mathrm{Proj}}\nolimits_x(g)
 =g-(x^\top g)x
 =(I-xx^\top)g.
 $$
@@ -131,13 +131,13 @@ $$
 
 $$
 d_{S}(x,y)=\arccos(x^\top y),
-\qquad \|x\|=\|y\|=1.
+\qquad \Vert x\Vert=\Vert y\Vert=1.
 $$
 
 而环境欧氏距离是弦长
 
 $$
-\|x-y\|_2
+\Vert x-y\Vert_2
 =\sqrt{2-2x^\top y}
 =2\sin\frac{d_S(x,y)}2.
 $$
@@ -146,14 +146,14 @@ $$
 
 ### 5.1 指数映射、对数映射与 retraction
 
-- 指数映射 $\operatorname{Exp}_x(v)$：从点 $x$ 沿切向量 $v$ 指定的测地线走单位时间；
-- 对数映射 $\operatorname{Log}_x(y)$：反过来，把邻近点 $y$ 表示成 $x$ 处的切向量；
+- 指数映射 $\mathop{\mathrm{Exp}}\nolimits_x(v)$：从点 $x$ 沿切向量 $v$ 指定的测地线走单位时间；
+- 对数映射 $\mathop{\mathrm{Log}}\nolimits_x(y)$：反过来，把邻近点 $y$ 表示成 $x$ 处的切向量；
 - retraction：用计算更便宜的一步近似指数映射，只要在小步长下方向正确。
 
 球面上常见 retraction 是
 
 $$
-R_x(v)=\frac{x+v}{\|x+v\|_2}.
+R_x(v)=\frac{x+v}{\Vert x+v\Vert_2}.
 $$
 
 它先在切平面走一步，再拉回球面。它不是精确大圆运动，但小步长下足以支撑许多优化算法。
@@ -170,7 +170,7 @@ $$
 对单位球面并采用继承度量：
 
 $$
-\operatorname{grad}f(x)
+\mathop{\mathrm{grad}}f(x)
 =(I-xx^\top)\nabla f(x).
 $$
 
@@ -181,7 +181,7 @@ $$
 对非零表示 $z$ 做
 
 $$
-y=\frac{z}{\|z\|_2}
+y=\frac{z}{\Vert z\Vert_2}
 $$
 
 后， $y$ 落在单位球面 $S^{d-1}$ 上。此时
@@ -198,12 +198,12 @@ $$
 
 $$
 \frac{\partial y}{\partial z}
-=\frac1{\|z\|_2}(I-yy^\top).
+=\frac1{\Vert z\Vert_2}(I-yy^\top).
 $$
 
 $I-yy^\top$ 正是到球面切空间的投影：反向传播会去掉纯径向分量。直觉上，若损失只看归一化后的方向，那么只把 $z$ 整体放大并不会改变输出；梯度自然不需要沿这个无效方向更新。
 
-但前面的 $1/\|z\|$ 也说明：非常小的向量可能放大梯度与数值误差，实际实现通常会加入小的 `eps`。
+但前面的 $1/\Vert z\Vert$ 也说明：非常小的向量可能放大梯度与数值误差，实际实现通常会加入小的 `eps`。
 
 ### 7.2 不要把所有 norm 都说成“在球面上学习”
 
@@ -230,7 +230,7 @@ Transformer hidden state 通常仍在环境欧氏空间中经过线性层、atte
 相机或刚体姿态的旋转属于
 
 $$
-SO(3)=\{R\in\mathbb R^{3\times3}:R^\top R=I,\det R=1\}.
+SO(3)=\lbrace R\in\mathbb R^{3\times3}:R^\top R=I,\det R=1\rbrace.
 $$
 
 它看起来有 9 个矩阵元素，实际只有 3 个自由度。直接回归 9 个互不约束的数不会自动得到合法旋转；常用方法包括规范化参数化、在李代数/切空间中更新，或把结果投影回 $SO(3)$。
@@ -239,7 +239,7 @@ $$
 
 ### 8.4 数据增强轨道与商空间
 
-对称群作用于样本 $x$ 后，所有 $\{g\cdot x:g\in G\}$ 构成它的轨道。若任务标签对这些变换不变，可以把整条轨道看成“同一个语义对象的不同外观”。
+对称群作用于样本 $x$ 后，所有 $\lbrace g\cdot x:g\in G\rbrace$ 构成它的轨道。若任务标签对这些变换不变，可以把整条轨道看成“同一个语义对象的不同外观”。
 
 把每条轨道压成一个点会通向商空间的思想；构造不变表示就是尝试忽略轨道内部差异。但真实增强不一定是精确群作用，过度压缩也会丢掉方向、位置等有效信息，详见 [增强与对称性](%E5%AF%B9%E7%A7%B0%E6%80%A7%E3%80%81%E7%BE%A4%E8%A1%A8%E7%A4%BA%E4%B8%8E%E7%AD%89%E5%8F%98%E7%BD%91%E7%BB%9C.md#6-%E6%95%B0%E6%8D%AE%E5%A2%9E%E5%BC%BA%E4%B8%8E%E7%AD%89%E5%8F%98%E7%BB%93%E6%9E%84%E4%B8%A4%E7%A7%8D%E4%B8%8D%E5%90%8C%E7%9A%84%E5%BD%92%E7%BA%B3%E5%81%8F%E7%BD%AE)。
 

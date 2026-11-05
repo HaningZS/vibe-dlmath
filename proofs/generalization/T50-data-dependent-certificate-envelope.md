@@ -18,7 +18,7 @@ $$B_\beta(S)=\sup_{S'}\epsilon(S')e^{-\beta d(S,S')}.$$
 假设包络可测且有限。若不恒为零，它处处正； $\log B_\beta$ 有界，所用期望存在。
 
 **输出**：以至少 $1-\delta$ 的概率抽到 $S_{obs}$ 时，
-$$\mathbb E_S\epsilon(S)\le B_\beta(S_{obs})\exp\!\left(\beta\sqrt{\frac n2\log\frac1\delta}+\frac{n\beta^2}{8}\right).$$
+$$\mathbb E_S\epsilon(S)\le B_\beta(S_{obs})\exp\negthinspace\left(\beta\sqrt{\frac n2\log\frac1\delta}+\frac{n\beta^2}{8}\right).$$
 
 **失败例子**：只看几个邻近数据集取最大值，通常是对 supremum 的下估计，不能代入右端作为认证上界。预先固定的 $\beta$ 看数据后自由优化，也会改变概率保证。
 
@@ -46,23 +46,27 @@ $$|\log B_\beta(S)-\log B_\beta(V)|\le\beta d(S,V).$$
 ## 3. 两个经典概率工具怎样拼起来
 
 写 $g(S)=\log B_\beta(S)$。替换一个坐标改变 $g$ 至多 $\beta$，McDiarmid 下尾给出
-$$\Pr\{\mathbb Eg-g(S_{obs})>t\}\le e^{-2t^2/(n\beta^2)}.$$
+$$\Pr\lbrace\mathbb Eg-g(S_{obs})>t\rbrace\le e^{-2t^2/(n\beta^2)}.$$
 故概率至少 $1-\delta$ 时， $\mathbb Eg\le g(S_{obs})+\beta\sqrt{n\log(1/\delta)/2}$。
 
 还不能直接把 $\mathbb E e^g$ 写成 $e^{\mathbb Eg}$。依次揭示独立坐标，构造 $g$ 的 Doob martingale；每个中心化增量的条件取值区间长度至多 $\beta$。Hoeffding 引理在指数参数 1 下给出每步因子 $e^{\beta^2/8}$，逐步条件化得到
 $$\mathbb E e^{g-\mathbb Eg}\le e^{n\beta^2/8}.$$
 
 于是，在同一个观测事件上，
+
 $$\mathbb E\epsilon\le\mathbb E B_\beta
 =e^{\mathbb Eg}\mathbb E e^{g-\mathbb Eg}
 \le B_\beta(S_{obs})e^{\beta\sqrt{n\log(1/\delta)/2}+n\beta^2/8}.$$
+
 这解释了两个常数各自来自哪一步，而不是只记住最后的指数。
 
 ## 4. 接回算法稳定性时，左端是什么
 
 固定学习程序 $A$，损失可积。让 $S^{(i)}$ 替换第 $i$ 个样本为独立 $Z_i'$。交换 $Z_i,Z_i'$ 得到 [T04](T04-stability.md) 的恒等式
+
 $$\mathbb E_S[R(A(S))-\widehat R_S(A(S))]
 =\frac1n\sum_i\mathbb E_{S,Z_i'}[\ell(A(S),Z_i')-\ell(A(S^{(i)}),Z_i')].$$
+
 若 $\epsilon(S)$ 是这些替换/测试点损失差绝对值的统一上界，则左端不超过 $\mathbb E\epsilon(S)$，可以使用第 3 节。
 
 结论是：一个随机观测到的上界，以高概率控制一个固定的**期望泛化差**。它没有直接控制该次 $S_{obs}$ 的 realized gap。若算法 seed 先独立固定，结论相对于该 seed；要再对 seed 平均，必须把随机性放回相应定义与证明。

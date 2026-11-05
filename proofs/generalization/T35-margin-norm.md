@@ -11,7 +11,7 @@ status: self-contained-core
 
 ## 复用契约
 
-**输入对象**：二分类 score $f$、标签 $Y\in\{-1,1\}$、margin $\gamma>0$ 和预先固定的 norm-constrained class。
+**输入对象**：二分类 score $f$、标签 $Y\in\lbrace-1,1\rbrace$、margin $\gamma>0$ 和预先固定的 norm-constrained class。
 
 **输出结论**：经验低间隔比例加复杂度项的总体分类风险界。
 
@@ -36,7 +36,7 @@ $$
 \phi_\gamma(u)=
 \begin{cases}
 1,&u\leq0,\\
-1-u/\gamma,&0<u<\gamma,\\
+1-u/\gamma,&0< u<\gamma,\\
 0,&u\geq\gamma.
 \end{cases}
 $$
@@ -44,22 +44,22 @@ $$
 它在 $[0,1]$ 中，且为 $1/\gamma$-Lipschitz。保守地将边界也计为错误，有
 
 $$
-\mathbf1\{Yf(X)\leq0\}\leq\phi_\gamma(Yf(X))
-\leq\mathbf1\{Yf(X)\leq\gamma\}.
+\mathbf1\lbrace Yf(X)\leq0\rbrace\leq\phi_\gamma(Yf(X))
+\leq\mathbf1\lbrace Yf(X)\leq\gamma\rbrace.
 $$
 
 ## 2. 线性类给出可以算清的例子
 
-考虑 $f_w(x)=\langle w,x\rangle$、 $\|w\|_2\leq W$、 $\|X\|_2\leq B$，其中 $W,B,\gamma$ 事先固定。
+考虑 $f_w(x)=\langle w,x\rangle$、 $\Vert w\Vert_2\leq W$、 $\Vert X\Vert_2\leq B$，其中 $W,B,\gamma$ 事先固定。
 
 对任一固定样本，margin class 的单侧 Rademacher complexity 是
 
 $$
 \begin{aligned}
-\mathbb E_\sigma\sup_{\|w\|\leq W}
+\mathbb E_\sigma\sup_{\Vert w\Vert\leq W}
 \frac1n\sum_i\sigma_iY_i\langle w,X_i\rangle
-&=\frac Wn\mathbb E_\sigma\left\|\sum_i\sigma_iY_iX_i\right\|\\
-&\leq\frac Wn\sqrt{\sum_i\|X_i\|^2}
+&=\frac Wn\mathbb E_\sigma\left\Vert\sum_i\sigma_iY_iX_i\right\Vert\\
+&\leq\frac Wn\sqrt{\sum_i\Vert X_i\Vert^2}
 \leq\frac{WB}{\sqrt n}.
 \end{aligned}
 $$
@@ -75,12 +75,12 @@ $$
 \leq\frac{WB}{\gamma\sqrt n}.
 $$
 
-再用 bounded loss 的单侧统一界：以概率至少 $1-\delta$，对所有 $\|w\|\leq W$，
+再用 bounded loss 的单侧统一界：以概率至少 $1-\delta$，对所有 $\Vert w\Vert\leq W$，
 
 $$
 \Pr(Y\langle w,X\rangle\leq0)
 \leq
-\frac1n\sum_i\mathbf1\{Y_i\langle w,X_i\rangle\leq\gamma\}
+\frac1n\sum_i\mathbf1\lbrace Y_i\langle w,X_i\rangle\leq\gamma\rbrace
 +\frac{2WB}{\gamma\sqrt n}
 +\sqrt{\frac{\log(1/\delta)}{2n}}.
 $$
@@ -92,10 +92,10 @@ $$
 取 $c>0$，将 $w$ 改成 $cw$，并将 threshold 改成 $c\gamma$，经验低间隔比例不变，且
 
 $$
-\frac{\|cw\|}{c\gamma}=\frac{\|w\|}{\gamma}.
+\frac{\Vert cw\Vert}{c\gamma}=\frac{\Vert w\Vert}{\gamma}.
 $$
 
-对应上一节的固定类证书，还应同步把预算 $W$ 改成 $cW$；复杂度项 $(cW)B/(c\gamma\sqrt n)$ 同样不变。不能把事后观测的 $\|\widehat w\|$ 不加说明地替换进原本事先固定的 $W$。
+对应上一节的固定类证书，还应同步把预算 $W$ 改成 $cW$；复杂度项 $(cW)B/(c\gamma\sqrt n)$ 同样不变。不能把事后观测的 $\Vert\widehat w\Vert$ 不加说明地替换进原本事先固定的 $W$。
 
 正齐次 ReLU 网络还存在层间重缩放，例如前层乘 $c$、后层除 $c$ 可保持函数不变。一个复杂度度量若仅因这类重新参数化变化，就需要审查它到底在控制什么。
 

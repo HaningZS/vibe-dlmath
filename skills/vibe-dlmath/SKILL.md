@@ -1,11 +1,11 @@
 ---
 name: vibe-dlmath
-description: Develop and audit deep-learning mathematical proofs using scoped templates, source evidence, and explicit proof obligations. Use for a concrete proof question, theorem draft, or proof-library update; not for ordinary coding or empirical claims without a mathematical task.
+description: Write and audit deep-learning mathematical proofs along proof routes distilled from classic and recent papers. Retrieve the closest route, expand it step by step, and state every departure as an added assumption, open lemma, or counterexample. Use for a concrete proof question, theorem draft, or proof-library update; not for ordinary coding or empirical claims without a mathematical task.
 ---
 
 # Vibe DLMath
 
-Use the versioned vibe-dlmath library to help the user complete a proof, understand its intuition, or identify a precise gap. A retrieved template is a candidate technique, not evidence that the user's assumptions satisfy a theorem.
+Use the versioned vibe-dlmath library to help the user complete a proof, understand its intuition, or identify a precise gap. Prefer an established route from the library over an improvised argument: where a card applies, follow its proof skeleton, decomposition and notation, and say where and why the user's setting departs from it. A retrieved template is a candidate technique, not evidence that the user's assumptions satisfy a theorem.
 
 For a substantive proof or audit, read `docs/AI_PROOF_CONTRACT.md` after locating the repository. For library distillation, also read `docs/PROOF_DISTILLATION.md`; it explains how to extract a reusable lemma without inheriting a paper's stronger claims.
 

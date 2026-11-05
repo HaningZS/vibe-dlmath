@@ -11,9 +11,9 @@ status: self-contained-core
 
 ## 复用契约
 
-**对象**：binary label $Y\in\{0,1\}$， $\eta(x)=P(Y=1\mid X=x)$，预测概率 $p(x)\in(0,1)$； $h_p(x)=1\{p(x)\ge1/2\}$。自然对数交叉熵风险有限。
+**对象**：binary label $Y\in\lbrace0,1\rbrace$， $\eta(x)=P(Y=1\mid X=x)$，预测概率 $p(x)\in(0,1)$； $h_p(x)=1\lbrace p(x)\ge1/2\rbrace$。自然对数交叉熵风险有限。
 
-**结论**：log-loss excess 等于条件 Bernoulli KL 的期望，且 $R_{01}(h_p)-R_{01}^*\le\sqrt{2(R_{log}(p)-R_{log}^*)}$。
+**结论**：log-loss excess 等于条件 Bernoulli KL 的期望，且 $R_{01}(h_p)-R_{01}^\ast\le\sqrt{2(R_{log}(p)-R_{log}^\ast)}$。
 
 **条件**：同一个数据 law 与同一个标签任务；reference 是 unrestricted Bayes risk，不是仅在当前模型类内最优的风险。
 
@@ -39,16 +39,16 @@ $-\eta\log p-(1-\eta)\log(1-p)$，最优值为 Bernoulli entropy $H(\eta)$。其
 
 $$
 \eta\log\frac\eta p+(1-\eta)\log\frac{1-\eta}{1-p}
-=\operatorname{KL}(\operatorname{Ber}(\eta)\|\operatorname{Ber}(p)).
+=\mathop{\mathrm{KL}}(\mathop{\mathrm{Ber}}(\eta)\Vert\mathop{\mathrm{Ber}}(p)).
 $$
 
-积分得到 $R_{log}(p)-R_{log}^*=\mathbb E\operatorname{KL}(\operatorname{Ber}(\eta)\|\operatorname{Ber}(p))$。
+积分得到 $R_{log}(p)-R_{log}^*=\mathbb E\mathop{\mathrm{KL}}(\mathop{\mathrm{Ber}}(\eta)\Vert\mathop{\mathrm{Ber}}(p))$。
 在 $\eta=0,1$ 处用 $0\log0=0$ 与极限；Bayes reference 可作为 inf，不要求 finite logits 恰好实现边界概率。
 
 ## 3. 条件分类 excess 的精确形式
 
-Bayes 决策是 $h_*=1\{\eta\ge1/2\}$；不同决策的额外错误率为
-$|2\eta-1|1\{h_p\ne h_*\}$。
+Bayes 决策是 $h_\ast=1\lbrace\eta\ge1/2\rbrace$；不同决策的额外错误率为
+$|2\eta-1|1\lbrace h_p\ne h_\ast\rbrace$。
 若决策不同， $p$ 与 $\eta$ 位于阈值两侧，所以 $|\eta-1/2|\le|p-\eta|$，从而
 
 $$
@@ -59,14 +59,14 @@ $$
 
 固定 $p$，把 KL 当作 $q\in(0,1)$ 的函数。它在 $q=p$ 处值与一阶导均为 0，二阶导为
 $1/q+1/(1-q)=1/[q(1-q)]\ge4$。Taylor 积分给出
-$\operatorname{KL}(\operatorname{Ber}(q)\|\operatorname{Ber}(p))\ge2(q-p)^2$；端点取极限。
+$\mathop{\mathrm{KL}}(\mathop{\mathrm{Ber}}(q)\Vert\mathop{\mathrm{Ber}}(p))\ge2(q-p)^2$；端点取极限。
 
 于是 Cauchy–Schwarz 给出
 
 $$
-R_{01}(h_p)-R_{01}^*
+R_{01}(h_p)-R_{01}^\ast
 \le2\sqrt{\mathbb E(p-\eta)^2}
-\le\sqrt{2(R_{log}(p)-R_{log}^*)}.
+\le\sqrt{2(R_{log}(p)-R_{log}^\ast)}.
 $$
 
 这个 Bernoulli 证明不需要把一般 Pinsker 不等式留成黑盒。

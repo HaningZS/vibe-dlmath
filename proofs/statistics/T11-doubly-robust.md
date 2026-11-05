@@ -51,17 +51,15 @@ off-policy evaluation、contextual bandit、causal inference、logged data、age
 
 $$
 \widehat V_{DR}
-=
-\frac{1}{n}\sum_{i=1}^n
+=\frac{1}{n}\sum_{i=1}^n
 \left[
 \sum_a\pi(a\mid X_i)\widehat m(X_i,a)
-+
-\frac{\pi(A_i\mid X_i)}{\widehat e(A_i\mid X_i)}
++\frac{\pi(A_i\mid X_i)}{\widehat e(A_i\mid X_i)}
 \bigl(Y_i-\widehat m(X_i,A_i)\bigr)
 \right].
 $$
 
-确定性 target policy 是 $\pi(a\mid x)=\mathbf1\{a=\pi(x)\}$ 的特例；不能把随机 policy 直接写成单个 $\widehat m(x,\pi(x))$。
+确定性 target policy 是 $\pi(a\mid x)=\mathbf1\lbrace a=\pi(x)\rbrace$ 的特例；不能把随机 policy 直接写成单个 $\widehat m(x,\pi(x))$。
 
 ## 核心性质
 
@@ -69,8 +67,7 @@ $$
 
 $$
 \mathbb E[\widehat\phi_{DR}\mid\mathcal F_{fit}]-V(\pi)
-=
-\mathbb E_X\sum_a\pi(a\mid X)
+=\mathbb E_X\sum_a\pi(a\mid X)
 \bigl(\widehat m(X,a)-m(X,a)\bigr)
 \left(1-\frac{e(a\mid X)}{\widehat e(a\mid X)}\right).
 $$
@@ -106,12 +103,9 @@ Step 8. Sequential RL 另写 horizon-wise DR recursion；不要把本节 bandit 
 
 $$
 \widehat\psi - \psi
-=
-\mathrm{empirical\ noise}
-+
-O(\|\hat m-m\|\cdot\|\hat e-e\|)
-+
-\mathrm{higher\ order}.
+=\mathrm{empirical\ noise}
++O(\Vert\hat m-m\Vert\cdot\Vert\hat e-e\Vert)
++\mathrm{higher\ order}.
 $$
 
 这就是 nuisance error 的一阶抵消。
@@ -124,7 +118,7 @@ $$
 
 $$
 \widehat\phi_{DR}
-=\frac12+2\mathbf1\{\pi=A\}(Y-\tfrac12)
+=\frac12+2\mathbf1\lbrace\pi=A\rbrace(Y-\tfrac12)
 =\frac12+Y,
 \qquad \mathbb E\widehat\phi_{DR}=1.
 $$

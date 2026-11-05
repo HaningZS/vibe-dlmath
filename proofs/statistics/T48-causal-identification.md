@@ -34,7 +34,7 @@ status: self-contained-core
 
 ## 2. g-formula 的完整推导
 
-对 $a\in\{0,1\}$，逐步写
+对 $a\in\lbrace0,1\rbrace$，逐步写
 
 $$
 \mathbb E[Y(a)]
@@ -51,7 +51,7 @@ $\tau=\mathbb E[m_1(X)-m_0(X)]$。
 
 ## 3. 不能识别的两个具体世界
 
-令 $U\sim\operatorname{Bernoulli}(1/2)$、 $A=U$，不观测 $U$。
+令 $U\sim\mathop{\mathrm{Bernoulli}}(1/2)$、 $A=U$，不观测 $U$。
 
 - 世界 1： $Y=A$。干预把 $A$ 设为 $a$ 时 $Y(a)=a$，所以 ATE 为 1。
 - 世界 2： $Y=U$。干预不会改变 $U$，所以 $Y(a)=U$，ATE 为 0。

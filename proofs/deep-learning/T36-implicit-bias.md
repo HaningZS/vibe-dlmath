@@ -47,35 +47,35 @@ $$
 
 ## 3. 多维线性 logistic 的方向结论
 
-令 $X=[x_1,\ldots,x_n]\in\mathbb R^{d\times n}$， $n\geq1$，标签 $y_i\in\{-1,1\}$，数据严格线性可分。使用
+令 $X=[x_1,\ldots,x_n]\in\mathbb R^{d\times n}$， $n\geq1$，标签 $y_i\in\lbrace-1,1\rbrace$，数据严格线性可分。使用
 
 $$
 F(w)=\sum_i\log(1+\exp(-y_iw^\top x_i)).
 $$
 
-单样本 logistic loss 对 margin 的梯度 Lipschitz 常数为 $\beta=1/4$，因此 $F$ 的 smoothness 至多 $\beta\|X\|_{\mathrm{op}}^2$。
+单样本 logistic loss 对 margin 的梯度 Lipschitz 常数为 $\beta=1/4$，因此 $F$ 的 smoothness 至多 $\beta\Vert X\Vert_{\mathrm{op}}^2$。
 
 Soudry 等论文的相应结论适用于固定正步长
 
 $$
-0<\eta<\frac{2}{\beta\|X\|_{\mathrm{op}}^2},
+0<\eta<\frac{2}{\beta\Vert X\Vert_{\mathrm{op}}^2},
 $$
 
 任意有限初始化，以及论文的 loss tail 条件（logistic 满足）。有
 
 $$
 w_t=\widehat w\log t+\rho_t,\qquad
-\|\rho_t\|=O(\log\log t),
+\Vert\rho_t\Vert=O(\log\log t),
 $$
 
 其中
 
 $$
-\widehat w=\arg\min_w\|w\|^2
+\widehat w=\arg\min_w\Vert w\Vert^2
 \quad\text{s.t.}\quad y_iw^\top x_i\geq1\ \forall i.
 $$
 
-所以归一化方向趋向 $\widehat w/\|\widehat w\|$。若用平均 loss，步长的样本数因子须相应调整。
+所以归一化方向趋向 $\widehat w/\Vert\widehat w\Vert$。若用平均 loss，步长的样本数因子须相应调整。
 
 上述渐近式是引用的专门定理，不是仅由“小梯度”推得；论文完整证明处理 support vectors 与残差。退化数据可出现 log-log 残差，不应把“几乎所有数据 residual 有界”升级成对全部数据有界。
 

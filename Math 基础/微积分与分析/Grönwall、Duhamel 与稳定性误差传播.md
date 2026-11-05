@@ -60,19 +60,19 @@ $$
 设 $(X,d)$ 是完备度量空间。映射 $F:X\to X$ 若满足
 
 $$
-d(F(x),F(y))\le q\,d(x,y),\qquad 0\le q<1,
+d(F(x),F(y))\le q\thinspace d(x,y),\qquad 0\le q<1,
 $$
 
 就叫 contraction（压缩映射）。它像一台每次都把两点距离压成原来 $q$ 倍的机器。
 
 Banach fixed-point theorem 告诉我们：
 
-1. $F$ 有唯一不动点 $x^*$，即 $F(x^*)=x^*$；
-2. 迭代 $x_{k+1}=F(x_k)$ 从任意初值收敛到 $x^*$；
+1. $F$ 有唯一不动点 $x^\ast$，即 $F(x^\ast)=x^\ast$；
+2. 迭代 $x_{k+1}=F(x_k)$ 从任意初值收敛到 $x^\ast$；
 3. 误差按几何速度缩小：
 
 $$
-d(x_k,x^*)\le q^k d(x_0,x^*).
+d(x_k,x^\ast)\le q^k d(x_0,x^\ast).
 $$
 
 ### 2.1 为什么必须是 $q<1$
@@ -98,16 +98,16 @@ $$
 而理想轨迹为 $y_{k+1}=F(y_k)$。令 $e_k=d(x_k,y_k)$，则
 
 $$
-e_{k+1}\le q e_k+\|r_k\|.
+e_{k+1}\le q e_k+\Vert r_k\Vert.
 $$
 
 展开后得到
 
 $$
-e_n\le q^n e_0+\sum_{j=0}^{n-1}q^{n-1-j}\|r_j\|.
+e_n\le q^n e_0+\sum_{j=0}^{n-1}q^{n-1-j}\Vert r_j\Vert.
 $$
 
-早期扰动会多乘几次 $q$，因此被遗忘；最近的扰动还没来得及衰减。若每步 $\|r_j\|\le r$，长期误差不超过约 $r/(1-q)$，而不是随步数无限线性增长。
+早期扰动会多乘几次 $q$，因此被遗忘；最近的扰动还没来得及衰减。若每步 $\Vert r_j\Vert\le r$，长期误差不超过约 $r/(1-q)$，而不是随步数无限线性增长。
 
 ## 3. 离散 Grönwall：把递推完整展开
 
@@ -135,7 +135,7 @@ $$
 $$
 e_n
 \le
-\exp\!\left(\sum_{i=0}^{n-1}a_i\right)
+\exp\negthinspace\left(\sum_{i=0}^{n-1}a_i\right)
 \left(e_0+\sum_{j=0}^{n-1}b_j\right).
 $$
 
@@ -161,7 +161,7 @@ $$
 
 $$
 e_{k+1}\le (1-h\mu)e_k+h\delta,
-\qquad 0<h\mu<1,
+\qquad 0< h\mu<1,
 $$
 
 则
@@ -178,20 +178,20 @@ $$
 设非负函数 $u(t)$ 满足
 
 $$
-u(t)\le A+\int_0^t a(s)u(s)\,ds,
+u(t)\le A+\int_0^t a(s)u(s)\thinspace ds,
 \qquad a(s)\ge0.
 $$
 
 则
 
 $$
-u(t)\le A\exp\!\left(\int_0^t a(s)\,ds\right).
+u(t)\le A\exp\negthinspace\left(\int_0^t a(s)\thinspace ds\right).
 $$
 
 若还有持续外力 $b(t)$：
 
 $$
-u(t)\le A+\int_0^t a(s)u(s)\,ds+\int_0^t b(s)\,ds,
+u(t)\le A+\int_0^t a(s)u(s)\thinspace ds+\int_0^t b(s)\thinspace ds,
 $$
 
 更精细的形式是
@@ -199,12 +199,12 @@ $$
 $$
 u(t)
 \le
-A e^{\int_0^t a(r)\,dr}
+A e^{\int_0^t a(r)\thinspace dr}
 +\int_0^t
-b(s)e^{\int_s^t a(r)\,dr}\,ds.
+b(s)e^{\int_s^t a(r)\thinspace dr}\thinspace ds.
 $$
 
-直觉上，时刻 $s$ 注入的误差 $b(s)\,ds$ 只在剩余区间 $[s,t]$ 内生“利息”。
+直觉上，时刻 $s$ 注入的误差 $b(s)\thinspace ds$ 只在剩余区间 $[s,t]$ 内生“利息”。
 
 ### 4.1 一个最常用的推导
 
@@ -218,19 +218,19 @@ $$
 并且 $f$ 对状态是 $L$-Lipschitz，那么形式上
 
 $$
-\frac{d}{dt}\|x-y\|
+\frac{d}{dt}\Vert x-y\Vert
 \le
-L\|x-y\|+\|f(y,t)-g(y,t)\|.
+L\Vert x-y\Vert+\Vert f(y,t)-g(y,t)\Vert.
 $$
 
 于是
 
 $$
-\|x_t-y_t\|
+\Vert x_t-y_t\Vert
 \le
-e^{Lt}\|x_0-y_0\|
+e^{Lt}\Vert x_0-y_0\Vert
 +\int_0^t e^{L(t-s)}
-\|f(y_s,s)-g(y_s,s)\|\,ds.
+\Vert f(y_s,s)-g(y_s,s)\Vert\thinspace ds.
 $$
 
 两类误差被清楚分开了：初值差异，以及动力学本身的差异。
@@ -248,14 +248,14 @@ $$
 $$
 x(t)
 =e^{At}x_0
-+\int_0^t e^{A(t-s)}r(s)\,ds.
++\int_0^t e^{A(t-s)}r(s)\thinspace ds.
 $$
 
-可以把 $r(s)\,ds$ 想成时刻 $s$ 敲响的一记小钟声； $e^{A(t-s)}$ 描述这记声音传播到时刻 $t$ 后还剩多少、转到了哪些方向。
+可以把 $r(s)\thinspace ds$ 想成时刻 $s$ 敲响的一记小钟声； $e^{A(t-s)}$ 描述这记声音传播到时刻 $t$ 后还剩多少、转到了哪些方向。
 
 - 第一项是没有外力时的自由演化；
 - 第二项是过去所有 forcing 的响应叠加；
-- 若 $\|e^{At}\|\le Me^{\omega t}$，马上得到稳定性上界。
+- 若 $\Vert e^{At}\Vert\le Me^{\omega t}$，马上得到稳定性上界。
 
 Grönwall 通常只给“总量最多多大”；Duhamel 还保留了误差来源、注入时间与传播算子，因此更适合做精细误差分解。
 
@@ -272,7 +272,7 @@ $$
 $$
 f(x)-f(y)
 =\left[\int_0^1
-J_f\bigl(y+\tau(x-y)\bigr)\,d\tau\right](x-y).
+J_f\bigl(y+\tau(x-y)\bigr)\thinspace d\tau\right] (x-y).
 $$
 
 随后使用 time-ordered fundamental matrix，或只对范数应用 Grönwall。前者更精细，后者更简单。
@@ -316,7 +316,7 @@ $$
 $$
 \varepsilon_t(\phi_t(x))J_t(x)
 =\varepsilon_0(x)
-+\int_0^t L_s(\phi_s(x))J_s(x)\,ds.
++\int_0^t L_s(\phi_s(x))J_s(x)\thinspace ds.
 $$
 
 这里 Jacobian determinant 负责记录流把体积压缩或膨胀了多少。再对空间积分并做变量替换，就能把 forcing 的 $L^1$ 大小转成 density error 或 TV distance 的上界。
@@ -350,10 +350,10 @@ $$
 在只相差一个样本的两个数据集上运行同一优化器，令参数差为 $\Delta_t$。常见递推是
 
 $$
-\mathbb E\|\Delta_{t+1}\|
+\mathbb E\Vert\Delta_{t+1}\Vert
 \le
-(1+\eta_t L_t)\mathbb E\|\Delta_t\|
-+\eta_t\,\text{single-sample perturbation}.
+(1+\eta_t L_t)\mathbb E\Vert\Delta_t\Vert
++\eta_t\thinspace\text{single-sample perturbation}.
 $$
 
 离散 Grönwall 把单样本影响传播到最终参数或 loss。这只是骨架；最终是 parameter stability、loss stability，还是 expectation/high-probability guarantee，必须单独说明。
@@ -363,14 +363,14 @@ $$
 比较有限粒子系统和极限分布时，coupling 后常得到
 
 $$
-e(t)\le e(0)+L\int_0^t e(s)\,ds+\text{finite-particle fluctuation}.
+e(t)\le e(0)+L\int_0^t e(s)\thinspace ds+\text{finite-particle fluctuation}.
 $$
 
 Grönwall 给有限时间误差。但 $e^{LT}$ 可能使长时间结论很弱；若系统有 dissipativity、凸性或 contractivity，应使用更强结构。
 
 ### 7.4 SDE：共同噪声 coupling 与 Itô 修正
 
-只有在 additive/common noise 下，或耦合后两条路径上的 diffusion matrix 逐时完全相同（例如同一个 state-independent $\Sigma_t$），同步使用同一 Brownian path 才会让噪声项抵消。若只是使用同一个状态依赖函数 $\sigma(\cdot)$，但 $X_t\ne Y_t$，差分仍含 $(\sigma(X_t)-\sigma(Y_t))\,dW_t$；这时对 $\|X_t-Y_t\|^2$ 使用 Itô formula 会出现 quadratic-variation 项，随后往往还需要 martingale/BDG 不等式。
+只有在 additive/common noise 下，或耦合后两条路径上的 diffusion matrix 逐时完全相同（例如同一个 state-independent $\Sigma_t$），同步使用同一 Brownian path 才会让噪声项抵消。若只是使用同一个状态依赖函数 $\sigma(\cdot)$，但 $X_t\ne Y_t$，差分仍含 $(\sigma(X_t)-\sigma(Y_t))\thinspace dW_t$；这时对 $\Vert X_t-Y_t\Vert^2$ 使用 Itô formula 会出现 quadratic-variation 项，随后往往还需要 martingale/BDG 不等式。
 
 因此本笔记只给稳定性入口，**没有完整覆盖随机积分理论**。Girsanov 更是“改变路径测度”的工具，不是 Grönwall 的别名；可先看 [Score-model PDF p.91–93：Girsanov 与路径 KL](../../proof_ref/recent-accepted-2025-2026/approximation-and-generalization-abilities-of-score-based-neural-2505.10880/paper.pdf#page=91)，再系统学习 Itô calculus、Novikov 条件和 Radon–Nikodym derivative。
 
@@ -441,7 +441,7 @@ print("final error norm:", actual[-1])
 print("final guaranteed bound:", bound[-1])
 ```
 
-这个 bound 不一定紧，因为 $\|a+b\|\le\|a\|+\|b\|$ 丢掉了方向抵消；但它明确、可靠，并保留了收缩因子。
+这个 bound 不一定紧，因为 $\Vert a+b\Vert\le\Vert a\Vert+\Vert b\Vert$ 丢掉了方向抵消；但它明确、可靠，并保留了收缩因子。
 
 ## 9. 读证明时的检查清单
 

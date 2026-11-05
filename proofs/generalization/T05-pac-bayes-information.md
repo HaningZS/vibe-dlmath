@@ -60,9 +60,9 @@ $$
 这里固定使用 Alquier 的 [2110.11216v6](https://arxiv.org/abs/2110.11216v6)，PDF 物理第 44 页 Theorem 3.2（其中引 Maurer 2004, Theorem 5），TeX `MAL-100.tex` 的 `thm:see:bound`。其 [本地核验定位](../../proof_ref/foundations-2026-09/user-friendly-introduction-to-pac-bayes-bounds-2110.11216/核验笔记.md) 记录工件 hash 与检查范围。该 PAC-Bayes-kl 版本是：以至少 $1-\delta$ 的概率，**同时对所有** $Q$，
 
 $$
-\operatorname{kl}\!\left(\widehat L_S(Q)\,\middle\|\,L_{\mathcal D}(Q)\right)
+\mathop{\mathrm{kl}}\negthinspace\left(\widehat L_S(Q)\thinspace\middle\Vert\thinspace L_{\mathcal D}(Q)\right)
 \le
-\frac{\operatorname{KL}(Q\|P)+\log(2\sqrt n/\delta)}{n}.
+\frac{\mathop{\mathrm{KL}}(Q\Vert P)+\log(2\sqrt n/\delta)}{n}.
 $$
 
 这里左侧是 Bernoulli KL。由 Pinsker 可得较易读但更松的推论
@@ -71,7 +71,7 @@ $$
 L_{\mathcal D}(Q)
 \le
 \widehat L_S(Q)
-+\sqrt{\frac{\operatorname{KL}(Q\|P)+\log(2\sqrt n/\delta)}{2n}}.
++\sqrt{\frac{\mathop{\mathrm{KL}}(Q\Vert P)+\log(2\sqrt n/\delta)}{2n}}.
 $$
 
 不同 PAC-Bayes 定理的常数、温度、经验风险变换与允许的数据依赖先验并不相同；引用时必须锁定具体版本。
@@ -115,10 +115,10 @@ $$
 右侧与 $w$ 无关，所以对 $P_W$ 积分仍有
 $\mathbb E_\nu e^{\lambda G}\le e^{\lambda^2\sigma^2/(2n)}$。这个步骤允许不同 $w$ 有不同的 $L_{\mathcal D}(w)$；直接混合未中心化的损失一般没有同样的矩界。
 
-若 $I(W;S)=\operatorname{KL}(\mu\|\nu)<\infty$，令 $r=d\mu/d\nu$。Jensen 给出换测度不等式：
+若 $I(W;S)=\mathop{\mathrm{KL}}(\mu\Vert\nu)<\infty$，令 $r=d\mu/d\nu$。Jensen 给出换测度不等式：
 
 $$
-\mathbb E_\mu f-\operatorname{KL}(\mu\|\nu)
+\mathbb E_\mu f-\mathop{\mathrm{KL}}(\mu\Vert\nu)
 =\mathbb E_\mu\log\frac{e^f}{r}
 \le\log\mathbb E_\mu\frac{e^f}{r}
 \le\log\mathbb E_\nu e^f.
@@ -162,7 +162,7 @@ Step 5. 若需要 high-probability bound，另选相应定理，不能把期望�
 
 ## 可迁移用法
 
-可以把 $\operatorname{KL}(Q_{\text{personalized}}\|P_{\text{base}})$ **定义为某种建模代理量**，讨论 personalization 与复杂度的 trade-off；但“memory strength 等于 KL”不是 PAC-Bayes 定理，必须另行定义并验证它与实际 memory 行为的关系。
+可以把 $\mathop{\mathrm{KL}}(Q_{\text{personalized}}\Vert P_{\text{base}})$ **定义为某种建模代理量**，讨论 personalization 与复杂度的 trade-off；但“memory strength 等于 KL”不是 PAC-Bayes 定理，必须另行定义并验证它与实际 memory 行为的关系。
 
 ## 常见坑
 

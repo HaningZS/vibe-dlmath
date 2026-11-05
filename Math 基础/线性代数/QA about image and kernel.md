@@ -32,28 +32,28 @@ reviewed: 2026-09-01
 
 ### 2. 那么 "1, 1" 的 Image 是什么？
 
-你说的“一个变换是 1, 1”有点模糊，但我猜你可能指的是一个与向量 $\begin{bmatrix} 1 \\ 1 \end{bmatrix}$ 相关的变换。
+你说的“一个变换是 1, 1”有点模糊，但我猜你可能指的是一个与向量 $\left[\matrix{ 1 \cr 1 }\right]$ 相关的变换。
 
 让我们来看一个最可能的例子：
 
-假设我们有一个 $2 \times 1$ 的矩阵 $A = \begin{bmatrix} 1 \\ 1 \end{bmatrix}$。
+假设我们有一个 $2 \times 1$ 的矩阵 $A = \left[\matrix{ 1 \cr 1 }\right]$。
 
 这个矩阵 $A$ 定义了一个从 $\mathbb{R}^1$（一条数轴）到 $\mathbb{R}^2$（一个平面）的变换 $T$。
 
-$T(x) = A \cdot x = \begin{bmatrix} 1 \\ 1 \end{bmatrix} [x] = \begin{bmatrix} x \\ x \end{bmatrix}$
+$T(x) = A \cdot x = \left[\matrix{ 1 \cr 1 }\right] [x] = \left[\matrix{ x \cr x }\right]$
 
 这个变换的意思是：
 
-- 你输入 $x=1$，它输出 $\begin{bmatrix} 1 \\ 1 \end{bmatrix}$。
+- 你输入 $x=1$，它输出 $\left[\matrix{ 1 \cr 1 }\right]$。
 
-- 你输入 $x=2$，它输出 $\begin{bmatrix} 2 \\ 2 \end{bmatrix}$。
+- 你输入 $x=2$，它输出 $\left[\matrix{ 2 \cr 2 }\right]$。
 
-- 你输入 $x=0$，它输出 $\begin{bmatrix} 0 \\ 0 \end{bmatrix}$。
+- 你输入 $x=0$，它输出 $\left[\matrix{ 0 \cr 0 }\right]$。
 
 - ... ...
 
 
-它的 **Image** 就是所有可能的输出 $\begin{bmatrix} x \\ x \end{bmatrix}$ 的集合。
+它的 **Image** 就是所有可能的输出 $\left[\matrix{ x \cr x }\right]$ 的集合。
 
 这个集合在 $\mathbb{R}^2$ 平面上是什么样的？它就是** $y=x$ 这条直线**。
 
@@ -72,11 +72,11 @@ $T(x) = A \cdot x = \begin{bmatrix} 1 \\ 1 \end{bmatrix} [x] = \begin{bmatrix} x
 
 **是的，绝对是！**
 
-- 这个 Image（即 $y=x$ 这条直线）是由一个向量 $\begin{bmatrix} 1 \\ 1 \end{bmatrix}$ **张成 (span)** 的。
+- 这个 Image（即 $y=x$ 这条直线）是由一个向量 $\left[\matrix{ 1 \cr 1 }\right]$ **张成 (span)** 的。
 
-- 换句话说，这条线上的每一个点都可以表示为 $c \cdot \begin{bmatrix} 1 \\ 1 \end{bmatrix}$（其中 $c$ 是一个标量）。
+- 换句话说，这条线上的每一个点都可以表示为 $c \cdot \left[\matrix{ 1 \cr 1 }\right]$（其中 $c$ 是一个标量）。
 
-- 这个 Image 的**基 (basis)** 是 $\left\{ \begin{bmatrix} 1 \\ 1 \end{bmatrix} \right\}$。
+- 这个 Image 的**基 (basis)** 是 $\left\lbrace \left[\matrix{ 1 \cr 1 }\right] \right\rbrace$。
 
 - **维度 (Dimension)** 就是基向量的个数。
 
@@ -87,7 +87,7 @@ $T(x) = A \cdot x = \begin{bmatrix} 1 \\ 1 \end{bmatrix} [x] = \begin{bmatrix} x
 
 - $y=x+1$ **不是** Image，因为它不经过原点。
 
-- 与 $\begin{bmatrix} 1 \\ 1 \end{bmatrix}$ 相关的变换，其 Image 是 $y=x$ 这条直线。
+- 与 $\left[\matrix{ 1 \cr 1 }\right]$ 相关的变换，其 Image 是 $y=x$ 这条直线。
 
 - $y=x$ 这条直线（作为一个子空间）的**维度是 1**。
 
@@ -103,19 +103,19 @@ $T(x) = A \cdot x = \begin{bmatrix} 1 \\ 1 \end{bmatrix} [x] = \begin{bmatrix} x
 
 $A \cdot x = b$
 
-$\begin{bmatrix} ? & ? & ? \\ ? & ? & ? \\ ? & ? & ? \end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix} = \begin{bmatrix} b_1 \\ b_2 \\ b_3 \end{bmatrix}$
+$\left[\matrix{ ? & ? & ? \cr ? & ? & ? \cr ? & ? & ? }\right] \left[\matrix{ x_1 \cr x_2 \cr x_3 }\right] = \left[\matrix{ b_1 \cr b_2 \cr b_3 }\right]$
 
 让我们定义一个具体的变换 $T$：**它将 3D 空间中的任何点“压扁”或“投影”到 $xy$ 平面上**。
 
-一个在 3D 空间中的点 $x = \begin{bmatrix} x \\ y \\ z \end{bmatrix}$，经过这个变换后，它的 $z$ 坐标会变成 0。
+一个在 3D 空间中的点 $x = \left[\matrix{ x \cr y \cr z }\right]$，经过这个变换后，它的 $z$ 坐标会变成 0。
 
-$T\left(\begin{bmatrix} x \\ y \\ z \end{bmatrix}\right) = \begin{bmatrix} x \\ y \\ 0 \end{bmatrix}$
+$T\left(\left[\matrix{ x \cr y \cr z }\right]\right) = \left[\matrix{ x \cr y \cr 0 }\right]$
 
 那么实现这个变换的矩阵 $A$ 是什么呢？
 
-$A = \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 0 \end{bmatrix}$
+$A = \left[\matrix{ 1 & 0 & 0 \cr 0 & 1 & 0 \cr 0 & 0 & 0 }\right]$
 
-（你可以验证一下： $\begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 0 \end{bmatrix} \begin{bmatrix} x \\ y \\ z \end{bmatrix} = \begin{bmatrix} (1 \cdot x + 0 \cdot y + 0 \cdot z) \\ (0 \cdot x + 1 \cdot y + 0 \cdot z) \\ (0 \cdot x + 0 \cdot y + 0 \cdot z) \end{bmatrix} = \begin{bmatrix} x \\ y \\ 0 \end{bmatrix}$。 正确！）
+（你可以验证一下： $\left[\matrix{ 1 & 0 & 0 \cr 0 & 1 & 0 \cr 0 & 0 & 0 }\right] \left[\matrix{ x \cr y \cr z }\right] = \left[\matrix{ (1 \cdot x + 0 \cdot y + 0 \cdot z) \cr (0 \cdot x + 1 \cdot y + 0 \cdot z) \cr (0 \cdot x + 0 \cdot y + 0 \cdot z) }\right] = \left[\matrix{ x \cr y \cr 0 }\right]$。 正确！）
 
 现在，我们来分析这个矩阵 $A$ 的 **Image** 和 **Kernel**：
 
@@ -127,32 +127,32 @@ Image 是**所有可能的输出**的集合。
 
 - 直观理解：
 
-    无论你输入 3D 空间中的哪个向量（比如 $\begin{bmatrix} 3 \\ 4 \\ 5 \end{bmatrix}$ 或 $\begin{bmatrix} -1 \\ 10 \\ 999 \end{bmatrix}$），这个变换 $A$ 都会把它“压扁”。
+    无论你输入 3D 空间中的哪个向量（比如 $\left[\matrix{ 3 \cr 4 \cr 5 }\right]$ 或 $\left[\matrix{ -1 \cr 10 \cr 999 }\right]$），这个变换 $A$ 都会把它“压扁”。
 
-    - $A \cdot \begin{bmatrix} 3 \\ 4 \\ 5 \end{bmatrix} = \begin{bmatrix} 3 \\ 4 \\ 0 \end{bmatrix}$
+    - $A \cdot \left[\matrix{ 3 \cr 4 \cr 5 }\right] = \left[\matrix{ 3 \cr 4 \cr 0 }\right]$
 
-    - $A \cdot \begin{bmatrix} -1 \\ 10 \\ 999 \end{bmatrix} = \begin{bmatrix} -1 \\ 10 \\ 0 \end{bmatrix}$
+    - $A \cdot \left[\matrix{ -1 \cr 10 \cr 999 }\right] = \left[\matrix{ -1 \cr 10 \cr 0 }\right]$
 
-    - $A \cdot \begin{bmatrix} 1 \\ 2 \\ 0 \end{bmatrix} = \begin{bmatrix} 1 \\ 2 \\ 0 \end{bmatrix}$
+    - $A \cdot \left[\matrix{ 1 \cr 2 \cr 0 }\right] = \left[\matrix{ 1 \cr 2 \cr 0 }\right]$
 
 
     所有这些输出向量有什么共同点？它们的第三个分量（ $z$ 坐标）永远是 0。
 
-    所有 $z$ 坐标为 0 的向量 $\begin{bmatrix} x \\ y \\ 0 \end{bmatrix}$ 组成了什么？
+    所有 $z$ 坐标为 0 的向量 $\left[\matrix{ x \cr y \cr 0 }\right]$ 组成了什么？
 
     它们组成了 $\mathbb{R}^3$ 空间中的 $xy$ 平面。
 
 - 数学定义：
 
-    Image 是 $A$ 的列空间。 $A$ 的列向量是 $\begin{bmatrix} 1 \\ 0 \\ 0 \end{bmatrix}$, $\begin{bmatrix} 0 \\ 1 \\ 0 \end{bmatrix}$ 和 $\begin{bmatrix} 0 \\ 0 \\ 0 \end{bmatrix}$。
+    Image 是 $A$ 的列空间。 $A$ 的列向量是 $\left[\matrix{ 1 \cr 0 \cr 0 }\right]$, $\left[\matrix{ 0 \cr 1 \cr 0 }\right]$ 和 $\left[\matrix{ 0 \cr 0 \cr 0 }\right]$。
 
-    $\text{Im}(A) = \text{span}\left(\begin{bmatrix} 1 \\ 0 \\ 0 \end{bmatrix}, \begin{bmatrix} 0 \\ 1 \\ 0 \end{bmatrix}, \begin{bmatrix} 0 \\ 0 \\ 0 \end{bmatrix}\right) = \text{span}\left(\begin{bmatrix} 1 \\ 0 \\ 0 \end{bmatrix}, \begin{bmatrix} 0 \\ 1 \\ 0 \end{bmatrix}\right)$
+    $\text{Im}(A) = \text{span}\left(\left[\matrix{ 1 \cr 0 \cr 0 }\right], \left[\matrix{ 0 \cr 1 \cr 0 }\right], \left[\matrix{ 0 \cr 0 \cr 0 }\right]\right) = \text{span}\left(\left[\matrix{ 1 \cr 0 \cr 0 }\right], \left[\matrix{ 0 \cr 1 \cr 0 }\right]\right)$
 
     这就是 $xy$ 平面的数学定义。
 
 - 维度：
 
-    这个 Image ( $xy$ 平面) 是由两个线性无关的基向量 $\left\{ \begin{bmatrix} 1 \\ 0 \\ 0 \end{bmatrix}, \begin{bmatrix} 0 \\ 1 \\ 0 \end{bmatrix} \right\}$ 张成的。
+    这个 Image ( $xy$ 平面) 是由两个线性无关的基向量 $\left\lbrace \left[\matrix{ 1 \cr 0 \cr 0 }\right], \left[\matrix{ 0 \cr 1 \cr 0 }\right] \right\rbrace$ 张成的。
 
     所以， $\dim(\text{Im}(A)) = 2$。
 
@@ -161,15 +161,15 @@ Image 是**所有可能的输出**的集合。
 
 ### 2. 🎯 Kernel (核)
 
-Kernel 是所有被变换到**零向量** $\begin{bmatrix} 0 \\ 0 \\ 0 \end{bmatrix}$ 的**输入** $x$ 的集合。
+Kernel 是所有被变换到**零向量** $\left[\matrix{ 0 \cr 0 \cr 0 }\right]$ 的**输入** $x$ 的集合。
 
 - 直观理解：
 
-    我们需要找到所有的 $\begin{bmatrix} x \\ y \\ z \end{bmatrix}$ 使得 $A \begin{bmatrix} x \\ y \\ z \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \\ 0 \end{bmatrix}$。
+    我们需要找到所有的 $\left[\matrix{ x \cr y \cr z }\right]$ 使得 $A \left[\matrix{ x \cr y \cr z }\right] = \left[\matrix{ 0 \cr 0 \cr 0 }\right]$。
 
-    我们知道 $A \begin{bmatrix} x \\ y \\ z \end{bmatrix} = \begin{bmatrix} x \\ y \\ 0 \end{bmatrix}$。
+    我们知道 $A \left[\matrix{ x \cr y \cr z }\right] = \left[\matrix{ x \cr y \cr 0 }\right]$。
 
-    所以我们要求解 $\begin{bmatrix} x \\ y \\ 0 \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \\ 0 \end{bmatrix}$。
+    所以我们要求解 $\left[\matrix{ x \cr y \cr 0 }\right] = \left[\matrix{ 0 \cr 0 \cr 0 }\right]$。
 
     这组方程的解是：
 
@@ -182,9 +182,9 @@ Kernel 是所有被变换到**零向量** $\begin{bmatrix} 0 \\ 0 \\ 0 \end{bmat
 
     所以，只要 $x=0$ 且 $y=0$， $z$ 可以是任何数。
 
-    这些向量长什么样？它们长这样： $\begin{bmatrix} 0 \\ 0 \\ z \end{bmatrix}$。
+    这些向量长什么样？它们长这样： $\left[\matrix{ 0 \cr 0 \cr z }\right]$。
 
-    （例如 $\begin{bmatrix} 0 \\ 0 \\ 1 \end{bmatrix}$, $\begin{bmatrix} 0 \\ 0 \\ 5 \end{bmatrix}$, $\begin{bmatrix} 0 \\ 0 \\ -10 \end{bmatrix}$ 等）
+    （例如 $\left[\matrix{ 0 \cr 0 \cr 1 }\right]$, $\left[\matrix{ 0 \cr 0 \cr 5 }\right]$, $\left[\matrix{ 0 \cr 0 \cr -10 }\right]$ 等）
 
     所有这些“被压扁后会消失”的向量组成了什么？
 
@@ -192,11 +192,11 @@ Kernel 是所有被变换到**零向量** $\begin{bmatrix} 0 \\ 0 \\ 0 \end{bmat
 
 - 数学定义：
 
-    $\text{Ker}(A) = \left\{ \begin{bmatrix} 0 \\ 0 \\ z \end{bmatrix} \mid z \in \mathbb{R} \right\} = \text{span}\left(\begin{bmatrix} 0 \\ 0 \\ 1 \end{bmatrix}\right)$
+    $\text{Ker}(A) = \left\lbrace \left[\matrix{ 0 \cr 0 \cr z }\right] \mid z \in \mathbb{R} \right\rbrace = \text{span}\left(\left[\matrix{ 0 \cr 0 \cr 1 }\right]\right)$
 
 - 维度：
 
-    这个 Kernel ($z$ 轴) 是由一个基向量 $\left\{ \begin{bmatrix} 0 \\ 0 \\ 1 \end{bmatrix} \right\}$ 张成的。
+    这个 Kernel ($z$ 轴) 是由一个基向量 $\left\lbrace \left[\matrix{ 0 \cr 0 \cr 1 }\right] \right\rbrace$ 张成的。
 
     所以， $\dim(\text{Ker}(A)) = 1$。
 

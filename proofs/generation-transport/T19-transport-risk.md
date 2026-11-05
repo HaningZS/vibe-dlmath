@@ -48,12 +48,9 @@ $$
 R_T(h)
 \le
 R_S(h)
-+
-\mathrm{Distance}(P_S,P_T)
-+
-\mathrm{label\ mismatch\ term}
-+
-\mathrm{complexity\ term}.
++\mathrm{Distance}(P_S,P_T)
++\mathrm{label\ mismatch\ term}
++\mathrm{complexity\ term}.
 $$
 
 OT/Wasserstein 模板把 `Distance` 写成 Wasserstein 或 partial Wasserstein。
@@ -67,8 +64,8 @@ $\ell_h(z)$ 对 ground metric $d$ 是 $L_h$-Lipschitz。对任意完整 coupling
 
 $$
 |R_T(h)-R_S(h)|
-\leq \int|\ell_h(z')-\ell_h(z)|\,d\gamma
-\leq L_h\int d(z,z')\,d\gamma.
+\leq \int|\ell_h(z')-\ell_h(z)|\thinspace d\gamma
+\leq L_h\int d(z,z')\thinspace d\gamma.
 $$
 
 对 $\gamma$ 取 inf 得 $|R_T(h)-R_S(h)|\leq L_h W_1(P_S^{XY},P_T^{XY})$。这是关于 **joint law** 的界；若把它换成 feature marginal，label 信息已经丢失，必须另加假设。
@@ -76,7 +73,7 @@ $$
 若 $\ell_h\in[0,1]$， $\gamma$ 是质量 $m$ 的 partial joint coupling，且其两个边缘分别被 $P_S,P_T$ 支配，则一个粗的一侧界是
 
 $$
-R_T(h)\leq R_S(h)+L_h\int d(z,z')\,d\gamma+(1-m).
+R_T(h)\leq R_S(h)+L_h\int d(z,z')\thinspace d\gamma+(1-m).
 $$
 
 最后一项来自未匹配 target mass 的最坏损失。这只是明确假设下的教学原型，不等于任何 feature-level partial-DA 论文的全部保证。

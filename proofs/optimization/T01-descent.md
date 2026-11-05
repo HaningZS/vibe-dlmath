@@ -48,10 +48,10 @@ x_{t+1} = x_t - eta_t * estimator_t
 
 ## 核心证明骨架
 
-令 $(\mathcal F_t)_{t\ge0}$ 是算法历史， $x_t$ 为 $\mathcal F_t$-可测。假设 $f:\mathbb R^d\to\mathbb R$ 可微、 $L$-smooth 且下有界于 $f_\star$：
+令 $(\mathcal F_t)_ {t\ge0}$ 是算法历史， $x_t$ 为 $\mathcal F_t$-可测。假设 $f:\mathbb R^d\to\mathbb R$ 可微、 $L$-smooth 且下有界于 $f_\star$：
 
 $$
-f(y) \le f(x) + \langle \nabla f(x), y-x \rangle + \frac{L}{2}\|y-x\|^2.
+f(y) \le f(x) + \langle \nabla f(x), y-x \rangle + \frac{L}{2}\Vert y-x\Vert^2.
 $$
 
 令
@@ -67,7 +67,7 @@ f(x_{t+1})
 \le
 f(x_t)
 -\eta \langle \nabla f(x_t), g_t\rangle
-+\frac{L\eta^2}{2}\|g_t\|^2.
++\frac{L\eta^2}{2}\Vert g_t\Vert^2.
 $$
 
 若 $g_t$ 在给定完整历史后条件无偏且方差有界：
@@ -75,36 +75,36 @@ $$
 $$
 \mathbb E[g_t\mid\mathcal F_t]=\nabla f(x_t),
 \qquad
-\mathbb E[\|g_t-\nabla f(x_t)\|^2\mid\mathcal F_t]\le\sigma^2,
+\mathbb E[\Vert g_t-\nabla f(x_t)\Vert^2\mid\mathcal F_t]\le\sigma^2,
 $$
 
-则 $\mathbb E[\|g_t\|^2\mid\mathcal F_t]\le\|\nabla f(x_t)\|^2+\sigma^2$。对常步长 $0<\eta\le1/L$，有精确的一步界
+则 $\mathbb E[\Vert g_t\Vert^2\mid\mathcal F_t]\le\Vert\nabla f(x_t)\Vert^2+\sigma^2$。对常步长 $0<\eta\le1/L$，有精确的一步界
 
 $$
 \mathbb E[f(x_{t+1})\mid\mathcal F_t]
 \le
 f(x_t)
--\eta\left(1-\frac{L\eta}{2}\right)\|\nabla f(x_t)\|^2
+-\eta\left(1-\frac{L\eta}{2}\right)\Vert\nabla f(x_t)\Vert^2
 +\frac{L\eta^2}{2}\sigma^2
 \le
-f(x_t)-\frac{\eta}{2}\|\nabla f(x_t)\|^2
+f(x_t)-\frac{\eta}{2}\Vert\nabla f(x_t)\Vert^2
 +\frac{L\eta^2}{2}\sigma^2.
 $$
 
 对 $t=0,\ldots,T-1$ 取全期望并求和，利用 $f(x_T)\ge f_\star$：
 
 $$
-\frac1T\sum_{t=0}^{T-1}\mathbb E\|\nabla f(x_t)\|^2
+\frac1T\sum_{t=0}^{T-1}\mathbb E\Vert\nabla f(x_t)\Vert^2
 \le
 \frac{2(f(x_0)-f_\star)}{\eta T}+L\eta\sigma^2.
 $$
 
-若 $R\sim\operatorname{Unif}\{0,\ldots,T-1\}$ 且独立于算法随机性，则平均项**等于** $\mathbb E\|\nabla f(x_R)\|^2$。还要区分下面三个量：
+若 $R\sim\mathop{\mathrm{Unif}}\lbrace0,\ldots,T-1\rbrace$ 且独立于算法随机性，则平均项**等于** $\mathbb E\Vert\nabla f(x_R)\Vert^2$。还要区分下面三个量：
 
 $$
-\mathbb E\min_t\|\nabla f(x_t)\|^2
-\leq \min_t\mathbb E\|\nabla f(x_t)\|^2
-\leq \frac1T\sum_t\mathbb E\|\nabla f(x_t)\|^2.
+\mathbb E\min_t\Vert\nabla f(x_t)\Vert^2
+\leq \min_t\mathbb E\Vert\nabla f(x_t)\Vert^2
+\leq \frac1T\sum_t\mathbb E\Vert\nabla f(x_t)\Vert^2.
 $$
 
 因此同一上界也控制前两项，但三者一般不相等；沿完整随机轨迹事后挑最小值，不等于预先独立抽取一个输出迭代。
@@ -142,7 +142,7 @@ conditional variance at most sigma^2, and eta <= 1/L, SGD satisfies
 - `L-smooth` 对大模型训练经常太强；可以换成 T15 的 generalized smoothness。
 - 如果算法有 momentum/EMA/error feedback，单看 `f(x_t)` 往往不下降；换 T02 的 Lyapunov。
 - 如果 estimator 有 bias，要把 bias 项单独保留，不能直接用 unbiasedness 消掉。
-- projected/proximal 更新不能直接把结论写成 $\|\nabla f\|$；应改用 gradient mapping 或 composite stationarity measure。
+- projected/proximal 更新不能直接把结论写成 $\Vert\nabla f\Vert$；应改用 gradient mapping 或 composite stationarity measure。
 - SARAH/SPIDER 型 estimator 往往不逐步条件无偏；需要先用 T03 的 estimator-error 递推，再与 descent inequality 联立。
 
 ## 来源论文 / 参考

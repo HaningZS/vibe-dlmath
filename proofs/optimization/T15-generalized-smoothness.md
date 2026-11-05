@@ -45,17 +45,17 @@ status: "refined + claim-checked"
 `(L0,L1)`-smoothness：
 
 $$
-\|\nabla^2 f(x)\|
+\Vert\nabla^2 f(x)\Vert
 \le
-L_0 + L_1\|\nabla f(x)\|.
+L_0 + L_1\Vert\nabla f(x)\Vert.
 $$
 
 更一般的 `ell`-smoothness：
 
 $$
-\|\nabla^2 f(x)\|
+\Vert\nabla^2 f(x)\Vert
 \le
-\ell(\|\nabla f(x)\|),
+\ell(\Vert\nabla f(x)\Vert),
 $$
 
 其中 `ell` 是非下降函数。
@@ -73,7 +73,7 @@ T01 的 standard descent lemma 改成 generalized descent lemma。局部曲率�
 为避免“先假设 gradient 有界才能证明 descent，再用 descent 证明 gradient 有界”的循环，可使用 localization。给定安全阈值 $G$，定义
 
 $$
-\tau_G=\inf\{t\ge0:\|\nabla f(x_t)\|>G\}.
+\tau_G=\inf\lbrace t\ge0:\Vert\nabla f(x_t)\Vert>G\rbrace.
 $$
 
 先只在 stopped process $x_{t\wedge\tau_G}$ 上使用局部 generalized descent；再用目标下界、一步 movement bound 或联合归纳证明在目标时间内 $\tau_G>T$。只有完成这个 closure，才能把 stopped bound 还原为原始 trajectory bound。
@@ -86,19 +86,19 @@ $$
 
 ### 为什么要控制整条更新线段
 
-以 $C^2$ 且 $\|\nabla^2f(z)\|_{\mathrm{op}}\leq L_0+L_1\|\nabla f(z)\|$ 为例。若该条件在从 $x$ 到 $x+h$ 的线段上成立，沿弧长积分并使用 Grönwall，可得
+以 $C^2$ 且 $\Vert\nabla^2f(z)\Vert_{\mathrm{op}}\leq L_0+L_1\Vert\nabla f(z)\Vert$ 为例。若该条件在从 $x$ 到 $x+h$ 的线段上成立，沿弧长积分并使用 Grönwall，可得
 
 $$
-L_0+L_1\|\nabla f(x+s u)\|
-\leq (L_0+L_1\|\nabla f(x)\|)e^{L_1s},
-\quad u=h/\|h\|,\quad 0\leq s\leq\|h\|.
+L_0+L_1\Vert\nabla f(x+s u)\Vert
+\leq (L_0+L_1\Vert\nabla f(x)\Vert)e^{L_1s},
+\quad u=h/\Vert h\Vert,\quad 0\leq s\leq\Vert h\Vert.
 $$
 
-于是，当 $\|h\|\leq r$ 时，一个方便但较松的局部下降式为
+于是，当 $\Vert h\Vert\leq r$ 时，一个方便但较松的局部下降式为
 
 $$
 f(x+h)\leq f(x)+\langle\nabla f(x),h\rangle
-+\frac12(L_0+L_1\|\nabla f(x)\|)e^{L_1r}\|h\|^2.
++\frac12(L_0+L_1\Vert\nabla f(x)\Vert)e^{L_1r}\Vert h\Vert^2.
 $$
 
 $h=0$ 可直接处理， $L_1=0$ 退化为标准光滑形式。这段计算说明步长为什么需要与移动半径和当前梯度一起选择；只有端点曲率信息并不足够。

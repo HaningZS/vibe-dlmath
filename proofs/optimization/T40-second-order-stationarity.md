@@ -13,7 +13,7 @@ status: self-contained-core
 
 **对象**：二次连续可微、下有界的 $f:\mathbb R^d\to\mathbb R$；梯度为 $L$-Lipschitz，Hessian 为 $\rho$-Lipschitz， $L,\rho>0$。范数均为 Euclidean/operator norm。
 
-**结论**：在精确梯度和负曲率方向 oracle 下，有限次更新到达 $\|\nabla f\|\le\epsilon_g$、 $\lambda_{\min}(\nabla^2f)\ge-\epsilon_H$。这里计算的是更新次数；寻找特征向量的成本另外记账。
+**结论**：在精确梯度和负曲率方向 oracle 下，有限次更新到达 $\Vert\nabla f\Vert\le\epsilon_g$、 $\lambda_{\min}(\nabla^2f)\ge-\epsilon_H$。这里计算的是更新次数；寻找特征向量的成本另外记账。
 
 **失败例子**： $f(x)=x^3$ 在 0 处梯度、Hessian 都为 0，却不是局部极小。二阶必要条件仍不是一般全局最优证书；此例用于说明逻辑关系，不满足本卡全局下有界假设。
 
@@ -36,12 +36,12 @@ Hessian-Lipschitz 给出
 
 $$
 f(x+s)\le f(x)+\langle\nabla f(x),s\rangle
-+\tfrac12s^\top\nabla^2f(x)s+\tfrac\rho6\|s\|^3.
++\tfrac12s^\top\nabla^2f(x)s+\tfrac\rho6\Vert s\Vert^3.
 $$
 
 可沿线段积分两次：二阶余项为
-$\int_0^1(1-t)s^\top[H(x+ts)-H(x)]s\,dt$，其绝对值不超过
-$\rho\|s\|^3\int_0^1t(1-t)dt=\rho\|s\|^3/6$。
+$\int_0^1(1-t)s^\top[H(x+ts)-H(x)]s\thinspace dt$，其绝对值不超过
+$\rho\Vert s\Vert^3\int_0^1t(1-t)dt=\rho\Vert s\Vert^3/6$。
 
 ## 3. 负曲率下降的完整一步
 
@@ -59,7 +59,7 @@ $$
 
 算法每次按以下顺序判断：
 
-1. 若 $\|\nabla f(x)\|>\epsilon_g$，走 $s=-\nabla f(x)/L$；[T01](T01-descent.md) 给出下降至少 $\epsilon_g^2/(2L)$。
+1. 若 $\Vert\nabla f(x)\Vert>\epsilon_g$，走 $s=-\nabla f(x)/L$；[T01](T01-descent.md) 给出下降至少 $\epsilon_g^2/(2L)$。
 2. 否则查 Hessian；若存在上面的负曲率方向，做第 3 节更新。
 3. 否则停止，输出满足两个阈值的点。
 

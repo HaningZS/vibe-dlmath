@@ -2,11 +2,11 @@
 
 [首页](../README.md) · [模板目录](../proofs/README.md) · [证明工作流](PROOF_WORKFLOW.md)
 
-Skill 的源文件位于 [skills/vibe-dlmath/SKILL.md](../skills/vibe-dlmath/SKILL.md)，随仓库版本维护。它会按问题检索模板，先核对假设与结论类型，再完成解释、推导或审阅。
+Skill 的源文件位于 [skills/vibe-dlmath/SKILL.md](../skills/vibe-dlmath/SKILL.md)，随仓库版本维护。它会按问题检索最接近的证明路线，先核对假设与结论类型，再沿路线完成推导、解释或审阅；与路线不一致的地方写成待补引理、新增假设或反例。
 
 ## 安装
 
-先按 [README 快速开始](../README.md#快速开始先读一张卡再提出一个可检查的问题) 克隆完整仓库并确认 Python 3.11+。单独下载 `SKILL.md` 不包含证明库、检索工具与合同文档。
+先按 [README 快速开始](../README.md#快速开始找到一条路线让-ai-沿着它写) 克隆完整仓库并确认 Python 3.11+。单独下载 `SKILL.md` 不包含证明库、检索工具与合同文档。
 
 在你长期保留的仓库目录里运行：
 

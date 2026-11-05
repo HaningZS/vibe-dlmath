@@ -15,7 +15,7 @@ status: self-contained-core
 
 **输出结论**：proximal-gradient mapping 的下降与平均 stationarity 界，不把不可微 $F$ 的普通梯度当作目标量。
 
-**失败例子**： $F(w)=(\operatorname{ReLU}(w)-1)^2$ 在 0 处左右导数分别为 0 与 -2，既不能直接套全局 smooth descent，也不能把任意 ReLU 网络目标视为本卡的 smooth-plus-convex 结构。
+**失败例子**： $F(w)=(\mathop{\mathrm{ReLU}}(w)-1)^2$ 在 0 处左右导数分别为 0 与 -2，既不能直接套全局 smooth descent，也不能把任意 ReLU 网络目标视为本卡的 smooth-plus-convex 结构。
 
 ## 实例化时必须完成
 
@@ -29,13 +29,13 @@ status: self-contained-core
 L1 正则和凸约束可能没有普通梯度，却有可计算的 prox。它像一次带规则的纠偏：先按 smooth 部分走，再用一个局部二次子问题处理非光滑部分。
 
 $$
-x^+=\operatorname{prox}_{\eta g}(x-\eta\nabla f(x))
-=\arg\min_z\left\{
-g(z)+\frac1{2\eta}\|z-x+\eta\nabla f(x)\|^2
-\right\}.
+x^+=\mathop{\mathrm{prox}}\nolimits_{\eta g}(x-\eta\nabla f(x))
+=\arg\min_z\left\lbrace
+g(z)+\frac1{2\eta}\Vert z-x+\eta\nabla f(x)\Vert^2
+\right\rbrace.
 $$
 
-例如 $g$ 是凸集的 indicator 时，prox 就是 Euclidean projection； $g(x)=\lambda\|x\|_1$ 时，prox 是 soft thresholding。
+例如 $g$ 是凸集的 indicator 时，prox 就是 Euclidean projection； $g(x)=\lambda\Vert x\Vert_1$ 时，prox 是 soft thresholding。
 
 ## 2. 定义正确的 stationarity 量
 
@@ -58,26 +58,26 @@ $$
 
 $$
 g(x)\geq g(x^+)+\langle\nabla f(x),\Delta\rangle+
-\|\Delta\|^2/\eta.
+\Vert\Delta\Vert^2/\eta.
 $$
 
 另由 $f$ 光滑，
 
 $$
 f(x^+)\leq f(x)+\langle\nabla f(x),\Delta\rangle+
-\frac L2\|\Delta\|^2.
+\frac L2\Vert\Delta\Vert^2.
 $$
 
 相加、抵消内积后得到
 
 $$
-F(x^+)\leq F(x)-\left(\frac1\eta-\frac L2\right)\|\Delta\|^2.
+F(x^+)\leq F(x)-\left(\frac1\eta-\frac L2\right)\Vert\Delta\Vert^2.
 $$
 
 若 $0<\eta\leq1/L$，
 
 $$
-F(x^+)\leq F(x)-\frac\eta2\|G_\eta(x)\|^2.
+F(x^+)\leq F(x)-\frac\eta2\Vert G_\eta(x)\Vert^2.
 $$
 
 ## 4. 累加后的保证
@@ -85,7 +85,7 @@ $$
 确定性精确 proximal-gradient 迭代因此满足
 
 $$
-\frac1T\sum_{t<T}\|G_\eta(x_t)\|^2
+\frac1T\sum_{t< T}\Vert G_\eta(x_t)\Vert^2
 \leq\frac{2(F(x_0)-F_\inf)}{\eta T}.
 $$
 
@@ -98,7 +98,7 @@ v^+=\nabla f(x^+)-\nabla f(x)+G_\eta(x)
 \in\nabla f(x^+)+\partial g(x^+),
 $$
 
-并界 $\|v^+\|\leq(1+L\eta)\|G_\eta(x)\|$。
+并界 $\Vert v^+\Vert\leq(1+L\eta)\Vert G_\eta(x)\Vert$。
 
 ## 5. 不能跳过的实现差异
 

@@ -34,20 +34,20 @@ $$
 
 $$
 df=\langle\nabla_X f,dX\rangle_F
-=\operatorname{tr}\big((\nabla_X f)^\top dX\big).
+=\mathop{\mathrm{tr}}\big((\nabla_X f)^\top dX\big).
 $$
 
 这里 $dX$ 表示给 $X$ 一个任意的无穷小扰动，Frobenius 内积为
 
 $$
-\langle A,B\rangle_F=\operatorname{tr}(A^\top B)
+\langle A,B\rangle_F=\mathop{\mathrm{tr}}(A^\top B)
 =\sum_{ij}A_{ij}B_{ij}.
 $$
 
 因此求导的目标变成：把 $df$ 整理成
 
 $$
-df=\operatorname{tr}(G^\top dX),
+df=\mathop{\mathrm{tr}}(G^\top dX),
 $$
 
 然后读出 $\nabla_X f=G$。
@@ -59,9 +59,9 @@ $$
 任何标量都等于自己的 trace。trace 还允许循环移动矩阵乘积：
 
 $$
-\operatorname{tr}(ABC)
-=\operatorname{tr}(BCA)
-=\operatorname{tr}(CAB).
+\mathop{\mathrm{tr}}(ABC)
+=\mathop{\mathrm{tr}}(BCA)
+=\mathop{\mathrm{tr}}(CAB).
 $$
 
 注意只能**循环移动**，不能随意交换次序。一般而言 $AB\ne BA$。
@@ -69,24 +69,24 @@ $$
 trace trick 的核心是把 $dX$ 转到表达式末尾，并把其余部分整理成某个矩阵的转置：
 
 $$
-\operatorname{tr}(A\,dX\,B)
-=\operatorname{tr}(BA\,dX).
+\mathop{\mathrm{tr}}(A\thinspace dX\thinspace B)
+=\mathop{\mathrm{tr}}(BA\thinspace dX).
 $$
 
-一旦写成 $\operatorname{tr}(G^\top dX)$，梯度就是 $G$。
+一旦写成 $\mathop{\mathrm{tr}}(G^\top dX)$，梯度就是 $G$。
 
 ## 3. 最基础的例子：线性函数
 
 令
 
 $$
-f(X)=\operatorname{tr}(A^\top X).
+f(X)=\mathop{\mathrm{tr}}(A^\top X).
 $$
 
 微分为
 
 $$
-df=\operatorname{tr}(A^\top dX),
+df=\mathop{\mathrm{tr}}(A^\top dX),
 $$
 
 所以
@@ -108,7 +108,7 @@ $$
 使用乘积法则：
 
 $$
-df=(dx)^\top Ax+x^\top A\,dx.
+df=(dx)^\top Ax+x^\top A\thinspace dx.
 $$
 
 第一项是标量，可以转置：
@@ -137,21 +137,21 @@ $$
 令
 
 $$
-f(X)=\frac12\|AX-B\|_F^2.
+f(X)=\frac12\Vert AX-B\Vert_F^2.
 $$
 
 设残差 $R=AX-B$，则
 
 $$
-f=\frac12\operatorname{tr}(R^\top R).
+f=\frac12\mathop{\mathrm{tr}}(R^\top R).
 $$
 
 微分：
 
 $$
-df=\operatorname{tr}(R^\top dR)
-=\operatorname{tr}(R^\top A\,dX)
-=\operatorname{tr}\big((A^\top R)^\top dX\big).
+df=\mathop{\mathrm{tr}}(R^\top dR)
+=\mathop{\mathrm{tr}}(R^\top A\thinspace dX)
+=\mathop{\mathrm{tr}}\big((A^\top R)^\top dX\big).
 $$
 
 因此
@@ -192,7 +192,7 @@ $$
 
 $$
 J_{\text{softmax}}(z)
-=\operatorname{diag}(p)-pp^\top.
+=\mathop{\mathrm{diag}}(p)-pp^\top.
 $$
 
 对角项为正，非对角项为负：提高一个 logit 不只提高自己的概率，还会通过归一化压低其他类别。
@@ -212,7 +212,7 @@ $$
 $$
 S=\frac{QK^\top}{\sqrt d},
 \qquad
-P=\operatorname{softmax}_{\text{row}}(S),
+P=\mathop{\mathrm{softmax}}\nolimits_{\text{row}}(S),
 \qquad
 O=PV.
 $$
@@ -225,7 +225,7 @@ $$
 反向时， $O=PV$ 首先给出
 
 $$
-dO=dP\,V+P\,dV.
+dO=dP\thinspace V+P\thinspace dV.
 $$
 
 因此上游梯度会同时流向注意力权重 $P$ 和 value $V$；再经过 row-wise softmax 与 $QK^\top$ 流回 $Q,K$。真实实现会批量化、分头并融合 kernel，但形状逻辑不变。
@@ -236,7 +236,7 @@ $$
 
 $$
 d\log|\det X|
-=\operatorname{tr}(X^{-1}dX),
+=\mathop{\mathrm{tr}}(X^{-1}dX),
 $$
 
 因此
@@ -312,8 +312,8 @@ assert np.allclose(softmax_jacobian @ np.ones_like(z), 0.0)
 
 ## 自测
 
-1. 用微分推导 $f(W)=\tfrac12\|Wx-y\|_2^2$ 对 $W$ 的梯度。
-2. 为什么 $\operatorname{tr}(ABC)=\operatorname{tr}(BCA)$，却不能说 $ABC=CBA$？
+1. 用微分推导 $f(W)=\tfrac12\Vert Wx-y\Vert_2^2$ 对 $W$ 的梯度。
+2. 为什么 $\mathop{\mathrm{tr}}(ABC)=\mathop{\mathrm{tr}}(BCA)$，却不能说 $ABC=CBA$？
 3. softmax Jacobian 乘全 1 向量为何得到 0？
 4. batch mean 改成 batch sum，梯度尺度怎样变化？
 5. attention 的 $QK^\top$ 对 $Q$ 和 $K$ 的梯度形状各是什么？

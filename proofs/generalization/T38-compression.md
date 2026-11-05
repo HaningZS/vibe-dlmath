@@ -45,7 +45,7 @@ decoder $D$ 预先固定，模型为 $h_c=D(c)$。每个固定模型的 $[0,1]$ 
 给码 $c$ 分配 $\delta_c=\delta2^{-L(c)}$，则
 
 $$
-\Pr\!\left(R(h_c)>\widehat R_S(h_c)+
+\Pr\negthinspace\left(R(h_c)>\widehat R_S(h_c)+
 \sqrt{\frac{L(c)\log2+\log(1/\delta)}{2n}}\right)
 \leq\delta_c.
 $$

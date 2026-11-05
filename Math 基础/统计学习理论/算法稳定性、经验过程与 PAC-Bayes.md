@@ -57,7 +57,7 @@ $$
 generalization gap 是
 
 $$
-\operatorname{gen}(h,S)
+\mathop{\mathrm{gen}}(h,S)
 =L_{\mathcal D}(h)-\widehat L_S(h).
 $$
 
@@ -97,14 +97,14 @@ $$
 如果两条训练轨迹为 $w_t,w_t'$，研究
 
 $$
-\Delta_t=\|w_t-w_t'\|.
+\Delta_t=\Vert w_t-w_t'\Vert.
 $$
 
 典型递推是
 
 $$
 \Delta_{t+1}
-\le a_t\Delta_t+b_t\mathbf1\{\text{本步碰到被替换样本}\}.
+\le a_t\Delta_t+b_t\mathbf1\lbrace\text{本步碰到被替换样本}\rbrace.
 $$
 
 $a_t$ 描述更新会放大还是收缩已有差异， $b_t$ 描述真正遇到不同样本时注入多少新差异。最后用 loss 的 Lipschitz 性把参数距离转成预测损失差。
@@ -202,7 +202,7 @@ $$
 右侧仍有两份样本。引入独立 Rademacher signs
 
 $$
-\sigma_i\in\{-1,+1\},
+\sigma_i\in\lbrace-1,+1\rbrace,
 \qquad \mathbb P(\sigma_i=1)=\frac12,
 $$
 
@@ -212,7 +212,7 @@ $$
 \mathbb E
 \sup_{f\in\mathcal F}|Pf-P_nf|
 \le
-2\,\mathbb E_S\widehat{\mathfrak R}^{\pm}_S(\mathcal F),
+2\thinspace\mathbb E_S\widehat{\mathfrak R}^{\pm}_S(\mathcal F),
 $$
 
 这里为直接控制双侧偏差，定义对称经验 Rademacher complexity
@@ -238,8 +238,8 @@ $$
 
 $$
 \mathcal F
-=\{x\mapsto\langle w,x\rangle:\|w\|_2\le B\},
-\qquad \|x_i\|_2\le R,
+=\lbrace x\mapsto\langle w,x\rangle:\Vert w\Vert_2\le B\rbrace,
+\qquad \Vert x_i\Vert_2\le R,
 $$
 
 满足典型量级
@@ -268,7 +268,7 @@ $$
 在度量 $d$ 下， $\varepsilon$-cover 是有限集合
 
 $$
-\{f_1,\ldots,f_M\}
+\lbrace f_1,\ldots,f_M\rbrace
 $$
 
 使每个 $f\in\mathcal F$ 都距某个代表不超过 $\varepsilon$。最小所需数量记为
@@ -320,7 +320,7 @@ local complexity 只看一个与低风险、低方差或小 excess risk 相关�
 
 $$
 \mathcal F(r)
-=\{f\in\mathcal F: P(f-f^\star)^2\le r\}.
+=\lbrace f\in\mathcal F: P(f-f^\star)^2\le r\rbrace.
 $$
 
 若局部半径越小，复杂度也随之下降，就可以寻找 fixed point
@@ -356,7 +356,7 @@ $$
 $$
 \mathbb E_Q[f]
 \le
-D_{\mathrm{KL}}(Q\|P)
+D_{\mathrm{KL}}(Q\Vert P)
 +\log\mathbb E_P[e^f].
 $$
 
@@ -365,7 +365,7 @@ $$
 若把 $f$ 换成 $\lambda f$，整理后会出现
 
 $$
-\frac{D_{\mathrm{KL}}(Q\|P)}{\lambda}
+\frac{D_{\mathrm{KL}}(Q\Vert P)}{\lambda}
 $$
 
 与 log-MGF 项的权衡；温度 $\lambda$ 不是装饰常数。
@@ -375,13 +375,13 @@ $$
 若损失在 $[0,1]$、 $S\sim\mathcal D^n$、 $n\ge2$，且 prior $P$ 与 $S$ 独立，则以至少 $1-\delta$ 的概率，同时对所有 $Q\ll P$：
 
 $$
-\operatorname{kl}
+\mathop{\mathrm{kl}}
 \left(
-\widehat L_S(Q)\,\middle\|\,L_{\mathcal D}(Q)
+\widehat L_S(Q)\thinspace\middle\Vert\thinspace L_{\mathcal D}(Q)
 \right)
 \le
 \frac{
-D_{\mathrm{KL}}(Q\|P)
+D_{\mathrm{KL}}(Q\Vert P)
 +\log(2\sqrt n/\delta)
 }{n}.
 $$
@@ -393,7 +393,7 @@ L_{\mathcal D}(Q)
 \le
 \widehat L_S(Q)
 +\sqrt{
-\frac{D_{\mathrm{KL}}(Q\|P)+\log(2\sqrt n/\delta)}{2n}
+\frac{D_{\mathrm{KL}}(Q\Vert P)+\log(2\sqrt n/\delta)}{2n}
 }.
 $$
 
@@ -404,7 +404,7 @@ $$
 若 $P$ 是连续分布，而 $Q=\delta_w$ 是单点确定性网络，则常有
 
 $$
-D_{\mathrm{KL}}(\delta_w\|P)=+\infty.
+D_{\mathrm{KL}}(\delta_w\Vert P)=+\infty.
 $$
 
 常见处理包括给权重加随机扰动、使用离散/压缩编码、证明从随机 predictor 到单模型的反随机化，或采用专门 deterministic PAC-Bayes 结果。不能把 Gibbs risk 的公式直接把 $Q$ 删掉。

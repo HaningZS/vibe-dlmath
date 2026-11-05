@@ -68,20 +68,16 @@ $$
 
 $$
 \log\frac{\pi_t(\mathrm{ON})}{\pi_t(\mathrm{OFF})}
-=
-\log\frac{\mu_t(\mathrm{ON})}{\mu_t(\mathrm{OFF})}
-+
-\log\frac{\ell_{\mathrm{ON}}(o_t)}{\ell_{\mathrm{OFF}}(o_t)}.
+=\log\frac{\mu_t(\mathrm{ON})}{\mu_t(\mathrm{OFF})}
++\log\frac{\ell_{\mathrm{ON}}(o_t)}{\ell_{\mathrm{OFF}}(o_t)}.
 $$
 
 若 latent state 是静态的（等价于 identity transition），且给定这个静态 state 后 $o_1,\ldots,o_t$ 条件独立，则
 
 $$
-\operatorname{logit}(p_t)
-=
-\operatorname{logit}(p_0)
-+
-\sum_{k=1}^t
+\mathop{\mathrm{logit}}(p_t)
+=\mathop{\mathrm{logit}}(p_0)
++\sum_{k=1}^t
 \log\frac{\ell_{\mathrm{ON}}(o_k)}{\ell_{\mathrm{OFF}}(o_k)}.
 $$
 

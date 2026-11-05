@@ -12,7 +12,7 @@ status: self-contained-core
 ## 复用契约
 
 **对象**：有限无向图；节点初始特征；共享更新的消息传递网络
-$h_v^{t+1}=U_t(h_v^t,\operatorname{AGG}_t(\{\!\{h_u^t:u\in N(v)\}\!\}))$，aggregation 只依赖邻居多重集，readout 只依赖节点多重集。
+$h_v^{t+1}=U_t(h_v^t,\mathop{\mathrm{AGG}}\nolimits_t(\lbrace\negthinspace\lbrace h_u^t:u\in N(v)\rbrace\negthinspace\rbrace))$，aggregation 只依赖邻居多重集，readout 只依赖节点多重集。
 
 **结论**：1-WL 在同样初始标签和深度下无法区分的图，该模型也无法区分。双重花括号表示 multiset：重复次数保留，顺序不保留。
 
@@ -36,7 +36,7 @@ $h_v^{t+1}=U_t(h_v^t,\operatorname{AGG}_t(\{\!\{h_u^t:u\in N(v)\}\!\}))$，aggre
 ## 2. 1-WL 是怎样更新颜色的
 
 初始颜色 $c_v^0$ 编码初始特征。第 $t+1$ 轮把
-$(c_v^t,\{\!\{c_u^t:u\in N(v)\}\!\})$ 用 injective 编码变成新颜色。
+$(c_v^t,\lbrace\negthinspace\lbrace c_u^t:u\in N(v)\rbrace\negthinspace\rbrace)$ 用 injective 编码变成新颜色。
 比较两张图时使用同一编码规则，检查各轮颜色多重集是否不同。
 
 颜色是数学上无碰撞的记号，不是默认某个有限维神经网络已经学会的编码。

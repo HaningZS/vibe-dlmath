@@ -46,10 +46,9 @@ status: "refined-algebra"
 
 $$
 \mathrm{AUROC}(r,y)
-=
-\frac{1}{|P||N|}
+=\frac{1}{|P||N|}
 \sum_{i\in P}\sum_{j\in N}
-\left[\mathbf{1}\{r_i>r_j\}+\frac12\mathbf{1}\{r_i=r_j\}\right].
+\left[\mathbf{1}\lbrace r_i>r_j\rbrace+\frac12\mathbf{1}\lbrace r_i=r_j\rbrace\right].
 $$
 
 如果 `g` 严格单调递增，则 pairwise order 不变：
@@ -64,8 +63,7 @@ $$
 
 $$
 \mathrm{Brier}(\hat p,y)
-=
-\frac{1}{n}\sum_i(\hat p_i-y_i)^2.
+=\frac{1}{n}\sum_i(\hat p_i-y_i)^2.
 $$
 
 Brier 对概率数值敏感，而不仅仅对排序敏感。
@@ -74,8 +72,7 @@ Brier 对概率数值敏感，而不仅仅对排序敏感。
 
 $$
 \mathbb E[(q-Y)^2\mid X=x]
-=
-(q-p(x))^2+p(x)(1-p(x)).
+=(q-p(x))^2+p(x)(1-p(x)).
 $$
 
 因此条件期望 Brier risk 在 $q=p(x)$ 处唯一最小。这个结论说明诚实概率最优，但不意味着有限样本上的某个模型已经 calibrated。
@@ -84,8 +81,7 @@ $$
 
 $$
 R_{\mathrm{Brier}}(q)-R_{\mathrm{Brier}}(p)
-=
-\mathbb E[(q(X)-p(X))^2]\ge0,
+=\mathbb E[(q(X)-p(X))^2]\ge0,
 $$
 
 等号当且仅当 $q(X)=p(X)$ almost surely。

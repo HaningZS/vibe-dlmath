@@ -34,7 +34,7 @@ status: self-contained-core
 
 $$
 E_M=\sup_{f\in\mathcal F}
-\inf_{h\in\mathcal H_M}\|f-h\|_\infty.
+\inf_{h\in\mathcal H_M}\Vert f-h\Vert_\infty.
 $$
 
 $M$ 可以是非零参数数，但若允许无限精度实数，参数数并不等于描述长度，参见 [T38](../generalization/T38-compression.md)。
@@ -51,10 +51,10 @@ $$
 
 $$
 h_m(x)=f(0)+s_0x+
-\sum_{k=1}^{m-1}(s_k-s_{k-1})\operatorname{ReLU}(x-x_k).
+\sum_{k=1}^{m-1}(s_k-s_{k-1})\mathop{\mathrm{ReLU}}(x-x_k).
 $$
 
-每越过一个节点，一个新 ReLU 改变斜率；把这些“折页”拼起来，就得到插值曲线。由于 $x\geq0$， $s_0x$ 也可写为 $s_0\operatorname{ReLU}(x)$，所以标准单隐藏层网络使用至多 $m$ 个隐藏单元即可实现这段构造。
+每越过一个节点，一个新 ReLU 改变斜率；把这些“折页”拼起来，就得到插值曲线。由于 $x\geq0$， $s_0x$ 也可写为 $s_0\mathop{\mathrm{ReLU}}(x)$，所以标准单隐藏层网络使用至多 $m$ 个隐藏单元即可实现这段构造。
 
 这里先使用精确实数权重。有限精度实现还需加入参数量化和数值计算造成的误差。
 

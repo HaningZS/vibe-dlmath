@@ -37,19 +37,19 @@ margin 是当前领先类别的优势；Lipschitz 常数是扰动能改变这种
 设当前类别 $a$， $s_a(x)-s_b(x)\ge\gamma_b>0$。若 $s_c$ 在球内为 $L_c$-Lipschitz，则
 
 $$
-s_a(x+u)-s_b(x+u)\ge\gamma_b-(L_a+L_b)\|u\|.
+s_a(x+u)-s_b(x+u)\ge\gamma_b-(L_a+L_b)\Vert u\Vert.
 $$
 
-因此 $\|u\|<\min_{b\ne a}\gamma_b/(L_a+L_b)$ 保证类别不变；分母为 0 且 margin 正时该对无限制。统一 $L$ 给出 $\gamma/(2L)$。
+因此 $\Vert u\Vert<\min_{b\ne a}\gamma_b/(L_a+L_b)$ 保证类别不变；分母为 0 且 margin 正时该对无限制。统一 $L$ 给出 $\gamma/(2L)$。
 
 深网络用各层 operator norm 乘积控制全局 Lipschitz 时，需把 residual、normalization、attention 和激活常数都算进去。宽松常数可能让证书接近 0。
 
 ## 3. Gaussian 平移的最坏事件
 
-令 $P=N(x,\sigma^2I)$、 $Q=N(x+u,\sigma^2I)$， $k=\|u\|_2/\sigma$。沿 $u$ 的标准化投影记为 $z$； $P$ 下 $z\sim N(0,1)$， $Q$ 下 $z\sim N(k,1)$，密度比 $dQ/dP=e^{kz-k^2/2}$ 单调增加。
+令 $P=N(x,\sigma^2I)$、 $Q=N(x+u,\sigma^2I)$， $k=\Vert u\Vert_2/\sigma$。沿 $u$ 的标准化投影记为 $z$； $P$ 下 $z\sim N(0,1)$， $Q$ 下 $z\sim N(k,1)$，密度比 $dQ/dP=e^{kz-k^2/2}$ 单调增加。
 
-固定 $P(A)=p$，最小 $Q(A)$ 的集合是左半空间 $H=\{z\le\Phi^{-1}(p)\}$。证明：令其边界密度比为 $c$，则
-$\int(1_A-1_H)(dQ-c\,dP)\ge0$；在 $H$ 内两个因子均非正，在外均非负，且 $P(A)-P(H)=0$。所以 $Q(A)\ge Q(H)$。
+固定 $P(A)=p$，最小 $Q(A)$ 的集合是左半空间 $H=\lbrace z\le\Phi^{-1}(p)\rbrace$。证明：令其边界密度比为 $c$，则
+$\int(1_A-1_H)(dQ-c\thinspace dP)\ge0$；在 $H$ 内两个因子均非正，在外均非负，且 $P(A)-P(H)=0$。所以 $Q(A)\ge Q(H)$。
 
 右半空间同理最大化 $Q(A)$。扩大/缩小事件后也得到概率界版本：
 
@@ -66,7 +66,7 @@ $$
 R=\frac\sigma2\big[\Phi^{-1}(p_A)-\Phi^{-1}(p_B)\big]
 $$
 
-保证所有 $\|u\|_2<R$ 下仍预测 $A$。两边的 Gaussian 界保持严格领先即可。使用 $p_B=1-p_A$ 且 $p_A>1/2$ 得到简化的 $R=\sigma\Phi^{-1}(p_A)$。
+保证所有 $\Vert u\Vert_2<R$ 下仍预测 $A$。两边的 Gaussian 界保持严格领先即可。使用 $p_B=1-p_A$ 且 $p_A>1/2$ 得到简化的 $R=\sigma\Phi^{-1}(p_A)$。
 
 ## 5. 有限采样怎样保持认证含义
 

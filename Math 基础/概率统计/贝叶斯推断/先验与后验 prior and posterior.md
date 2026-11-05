@@ -24,9 +24,7 @@ $$
 - **似然** $p(D\mid\theta)$：固定已观测的 $D$，把它视为 $\theta$ 的函数；它通常不是关于 $\theta$ 的归一化概率分布；
 - **证据/边际似然**
 
-  $$
-  p(D)=\int p(D\mid\theta)p(\theta)\,d\theta;
-  $$
+  $$p(D)=\int p(D\mid\theta)p(\theta)\thinspace d\theta;$$
 
 - **后验** $p(\theta\mid D)$：结合先验与数据后的参数分布。
 
@@ -53,8 +51,8 @@ $$
 贝叶斯建模通常关心新观测 $x_*$：
 
 $$
-p(x_*\mid D)
-=\int p(x_*\mid\theta)p(\theta\mid D)\,d\theta.
+p(x_\ast\mid D)
+=\int p(x_\ast\mid\theta)p(\theta\mid D)\thinspace d\theta.
 $$
 
 它对后验参数不确定性进行积分，和只使用一个点估计 $\hat\theta$ 的预测不同。
@@ -72,7 +70,7 @@ $$
 自回归 LLM 输出
 
 $$
-p_\phi(x_t\mid x_{<t}),
+p_\phi(x_t\mid x_{< t}),
 $$
 
 这是给定上下文的**条件预测分布**。上下文确实改变预测，但普通 Transformer 前向传播并没有显式定义参数先验 $p(\phi)$、计算参数后验 $p(\phi\mid D)$，也没有执行贝叶斯定理。

@@ -13,7 +13,7 @@ reviewed: 2026-09-01
 很多概率计算最终都长成一个难积分：
 
 $$
-I=\mathbb E_{X\sim p}[f(X)]=\int f(x)p(x)\,dx.
+I=\mathbb E_{X\sim p}[f(X)]=\int f(x)p(x)\thinspace dx.
 $$
 
 蒙特卡洛（Monte Carlo, MC）的核心想法非常朴素：**不会精确算整锅汤的平均味道，就按正确方式舀很多勺，再取平均。** 重要性采样改进舀汤位置，把样本集中到真正影响答案的区域；MCMC 则在无法独立舀样时，让一条满足特定规则的随机轨迹逐渐代表目标分布。
@@ -39,15 +39,15 @@ $$
 在期望存在等条件下，大数定律使 $\hat I_N\to I$；若方差有限，中心极限定理给出近似标准误
 
 $$
-\operatorname{SE}(\hat I_N)
-\approx\sqrt{\frac{\operatorname{Var}_p[f(X)]}{N}}.
+\mathop{\mathrm{SE}}(\hat I_N)
+\approx\sqrt{\frac{\mathop{\mathrm{Var}}\nolimits_p[f(X)]}{N}}.
 $$
 
 ### 1.1 为什么它强大
 
 确定性网格积分会随维度指数爆炸，而在独立同分布、方差有限等条件下，MC 的典型标准误仍按 $N^{-1/2}$ 缩小，速率指数本身不直接依赖维度。因此它是贝叶斯推断、强化学习回报估计、渲染和生成模型中的基础工具。
 
-但“速率不显含维度”不等于维度免费： $\operatorname{Var}[f(X)]$ 这个常数可能随维度急剧增大，单个样本的生成与评估成本也会变高，IS/MCMC 的 proposal 还可能在高维中迅速失配。因此高维问题仍可能需要指数级计算，只是困难藏在方差常数、采样器和每步成本里，而不是写在 $N^{-1/2}$ 的指数上。
+但“速率不显含维度”不等于维度免费： $\mathop{\mathrm{Var}}[f(X)]$ 这个常数可能随维度急剧增大，单个样本的生成与评估成本也会变高，IS/MCMC 的 proposal 还可能在高维中迅速失配。因此高维问题仍可能需要指数级计算，只是困难藏在方差常数、采样器和每步成本里，而不是写在 $N^{-1/2}$ 的指数上。
 
 ### 1.2 为什么它也可能很浪费
 
@@ -60,7 +60,7 @@ $$
 选择较容易采样的提议分布 $q$，并要求凡是 $f(x)p(x)\ne0$ 的地方都有 $q(x)>0$。则
 
 $$
-I=\int f(x)\frac{p(x)}{q(x)}q(x)\,dx
+I=\int f(x)\frac{p(x)}{q(x)}q(x)\thinspace dx
 =\mathbb E_{X\sim q}[f(X)w(X)],
 $$
 
@@ -99,7 +99,7 @@ $$
 常用权重有效样本量诊断为
 
 $$
-\operatorname{ESS}_w
+\mathop{\mathrm{ESS}}\nolimits_w
 =\frac{(\sum_i w_i)^2}{\sum_i w_i^2}
 =\frac1{\sum_i\bar w_i^2}.
 $$
@@ -112,14 +112,12 @@ $$
 
 $$
 p(\theta\mid D)\propto p(D\mid\theta)p(\theta),
-
 $$
 
 归一化常数难算，直接独立采样也困难。MCMC 构造一条 Markov 链
 
 $$
 X_0\to X_1\to X_2\to\cdots
-
 $$
 
 使目标分布 $\pi$ 成为其平稳分布；链充分混合后，沿轨迹的平均值可估计 $\mathbb E_\pi[f(X)]$。
@@ -281,5 +279,5 @@ assert lag1 > 0.0              # MCMC 样本不是独立样本
 - Robert & Casella, *Monte Carlo Statistical Methods*, 2nd ed.
 - Owen, [Monte Carlo Theory, Methods and Examples](https://artowen.su.domains/mc/).
 - Neal, [MCMC Using Hamiltonian Dynamics](https://arxiv.org/abs/1206.1901).
-- Vehtari et al., [Rank-Normalization, Folding, and Localization: An Improved $\hat R$](https://projecteuclid.org/journals/bayesian-analysis/volume-16/issue-2/Rank-Normalization-Folding-and-Localization--An-Improved-R%CB%86-for/10.1214/20-BA1221.full), 2021.
+- Vehtari et al., [Rank-Normalization, Folding, and Localization: An Improved R̂](https://projecteuclid.org/journals/bayesian-analysis/volume-16/issue-2/Rank-Normalization-Folding-and-Localization--An-Improved-R%CB%86-for/10.1214/20-BA1221.full), 2021.
 - Stan, [MCMC Sampling](https://mc-stan.org/docs/reference-manual/mcmc.html).

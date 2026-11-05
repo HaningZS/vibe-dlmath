@@ -1,69 +1,81 @@
 <p align="center">
-  <img src="assets/readme-hero.svg" alt="vibe-dlmath banner: the title and the tagline “Intuition into arguments. Every assumption in the open.” beside a spiral galaxy whose two arms are heavy-ball optimization paths spiralling along loss level sets into the minimizer θ*" width="100%">
+  <img src="assets/readme-hero.svg" alt="vibe-dlmath banner: the title and the tagline “Follow the classic proof routes. Every step in the open.” beside a spiral galaxy whose two arms are heavy-ball optimization paths spiralling along loss level sets into the minimizer θ*" width="100%">
 </p>
 
 <p align="center">
-  <strong>Make the intuition clear. Make the proof obligations explicit.</strong><br>
-  Deep learning theory · Classical and recent proof methods · A constrained AI proof workflow
+  <strong>Let AI write proofs along classic proof routes.</strong><br>
+  Deep learning theory · Proof routes distilled from classic and recent papers · A skill for Codex and Claude Code
 </p>
 
 <p align="center">
   <a href="README.md">简体中文</a> · English<br>
-  <a href="Math%20基础/Math%20基础目录.md">Math prerequisites</a> ·
-  <a href="proofs/README.md">Proof library</a> ·
+  <a href="proofs/README.md">Proof routes</a> ·
   <a href="docs/PROOF_DISTILLATION.md">Proof distillation</a> ·
+  <a href="docs/SKILL.md">Install the skill</a> ·
   <a href="docs/AI_PROOF_CONTRACT.md">AI proof contract</a> ·
-  <a href="docs/SKILL.md">Install the skill</a>
+  <a href="Math%20基础/Math%20基础目录.md">Math prerequisites</a>
 </p>
 
 ---
 
-**vibe-dlmath** is a library of mathematical prerequisites, reusable proof templates, and paper evidence for AI researchers. It also provides an installable agent skill for selecting, explaining, constructing, and reviewing proofs. The workflow connects intuition to explicit assumptions, justified steps, and clearly stated limits.
+**vibe-dlmath** distills the proofs in deep learning theory papers into reusable route cards. Each card states the problem it solves, its key steps, the assumption behind each step, and which steps must be re-proved when the setting changes. Installed as an agent skill, it has the AI find the closest route for your problem and expand the proof along it; wherever your setting departs from the route, the departure becomes an explicit missing lemma, added assumption, or counterexample.
 
 **8 topics · 47 template and tool cards · 56 prerequisite notes · 101 paper records.** The notes, catalog, and discovery tools work offline. Paper PDFs and TeX sources are optional downloads. The mathematical corpus is primarily in Chinese, with standard mathematical notation and Chinese/English search keywords; this README is an English entry point, not a claim that every linked document is translated.
 
 ## Motivation
 
-**Understanding a paper's conclusion is not the same as being able to reuse its proof.** Changing the optimizer, sampling procedure, or error metric can invalidate an independence assumption, a smoothness condition, or the scope of a quantifier. We want to preserve not only what a paper proves, but why its key argument works and where it stops working.
+**Many deep learning researchers have the intuition and the experiments, but not the habits of writing the proof.** Which lemma comes first in a convergence or generalization bound, which inequality to use at which step, how precisely to state the assumptions: these conventions are scattered across papers and hard to learn from their conclusions alone.
 
-AI makes derivations faster, but also makes fluent, unjustified proofs easier to produce. For example, a vanishing training gradient is an optimization statement; it does not by itself establish optimal test risk. Generalization and the approximation capacity of the function class still need arguments. A sequence of plausible formulas is not a closed logical chain.
+**Proofs that AI writes from scratch often take strange, unconventional routes.** The model invents its own decompositions and notation, assumes more than it states, or skips an argument between two formulas. For example, a vanishing training gradient is an optimization statement; it does not by itself establish optimal test risk, which still needs generalization and approximation arguments. Such proofs read fluently but are hard for reviewers and collaborators to check.
 
-This library connects learning with review: explain concepts through intuition and prerequisites, distill classical and recent arguments into templates with explicit conditions, then track each proof obligation against a derivation or a precisely located source. **Help researchers understand, adapt, and challenge an argument; require agents to expose its evidence, limits, and unresolved gaps.**
+**Classic papers already provide routes that have been checked many times.** Descent lemma plus telescoping, ghost-sample symmetrization, coupling plus Grönwall: these moves recur in new problems. This library distills them from classic and recent papers, records what each step depends on, and has the AI expand a proof along an established route instead of improvising one. Any departure from the route must be stated.
 
-The goal is reusable, traceable, reviewable mathematical work—not one-click correct proofs. A template does not replace a theorem, and skill instructions are not formal verification. Important conclusions still need step-by-step review.
+A route gives a proof a source and a familiar shape; it does not make the conclusion true. A template does not replace a theorem, and skill instructions are not formal verification. Important conclusions still need step-by-step review.
 
-## What a card looks like
+## What a route looks like
 
-The example from the motivation, a vanishing training gradient versus optimal test risk, becomes three separately proved terms in [T32](proofs/generalization/T32-excess-risk-decomposition.md):
+Take a convergence bound for clipped SGD under heavy-tailed noise. The library's route combines two cards:
+
+- [T01](proofs/optimization/T01-descent.md) is the classic skeleton of nonconvex SGD analysis: smoothness gives a one-step descent inequality; take conditional expectations, telescope over $t$, then choose the step size.
+- [T16](proofs/optimization/T16-heavy-tail-clipping.md) shows what clipping changes: the clipped gradient $\widetilde g_t$ is no longer unbiased, so it is split into a martingale difference and a clipping bias, each controlled separately.
 
 $$
-R(\widehat h)-R^\star
-\leq\epsilon_{\rm app}+2\Delta_S+\epsilon_{\rm opt}
+\widetilde g_t-\nabla f(x_t)=
+\underbrace{\widetilde g_t-\mathbb E[\widetilde g_t\mid\mathcal F_t]}_{m_t}+
+\underbrace{\mathbb E[\widetilde g_t\mid\mathcal F_t]-\nabla f(x_t)}_{b_t}
 $$
 
-Here $\widehat h$ is the trained output and $R^\star$ is the comparison risk (the Bayes risk when the infimum ranges over all measurable predictors). The approximation error $\epsilon_{\rm app}$ asks how close the best hypothesis in the class comes to that benchmark; the estimation term $\Delta_S$, the largest gap between empirical and population risk over the class, asks whether the finite sample evaluates candidates reliably; the optimization gap $\epsilon_{\rm opt}$ asks whether training found a candidate with low enough empirical risk. A vanishing gradient is a stationarity statement: it controls the third term only through an extra bridge such as PL, convexity, or an NTK regime, and the first two terms need their own proofs.
+Substituting into T01's descent inequality (with $f$ being $L$-smooth, step size $\eta$, and a predictable threshold $\tau_t$) gives a one-step bound that telescopes as before:
 
-> **Failure example:** for $f(w)=(w^2-1)^2$, the gradient at $w=0$ is zero, yet the function value is 1 above the global minimum. A small gradient is not automatically a small optimization gap.
+$$
+\mathbb E[f(x_{t+1})\mid\mathcal F_t]
+\le f(x_t)-\frac\eta2\Vert\nabla f(x_t)\Vert^2+\frac\eta2\Vert b_t\Vert^2+\frac{L\eta^2\tau_t^2}{2}
+$$
 
-Every card follows the same structure: a reuse contract (input objects, conclusion, required assumptions, failure example), the derivation, interfaces to other templates, and the obligations to discharge when instantiating it, for example:
+> **Failure example:** the true gradient is 0 and the stochastic gradient equals 9 with probability 0.1 and $-1$ with probability 0.9, so its mean is zero; clipped at threshold 1, its mean becomes $-0.8$. The clipped gradient is no longer an unbiased estimate, so the step in T01 that uses unbiasedness to remove the first-order noise term must be rewritten.
 
-- [ ] State whether the target is population excess risk, the empirical optimization gap, or stationarity.
-- [ ] Give a valid bound for each of approximation, estimation, and optimization.
+The cards also mark where the route stops: this bound is only an intermediate inequality in expectation. A high-probability convergence claim also needs a Freedman-type martingale bound for $\langle\nabla f(x_t),m_t\rangle$, with the gradient bound and threshold conditions closed on the same event.
 
-These excerpts are translated; the card itself is written in Chinese.
+Every card follows the same structure: a reuse contract (input objects, conclusion, required assumptions, failure example), the proof skeleton, interfaces to other cards, source papers, and the obligations to discharge when instantiating it. T16's obligations, for example:
+
+- [ ] After clipping the full observed gradient, re-center it.
+- [ ] Bound the bias, the fluctuation, and the second-order term separately.
+- [ ] Close the threshold and gradient conditions on the same event.
+
+These excerpts are translated; the cards themselves are written in Chinese.
 
 ## Choose an entry point
 
 | Your task | Start here |
 |---|---|
-| Rebuild mathematical foundations | [Learning roadmap](Math%20基础/AI%20Researcher%20数学学习路线.md) → [Proof prerequisites](Math%20基础/证明工具/AI%20理论证明前置学习路线.md) |
+| Find a proof route for your problem | [Proof library](proofs/README.md) → [Proof primitives](通用证明原语.md) → [Instantiation workflow](docs/PROOF_WORKFLOW.md) |
+| Have an AI follow a route and check for missing assumptions | [Install the skill](docs/SKILL.md) → [AI proof contract](docs/AI_PROOF_CONTRACT.md) → [Theory review](docs/THEORY_REVIEW.md) |
 | Understand how a DL guarantee fits together | [Theory framework and coverage](docs/DL_THEORY_FRAMEWORK.md) → [An end-to-end learning proof](docs/END_TO_END_LEARNING_PROOF.md) |
-| Find a reusable argument | [Proof library](proofs/README.md) → [Proof primitives](通用证明原语.md) → [Instantiation workflow](docs/PROOF_WORKFLOW.md) |
-| Extract a method from a paper | [Proof distillation](docs/PROOF_DISTILLATION.md) → [October 2026 research review](docs/RECENT_RESEARCH_2026_10.md) → [Paper catalog](PAPERS.md) |
-| Review an AI-generated proof | [AI proof contract](docs/AI_PROOF_CONTRACT.md) → [Claim ledger](templates/PROOF_LEDGER.json) → [Theory review](docs/THEORY_REVIEW.md) |
+| Distill a new route from a paper | [Proof distillation](docs/PROOF_DISTILLATION.md) → [October 2026 research review](docs/RECENT_RESEARCH_2026_10.md) → [Paper catalog](PAPERS.md) |
+| Rebuild mathematical foundations | [Learning roadmap](Math%20基础/AI%20Researcher%20数学学习路线.md) → [Proof prerequisites](Math%20基础/证明工具/AI%20理论证明前置学习路线.md) |
 | Review release contents and later changes | [Initial release and release notes](CHANGELOG.md) |
 
-## Start offline
+## Start offline: find a route, then let the AI follow it
 
 First obtain the complete repository:
 
@@ -78,24 +90,22 @@ Use **Python 3.11+** consistently. If your system `python3` is older, use an ins
 Run the following commands from the repository root. No third-party Python packages are required.
 
 ```bash
-# Search offline: each hit gives an ID, a one-line purpose, and the card path.
-python3 scripts/proof_templates.py search "Bayes risk" --limit 3
+# Search offline for candidate routes: each hit gives an ID, a one-line purpose, and the card path.
+python3 scripts/proof_templates.py search "heavy-tailed clipping SGD" --limit 2
 ```
 
 ```text
-T32 [proof-template] 把总体 excess risk 拆成逼近、统计估计与经验优化误差。
-  proofs/generalization/T32-excess-risk-decomposition.md
-T49 [proof-template] 由 binary log-loss excess 推到分类 excess，并保留模型与裁剪误差。
-  proofs/generalization/T49-surrogate-bayes-risk.md
-T18 [proof-template] 用交换性和名次对称性证明边际覆盖。
-  proofs/statistics/T18-split-conformal.md
+T16 [proof-template] 把裁剪梯度分成 centered martingale 与 clipping bias。
+  proofs/optimization/T16-heavy-tail-clipping.md
+T01 [proof-template] 把单步目标下降累积成平均梯度平方界。
+  proofs/optimization/T01-descent.md
 ```
 
-Card summaries are in Chinese; English keywords such as "Bayes risk" still retrieve them.
+Card summaries are in Chinese; English keywords such as "heavy-tailed clipping" still retrieve them.
 
 ```bash
-# Read a candidate's assumptions, conclusion, and failure boundaries.
-python3 scripts/proof_templates.py show T32
+# Read a route card's assumptions, proof skeleton, and failure boundaries.
+python3 scripts/proof_templates.py show T16
 
 # Optional: install the skill (pick one). Codex, linked into ~/.codex/skills:
 python3 scripts/install_skill.py
@@ -108,26 +118,26 @@ Keep the repository at a stable location: the installer creates a symlink and re
 An example request after installation (invoke the skill with `$vibe-dlmath` in Codex or `/vibe-dlmath` in Claude Code):
 
 ```text
-Use $vibe-dlmath to review this claim:
-"The training gradient tends to zero, so test risk converges to Bayes risk."
-Explain the intuition, then fix the objects, quantifiers, randomness,
-and algorithm output. List every proof obligation and its evidence.
-If the claim fails, give a counterexample and a valid conditional version.
+Use $vibe-dlmath to prove a convergence bound for clipped SGD under heavy-tailed noise.
+First find the closest proof route in the library; say which card each step
+follows and where it departs. Keep the original assumptions and quantifiers,
+and list every proof obligation with its source. Where a gap remains, name
+the missing lemma, the added assumption, or a counterexample.
 ```
 
 To create an unfinished worksheet for your own problem:
 
 ```bash
-python3 scripts/proof_templates.py scaffold T32 T33 \
-  --problem "Connect empirical optimization error to population risk" \
+python3 scripts/proof_templates.py scaffold T01 T16 \
+  --problem "Convergence of clipped SGD under heavy-tailed noise" \
   --out my-proof.md
 ```
 
-The worksheet records obligations still to be resolved and refuses to overwrite an existing file. Search results are candidates; applicability depends on the actual mathematical objects and assumptions.
+The worksheet records obligations still to be resolved and refuses to overwrite an existing file. Search results are candidates; which route applies depends on the actual mathematical objects and assumptions.
 
-## Distill the proof, preserve its scope
+## Where the routes come from: proof distillation
 
-The [distillation workflow](docs/PROOF_DISTILLATION.md) connects classical arguments to recent papers through five steps:
+Every card is distilled from proofs in papers. The [distillation workflow](docs/PROOF_DISTILLATION.md) keeps the original theorem's scope and extracts only the steps that transfer; turning a new paper into a new route follows the same five steps:
 
 1. Fix the source version, theorem, assumptions, and proof location.
 2. Identify the reusable mechanism, such as descent, coupling, a potential function, or a change of measure.
@@ -139,7 +149,18 @@ Start with worked routes for [descent with bias and variance](extensions/经典�
 
 For a complete worked argument, see the [end-to-end learning proof](docs/END_TO_END_LEARNING_PROOF.md). Use the [theorem dossier](templates/THEOREM_DOSSIER.md) when developing a new result.
 
-## Constraints for AI-assisted proofs
+## Guardrails: every departure must be stated
+
+Following a route is not copying it. Changing the optimizer, sampling procedure, or error metric can invalidate an independence assumption, a smoothness condition, or the scope of a quantifier. "The training gradient tends to zero, so test risk converges to Bayes risk" skips two arguments; [T32](proofs/generalization/T32-excess-risk-decomposition.md) splits the excess risk into three terms that each need a proof:
+
+$$
+R(\widehat h)-R^\star
+\leq\epsilon_{\rm app}+2\Delta_S+\epsilon_{\rm opt}
+$$
+
+Here $\widehat h$ is the trained output and $R^\star$ is the comparison risk (the Bayes risk when the infimum ranges over all measurable predictors). A vanishing gradient is a stationarity statement: it controls the optimization gap $\epsilon_{\rm opt}$ only through an extra bridge such as PL, convexity, or an NTK regime, and the approximation error $\epsilon_{\rm app}$ and estimation term $\Delta_S$ need their own proofs.
+
+> **Failure example:** for $f(w)=(w^2-1)^2$, the gradient at $w=0$ is zero, yet the function value is 1 above the global minimum.
 
 The [AI proof contract](docs/AI_PROOF_CONTRACT.md) requires explicit proof obligations and forbids silently adding assumptions, changing quantifiers, or inventing references. An experiment, numerical check, or search match cannot stand in for a mathematical derivation. When a step remains open, the output should identify the missing assumption, unproved lemma, counterexample, or conditional conclusion.
 

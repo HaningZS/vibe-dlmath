@@ -36,10 +36,10 @@ $$
 $$
 x_{t+1}
 =\arg\min_x
-\left\{
+\left\lbrace
 \eta\langle g_t,x\rangle
-+\frac12\|x-x_t\|_2^2
-\right\}.
++\frac12\Vert x-x_t\Vert_2^2
+\right\rbrace.
 $$
 
 第一项希望沿梯度下降，第二项阻止一步走太远。这里“太远”使用欧氏平方距离。
@@ -52,7 +52,7 @@ $$
 
 $$
 \psi^*(y)
-=\sup_x\{\langle y,x\rangle-\psi(x)\}.
+=\sup_x\lbrace\langle y,x\rangle-\psi(x)\rbrace.
 $$
 
 它把 primal 变量 $x$ 转到 dual 变量 $y$。由定义立即得到 Fenchel–Young：
@@ -91,11 +91,11 @@ $$
 - 不满足三角不等式；
 - 所以叫 divergence，不是 metric。
 
-若 $\psi$ 关于范数 $\|\cdot\|$ 为 $\sigma$-strongly convex：
+若 $\psi$ 关于范数 $\Vert\cdot\Vert$ 为 $\sigma$-strongly convex：
 
 $$
 D_\psi(x,y)
-\ge\frac\sigma2\|x-y\|^2.
+\ge\frac\sigma2\Vert x-y\Vert^2.
 $$
 
 这条下界让 Bregman potential 能控制真实参数距离。
@@ -105,13 +105,13 @@ $$
 ### 4.1 欧氏势函数
 
 $$
-\psi(x)=\frac12\|x\|_2^2
+\psi(x)=\frac12\Vert x\Vert_2^2
 $$
 
 给出
 
 $$
-D_\psi(x,y)=\frac12\|x-y\|_2^2.
+D_\psi(x,y)=\frac12\Vert x-y\Vert_2^2.
 $$
 
 因此普通 projected gradient descent 是 Mirror Descent 的欧氏特例。
@@ -129,7 +129,7 @@ $$
 $$
 D_\psi(x,y)
 =\sum_i x_i\log\frac{x_i}{y_i}
-=D_{\mathrm{KL}}(x\|y).
+=D_{\mathrm{KL}}(x\Vert y).
 $$
 
 方向、定义域和共同支撑不能省略。若 $x_i>0$ 而 $y_i=0$，KL 为无穷；这不是数值小问题，而是几何边界。
@@ -154,10 +154,10 @@ $$
 $$
 x_{t+1}
 =\arg\min_{x\in\mathcal X}
-\left\{
+\left\lbrace
 \eta_t\langle g_t,x\rangle
 +D_\psi(x,x_t)
-\right\}.
+\right\rbrace.
 $$
 
 它把线性化损失和“不要离 $x_t$ 太远”放在一起，只是距离换成 Bregman divergence。
@@ -194,7 +194,7 @@ $$
 
 $$
 \langle g_t,x_t-x_{t+1}\rangle
-\le\|g_t\|_*\|x_t-x_{t+1}\|,
+\le\Vert g_t\Vert_*\Vert x_t-x_{t+1}\Vert,
 $$
 
 再由 Young 和 strong convexity 吸收到 $D_\psi(x_{t+1},x_t)$，得到典型界：
@@ -203,7 +203,7 @@ $$
 \eta_t\langle g_t,x_t-u\rangle
 \le
 D_\psi(u,x_t)-D_\psi(u,x_{t+1})
-+\frac{\eta_t^2}{2\sigma}\|g_t\|_*^2.
++\frac{\eta_t^2}{2\sigma}\Vert g_t\Vert_*^2.
 $$
 
 固定步长求和时 Bregman 项 telescope；这就是 regret proof 的核心骨架。
@@ -213,7 +213,7 @@ $$
 在线学习在每轮 $t$ 先选择 $x_t\in\mathcal X$，再观察凸损失 $\ell_t$ 并支付 $\ell_t(x_t)$。相对固定比较点 $u$ 的 static regret 为
 
 $$
-\operatorname{Reg}_T(u)
+\mathop{\mathrm{Reg}}\nolimits_T(u)
 =\sum_{t=1}^T\big(\ell_t(x_t)-\ell_t(u)\big).
 $$
 
@@ -227,13 +227,13 @@ $$
 若步长固定为 $\eta$，把上一节的一步界求和，并假设 $\psi$ 关于所选范数为 $\sigma$-strongly convex，可得
 
 $$
-\operatorname{Reg}_T(u)
+\mathop{\mathrm{Reg}}\nolimits_T(u)
 \le
 \frac{D_\psi(u,x_1)}{\eta}
-+\frac{\eta}{2\sigma}\sum_{t=1}^T\|g_t\|_*^2.
++\frac{\eta}{2\sigma}\sum_{t=1}^T\Vert g_t\Vert_*^2.
 $$
 
-若 $D_\psi(u,x_1)\le D^2$ 且 $\|g_t\|_*\le G$，选择 $\eta$ 为 $1/\sqrt T$ 量级即可得到 $O(\sqrt T)$ static regret。这个结论依赖 convex loss、固定 comparator、Bregman 直径与 dual-gradient bound；不能直接搬到任意非凸训练 loss。
+若 $D_\psi(u,x_1)\le D^2$ 且 $\Vert g_t\Vert_*\le G$，选择 $\eta$ 为 $1/\sqrt T$ 量级即可得到 $O(\sqrt T)$ static regret。这个结论依赖 convex loss、固定 comparator、Bregman 直径与 dual-gradient bound；不能直接搬到任意非凸训练 loss。
 
 ## 8. Negative entropy 导出 multiplicative weights
 
@@ -266,10 +266,10 @@ Follow-the-Regularized-Leader（FTRL）常写成
 $$
 x_{t+1}
 =\arg\min_{x\in\mathcal X}
-\left\{
+\left\lbrace
 \sum_{s=1}^t\langle g_s,x\rangle
 +\frac1\eta\psi(x)
-\right\}.
+\right\rbrace.
 $$
 
 Mirror Descent 使用局部 Bregman proximal step，FTRL 使用累计线性损失加 regularizer。在线性损失、特定 regularizer 和更新约定下二者可以等价或紧密对应，但变步长、约束、复合损失和近似解会改变关系。
@@ -283,10 +283,10 @@ Mirror Descent 使用局部 Bregman proximal step，FTRL 使用累计线性损�
 $$
 \pi_{t+1}
 =\arg\max_\pi
-\left\{
+\left\lbrace
 \langle r_t,\pi\rangle
--\frac1\eta D_{\mathrm{KL}}(\pi\|\pi_t)
-\right\}.
+-\frac1\eta D_{\mathrm{KL}}(\pi\Vert\pi_t)
+\right\rbrace.
 $$
 
 这在有限动作单纯形上给指数加权更新。但 RLHF 中还可能使用相对固定 reference policy 的 KL，它属于目标正则，不一定等于相邻迭代之间的 trust region。

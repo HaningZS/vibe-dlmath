@@ -13,7 +13,7 @@ operator norm 回答的是：在所有单位方向中，最坏的放大误差有
 对对称矩阵 $E$，
 
 $$
-\|E\|_{\mathrm{op}}=\sup_{\|u\|=1}|u^\top E u|.
+\Vert E\Vert_{\mathrm{op}}=\sup_{\Vert u\Vert=1}|u^\top E u|.
 $$
 
 矩阵 Bernstein 控制随机矩阵和的这个最坏方向偏差。
@@ -23,20 +23,20 @@ $$
 设 $X_1,\ldots,X_n$ 是独立、零均值、 $d\times d$ 自伴矩阵，且几乎处处
 
 $$
-\|X_i\|_{\mathrm{op}}\leq R.
+\Vert X_i\Vert_{\mathrm{op}}\leq R.
 $$
 
 定义方差代理
 
 $$
-v=\left\|\sum_i\mathbb E[X_i^2]\right\|_{\mathrm{op}}.
+v=\left\Vert\sum_i\mathbb E[X_i^2]\right\Vert_{\mathrm{op}}.
 $$
 
 一个常用双侧版本为
 
 $$
-\Pr\!\left(\left\|\sum_iX_i\right\|_{\mathrm{op}}\geq t\right)
-\leq2d\exp\!\left(-\frac{t^2}{2(v+Rt/3)}\right).
+\Pr\negthinspace\left(\left\Vert\sum_iX_i\right\Vert_{\mathrm{op}}\geq t\right)
+\leq2d\exp\negthinspace\left(-\frac{t^2}{2(v+Rt/3)}\right).
 $$
 
 不要把 $X_i^2$ 理解成逐元素平方；这里是矩阵乘法。也不要把仅有有限二阶矩写成“满足有界矩阵 Bernstein”。
@@ -57,7 +57,7 @@ $$
 
 ## 4. 把样本协方差写成随机矩阵和
 
-设 $x_i$ 独立同分布、 $\mathbb E x_i=0$、 $\|x_i\|_2\leq K$，并定义
+设 $x_i$ 独立同分布、 $\mathbb E x_i=0$、 $\Vert x_i\Vert_2\leq K$，并定义
 
 $$
 \Sigma=\mathbb E[x_ix_i^\top],\qquad
@@ -86,7 +86,7 @@ $$
 -K^2I\preceq X_i\preceq K^2I,\qquad R=K^2.
 $$
 
-再令 $A=x_ix_i^\top$。由于 $A^2=\|x_i\|^2A\preceq K^2A$，
+再令 $A=x_ix_i^\top$。由于 $A^2=\Vert x_i\Vert^2A\preceq K^2A$，
 
 $$
 \mathbb E X_i^2
@@ -95,7 +95,7 @@ $$
 \preceq K^2\Sigma.
 $$
 
-因此 $v\leq nK^2\|\Sigma\|_{\mathrm{op}}$。
+因此 $v\leq nK^2\Vert\Sigma\Vert_{\mathrm{op}}$。
 
 注意：矩阵有序关系允许这里的上界； $\mathbb E A^2-\Sigma^2$ 不是把所有交叉项都随意丢掉，而是利用 $\mathbb E A=\Sigma$ 展开得到。
 
@@ -104,9 +104,9 @@ $$
 取 $\ell=\log(2d/\delta)$。由 Bernstein 的反解，一个便利但稍松的高概率界是
 
 $$
-\|\widehat\Sigma-\Sigma\|_{\mathrm{op}}
+\Vert\widehat\Sigma-\Sigma\Vert_{\mathrm{op}}
 \leq
-\sqrt{\frac{2K^2\|\Sigma\|_{\mathrm{op}}\ell}{n}}
+\sqrt{\frac{2K^2\Vert\Sigma\Vert_{\mathrm{op}}\ell}{n}}
 +\frac{2K^2\ell}{3n}.
 $$
 

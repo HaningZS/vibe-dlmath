@@ -64,8 +64,7 @@ $$
 
 $$
 \delta_h^{\pi}(s,a)
-=
-\widehat V_h(s)-r_h(s,a)
+=\widehat V_h(s)-r_h(s,a)
 -\mathbb E_{s'\sim P_h(\cdot\mid s,a)}[\widehat V_{h+1}(s')].
 $$
 
@@ -84,8 +83,7 @@ $$
 
 $$
 \widehat V_1(s_1)-V_1^{\pi}(s_1)
-=
-\sum_{h=1}^H
+=\sum_{h=1}^H
 \mathbb E_{(s_h,a_h)\sim d_h^{\pi}}
 [\delta_h^{\pi}(s_h,a_h)].
 $$
@@ -96,8 +94,7 @@ $$
 
 $$
 V_1^{\pi'}(s_1)-V_1^{\pi}(s_1)
-=
-\sum_{h=1}^H
+=\sum_{h=1}^H
 \mathbb E_{(s_h,a_h)\sim d_h^{\pi'}}[A_h^{\pi}(s_h,a_h)].
 $$
 

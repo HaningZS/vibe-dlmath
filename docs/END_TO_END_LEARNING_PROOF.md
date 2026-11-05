@@ -9,7 +9,7 @@
 数据 $(X_i,Y_i)$ 独立同分布， $|Y|\le Y_0$。损失为
 $\ell(h,y)=\frac12(h-y)^2$，总体风险 $R(h)=\mathbb E\ell(h(X),Y)$，经验风险 $R_n(h)=n^{-1}\sum_i\ell(h(X_i),Y_i)$。
 
-事先给定一个**可抽样、与训练集独立**的特征分布 $\pi$，特征 $|\psi_\theta(x)|\le1$。假设条件均值 $f_*(x)=\mathbb E[Y\mid X=x]$ 存在表示
+事先给定一个**可抽样、与训练集独立**的特征分布 $\pi$，特征 $|\psi_\theta(x)|\le1$。假设条件均值 $f_\ast(x)=\mathbb E[Y\mid X=x]$ 存在表示
 
 $$
 f_*(x)=\mathbb E_{\theta\sim\pi}[a(\theta)\psi_\theta(x)],\qquad |a(\theta)|\le V,
@@ -17,7 +17,7 @@ $$
 
 其中 $V>0$ 是已给的预算；未知函数 $a$ 只用于证明比较解存在，算法不需要读取它。注意：任意 Barron variation 有限，未必能在这个**事先给定**的 $\pi$ 下用同一 $V$ 表示。这是明确的目标类假设。
 
-算法独立抽取 $m$ 个特征，令 $\phi(x)=(\psi_{\theta_j}(x))_{j=1}^m$，训练 $h_w=w^\top\phi$，约束 $\|w\|_2\le W=V/\sqrt m$。从 $w_0=0$ 出发，做 $T$ 步 projected GD， $\eta=1/m$，输出 $\bar w=T^{-1}\sum_{t=1}^T w_t$。
+算法独立抽取 $m$ 个特征，令 $\phi(x)=(\psi_{\theta_j}(x))_ {j=1}^m$，训练 $h_w=w^\top\phi$，约束 $\Vert w\Vert_2\le W=V/\sqrt m$。从 $w_0=0$ 出发，做 $T$ 步 projected GD， $\eta=1/m$，输出 $\bar w=T^{-1}\sum_{t=1}^T w_t$。
 
 假设通常的可测性与期望存在条件；这里的有限维参数球紧，损失连续、有界，uniform supremum 可用可数稠密参数集处理。
 
@@ -35,7 +35,7 @@ R(h_{\bar w})-R^*
 }
 $$
 
-$R^*=\frac12\mathbb E\operatorname{Var}(Y\mid X)$ 是平方损失的 Bayes 风险。四项分别是特征逼近、复杂度统计误差、尾部统计误差和训练误差。
+$R^*=\frac12\mathbb E\mathop{\mathrm{Var}}(Y\mid X)$ 是平方损失的 Bayes 风险。四项分别是特征逼近、复杂度统计误差、尾部统计误差和训练误差。
 
 这是基础教学界：Markov 给出的 $1/\delta_A$ 较松，某些参数下风险界也会空泛；它的作用是完整展示合法接口，不宣称最优 rate。
 
@@ -44,7 +44,7 @@ $R^*=\frac12\mathbb E\operatorname{Var}(Y\mid X)$ 是平方损失的 Bayes 风�
 条件展开平方可得
 
 $$
-R(h)-R^*=\tfrac12\|h-f_*\|_{L^2(P_X)}^2.
+R(h)-R^\ast=\tfrac12\Vert h-f_\ast\Vert_{L^2(P_X)}^2.
 $$
 
 因为 $\mathbb E[Y-f_*\mid X]=0$，展开中的交叉项为 0。
@@ -54,12 +54,12 @@ $$
 [T41](../proofs/deep-learning/T41-barron-random-feature-approximation.md) 的 Hilbert 方差计算应用于 $Z=a(\theta)\psi_\theta$，给出期望平方误差不超过 $V^2/m$。故概率至少 $1-\delta_A$，有
 
 $$
-\inf_{\|w\|\le W}R(h_w)-R^*\le\frac{V^2}{2m\delta_A}.
+\inf_{\Vert w\Vert\le W}R(h_w)-R^*\le\frac{V^2}{2m\delta_A}.
 $$
 
 ## 4. 引理 B：训练集控制整个固定模型类
 
-给定已抽取特征， $\|\phi(x)\|\le B=\sqrt m$，且 $|h_w(x)|\le WB=V$。因此损失在 $[0,M]$， $M=(V+Y_0)^2/2$；在预测区间 $[-V,V]$ 上对预测为 $C=V+Y_0$-Lipschitz。
+给定已抽取特征， $\Vert\phi(x)\Vert\le B=\sqrt m$，且 $|h_w(x)|\le WB=V$。因此损失在 $[0,M]$， $M=(V+Y_0)^2/2$；在预测区间 $[-V,V]$ 上对预测为 $C=V+Y_0$-Lipschitz。
 
 线性预测类的 Rademacher complexity 满足
 
@@ -73,7 +73,7 @@ $\frac12\sup_{u,v}[A_u+A_v+\psi(u)-\psi(v)]\le\frac12\sup_{u,v}[A_u+A_v+C|u-v|]$
 [T33](../proofs/generalization/T33-uniform-convergence.md) 的双侧界因此给出，条件概率至少 $1-\delta_S$，
 
 $$
-b_n:=\sup_{\|w\|\le W}|R(h_w)-R_n(h_w)|
+b_n:=\sup_{\Vert w\Vert\le W}|R(h_w)-R_n(h_w)|
 \le\frac{2CV}{\sqrt n}+M\sqrt{\frac{\log(2/\delta_S)}{2n}}.
 $$
 
@@ -83,19 +83,19 @@ $$
 
 固定特征后 $F(w)=R_n(h_w)$ 为凸函数，Hessian 为 $n^{-1}\sum_i\phi(X_i)\phi(X_i)^\top\preceq mI$。参数球紧， $F$ 连续，所以经验最优 $w^*$ 存在。
 
-更新为 $w_{t+1}=\Pi_{\|w\|\le W}(w_t-\eta\nabla F(w_t))$。投影最优性给出
+更新为 $w_{t+1}=\Pi_{\Vert w\Vert\le W}(w_t-\eta\nabla F(w_t))$。投影最优性给出
 
 $$
-\langle\nabla F(w_t),w_{t+1}-w^*\rangle
-\le\frac{\|w_t-w^*\|^2-\|w_{t+1}-w^*\|^2-\|w_{t+1}-w_t\|^2}{2\eta}.
+\langle\nabla F(w_t),w_{t+1}-w^\ast\rangle
+\le\frac{\Vert w_t-w^\ast\Vert^2-\Vert w_{t+1}-w^\ast\Vert^2-\Vert w_{t+1}-w_t\Vert^2}{2\eta}.
 $$
 
 再用 convexity 与 smoothness：
-$F(w_{t+1})-F(w^*)\le\langle\nabla F(w_t),w_{t+1}-w^*\rangle+\frac m2\|w_{t+1}-w_t\|^2$。
+$F(w_{t+1})-F(w^\ast)\le\langle\nabla F(w_t),w_{t+1}-w^\ast\rangle+\frac m2\Vert w_{t+1}-w_t\Vert^2$。
 $\eta=1/m$ 使移动平方项抵消。望远镜求和与 Jensen 得到
 
 $$
-F(\bar w)-F(w^*)\le\frac{\|w_0-w^*\|^2}{2\eta T}
+F(\bar w)-F(w^\ast)\le\frac{\Vert w_0-w^\ast\Vert^2}{2\eta T}
 \le\frac{mW^2}{2T}=\frac{V^2}{2T}.
 $$
 
@@ -106,8 +106,8 @@ $$
 对训练集事件中的任意输出，[T32](../proofs/generalization/T32-excess-risk-decomposition.md) 给出
 
 $$
-R(h_{\bar w})-R^*
-\le[\inf_{\|w\|\le W}R(h_w)-R^*]+2b_n+[F(\bar w)-\inf F].
+R(h_{\bar w})-R^\ast
+\le[\inf_{\Vert w\Vert\le W}R(h_w)-R^\ast]+2b_n+[F(\bar w)-\inf F].
 $$
 
 代入 A、B、C 得到第 2 节的所有常数。A 的失败概率是 $\delta_A$；B 对每个已固定特征集的条件失败概率至多 $\delta_S$，tower property 给出无条件同一上界。union bound 因而为 $\delta_A+\delta_S$，不需要假设两个事件独立。
@@ -118,7 +118,7 @@ $$
 |---|---|---|
 | 已知可抽样 $\pi$，目标有有界系数表示 | A 与可执行特征抽样 | 任意 variation 表示可能使用未知的目标依赖分布 |
 | 特征与训练集独立 | B 的条件 iid | 学习隐藏层后需稳定性、sample split 或新复杂度界 |
-| $|Y|$、 $|\psi|$ 有界 | B 的 Lipschitz 与 loss range | 无界标签改用矩/尾条件，常数重推 |
+| $\vert Y\vert$、 $\vert\psi\vert$ 有界 | B 的 Lipschitz 与 loss range | 无界标签改用矩/尾条件，常数重推 |
 | 参数球与 projected GD | C 的凸性、投影和输出 | Adam/全网络训练不能直接沿用 |
 | 平均 $w_1,\ldots,w_T$ | C 的 Jensen | 最后迭代需另证对应结论 |
 | 同一平方风险和输入 law | 三个引理接口 | 分类或分布转移分别用 T49/T19 的桥 |

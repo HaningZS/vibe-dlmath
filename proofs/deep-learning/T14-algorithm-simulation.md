@@ -50,7 +50,7 @@ attention layer / transformer block ≈ known algorithm 的一步
 
 必须为 `≈` 指定范数、输入域、误差、depth/width/precision/context length，并控制逐层误差传播，之后才能复用被模拟算法的误差界。
 
-例如，若单层模拟误差满足 $\|F_\theta(z)-A(z)\|\le\varepsilon$，且目标算法映射 $A$ 是 $L_A$-Lipschitz，则层间误差可递推为
+例如，若单层模拟误差满足 $\Vert F_\theta(z)-A(z)\Vert\le\varepsilon$，且目标算法映射 $A$ 是 $L_A$-Lipschitz，则层间误差可递推为
 
 $$
 e_{\ell+1}\le L_Ae_\ell+\varepsilon,

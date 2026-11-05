@@ -63,8 +63,7 @@ $$
 
 $$
 \Delta^{std}_m
-=
-M_m-
+=M_m-
 \max_{b\in\mathcal{B}^{std}}M_b.
 $$
 
@@ -72,9 +71,8 @@ audit gap：
 
 $$
 \Delta^{audit}_m
-=
-M_m-
-\max_{b\in\mathcal{B}^{std}\cup\{b^{audit}\}}M_b.
+=M_m-
+\max_{b\in\mathcal{B}^{std}\cup\lbrace b^{audit}\rbrace}M_b.
 $$
 
 若定义 direct audit gap：
@@ -87,24 +85,20 @@ $$
 
 $$
 \Delta^{audit}_m
-=
-\min\{\Delta^{std}_m,\Delta^{direct}_m\}.
+=\min\lbrace\Delta^{std}_m,\Delta^{direct}_m\rbrace.
 $$
 
 对 lower-is-better 的 loss，应改用 $\min$ baseline 和反向差值，例如
 
 $$
 \Gamma_m^{std}
-=
-\min_{b\in\mathcal B^{std}}L_b-L_m,
+=\min_{b\in\mathcal B^{std}}L_b-L_m,
 \qquad
 \Gamma_m^{direct}=L_{b^{audit}}-L_m,
 \qquad
 \Gamma_m^{audit}
-=
-\min_{b\in\mathcal B^{std}\cup\{b^{audit}\}}L_b-L_m
-=
-\min\{\Gamma_m^{std},\Gamma_m^{direct}\}.
+=\min_{b\in\mathcal B^{std}\cup\lbrace b^{audit}\rbrace}L_b-L_m
+=\min\lbrace\Gamma_m^{std},\Gamma_m^{direct}\rbrace.
 $$
 
 ## 逐步证明模板

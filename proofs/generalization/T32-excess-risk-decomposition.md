@@ -99,7 +99,7 @@ $$
 取 $X\in[0,1]$、 $Y\equiv1$，平方损失，以及
 
 $$
-f_\theta(x)=\sum_{j=1}^m a_j\operatorname{ReLU}(b_jx+c_j).
+f_\theta(x)=\sum_{j=1}^m a_j\mathop{\mathrm{ReLU}}(b_jx+c_j).
 $$
 
 若全部 $a_j=b_j=0,c_j=-1$，隐藏单元在一个参数邻域内都关闭，模型输出 0，经验梯度恰为 0，总体风险为 1。但一个隐藏单元就能表示常数 1，因此类内最优与 Bayes 风险均为 0。

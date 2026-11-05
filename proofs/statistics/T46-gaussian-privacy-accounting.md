@@ -34,16 +34,16 @@ status: self-contained-core
 
 ## 2. Gaussian 散度的直接计算
 
-定义 $D_\alpha(P\|Q)=(\alpha-1)^{-1}\log\mathbb E_P e^{(\alpha-1)L}$，其中 $L=\log(dP/dQ)$。
+定义 $D_\alpha(P\Vert Q)=(\alpha-1)^{-1}\log\mathbb E_P e^{(\alpha-1)L}$，其中 $L=\log(dP/dQ)$。
 取 $P=N(\mu,\sigma^2I)$、 $Q=N(\mu',\sigma^2I)$， $d=\mu-\mu'$，在 $P$ 下写 $Z=\mu+\sigma\xi$。有
 
 $$
-L(Z)=\frac{\|d\|^2}{2\sigma^2}+\frac{d^\top\xi}{\sigma},\qquad\xi\sim N(0,I).
+L(Z)=\frac{\Vert d\Vert^2}{2\sigma^2}+\frac{d^\top\xi}{\sigma},\qquad\xi\sim N(0,I).
 $$
 
 Gaussian MGF 得到
-$\log\mathbb E_Pe^{(\alpha-1)L}=\alpha(\alpha-1)\|d\|^2/(2\sigma^2)$，故
-$D_\alpha(P\|Q)=\alpha\|d\|^2/(2\sigma^2)$。交换两个均值后同一界仍成立。
+$\log\mathbb E_Pe^{(\alpha-1)L}=\alpha(\alpha-1)\Vert d\Vert^2/(2\sigma^2)$，故
+$D_\alpha(P\Vert Q)=\alpha\Vert d\Vert^2/(2\sigma^2)$。交换两个均值后同一界仍成立。
 
 ## 3. 为什么自适应步骤仍能组合
 
@@ -70,7 +70,7 @@ $$
 ## 5. full-batch clipping 的具体原型
 
 初始化与原始数据独立。固定样本数 $n$，replace-one 邻接，每个样本梯度先裁到范数 $C$：
-$q(D)=n^{-1}\sum_i\operatorname{clip}_C(g_i)$。在同一已发布参数历史下，只替换一个项，故 $\Delta\le2C/n$。
+$q(D)=n^{-1}\sum_i\mathop{\mathrm{clip}}\nolimits_C(g_i)$。在同一已发布参数历史下，只替换一个项，故 $\Delta\le2C/n$。
 
 每步向平均梯度加标准差 $\sigma=zC/n$ 的噪声，则 $\rho_t=2\alpha/z^2$； $T$ 步预算为 $2T\alpha/z^2$。参数更新只使用这些带噪查询和与数据独立的随机性；最后参数是 noisy transcript 的后处理，不增加预算。若有另一个读取原始梯度的内部状态，也需重新证明它在相同发布历史下的条件 sensitivity。
 

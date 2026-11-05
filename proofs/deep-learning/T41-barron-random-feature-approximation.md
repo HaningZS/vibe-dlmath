@@ -12,7 +12,7 @@ status: self-contained-core
 ## 复用契约
 
 **对象**：固定输入 law $P_X$；可测特征 $\psi_\theta$ 和有限 signed measure $\nu$，满足
-$f_*(x)=\int\psi_\theta(x)d\nu(\theta)$。令 $V=|\nu|(\Theta)>0$，要求 $\|\psi_\theta\|_{L^2(P_X)}\le1$，随机特征为可积的 Hilbert-valued 对象。
+$f_\ast(x)=\int\psi_\theta(x)d\nu(\theta)$。令 $V=|\nu|(\Theta)>0$，要求 $\Vert\psi_\theta\Vert_{L^2(P_X)}\le1$，随机特征为可积的 Hilbert-valued 对象。
 
 **结论**：存在宽度 $m$ 的有限特征和，平方 $L^2$ 逼近误差不超过 $V^2/m$；随机抽取时期望同样受控。本卡使用表示的 variation norm，不宣称它与所有文献的 Fourier/Barron 范数定义完全相同。
 
@@ -33,7 +33,7 @@ $f_*(x)=\int\psi_\theta(x)d\nu(\theta)$。令 $V=|\nu|(\Theta)>0$，要求 $\|\p
 
 ## 2. 把 signed measure 改写为随机变量
 
-写 $d\nu=s(\theta)d|\nu|$，实数情形 $s\in\{-1,1\}$ 在非零部分成立。令 $\theta\sim|\nu|/V$，则
+写 $d\nu=s(\theta)d|\nu|$，实数情形 $s\in\lbrace-1,1\rbrace$ 在非零部分成立。令 $\theta\sim|\nu|/V$，则
 
 $$
 Z(x)=V s(\theta)\psi_\theta(x),\qquad \mathbb EZ=f_*.
@@ -46,24 +46,24 @@ $$
 独立性和中心化消掉交叉项：
 
 $$
-\mathbb E\|f_m-f_*\|_{L^2}^2
-=\frac1m\mathbb E\|Z-f_*\|_{L^2}^2
-=\frac{\mathbb E\|Z\|_{L^2}^2-\|f_*\|_{L^2}^2}{m}
+\mathbb E\Vert f_m-f_\ast\Vert_{L^2}^2
+=\frac1m\mathbb E\Vert Z-f_\ast\Vert_{L^2}^2
+=\frac{\mathbb E\Vert Z\Vert_{L^2}^2-\Vert f_\ast\Vert_{L^2}^2}{m}
 \le\frac{V^2}{m}.
 $$
 
 所以至少存在一次抽样实现该误差界。随机特征若要带置信度，最基础的 Markov 界为
 
 $$
-\Pr\!\left(\|f_m-f_*\|_{L^2}^2>\frac{V^2}{m\delta_A}\right)\le\delta_A.
+\Pr\negthinspace\left(\Vert f_m-f_*\Vert_{L^2}^2>\frac{V^2}{m\delta_A}\right)\le\delta_A.
 $$
 
 这是较弱但自包含的 $1/\delta_A$ 界；更强尾界需要额外条件与工具，不能把期望结果直接写成 $\log(1/\delta_A)$。
 
 ## 4. ReLU 特征怎样归一化
 
-若 $\|x\|_2\le R$，约束 $R\|w\|_2+|b|\le1$，则
-$\psi_{w,b}(x)=\operatorname{ReLU}(w^\top x+b)\in[0,1]$。
+若 $\Vert x\Vert_2\le R$，约束 $R\Vert w\Vert_2+|b|\le1$，则
+$\psi_{w,b}(x)=\mathop{\mathrm{ReLU}}(w^\top x+b)\in[0,1]$。
 利用 ReLU 正齐次性可以把特征的尺度移到外层系数，但迁移后的总 variation $V$ 必须保留。
 
 这里解决的是给定表示的逼近。Sobolev 类到该表示范数的嵌入、最紧深度分离或 arbitrary feature learning 都另有证明。

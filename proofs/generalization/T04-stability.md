@@ -53,7 +53,7 @@ $$
 二者只差一个样本。用相同随机种子运行算法，比较轨迹：
 
 $$
-\Delta_t = \|w_t(S)-w_t(S')\|.
+\Delta_t = \Vert w_t(S)-w_t(S')\Vert.
 $$
 
 如果算法对单个样本不敏感，则 `Delta_t` 小，从而 generalization gap 小。
@@ -75,12 +75,12 @@ Step 9. 对被替换样本位置取平均，得到 generalization bound。
 ## 常见 theorem 形状
 
 $$
-\left|\mathbb E_{S,U}\!\left[
+\left|\mathbb E_{S,U}\negthinspace\left[
 R(A(S,U))-\widehat R_S(A(S,U))
 \right]\right|
 \leq
 \frac{L_\ell}{n}\sum_{i=1}^n
-\mathbb E_{S,Z_i',U}\|A(S,U)-A(S^{(i)},U)\|.
+\mathbb E_{S,Z_i',U}\Vert A(S,U)-A(S^{(i)},U)\Vert.
 $$
 
 这里 $S^{(i)}$ 用独立的 $Z_i'\sim\mathcal D$ 替换第 $i$ 个训练样本， $U$ 是独立于样本的算法随机性，两次训练使用同一个 $U$。 $R$ 与 $\widehat R_S$ 分别为总体和经验风险，并假设相关期望存在。

@@ -39,7 +39,7 @@ $v(x,t)$ 是向量场：它告诉位于 $x$ 的粒子在时刻 $t$ 应往哪里�
 积分形式是
 
 $$
-x_t=x_0+\int_0^t v(x_s,s)\,ds.
+x_t=x_0+\int_0^t v(x_s,s)\thinspace ds.
 $$
 
 这说明 ODE 不是“每步套公式”，而是沿时间累计速度。
@@ -73,7 +73,7 @@ stiff ODE 含有差异很大的时间尺度，显式 solver 可能被迫使用�
 Itô 随机微分方程写作
 
 $$
-dX_t=f(X_t,t)\,dt+G(X_t,t)\,dW_t,
+dX_t=f(X_t,t)\thinspace dt+G(X_t,t)\thinspace dW_t,
 $$
 
 其中 $f$ 是 drift， $G$ 是 diffusion coefficient， $W_t$ 是 Brownian motion。
@@ -94,7 +94,7 @@ SDE 对应的基本离散化为
 
 $$
 X_{k+1}=X_k+f(X_k,t_k)\Delta t
-+G(X_k,t_k)\sqrt{\Delta t}\,\varepsilon_k,
++G(X_k,t_k)\sqrt{\Delta t}\thinspace\varepsilon_k,
 \qquad \varepsilon_k\sim\mathcal N(0,I).
 $$
 
@@ -134,7 +134,7 @@ $$
 $$
 \frac{d}{dt}\log p_t(x_t)
 =-\nabla\cdot v(x_t,t)
-=-\operatorname{Tr}\left(\frac{\partial v}{\partial x}\right).
+=-\mathop{\mathrm{Tr}}\left(\frac{\partial v}{\partial x}\right).
 $$
 
 它是离散 flow 的 $-\log|\det J|$ 在无限小时间步下的版本。continuous normalizing flow 可以同时积分状态和 log-density，但高维 divergence 的精确 trace 很贵，实践中常用 Hutchinson trace estimator 等随机近似。
@@ -146,7 +146,7 @@ flow matching 通常先指定从简单分布 $p_0$ 到数据分布 $p_1$ 的概�
 一种常见训练形式是采样端点/条件变量和时间，构造中间点 $X_t$ 及条件目标速度 $u_t$，最小化
 
 $$
-\mathbb E\left[\|v_\theta(X_t,t)-u_t\|^2\right].
+\mathbb E\left[\Vert v_\theta(X_t,t)-u_t\Vert^2\right].
 $$
 
 在平方损失、采样过程与可积性等条件下，人口最优解是条件期望
@@ -172,14 +172,14 @@ $$
 考虑常见的各向同性前向 SDE：
 
 $$
-dX_t=f(X_t,t)\,dt+g(t)\,dW_t.
+dX_t=f(X_t,t)\thinspace dt+g(t)\thinspace dW_t.
 $$
 
 在密度光滑、正值等正则条件下，其 reverse-time SDE 可写成
 
 $$
 dX_t=\left[f(X_t,t)-g(t)^2\nabla_x\log p_t(X_t)\right]dt
-+g(t)\,d\bar W_t,
++g(t)\thinspace d\bar W_t,
 $$
 
 其中时间从 $T$ 向 $0$ 运行，所以这里的 $dt$ 是反向时间增量。若改用递增的新时间 $s=T-t$，漂移符号必须相应变换；抄公式时必须先确认时间约定。
@@ -208,7 +208,7 @@ $$
 考虑
 
 $$
-dX_t=-\frac\beta2X_t\,dt+\sqrt\beta\,dW_t,
+dX_t=-\frac\beta2X_t\thinspace dt+\sqrt\beta\thinspace dW_t,
 \qquad X_0=x_0.
 $$
 
@@ -217,7 +217,7 @@ $$
 $$
 \mathbb E[X_t]=x_0e^{-\beta t/2},
 \qquad
-\operatorname{Var}(X_t)=1-e^{-\beta t}.
+\mathop{\mathrm{Var}}(X_t)=1-e^{-\beta t}.
 $$
 
 ```python

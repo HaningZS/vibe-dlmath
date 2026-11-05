@@ -11,7 +11,7 @@
 Polyak–Łojasiewicz（PL）条件直接排除了“离最优还很远但已经很平”：
 
 $$
-\frac12\|\nabla f(x)\|^2\geq \mu(f(x)-f^\star),\qquad \mu>0.
+\frac12\Vert\nabla f(x)\Vert^2\geq \mu(f(x)-f^\star),\qquad \mu>0.
 $$
 
 左边是当前能感受到的坡度，右边是离最低目标值的差距。它规定：如果差距大，坡度就不能太小。
@@ -24,13 +24,13 @@ $$
 
 $$
 f(y)\geq f(x)+\langle\nabla f(x),y-x\rangle
-+\frac\mu2\|y-x\|^2.
++\frac\mu2\Vert y-x\Vert^2.
 $$
 
 右边关于 $y$ 的最小值在 $y=x-\nabla f(x)/\mu$，从而
 
 $$
-f^\star\geq f(x)-\frac{\|\nabla f(x)\|^2}{2\mu}.
+f^\star\geq f(x)-\frac{\Vert\nabla f(x)\Vert^2}{2\mu}.
 $$
 
 这就是 PL。但反方向不成立： $f(x_1,x_2)=x_1^2$ 满足 PL，却沿 $x_2$ 方向完全平坦，所以不是强凸，也没有唯一最优参数。
@@ -49,9 +49,9 @@ $$
 
 $$
 f(x_{t+1})
-\leq f(x_t)-\eta\|\nabla f(x_t)\|^2
-+\frac{L\eta^2}{2}\|\nabla f(x_t)\|^2
-\leq f(x_t)-\frac\eta2\|\nabla f(x_t)\|^2.
+\leq f(x_t)-\eta\Vert\nabla f(x_t)\Vert^2
++\frac{L\eta^2}{2}\Vert\nabla f(x_t)\Vert^2
+\leq f(x_t)-\frac\eta2\Vert\nabla f(x_t)\Vert^2.
 $$
 
 记 $\Delta_t=f(x_t)-f^\star$，代入 PL 得
@@ -70,22 +70,22 @@ $$
 
 $$
 \mathbb E[g_t\mid\mathcal F_t]=\nabla f(x_t),\qquad
-\mathbb E[\|g_t-\nabla f(x_t)\|^2\mid\mathcal F_t]\leq\sigma^2.
+\mathbb E[\Vert g_t-\nabla f(x_t)\Vert^2\mid\mathcal F_t]\leq\sigma^2.
 $$
 
 用同样的 smoothness 展开，再取条件期望：
 
 $$
 \mathbb E[f(x_{t+1})\mid\mathcal F_t]
-\leq f(x_t)-\eta\|\nabla f(x_t)\|^2
-+\frac{L\eta^2}{2}\mathbb E[\|g_t\|^2\mid\mathcal F_t].
+\leq f(x_t)-\eta\Vert\nabla f(x_t)\Vert^2
++\frac{L\eta^2}{2}\mathbb E[\Vert g_t\Vert^2\mid\mathcal F_t].
 $$
 
 无偏性使交叉项为零，因此
 
 $$
-\mathbb E[\|g_t\|^2\mid\mathcal F_t]\leq
-\|\nabla f(x_t)\|^2+\sigma^2.
+\mathbb E[\Vert g_t\Vert^2\mid\mathcal F_t]\leq
+\Vert\nabla f(x_t)\Vert^2+\sigma^2.
 $$
 
 在相同步长条件下得到

@@ -73,11 +73,11 @@ $$
 
 ## 5. 无位置 self-attention 的排列证明
 
-令 $A(X)=\operatorname{softmax}_{row}(QK^\top/\sqrt d)V$， $Q=XW_Q$ 等。排列矩阵 $P$ 作用后 $Q'=PQ$ 等，且
+令 $A(X)=\mathop{\mathrm{softmax}}\nolimits_{row}(QK^\top/\sqrt d)V$， $Q=XW_Q$ 等。排列矩阵 $P$ 作用后 $Q'=PQ$ 等，且
 
 $$
-\operatorname{softmax}_{row}(PMP^\top)
-=P\operatorname{softmax}_{row}(M)P^\top,
+\mathop{\mathrm{softmax}}\nolimits_{row}(PMP^\top)
+=P\mathop{\mathrm{softmax}}\nolimits_{row}(M)P^\top,
 \qquad A(PX)=PA(X).
 $$
 
